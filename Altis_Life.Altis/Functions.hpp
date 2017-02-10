@@ -172,6 +172,9 @@ class Life_Client_Core {
 		class safeInventoryOilRig {};  
 		class safeOpenOilRig {};  
 		class safeTakeOilRig {};
+		class safeInventoryDrugsStash {};  
+		class safeOpenDrugsStash {};  
+		class safeTakeDrugsStash {};
     };
 
     class Functions {

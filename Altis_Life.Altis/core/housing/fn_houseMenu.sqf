@@ -47,7 +47,7 @@ if (_curTarget in life_hideoutBuildings) exitWith {
 if (_curTarget isKindOf "House_F" && playerSide isEqualTo west) exitWith {
 
 
-	private _oilRigPos = [24525.5,19190.1,16.6031];
+	private _oilRigPos = [13670,12327.2,9.98645];
 	private _oilRigBuildingType = "Land_Research_HQ_F";
 	private _oilRigBuilding = nearestObject [_oilRigPos,_oilRigBuildingType];
 

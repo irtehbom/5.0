@@ -21,6 +21,25 @@ _robber = false;
     _val = ITEM_VALUE(_var);
     if (_val > 0) then {
         _inv pushBack [_var,_val];
+		
+	
+		_exists = [seized_drugs, _var, 0] call Zen_ArrayGetNestedIndex;
+		
+		if (_exists == -1) then {
+		
+			seized_drugs pushBack [_var,_val];
+			drugs_stash setVariable ["seized_drugs_array",seized_drugs,true];
+			
+		} else {
+			
+			_item_index = seized_drugs select _exists;
+			_amount_index = _item_index select 1;
+			_total_amount =  _amount_index + _val;;
+			_item_index set [1,_total_amount];
+			drugs_stash setVariable ["seized_drugs_array",seized_drugs,true];
+		};
+	
+	
         [false,_var,_val] call life_fnc_handleInv;
     };
 } forEach ("getNumber(_x >> 'illegal') isEqualTo 1" configClasses (missionConfigFile >> "VirtualItems"));

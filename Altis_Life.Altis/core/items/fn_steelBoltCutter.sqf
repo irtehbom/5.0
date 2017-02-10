@@ -9,7 +9,7 @@
 private ["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui"];
 _building = param [0,objNull,[objNull]];
 
-private _oilRigPos = [24525.5,19190.1,16.6031];
+private _oilRigPos = [13670,12327.2,9.98645];
 private _oilRigBuildingType = "Land_Research_HQ_F";
 private _oilRigBuilding = nearestObject [_oilRigPos,_oilRigBuildingType];
 

@@ -86,6 +86,10 @@ life_istazed = false;
 life_isknocked = false;
 life_vehicles = [];
 real_estate = [];
+seized_drugs = [];
+amount_test = 0;
+total_test = 0;
+
 
 /*
     Master Array of items?

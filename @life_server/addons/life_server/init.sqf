@@ -142,8 +142,10 @@ life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_N
 life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 
 /* Set the amount of gold in the federal reserve at mission start */
+
 fed_bank setVariable ["safe",count playableUnits,true];
 oil_rig setVariable ["safe",count playableUnits,true];
+drugs_stash setVariable ["seized_drugs_array",[],true];
 [] spawn TON_fnc_federalUpdate;
 
 /* Event handler for disconnecting players */
@@ -189,7 +191,7 @@ publicVariable "TON_fnc_playtime_values_request";
 
 //Lock the oilrig
 
-private _oilRigPos = [24525.5,19190.1,16.6031];
+private _oilRigPos = [13670,12327.2,9.98645];
 _oilRigBuilding = nearestObject [_oilRigPos,"Land_Research_HQ_F"];
 for "_i" from 1 to 3 do {_oilRigBuilding setVariable [format ["bis_disabled_Door_%1",_i],1,true]; _oilRigBuilding animateSource [format ["Door_%1_source", _i], 0];};
 _oilRigBuilding setVariable ["locked",true,true];

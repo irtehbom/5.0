@@ -32,3 +32,4 @@
 #include "realEstate.hpp"
 #include "realEstateGarage.hpp"
 #include "placeables.hpp"
+#include "DrugsStash.hpp"

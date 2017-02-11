@@ -69,6 +69,7 @@ class CfgRemoteExec {
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
 		F(life_fnc_AAN_oilRig,CLIENT)
+		F(life_fnc_civInteractionMenu,CLIENT)
 		
 		
 		

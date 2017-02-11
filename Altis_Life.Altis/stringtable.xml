@@ -6873,6 +6873,12 @@
             <Portuguese>Barra de Ouro</Portuguese>
             <Polish>Sztabka złota</Polish>
         </Key>
+		<Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+		</Key>
+		<Key ID="STR_Item_Blindfold">
+			<Original>Blindfold</Original>
+		</Key>
 		<Key ID="STR_Item_bonds">
             <Original>Bonds</Original>
 		</Key>

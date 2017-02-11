@@ -33,3 +33,4 @@
 #include "realEstateGarage.hpp"
 #include "placeables.hpp"
 #include "DrugsStash.hpp"
+#include "civInteractionMenu.hpp"

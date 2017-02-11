@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter","steel_bolt_cutter", "blastingcharge","C4" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter","steel_bolt_cutter", "blastingcharge","C4","zipties","blindfold" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull","peach", "steel_bolt_cutter", "boltcutter", "blastingcharge","C4" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull","peach", "steel_bolt_cutter", "boltcutter", "blastingcharge","C4","zipties","blindfold" };
     };
 	
 	class bonds {
@@ -162,6 +162,28 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
+    };
+	
+	class zipties {
+        variable = "zipties";
+        displayName = "STR_Item_ZipTies";
+        weight = 0;
+        buyPrice = 1200;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ziptie.paa";
+    };
+	
+	class blindfold {
+        variable = "blindfold";
+        displayName = "STR_Item_Blindfold";
+        weight = 0;
+        buyPrice = 600;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\blindfold.paa";
     };
 
     class defibrillator {

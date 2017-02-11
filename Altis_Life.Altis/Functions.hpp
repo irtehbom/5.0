@@ -105,6 +105,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class civInteractionMenu{};
     };
 
     class Config {
@@ -226,6 +227,19 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
     };
+	
+	class CivTieing {
+		file = "core\restraining";
+		class gagAction {};					
+		class gagged {};
+		class removeGagAction {};
+		class tieing {};
+		class tieingAction {};
+		class tieingActionb {};
+		class tieingb {};
+		class untie {};
+		class untieb {};
+	};
 
     class Gangs {
         file = "core\gangs";

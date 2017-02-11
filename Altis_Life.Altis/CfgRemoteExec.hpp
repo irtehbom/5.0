@@ -6,6 +6,7 @@
 #define CLIENT 1
 #define SERVER 2
 #define HC HC_Life
+#define HC_AI HC_Life
 
 class CfgRemoteExec {
     class Functions {
@@ -168,6 +169,7 @@ class CfgRemoteExec {
         F(SPY_fnc_notifyAdmins,ANYONE)
 		F(life_fnc_demoChargeTimerOilRig,ANYONE)
 		F(life_fnc_bankalarmsound,ANYONE)
+		F(AI_HC_fnc_spawn_ai,ANYONE)
     };
 
     class Commands {

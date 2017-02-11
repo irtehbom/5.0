@@ -8,16 +8,12 @@
 
 HC_UID = nil;
 
-    diag_log "-------TEST 231321313123------";
 // JIP integration of an hc
 "life_HC_isActive" addPublicVariableEventHandler {
-    diag_log "-------TEST 2------";
-	diag_log format["_this 1 %1",_this];
     if (_this select 1) then {
 		diag_log format["_this 2 %1",_this];
-	    diag_log "-------TEST 3------";
-        HC_UID = getPlayerUID hc_1;
-        HC_Life = owner hc_1;
+        HC_UID = getPlayerUID life_hc;
+        HC_Life = owner life_hc;
         publicVariable "HC_Life";
         HC_Life publicVariableClient "serv_sv_use";
         cleanupFSM setFSMVariable ["stopfsm",true];

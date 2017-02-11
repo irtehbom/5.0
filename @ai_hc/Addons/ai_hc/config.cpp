@@ -23,7 +23,7 @@ class CfgFunctions
         class Functions
         {
             file = "\ai_hc\Functions";
-            
+            class spawn_ai {};
         };
 
     };

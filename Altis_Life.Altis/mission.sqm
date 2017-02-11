@@ -8,18 +8,18 @@ class EditorData
 	toggles=1134;
 	class ItemIDProvider
 	{
-		nextID=2885;
+		nextID=2892;
 	};
 	class MarkerIDProvider
 	{
-		nextID=222;
+		nextID=225;
 	};
 	class Camera
 	{
-		pos[]={3616.7114,14.267517,13113.826};
-		dir[]={0.057301775,-0.32884625,-0.94265491};
-		up[]={0.019953312,0.94438148,-0.32824388};
-		aside[]={-0.99816728,2.0852895e-007,-0.060675591};
+		pos[]={3616.7114,602.77832,13113.826};
+		dir[]={-0.01130192,-0.9985159,-0.053495713};
+		up[]={-0.20639567,0.054664567,-0.97693956};
+		aside[]={-0.9784137,6.1637547e-007,0.20670724};
 	};
 };
 binarizationWanted=0;
@@ -60,7 +60,6 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
-	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_Addons",
 	"A3_Supplies_F_Heli_CargoNets",
@@ -247,14 +246,13 @@ class ScenarioData
 	{
 		gameType="RPG";
 		minPlayers=1;
-		maxPlayers=126;
+		maxPlayers=125;
 	};
 	wreckLimit=3;
 	wreckRemovalMinTime=60;
 	wreckRemovalMaxTime=320;
 	corpseLimit=150;
 	corpseRemovalMinTime=999;
-	corpseRemovalMaxTime=9999;
 };
 class CustomAttributes
 {
@@ -262,24 +260,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnButton";
 			expression="true";
@@ -295,6 +275,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -333,13 +331,14 @@ class Mission
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
-		startWaves=0.12;
+		startLightnings=0.10081369;
 		startGust=0.099999994;
 		forecastWeather=0.099999994;
 		forecastWind=0.29999998;
-		forecastWaves=0.12;
+		forecastWaves=0;
 		forecastGust=0.099999994;
 		forecastWindDir=360;
+		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
 		year=2035;
@@ -352,7 +351,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1557;
+		items=1560;
 		class Item0
 		{
 			dataType="Marker";
@@ -4685,7 +4684,6 @@ class Mission
 			};
 			id=280;
 			type="Land_CashDesk_F";
-			atlOffset=9.8466873e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4809,7 +4807,6 @@ class Mission
 			};
 			id=283;
 			type="Land_CashDesk_F";
-			atlOffset=0.00010299683;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15715,7 +15712,6 @@ class Mission
 			};
 			id=544;
 			type="Land_CashDesk_F";
-			atlOffset=7.1287155e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30860,7 +30856,6 @@ class Mission
 					};
 					id=984;
 					type="C_man_1";
-					atlOffset=7.1287155e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31075,7 +31070,7 @@ class Mission
 					};
 					id=990;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.052223206;
+					atlOffset=0.052124739;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33832,7 +33827,6 @@ class Mission
 					};
 					id=939;
 					type="C_man_1";
-					atlOffset=0.00011920929;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46274,7 +46268,7 @@ class Mission
 			};
 			id=1741;
 			type="Land_Billboard_F";
-			atlOffset=1.9646406;
+			atlOffset=1.9645576;
 		};
 		class Item1367
 		{
@@ -48047,7 +48041,6 @@ class Mission
 					};
 					id=988;
 					type="C_man_1";
-					atlOffset=0.00010299683;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48077,7 +48070,6 @@ class Mission
 			{
 			};
 			id=2016;
-			atlOffset=0.00010299683;
 		};
 		class Item1466
 		{
@@ -48147,7 +48139,7 @@ class Mission
 			};
 			id=2020;
 			type="Land_Sack_F";
-			atlOffset=0.00028800964;
+			atlOffset=0.00017166138;
 		};
 		class Item1470
 		{
@@ -48164,7 +48156,7 @@ class Mission
 			};
 			id=2022;
 			type="Land_CratesPlastic_F";
-			atlOffset=0.011289597;
+			atlOffset=0.011174202;
 		};
 		class Item1471
 		{
@@ -49759,6 +49751,42 @@ class Mission
 			id=2878;
 			type="Land_CargoBox_V1_F";
 			atlOffset=9.5367432e-007;
+		};
+		class Item1557
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8343.5156,85.463928,25158.939};
+			};
+			name="ai_hc";
+			isPlayable=1;
+			description="Headless Client AI";
+			id=2885;
+			type="HeadlessClient_F";
+		};
+		class Item1558
+		{
+			dataType="Marker";
+			position[]={3959.0269,27.166103,13249.506};
+			name="Bonds Dealer_1";
+			text="Bonds Dealer";
+			type="hd_unknown";
+			colorName="ColorGreen";
+			id=2886;
+		};
+		class Item1559
+		{
+			dataType="Marker";
+			position[]={3634.5071,1.1079999e+024,13108.881};
+			name="ai_danger";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorOrange";
+			a=50;
+			b=50;
+			id=2891;
+			atlOffset=1.1079999e+024;
 		};
 	};
 };

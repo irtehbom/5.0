@@ -6,10 +6,18 @@
     Description:
     Starts the initialization of the player.
 */
-diag_log format["isServer %1",isServer];
-diag_log format["hasInterface %1",hasInterface];
+
 if (!hasInterface && !isServer) exitWith {
-    [] call compile preprocessFileLineNumbers "\life_hc\initHC.sqf";
+	_selectHC = name player;
+	
+	if (_selectHC == "life_hc") then {
+		[] call compile preprocessFileLineNumbers "\life_hc\initHC.sqf";
+	};
+	
+	if (_selectHC == "ai_hc") then {
+		[] call compile preprocessFileLineNumbers "\ai_hc\initHCAI.sqf";
+	};
+	
 }; //This is a headless client.
 
 #define CONST(var1,var2) var1 = compileFinal (if (var2 isEqualType "") then {var2} else {str(var2)})

@@ -6,7 +6,6 @@ sleep 5;
 
 [0,"AI HC: Spawning AI"] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
-diag_log["getMarkerPos ai_danger %1", getMarkerPos "ai_danger"];
 
 _markerPos = getMarkerPos "ai_danger";
 _markerSize =  getMarkerSize "ai_danger";
@@ -14,7 +13,7 @@ _markerSize =  getMarkerSize "ai_danger";
 
 diag_log format ["================  AI Spawn Start %1 =======================",(diag_tickTime) - _timeStamp];
 
-
+independent setFriend [west , 1]; 
 _maxUnits = 10;
 _units = [];
 _grp = createGroup independent;
@@ -52,7 +51,8 @@ _trg = createTrigger ["EmptyDetector", _markerPos, true];
 _trg setTriggerArea [_markerSize select 0, _markerSize select 1, 0, false];
 _trg setTriggerActivation ["ANY", "PRESENT", true];
 _condition = "this && triggerDelay";
-_activate = "{ if (side _x != independent && rating _x >= 0) then { _x addRating -999999999999999999999999; }; } forEach (thisList); [] spawn { sleep 2; triggerDelay = false; };";
+_activate = "{ 
+if (side _x == civilian && rating _x >= 0)then { _x addRating -999999999999999999999999; };} forEach (thisList); [] spawn { sleep 2; triggerDelay = false; };";
 _deactivate = "[] spawn { sleep 2; triggerDelay = true; };";
 _trg setTriggerStatements [_condition, _activate, _deactivate];
 

@@ -66,7 +66,11 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", "" },
             { "B_Heli_Light_01_F", "" },
             { "O_Heli_Light_02_unarmed_F", "" },
-            { "C_Plane_Civil_01_F", "" } //Apex DLC
+            { "C_Plane_Civil_01_F", "" }, //Apex DLC
+			{ "B_Heli_Transport_03_unarmed_F", "" }, //Huron
+			{ "I_Heli_Transport_02_F", "" } //Mohawk
+			
+			
         };
     };
 
@@ -195,6 +199,22 @@ class LifeCfgVehicles {
                 "\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_exterior_CO.paa"
             }, "" }
         };
+    };
+	
+	// Huron
+    class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 250;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 10;
+        textures[] = {};
+    };
+	
+	// Mohawk
+    class I_Heli_Transport_02_F {
+        vItemSpace = 250;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 10;
+        textures[] = {};
     };
 
     // Apex DLC

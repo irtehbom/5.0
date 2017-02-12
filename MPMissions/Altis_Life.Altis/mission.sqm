@@ -35262,7 +35262,7 @@ class Mission
 			{
 				position[]={8495.3213,102.73811,25178.83};
 			};
-			name="hc_1";
+			name="life_hc";
 			isPlayable=1;
 			description="Headless Client";
 			id=1108;

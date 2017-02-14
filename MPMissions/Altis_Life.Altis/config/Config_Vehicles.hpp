@@ -136,7 +136,7 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -147,7 +147,7 @@ class CarShops {
             { "B_Boat_Transport_01_F", "" },
             { "C_Boat_Civil_01_police_F", "" },
             { "C_Boat_Transport_02_F", "" }, //Apex DLC
-            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 3" },
+            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 5" },
             { "B_SDV_01_F", "" }
         };
     };

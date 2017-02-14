@@ -157,13 +157,28 @@ class WeaponShops {
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
             { "hgun_P07_F", "", 7500, 3750, "" },
+            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC			
+            { "SMG_01_F", "", 10000, 3750, "" }, //Vermin
+            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
             { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
             { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
             { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" }, //NX Carbide
+            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" }, //Apex DLC Sniper
+            { "hgun_Pistol_heavy_02_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Revolver
+            { "arifle_MX_SW_Black_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MXSW
+            { "arifle_MXM_Black_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MXM
+            { "LMG_Mk200_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MK200
+            { "LMG_Zafir_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Zafir
+			{ "srifle_DMR_01_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Rahim
+			{ "srifle_EBR_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Mk 18
+			{ "srifle_DMR_02_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Mark 10
+			{ "srifle_DMR_05_blk_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Cyrus
+			{ "srifle_GM6_camo_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Lynx
+			{ "srifle_LRR_camo_F", "", 10000, 6000, "call life_coplevel >= 4" } //M320
+
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -172,15 +187,40 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
             { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
             { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" } //Apex DLC
+            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" }, //Apex DLC
+            { "6Rnd_45ACP_Cylinder", "", 200, 100, "call life_coplevel >= 4" }, //MXSW
+            { "100Rnd_65x39_caseless_mag", "", 200, 100, "call life_coplevel >= 4" }, //MXSW
+            { "200Rnd_65x39_cased_Box", "", 200, 100, "call life_coplevel >= 4" }, //MK200
+            { "200Rnd_65x39_cased_Box_Tracer", "", 200, 100, "call life_coplevel >= 4" }, //MK200
+            { "150Rnd_762x54_Box", "", 200, 100, "call life_coplevel >= 4" }, //Zafir
+            { "150Rnd_762x54_Box_Tracer", "", 200, 100, "call life_coplevel >= 4" }, //Zafir
+            { "10Rnd_762x54_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Rahim
+            { "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Mk18
+            { "10Rnd_338_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Mark 10
+            { "10Rnd_93x64_DMR_05_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Cyrus
+            { "5Rnd_127x108_Mag", "", 200, 100, "call life_coplevel >= 4" }, //5Rnd_127x108_Mag //Lynx
+            { "5Rnd_127x108_APDS_Mag", "", 200, 100, "call life_coplevel >= 4" }, //5Rnd_127x108_APDS_Mag //Lynx
+            { "7Rnd_408_Mag", "", 200, 100, "call life_coplevel >= 4" } //7Rnd_408_Mag //M320
         };
         accs[] = {
-            { "muzzle_snds_L", "", 650, 325, "" },
+            { "muzzle_snds_L", "", 650, 325, "" }, //9MM Suppressor
             { "optic_MRD", "", 2750, 1375, "call life_coplevel >= 1" },
             { "acc_flashlight", "", 750, 375, "call life_coplevel >= 2" },
             { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
             { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
-            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }
+            { "muzzle_snds_B", "", 2750, 1375, "call life_coplevel >= 2" }, //7.62 Suppressor
+            { "muzzle_snds_H_MG", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 6.5mm HMG
+            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 6.5mm
+            { "muzzle_snds_M", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 5.56mm
+            { "optic_SOS", "", 2750, 1375, "call life_coplevel >= 2" }, //SOS Scope
+            { "optic_DMS", "", 2750, 1375, "call life_coplevel >= 2" }, //DMS Scope
+            { "optic_LRPS", "", 2750, 1375, "call life_coplevel >= 2" }, //LRPS Scope
+            { "muzzle_snds_338_green", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor .338
+            { "muzzle_snds_93mmg", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 9.3mm
+            { "optic_AMS", "", 2750, 1375, "call life_coplevel >= 2" }, //AMS Scope
+            { "bipod_01_F_blk", "", 2750, 1375, "call life_coplevel >= 2" }, //Bipod Black
+            { "bipod_02_F_hex", "", 2750, 1375, "call life_coplevel >= 2" }, //Bipod Hex
+            { "bipod_01_F_mtp", "", 2750, 1375, "call life_coplevel >= 2" } //Bipod MTP
         };
     };
 

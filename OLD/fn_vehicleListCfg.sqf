@@ -25,11 +25,70 @@ switch (_shop) do
 	*/
 
 	case "kart_shop":
-	case "med_shop":
-	case "med_air_hs": 
-	case "civ_car":
-	case "civ_truck":
+	{
+			_return set[count _return,["C_Kart_01_Blu_F",15000]];
+			_return set[count _return,["C_Kart_01_Fuel_F",15000]];
+			_return set[count _return,["C_Kart_01_Red_F",15000]];
+			_return set[count _return,["C_Kart_01_Vrana_F",15000]];
+	};
 	
+	case "med_shop":
+	{
+			_return set[count _return,["C_Hatchback_01_F", 5000]];
+			_return set[count _return,["C_Offroad_01_F",10000]];
+			_return set[count _return,["C_SUV_01_F", 16000]];
+			_return set[count _return,["C_Van_01_box_F", 20000]];
+	};
+	
+	case "med_air_hs": 
+	{
+			_return set[count _return,["B_Heli_Light_01_F",5000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",8000]];
+			_return set[count _return,["O_Heli_Transport_04_medevac_F",10000]];
+	};
+	
+	case "bounty_car":
+	{
+			_return set[count _return,["C_Hatchback_01_F",0]];
+			_return set[count _return,["C_Offroad_01_repair_F",0]];
+			_return set[count _return,["C_SUV_01_F",0]];
+			_return set[count _return,["I_Truck_02_box_F",0]];
+			_return set[count _return,["C_Van_01_fuel_F",0]];
+			_return set[count _return,["B_Truck_01_mover_F",0]];
+	};
+	
+	case "civ_car":
+	{
+			_return set[count _return,["C_Hatchback_01_F",10000]]; //Hatchback
+			_return set[count _return,["C_Hatchback_01_sport_F",100000]]; //Hatchback (Sport)
+			_return set[count _return,["C_Offroad_01_F",16000]]; //Offroad
+			_return set[count _return,["C_SUV_01_F",24000]]; //SUV
+	};
+
+	case "civ_truck":
+	{
+			_return set[count _return,["C_Van_01_fuel_F",40000]]; //Fuel Truck
+			_return set[count _return,["C_Van_01_transport_F",40000]]; //Truck 
+			_return set[count _return,["C_Van_01_box_F",80000]]; //Truck Boxer
+			_return set[count _return,["I_Truck_02_fuel_F",120000]]; //Zamak Fuel
+			_return set[count _return,["I_Truck_02_transport_F",120000]]; //Zamak Transport
+			_return set[count _return,["I_Truck_02_covered_F",160000]]; //Zamak Transport (Covered)
+			_return set[count _return,["I_Truck_02_ammo_F",200000]]; //Zamak Ammo
+			_return set[count _return,["I_Truck_02_box_F",200000]]; //Zamak Repair
+			_return set[count _return,["B_Truck_01_fuel_F",200000]]; //HEMTT Fuel
+			_return set[count _return,["B_Truck_01_mover_F",200000]]; //HEMTT
+			_return set[count _return,["B_Truck_01_transport_F",240000]]; //HEMTT Transport
+			_return set[count _return,["B_Truck_01_covered_F",280000]]; //HEMTT Transport (Covered)
+			_return set[count _return,["B_Truck_01_ammo_F",320000]]; //HEMTT Ammo
+			_return set[count _return,["B_Truck_01_Repair_F",360000]]; //HEMTT Repair
+			_return set[count _return,["B_Truck_01_box_F",400000]]; //HEMMT Box
+			_return set[count _return,["O_Truck_03_fuel_F",440000]]; //Tempest Fuel
+			_return set[count _return,["O_Truck_03_transport_F",440000]]; //Tempest Transport
+			_return set[count _return,["O_Truck_03_covered_F",480000]]; //Tempest Transport (Covered)
+			_return set[count _return,["O_Truck_03_ammo_F",600000]]; //Tempest Ammo
+			_return set[count _return,["O_Truck_03_repair_F",1000000]]; //Tempest Repair
+			_return set[count _return,["O_Truck_03_device_F",4000000]]; //Tempest Device
+	};
 	
 	case "civ_air":
 	{

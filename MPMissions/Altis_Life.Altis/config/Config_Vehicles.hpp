@@ -55,16 +55,7 @@ class CarShops {
             { "O_Truck_03_device_F", "" },
             { "C_Van_01_fuel_F", "" },
             { "I_Truck_02_fuel_F", "" },
-            { "B_Truck_01_fuel_F", "" }, //HEMTT Fuel
-			{ "I_Truck_02_ammo_F", "" }, //Zamak Ammo
-			{ "I_Truck_02_box_F", "" }, //Zamak Repair
-			{ "B_Truck_01_mover_F", "" }, //HEMTT
-			{ "B_Truck_01_covered_F", "" }, //HEMTT Transport (covered)
-			{ "B_Truck_01_ammo_F", "" }, //HEMTT Ammo
-			{ "B_Truck_01_Repair_F", "" }, //HEMTT Repair
-			{ "O_Truck_03_fuel_F", "" }, //Tempest Fuel
-			{ "O_Truck_03_ammo_F", "" }, //Tempest Ammo
-			{ "O_Truck_03_repair_F", "" } //Tempest Repair
+            { "B_Truck_01_fuel_F", "" }
         };
     };
 
@@ -77,18 +68,13 @@ class CarShops {
             { "O_Heli_Light_02_unarmed_F", "" },
             { "C_Plane_Civil_01_F", "" }, //Apex DLC
 			{ "B_Heli_Transport_03_unarmed_F", "" }, //Huron
-			{ "I_Heli_Transport_02_F", "" }, //Mohawk
-			{ "O_Heli_Transport_04_F", "" }, //Taru (Lift)
-			{ "O_Heli_Transport_04_bench_F", "" }, //Taru Bench
-			{ "O_Heli_Transport_04_covered_F", "" }, //Taru Bench (covered)
-			{ "O_Heli_Transport_04_fuel_F", "" }, //Taru Fuel
-			{ "O_Heli_Transport_04_ammo_F", "" }, //Taru Ammo
-			{ "O_Heli_Transport_04_repair_F", "" }, //Taru Repair
-			{ "O_Heli_Transport_04_box_F", "" } //Taru Cargo
+			{ "I_Heli_Transport_02_F", "" } //Mohawk
+			
+			
         };
     };
 
-    class civ_ship {
+     class civ_ship {
         side = "civ";
         conditions = "";
         vehicles[] = {
@@ -100,6 +86,19 @@ class CarShops {
         };
     };
 
+    class reb_car {
+        side = "civ";
+        conditions = "";
+        vehicles[] = {
+            { "B_Quadbike_01_F", "" },
+            { "B_G_Offroad_01_F", "" },
+            { "O_MRAP_02_F", "" },
+            { "B_Heli_Light_01_stripped_F", "" },
+            { "B_G_Offroad_01_armed_F", "" },
+            { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+        };
+    };
+
     class med_shop {
         side = "med";
         conditions = "";
@@ -107,8 +106,7 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "I_Truck_02_medical_F", "" },
             { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" },
-			{ "C_Hatchback_01_F", "" }
+            { "B_Truck_01_medical_F", "" }
         };
     };
 
@@ -117,8 +115,7 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" },
-			{ "O_Heli_Transport_04_medevac_F", "" }
+            { "O_Heli_Light_02_unarmed_F", "" }
         };
     };
 
@@ -130,10 +127,7 @@ class CarShops {
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" },
-			{ "O_Truck_02_covered_F", "call life_coplevel >=1" },
-			{ "C_Hatchback_01_sport_white_F", "call life_coplevel >=1" },
-			{ "I_MRAP_03_F", "call life_coplevel >= 2" }
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -142,9 +136,7 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 3" },
-			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" }
-			
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -535,15 +527,7 @@ class LifeCfgVehicles {
     class C_Offroad_01_F {
         vItemSpace = 65;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-		
-		vItemSpace = 65;
-        conditions = "license_med_shop || {!(playerSide isEqualTo medic)}";
-        price = 10;
-		
-		vItemSpace = 65;
-        conditions = "license_cop_car || {!(playerSide isEqualTo police)}";
-        price = 10;
+        price = 12500;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -694,14 +678,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class O_Truck_03_covered_F {
         vItemSpace = 300;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-		
-		
-	class O_Truck_03_covered_F {
-        vItemSpace = 300;
-        conditions = "license_med_shop || {!(playerSide isEqualTo medic)}";
-        price = 10;
+        price = 250000;
         textures[] = {};
     };
 
@@ -740,11 +717,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_SUV_01_F {
         vItemSpace = 50;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-		
-		vItemSpace = 50;
-        conditions = "license_cop_car || {!(playerSide isEqualTo police)}";
-        price = 10;
+        price = 30000;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -778,7 +751,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_01_box_F {
         vItemSpace = 150;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 10;
+        price = 60000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -815,7 +788,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_Heli_Light_01_F {
         vItemSpace = 90;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 10;
+        price = 245000;
         textures[] = {
             { "Police", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
@@ -937,167 +910,4 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
-
-	class O_Heli_Transport_04_medevac_F {
-        vItemSpace = 50;
-        vFuelSpace = 50000;
-        conditions = "license_med_air_hs || {!(playerSide isEqualTo medic)}";
-        price = 10;
-        textures[] = {};
-    };
 };
-    
-	// Zamak Ammo
-	class I_Truck_02_ammo_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Zamak Repair
-	class I_Truck_02_box_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// HEMTT
-	class B_Truck_01_mover_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// HEMTT Transport (covered)
-	class B_Truck_01_covered_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// HEMTT Ammo
-	class B_Truck_01_ammo_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// HEMTT Repair
-	class B_Truck_01_repair_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Tempest Fuel
-	class O_Truck_03_fuel_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Tempest Ammo
-	class O_Truck_03_ammo_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Tempest Repair
-	class O_Truck_03_repair_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Taru (Lift)
-	class O_Heli_Transport_04_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-			
-	// Taru Bench
-	class O_Heli_Transport_04_bench_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// Taru Bench (covered)
-	class O_Heli_Transport_04_covered_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-	// Taru Fuel
-	class O_Heli_Transport_04_fuel_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-	// Taru Ammo
-	class O_Heli_Transport_04_ammo_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-	// Taru Repair
-	class O_Heli_Transport_04_repair_F {
-        vItemSpace = 300;
-        conditions = "license_civ_air || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-	// Taru Cargo
-	class O_Heli_Transport_04_box_F {
-        vItemSpace = 300;
-        conditions = "license_civ_truck || {!(playerSide isEqualTo civilian)}";
-        price = 10;
-        textures[] = {};
-    };
-			
-	// Hatchback Sports 
-	class C_Hatchback_01_sport_white_F {
-        vItemSpace = 300;
-        conditions = "license_cop_car || {!(playerSide isEqualTo police)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-	// 
-	class I_MRAP_03_F {
-        vItemSpace = 300;
-        conditions = "license_cop_car|| {!(playerSide isEqualTo police)}";
-        price = 10;
-        textures[] = {};
-    };
-	
-	// 
-	class I_Heli_light_03_unarmed_F {
-        vItemSpace = 300;
-        conditions = "license_cop_air || {!(playerSide isEqualTo police)}";
-        price = 10;
-        textures[] = {};
-    };
-		
-    
-		

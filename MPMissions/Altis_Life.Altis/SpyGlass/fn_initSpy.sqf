@@ -188,7 +188,8 @@ _patchList =
 "A3_Air_F_Exp","A3_Air_F_Exp_Heli_Light_01","A3_Air_F_Exp_Heli_Transport_01","A3_Air_F_Exp_Plane_Civil_01","A3_Air_F_Exp_UAV_03","A3_Air_F_Exp_UAV_04","A3_Air_F_Exp_VTOL_01","A3_Air_F_Exp_VTOL_02","A3_Anims_F_Exp",
 "A3_Anims_F_Exp_Revive","A3_Armor_F_Exp","A3_Armor_F_Exp_APC_Tracked_01","A3_Armor_F_Exp_APC_Tracked_02","A3_Armor_F_Exp_APC_Wheeled_01","A3_Armor_F_Exp_APC_Wheeled_02","A3_Armor_F_Exp_MBT_01","A3_Armor_F_Exp_MBT_02",
 "A3_Boat_F_Exp","A3_Boat_F_Exp_Boat_Armed_01","A3_Boat_F_Exp_Boat_Transport_01","A3_Boat_F_Exp_Boat_Transport_02","A3_Boat_F_Exp_Scooter_Transport_01","A3_Cargoposes_F_Exp","A3_Characters_F_Exp","A3_Characters_F_Exp_Civil",
-"A3_Characters_F_Exp_Headgear","A3_Characters_F_Exp_Vests","A3_Map_Tanoabuka","A3_Map_Tanoabuka_Data","A3_Map_Tanoabuka_Data_Layers","A3_Sounds_F_Exp","A3_Data_F_Exp_Loadorder","A3_Map_Tanoa_Scenes_F"];
+"A3_Characters_F_Exp_Headgear","A3_Characters_F_Exp_Vests","A3_Map_Tanoabuka","A3_Map_Tanoabuka_Data","A3_Map_Tanoabuka_Data_Layers","A3_Sounds_F_Exp","A3_Data_F_Exp_Loadorder","A3_Map_Tanoa_Scenes_F",
+"life_fnc_gagaction_meta","drugs_stash","seized_drugs","life_inv_c4","life_fnc_placeableplace"];
 
 uiNamespace setVariable ["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
 uiNamespace setVariable ["RscDisplayMultiplayer",displayNull];

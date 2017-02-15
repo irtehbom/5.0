@@ -66,6 +66,7 @@ _checkFunction = {
                                      _find = _allowedVariables find [_x,_varType];
 									 if (_x find "houses_" >= 0) then { _find = 0 };
 									 if (_x find "gang_" >= 0) then { _find = 0 };
+									 if (_x find "realestate_" >= 0) then { _find = 0 };
                                      if (_find isEqualTo -1) then {
                                         diag_log format ["Variable: %1 is not allowed TYPE: %2 NS: MN",_x,_varType];
                                         failMission "SpyGlass";
@@ -91,6 +92,7 @@ _uiCheckFunction = {
 				
 					if (_find find "houses_" >= 0) exitWith {};
 					if (_find find "gang_" >= 0) exitWith {};
+					if (_find find "realestate_" >= 0) exitWith {};
                     diag_log format ["Variable: %1 is not allowed TYPE: %2 NS: UI",_x,_varType];
                     failMission "SpyGlass";
                 };

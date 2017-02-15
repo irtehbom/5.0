@@ -419,7 +419,10 @@ class SpyGlass {
 		{"ton_fnc_updateyinv","CODE"},
 		{"realestatedata","SCRIPT"},
 		{"gotstorageobject","OBJECT"},
-		{"storagecontainerarr","ARRAY"}
+		{"storagecontainerarr","ARRAY"},
+		{"real_estate_rent","SCALAR"}
+		
+		
     };
 
     allowedVariables_UI[] = {

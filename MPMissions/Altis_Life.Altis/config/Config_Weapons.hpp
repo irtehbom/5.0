@@ -230,6 +230,8 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
+            { "Medikit", "", 100, 50, "" },			
+            { "Toolkit", "", 250, 50, "" },
             { "ItemGPS", "", 100, 50, "" },
             { "Binocular", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },

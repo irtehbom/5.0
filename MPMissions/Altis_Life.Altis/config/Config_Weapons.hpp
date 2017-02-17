@@ -51,16 +51,26 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
-            { "arifle_TRG20_F", "", 25000, 12500, "" },
-            { "arifle_Katiba_F", "", 30000, 15000, "" },
-            { "srifle_DMR_01_F", "", 50000, 25000, "" },
-            { "arifle_SDAR_F", "", 20000, 10000, "" },
-            { "arifle_AK12_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_AKS_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_AKM_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, //Apex DLC
-            { "arifle_CTAR_blk_F", "", 30000, 15000, "" } //Apex DLC
+            { "hgun_ACPC2_F", "", 2500, 1250, "" }, //ACPC2
+            { "hgun_Pistol_heavy_01_F", "", 3500, 1750, "" }, //4Five
+            { "hgun_Pistol_heavy_02_F", "", 5000, 2500, "" }, //Zubr
+            { "SMG_01_F", "", 10000, 5000, "" }, //Vermin
+            { "SMG_02_F", "", 15000, 7500, "" }, //Sting
+            { "arifle_AKS_F", "", 30000, 15000, "" }, //AKS74U
+            { "arifle_TRG21_F", "", 40000, 20000, "" }, //TRG21
+            { "arifle_CTAR_blk_F", "", 45000, 22500, "" }, //CAR95
+            { "arifle_ARX_blk_F", "", 65000, 32500, "" }, //Type115
+            { "arifle_Katiba_F", "", 65000, 32500, "" }, //Katiba
+			{ "srifle_DMR_07_blk_F", "", 70000, 35000, "" }, //CMR76
+			{ "arifle_CTARS_blk_F", "", 80000, 40000, "" }, //CAR951
+			{ "LMG_03_F", "", 115000, 57500, "" }, //LIM
+			{ "LMG_Zafir_F", "", 200000, 100000, "" }, //Zafir
+			{ "arifle_AKM_F", "", 75000, 37500, "" }, //AKM
+			{ "srifle_DMR_01_F", "", 100000, 50000, "" }, //Rahim
+			{ "arifle_AK12_F", "", 105000, 52500, "" }, //AK12
+			{ "srifle_DMR_06_camo_khs_F", "", 110000, 55000, "" }, //MK14
+			{ "srifle_EBR_F", "", 125000, 62500, "" }, //MK18A
+			{ "srifle_DMR_03_woodland_F", "", 150000, 75000, "" } //MKIEMR
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300, 150, "" },
@@ -177,7 +187,9 @@ class WeaponShops {
 			{ "srifle_DMR_02_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Mark 10
 			{ "srifle_DMR_05_blk_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Cyrus
 			{ "srifle_GM6_camo_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Lynx
-			{ "srifle_LRR_camo_F", "", 10000, 6000, "call life_coplevel >= 4" } //M320
+			{ "srifle_LRR_camo_F", "", 10000, 6000, "call life_coplevel >= 4" }, //M320
+			{ "srifle_DMR_06_olive_F", "", 10000, 6000, "call life_coplevel >= 4" } //MK14
+
 
         };
         mags[] = {

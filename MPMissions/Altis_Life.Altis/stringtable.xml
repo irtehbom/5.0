@@ -7745,6 +7745,17 @@
             <Italian>Processando in lingotti di Rame</Italian>
             <Portuguese>Processando Cobre</Portuguese>
             <Polish>Wytop miedzi</Polish>
+		</Key>
+        <Key ID="STR_Process_vehicle">
+            <Original>Process Vehicle Contents</Original>
+            <Czech>Casting měděných ingotů</Czech>
+            <Spanish>Fundiendo Lingotes de Cobre</Spanish>
+            <Russian></Russian>
+            <French>Fonte du Cuivre</French>
+            <German>Kupfer wird verarbeitet...</German>
+            <Italian>Processando in lingotti di Rame</Italian>
+            <Portuguese>Processando Cobre</Portuguese>
+            <Polish>Wytop miedzi</Polish>
         </Key>
         <Key ID="STR_Process_Iron">
             <Original>Casting Iron Ingots</Original>

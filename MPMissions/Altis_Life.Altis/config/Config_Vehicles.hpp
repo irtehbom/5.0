@@ -45,17 +45,16 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "C_Van_01_box_F", "" },
+            { "C_Van_01_box_F", "" }, //Box Van
             { "I_Truck_02_transport_F", "" },
             { "I_Truck_02_covered_F", "" },
             { "B_Truck_01_transport_F", "" },
             { "O_Truck_03_transport_F", "" },
             { "O_Truck_03_covered_F", "" },
             { "B_Truck_01_box_F", "" },
-            { "O_Truck_03_device_F", "" },
             { "C_Van_01_fuel_F", "" },
             { "I_Truck_02_fuel_F", "" },
-            { "B_Truck_01_fuel_F", "" },
+            { "B_G_Van_01_fuel_F", "" },  //Fuel Truck
 			{ "B_Truck_01_fuel_F", "" }, //HEMTT Fuel
 			{ "I_Truck_02_ammo_F", "" }, //Zamak Ammo
 			{ "I_Truck_02_box_F", "" }, //Zamak Repair
@@ -65,7 +64,8 @@ class CarShops {
 			{ "B_Truck_01_Repair_F", "" }, //HEMTT Repair
 			{ "O_Truck_03_fuel_F", "" }, //Tempest Fuel
 			{ "O_Truck_03_ammo_F", "" }, //Tempest Ammo
-			{ "O_Truck_03_repair_F", "" } //Tempest Repair
+			{ "O_Truck_03_repair_F", "" }, //Tempest Repair
+            { "O_Truck_03_device_F", "" } //Tempest Device
         };
     };
 
@@ -112,8 +112,7 @@ class CarShops {
             { "B_G_Offroad_01_F", "" },
             { "O_MRAP_02_F", "" },
             { "B_Heli_Light_01_stripped_F", "" },
-            { "B_G_Offroad_01_armed_F", "" },
-            { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+            { "B_T_LSV_01_unarmed_F", "" } //Prowler
         };
     };
 
@@ -147,9 +146,9 @@ class CarShops {
             { "C_Offroad_01_F", "" }, //Offroad
             { "C_SUV_01_F", "" }, //SUV
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" }, //Hatchback Sport
-            { "B_MRAP_01_F", "call life_coplevel >= 2" }, //Hunter
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }, //Hunter HMG
-			{ "I_MRAP_03_F", "call life_coplevel >= 2" } //Strider
+            { "O_LSV_02_unarmed_F", "call life_coplevel >= 2" }, //Qilin		
+            { "B_MRAP_01_F", "call life_coplevel >= 3" }, //Hunter
+			{ "I_MRAP_03_F", "call life_coplevel >= 5" } //Strider
         };
     };
 

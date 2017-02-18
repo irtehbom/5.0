@@ -27,7 +27,7 @@ CONTROL(2700,2701) ctrlSetStructuredText parseText format ["<img size='1.7' imag
     if (alive _x && (!(_name isEqualTo profileName))) then {
         switch (side _x) do {
             case west: {_type = "Cop"};
-            case civilian: {_type = "Civ"};
+            case east: {_type = "Civ"};
             case independent: {_type = "EMS"};
         };
         _units lbAdd format ["%1 (%2)",_x getVariable ["realname",name _x],_type];

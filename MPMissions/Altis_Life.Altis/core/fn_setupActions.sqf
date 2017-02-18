@@ -6,7 +6,7 @@
     Master addAction file handler for all client-based actions.
 */
 switch (playerSide) do {
-    case civilian: {
+    case east: {
         //Drop fishing net
         life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
         (surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];

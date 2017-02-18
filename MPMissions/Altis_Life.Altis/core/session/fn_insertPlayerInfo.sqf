@@ -16,7 +16,7 @@ switch (playerSide) do {
     case west: {
         _bank = LIFE_SETTINGS(getNumber,"bank_cop");
     };
-    case civilian: {
+    case east: {
         _bank = LIFE_SETTINGS(getNumber,"bank_civ");
     };
     case independent: {

@@ -16,7 +16,7 @@ private _inStatement = "";
 private _list = [];
 private _units = [];
 {
-    if (side _x isEqualTo civilian) then {_units pushBack (getPlayerUID _x)};
+    if (side _x isEqualTo east) then {_units pushBack (getPlayerUID _x)};
     false
 } count playableUnits;
 

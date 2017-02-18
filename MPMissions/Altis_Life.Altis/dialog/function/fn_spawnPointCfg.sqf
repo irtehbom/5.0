@@ -10,7 +10,7 @@
     [Spawn Marker,Spawn Name,Image Path]
 */
 
-params [["_side",civilian,[civilian]]];
+params [["_side",east,[east]]];
 
 _side = switch (_side) do {
     case west: {"Cop"};
@@ -38,7 +38,7 @@ for "_i" from 0 to count(_spawnCfg)-1 do {
     };
 };
 
-if (playerSide isEqualTo civilian) then {
+if (playerSide isEqualTo east) then {
   if (count life_houses > 0) then {
     {
       _pos = call compile format ["%1",(_x select 0)];

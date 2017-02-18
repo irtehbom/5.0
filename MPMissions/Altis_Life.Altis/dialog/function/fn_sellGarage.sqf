@@ -24,7 +24,7 @@ if (!isClass (missionConfigFile >> "LifeCfgVehicles" >> _vehicleLife)) then {
 
 _price = M_CONFIG(getNumber,"LifeCfgVehicles",_vehicleLife,"price");
 switch (playerSide) do {
-    case civilian: {
+    case east: {
         _multiplier = LIFE_SETTINGS(getNumber,"vehicle_sell_multiplier_CIVILIAN");
         _purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
     };

@@ -22,7 +22,7 @@ if (_pid isEqualTo "" || _side isEqualTo sideUnknown || _type isEqualTo "" || is
 _unit = owner _unit;
 _side = switch (_side) do {
     case west:{"cop"};
-    case civilian: {"civ"};
+    case east: {"civ"};
     case independent: {"med"};
     default {"Error"};
 };

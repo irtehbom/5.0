@@ -55,7 +55,7 @@ ctrlSetText [3103,localize _shopTitle];
 sliderSetRange [3107, 0, 360];
 
 //Cop / Civ Pre Check
-if (_shop in ["bruce","dive","reb","kart"] && {!(playerSide isEqualTo civilian)}) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
+if (_shop in ["bruce","dive","reb","kart"] && {!(playerSide isEqualTo east)}) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
 if (_shop == "reb" && {!license_civ_rebel}) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 if (_shop == "cop" && {!(playerSide isEqualTo west)}) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if (_shop == "dive" && {!license_civ_dive}) exitWith {hint localize "STR_Shop_NotaDive"; closeDialog 0;};

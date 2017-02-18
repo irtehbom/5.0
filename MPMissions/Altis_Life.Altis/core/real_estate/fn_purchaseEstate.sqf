@@ -70,7 +70,7 @@ if(_action) then {
 	
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Rebel Market",life_fnc_virt_menu,"rebel"];
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Market",life_fnc_virt_menu,"market"];
-	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Clothing Shop",life_fnc_clothingMenu,"reb",0,false,false,"",'playerSide == civilian'];
+	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Clothing Shop",life_fnc_clothingMenu,"reb",0,false,false,"",'playerSide == east'];
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Bank",life_fnc_atmMenu,"",0,false,false,"",'vehicle player == player && player distance _target < 5'];
 	
 	//Set the storage creates variable

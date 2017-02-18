@@ -19,7 +19,7 @@ if (count _itemArray isEqualTo 0) exitWith {
             [] call life_fnc_copLoadout;
         };
 
-        case civilian: {
+        case east: {
             [] call life_fnc_civLoadout;
         };
 

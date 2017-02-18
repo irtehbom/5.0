@@ -20,7 +20,7 @@ if(count real_estate_houses_recieve == 0) exitWith {}; //Nothing to do.
 
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Rebel Market",life_fnc_virt_menu,"rebel"];
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Market",life_fnc_virt_menu,"market"];
-	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Clothing Shop",life_fnc_clothingMenu,"reb",0,false,false,"",'playerSide == civilian'];
+	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Online Clothing Shop",life_fnc_clothingMenu,"reb",0,false,false,"",'playerSide == east'];
 	_computer addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Realestate</t><t color='#FF0000'>]</t> Bank",life_fnc_atmMenu,"",0,false,false,"",'vehicle player == player && player distance _target < 5'];
 	
 	_marker = createMarkerLocal [format["house_%1",(_realEstate getVariable "uid")],_position];

@@ -61,7 +61,7 @@ compileFinal "
     if (isNil ""_unit"" || isNil ""_group"") exitWith {};
     if (player isEqualTo _unit && (group player) == _group) then {
         life_my_gang = objNull;
-        [player] joinSilent (createGroup civilian);
+        [player] joinSilent (createGroup east);
         hint localize ""STR_GNOTF_KickOutGang"";
     };
 ";
@@ -108,7 +108,7 @@ compileFinal "
     if (isNil ""_unit"" || isNil ""_group"") exitWith {};
     if (player isEqualTo _unit && (group player) == _group) then {
         life_my_gang = objNull;
-        [player] joinSilent (createGroup civilian);
+        [player] joinSilent (createGroup east);
         hint localize ""STR_GNOTF_LeaveGang"";
     };
 ";
@@ -350,7 +350,7 @@ TON_fnc_MapMarkersAdmin = compileFinal "
               if (side _x isEqualTo independent) then {
                 _Markers setMarkerColorLocal (""ColorIndependent"");
               };
-              if (side _x isEqualTo civilian) then {
+              if (side _x isEqualTo east) then {
                 _Markers setMarkerColorLocal (""ColorCivilian"");
               };
               if (side _x isEqualTo west) then {
@@ -389,7 +389,7 @@ TON_fnc_MapMarkersAdmin = compileFinal "
           if (side _x isEqualTo independent) then {
             _Markers setMarkerColorLocal (""ColorIndependent"");
           };
-          if (side _x isEqualTo civilian) then {
+          if (side _x isEqualTo east) then {
             _Markers setMarkerColorLocal (""ColorCivilian"");
           };
           if (side _x isEqualTo west) then {

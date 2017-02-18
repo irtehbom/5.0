@@ -9,7 +9,7 @@
 
 (_this select 3) params [
     ["_shop","",[""]],
-    ["_sideCheck",sideUnknown,[civilian]],
+    ["_sideCheck",sideUnknown,[east]],
     ["_spawnPoints","",["",[]]],
     ["_shopFlag","",[""]],
     ["_shopTitle","",[""]],

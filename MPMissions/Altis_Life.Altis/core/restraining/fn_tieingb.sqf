@@ -20,7 +20,7 @@ if(isNull _civ) exitWith {};
 			hint "You managed to remove the blindfold!";
 		};
 
-		if(!([east,getPos player,50] call life_fnc_nearUnits) && !([civilian,getPos player,50] call life_fnc_nearUnits) && (player getVariable["blindfolded", false]) && isNull objectParent player) exitWith {
+		if(!([east,getPos player,50] call life_fnc_nearUnits) && !([east,getPos player,50] call life_fnc_nearUnits) && (player getVariable["blindfolded", false]) && isNull objectParent player) exitWith {
 
 			player setVariable["blindfolded", nil, true];
 			"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 

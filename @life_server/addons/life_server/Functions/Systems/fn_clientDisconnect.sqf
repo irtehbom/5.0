@@ -21,7 +21,7 @@ if (isNil "HC_UID" || {!(_uid isEqualTo HC_UID)}) then {
     if ((getMarkerPos "respawn_civilian" distance _position) > 300) then {
 
         //Civilian position
-        if (life_save_civilian_position && _side isEqualTo civilian) then {
+        if (life_save_civilian_position && _side isEqualTo east) then {
             _alive = alive _unit;
             if (life_HC_isActive) then {[_uid,_side,_alive,4,_position] remoteExec ["HC_fnc_updatePartial",HC_Life];} else {[_uid,_side,_alive,4,_position] spawn DB_fnc_updatePartial;};
         };

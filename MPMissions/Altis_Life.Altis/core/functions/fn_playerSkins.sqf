@@ -9,7 +9,7 @@
 private ["_skinName"];
 
 switch (playerSide) do {
-    case civilian: {
+    case east: {
         if (LIFE_SETTINGS(getNumber,"civ_skins") isEqualTo 1) then {
             if (uniform player isEqualTo "U_C_Poloshirt_blue") then {
                 player setObjectTextureGlobal [0, "textures\civilian_uniform_1.jpg"];

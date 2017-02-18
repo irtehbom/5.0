@@ -23,7 +23,7 @@ private "_buyMultiplier";
 private "_rentMultiplier";
 
 switch (playerSide) do {
-    case civilian: {
+    case east: {
         _buyMultiplier = LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
         _rentMultiplier = LIFE_SETTINGS(getNumber,"vehicle_rental_multiplier_CIVILIAN");
     };
@@ -116,7 +116,7 @@ switch (playerSide) do {
     case west: {
         [_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
     };
-    case civilian: {
+    case east: {
         if ((life_veh_shop select 2) isEqualTo "civ" && {_className == "B_Heli_Light_01_F"}) then {
             [_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
         };

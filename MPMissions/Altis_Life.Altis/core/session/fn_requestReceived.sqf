@@ -65,7 +65,7 @@ switch (playerSide) do {
         };
     };
 
-    case civilian: {
+    case east: {
         life_is_arrested = _this select 7;
         CONST(life_coplevel, 0);
         CONST(life_medicLevel, 0);

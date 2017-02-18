@@ -17,7 +17,7 @@ if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exi
     [] call life_fnc_copInteractionMenu;
 };
 
-if (playerSide isEqualTo civilian && {player getVariable ["isEscorting",false]} && (!(_curObject getVariable ["restrained",false]))) exitWith {
+if (playerSide isEqualTo east && {player getVariable ["isEscorting",false]} && (!(_curObject getVariable ["restrained",false]))) exitWith {
     [] call life_fnc_civInteractionMenu;
 };
 
@@ -44,7 +44,7 @@ if (isNull _curObject) exitWith {
             };
         } else {
             private "_handle";
-            if (playerSide isEqualTo civilian && !life_action_gathering) then {
+            if (playerSide isEqualTo east && !life_action_gathering) then {
           _whatIsIt = [] call life_fnc_whereAmI;
                 if (life_action_gathering) exitWith {};                 //Action is in use, exit to prevent spamming.
                 switch (_whatIsIt) do {
@@ -87,7 +87,7 @@ life_action_inUse = true;
 //Check if it's a dead body.
 if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable ["Revive",false])) exitWith {
     //Hotfix code by ins0
-    if ((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)}) || {(playerSide isEqualTo civilian && {(LIFE_SETTINGS(getNumber,"revive_civ") isEqualTo 1)})} || {(playerSide isEqualTo east && {(LIFE_SETTINGS(getNumber,"revive_east") isEqualTo 1)})} || {playerSide isEqualTo independent}) then {
+    if ((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)}) || {(playerSide isEqualTo east && {(LIFE_SETTINGS(getNumber,"revive_civ") isEqualTo 1)})} || {(playerSide isEqualTo east && {(LIFE_SETTINGS(getNumber,"revive_east") isEqualTo 1)})} || {playerSide isEqualTo independent}) then {
         if (life_inv_defibrillator > 0) then {
             [_curObject] call life_fnc_revivePlayer;
         };
@@ -99,7 +99,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
     if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
         [_curObject] call life_fnc_copInteractionMenu;
     };
-	if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {	
+	if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo east) then {	
 		[] call life_fnc_civInteractionMenu;
 	};
 } else {

@@ -10,6 +10,11 @@
     Initialize the server and required systems.
 */
 private ["_dome","_rsb","_timeStamp","_extDBNotLoaded"];
+
+west setFriend [independent, 1];
+independent setFriend [west, 1];
+west setFriend [east, 1];
+
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 life_server_isReady = false;

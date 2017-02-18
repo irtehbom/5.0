@@ -11,8 +11,6 @@ spawn_ai = {
 	_markerPos = getMarkerPos _markerName;
 	_markerSize =  getMarkerSize _markerName;
 
-
-	independent setFriend [west , 1]; 
 	_units = [];
 	_grp = createGroup independent;
 	_grp allowFleeing 0;
@@ -41,19 +39,6 @@ spawn_ai = {
 			_unit addMagazine "20Rnd_762x51_Mag";
 	};
 
-	//Kill civilians trigger
-
-	triggerDelay = true;
-
-	_trg = createTrigger ["EmptyDetector", _markerPos, true];
-	_trg setTriggerArea [_markerSize select 0, 1200, 0, false];
-	_trg setTriggerActivation ["ANY", "PRESENT", true];
-	_condition = "this && triggerDelay";
-	_activate = "{ 
-	if (side _x == civilian && rating _x >= 0)then { _x addRating -999999999999999999999999; };} forEach (thisList); [] spawn { sleep 2; triggerDelay = false; };";
-	_deactivate = "[] spawn { sleep 2; triggerDelay = true; };";
-	_trg setTriggerStatements [_condition, _activate, _deactivate];
-	
 	_timeStamp = diag_tickTime;
 
 	diag_log format ["================  AI Spawn Finish %1 =======================",(diag_tickTime) - _timeStamp];

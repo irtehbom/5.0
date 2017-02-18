@@ -30,7 +30,7 @@ switch (playerSide) do
     case west: {
         _handle = [] spawn life_fnc_copLoadout;
     };
-    case civilian: {
+    case east: {
         _handle = [] spawn life_fnc_civLoadout;
     };
     case independent: {

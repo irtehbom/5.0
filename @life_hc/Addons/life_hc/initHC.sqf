@@ -128,6 +128,7 @@ CONSTVAR(HC_MPAllowedFuncs);
 
 life_HC_isActive = true;
 
+
 [] spawn HC_fnc_spawn_ai;
 
 publicVariable "life_HC_isActive";

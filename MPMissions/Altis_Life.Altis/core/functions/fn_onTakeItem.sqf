@@ -22,7 +22,7 @@ switch (playerSide) do
             [] call life_fnc_playerSkins;
         };
     };
-    case civilian: {
+    case east: {
         if (LIFE_SETTINGS(getNumber,"restrict_clothingPickup") isEqualTo 1) then {
             if (_item in _restrictedClothing) then {
                 [_item,false,false,false,false] call life_fnc_handleItem;

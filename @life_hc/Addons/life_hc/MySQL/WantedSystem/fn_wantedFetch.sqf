@@ -17,7 +17,7 @@ if (isNull _ret) exitWith {};
 _inStatement = "";
 _list = [];
 _units = [];
-{if ((side _x) isEqualTo civilian) then {_units pushBack (getPlayerUID _x)};} forEach playableUnits;
+{if ((side _x) isEqualTo east) then {_units pushBack (getPlayerUID _x)};} forEach playableUnits;
 
 if (_units isEqualTo []) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];};
 

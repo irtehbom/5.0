@@ -48,7 +48,7 @@ _allUnits = playableUnits;
 
 //Clear out the list..
 {
-    if (_x in _grpMembers || !(side _x isEqualTo civilian) && isNil {(group _x) getVariable "gang_id"}) then {
+    if (_x in _grpMembers || !(side _x isEqualTo east) && isNil {(group _x) getVariable "gang_id"}) then {
         _allUnits deleteAt _forEachIndex;
     };
 } forEach _allUnits;

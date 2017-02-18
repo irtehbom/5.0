@@ -8,7 +8,7 @@
 private ["_unit","_bool","_side"];
 _unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _bool = [_this,1,false,[false]] call BIS_fnc_param;
-_side = [_this,2,civilian,[west]] call BIS_fnc_param;
+_side = [_this,2,east,[west]] call BIS_fnc_param;
 
 if (isNull _unit) exitWith {};
 
@@ -21,7 +21,7 @@ switch (_side) do {
         };
     };
 
-    case civilian: {
+    case east: {
         if (_bool) then {
             life_radio_civ radioChannelAdd [_unit];
         } else {

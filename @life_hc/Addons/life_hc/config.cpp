@@ -38,6 +38,12 @@ class CfgFunctions
             class huntingZone {};
             class receivekeyofServer {};
         };
+		
+		class AI
+        {
+            file = "\life_hc\AI";
+            class spawn_ai {};
+        };
 
         class PlayTime
         {

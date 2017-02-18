@@ -78,6 +78,7 @@ diag_log "----------------------------------------------------------------------
 // A list of allowed funcs to be passed on the hc (by external sources)
 // Have to be written in only lower capitals
 HC_MPAllowedFuncs = [
+	"hc_fnc_spawn_ai",
     "hc_fnc_insertrequest",
     "hc_fnc_insertvehicle",
     "hc_fnc_queryrequest",
@@ -126,6 +127,9 @@ HC_MPAllowedFuncs = [
 CONSTVAR(HC_MPAllowedFuncs);
 
 life_HC_isActive = true;
+
+[] spawn HC_fnc_spawn_ai;
+
 publicVariable "life_HC_isActive";
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["                 End of Altis Life HC Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

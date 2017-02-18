@@ -1,0 +1,121 @@
+"UserLocalConfigStore"
+{
+	"Software"
+	{
+		"Valve"
+		{
+			"Steam"
+			{
+				"apps"
+				{
+					"550"
+					{
+						"LastPlayed"		"1275173610"
+					}
+					"221380"
+					{
+						"cloudenabled"		"1"
+						"tags"		""
+					}
+					"223750"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"107410"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"219540"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"8930"
+					{
+						"cloudenabled"		"1"
+					}
+					"231430"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+						"cloudenabled"		"1"
+					}
+					"242920"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"220260"
+					{
+						"cloudenabled"		"1"
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"221100"
+					{
+						"cloudenabled"		"1"
+					}
+					"233840"
+					{
+						"cloudenabled"		"1"
+					}
+					"313160"
+					{
+						"cloudenabled"		"1"
+					}
+					"33910"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"346110"
+					{
+						"cloudenabled"		"1"
+					}
+					"33350"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+				}
+				"SSAVersion"		"3"
+				"DesktopShortcutCheck"		"1"
+				"StartMenuShortcutCheck"		"1"
+				"AutoLaunchGameListCheck"		"0"
+				"SteamDefaultDialog"		"#app_store"
+			}
+		}
+	}
+	"Web"
+	{
+		"WebFav0_URL"		"https://www.google.com/"
+		"WebFav0_Name"		"Google"
+		"WebFav1_URL"		"http://www.youtube.com/"
+		"WebFav1_Name"		"YouTube"
+		"WebFav2_URL"		"http://www.twitter.com/"
+		"WebFav2_Name"		"Twitter"
+		"WebFav3_URL"		"http://www.facebook.com/"
+		"WebFav3_Name"		"Facebook"
+		"WebFav4_URL"		"http://www.reddit.com/"
+		"WebFav4_Name"		"Reddit"
+	}
+	"TradeInfoHint"		"1"
+}

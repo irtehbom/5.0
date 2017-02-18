@@ -1,0 +1,59 @@
+
+
+[2017-02-18 09:53:47] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:53:48] ProductInfoChanges: change number 0->2718209, apps: 0/0, packages: 0/0
+[2017-02-18 09:53:48] UpdatesJob: requesting 1 apps, 48 packages (meta data, 1024 prev attempts)
+[2017-02-18 09:53:48] UpdatesJob: requesting 1 apps, 48 packages (full data, 1024 prev attempts)
+[2017-02-18 09:53:49] UpdatesJob: finished OK, nAppsUpdated 1 (2 KB), nPackagesUpdated 48 (20 KB)
+[2017-02-18 09:53:49] UpdatesJob: requesting 332 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 09:53:50] UpdatesJob: requested 50 access tokens, 47 received, 3 denied
+[2017-02-18 09:53:50] UpdatesJob: updated SHAs with 47 new access tokens
+[2017-02-18 09:53:50] UpdatesJob: downloaded 23 apps via HTTP, 794 KB (217 KB compressed)
+[2017-02-18 09:53:50] UpdatesJob: requesting 309 apps, 0 packages (full data, 1024 prev attempts)
+[2017-02-18 09:53:51] UpdatesJob: finished OK, nAppsUpdated 332 (1333 KB), nPackagesUpdated 0 (0 KB)
+[2017-02-18 09:53:51] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:53:51] UpdatesJob: requesting 1 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 09:53:52] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+[2017-02-18 09:54:06] Starting async write C:\Users\root\Desktop\arma_update/appcache/appinfo.vdf (1008397 bytes)
+
+
+[2017-02-18 09:56:00] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:56:00] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:56:01] ProductInfoChanges: change number 2718209->2718210, apps: 0/1, packages: 0/0
+[2017-02-18 09:56:01] UpdatesJob: requesting 5 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 09:56:01] UpdatesJob: requested 3 access tokens, 0 received, 3 denied
+[2017-02-18 09:56:01] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2017-02-18 09:56:49] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:56:49] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 09:56:49] ProductInfoChanges: change number 2718210->2718210, apps: 0/0, packages: 0/0
+[2017-02-18 09:56:49] UpdatesJob: requesting 5 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 09:56:50] UpdatesJob: requested 3 access tokens, 0 received, 3 denied
+[2017-02-18 09:56:50] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2017-02-18 10:10:04] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 10:10:04] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 10:10:04] ProductInfoChanges: change number 2718210->2718231, apps: 0/12, packages: 0/3
+[2017-02-18 10:10:04] UpdatesJob: requesting 5 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 10:10:05] UpdatesJob: requested 3 access tokens, 0 received, 3 denied
+[2017-02-18 10:10:05] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2017-02-18 10:56:55] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 10:56:55] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 10:56:55] ProductInfoChanges: change number 2718231->2718275, apps: 0/33, packages: 0/0
+[2017-02-18 10:56:55] UpdatesJob: requesting 5 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 10:56:56] UpdatesJob: requested 3 access tokens, 0 received, 3 denied
+[2017-02-18 10:56:56] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2017-02-18 11:40:50] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 11:40:50] RequestAppInfoUpdate: nNumAppIDs 1
+[2017-02-18 11:40:51] ProductInfoChanges: change number 2718275->2718321, apps: 1/38, packages: 0/3
+[2017-02-18 11:40:51] UpdatesJob: requesting 6 apps, 0 packages (meta data, 1024 prev attempts)
+[2017-02-18 11:40:51] UpdatesJob: requested 3 access tokens, 0 received, 3 denied
+[2017-02-18 11:40:52] UpdatesJob: downloaded 1 apps via HTTP, 17 KB (5 KB compressed)
+[2017-02-18 11:40:52] UpdatesJob: finished OK, nAppsUpdated 1 (17 KB), nPackagesUpdated 0 (0 KB)
+[2017-02-18 11:41:07] Starting async write C:\Users\root\Desktop\5.0\arma_update/appcache/appinfo.vdf (1008397 bytes)

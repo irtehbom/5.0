@@ -1,0 +1,85 @@
+
+
+[2017-02-18 09:43:15] Log session started
+[2017-02-18 09:43:15] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 09:43:15] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+
+
+[2017-02-18 09:50:32] Log session started
+[2017-02-18 09:50:32] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 09:50:32] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+
+
+[2017-02-18 09:52:57] Log session started
+[2017-02-18 09:52:57] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 09:52:57] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+
+
+[2017-02-18 09:55:59] Log session started
+[2017-02-18 09:55:59] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 09:55:59] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+[2017-02-18 09:55:59] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 09:55:59] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 09:55:59] [1,6] Connect() starting connection (eNetQOSLevelHigh, 146.66.152.11:27019, UDP)
+[2017-02-18 09:56:00] [1,6] ConnectionCompleted() (162.254.196.41:27019, UDP)
+[2017-02-18 09:56:00] [1,6] RecvMsgClientLogOnResponse() : [U:1:62599858] 'OK'
+[2017-02-18 09:56:24] [3,6] ResetVoiceRecording() (was recording: 0) (last get voice time: 25 seconds ago)
+[2017-02-18 09:56:24] [3,6] LogOff()
+[2017-02-18 09:56:24] [2,6] AsyncDisconnect()
+[2017-02-18 09:56:24] [2,6] Log session ended
+
+
+[2017-02-18 09:56:47] Log session started
+[2017-02-18 09:56:47] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 09:56:47] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+[2017-02-18 09:56:47] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 09:56:47] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 09:56:48] [1,6] Connect() starting connection (eNetQOSLevelHigh, 146.66.152.11:27018, UDP)
+[2017-02-18 09:56:49] [1,6] ConnectionCompleted() (162.254.196.43:27020, UDP)
+[2017-02-18 09:56:49] [1,6] RecvMsgClientLogOnResponse() : [U:1:62599858] 'OK'
+[2017-02-18 09:57:12] [3,6] ResetVoiceRecording() (was recording: 0) (last get voice time: 25 seconds ago)
+[2017-02-18 09:57:12] [3,6] LogOff()
+[2017-02-18 09:57:12] [2,6] AsyncDisconnect()
+[2017-02-18 09:57:12] [2,6] Log session ended
+
+
+[2017-02-18 10:10:02] Log session started
+[2017-02-18 10:10:02] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 10:10:02] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+[2017-02-18 10:10:02] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 10:10:02] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 10:10:03] [1,6] Connect() starting connection (eNetQOSLevelHigh, 146.66.152.11:27019, UDP)
+[2017-02-18 10:10:04] [1,6] ConnectionCompleted() (162.254.196.41:27021, UDP)
+[2017-02-18 10:10:04] [1,6] RecvMsgClientLogOnResponse() : [U:1:62599858] 'OK'
+[2017-02-18 10:10:29] [3,6] ResetVoiceRecording() (was recording: 0) (last get voice time: 27 seconds ago)
+[2017-02-18 10:10:29] [3,6] LogOff()
+[2017-02-18 10:10:29] [2,6] AsyncDisconnect()
+[2017-02-18 10:10:29] [2,6] Log session ended
+
+
+[2017-02-18 10:56:53] Log session started
+[2017-02-18 10:56:53] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 10:56:53] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+[2017-02-18 10:56:53] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 10:56:53] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 10:56:53] [1,6] Connect() starting connection (eNetQOSLevelHigh, 162.254.197.42:27017, UDP)
+[2017-02-18 10:56:54] [1,6] ConnectionCompleted() (162.254.196.43:27021, UDP)
+[2017-02-18 10:56:55] [1,6] RecvMsgClientLogOnResponse() : [U:1:62599858] 'OK'
+[2017-02-18 10:57:22] [3,6] ResetVoiceRecording() (was recording: 0) (last get voice time: 29 seconds ago)
+[2017-02-18 10:57:22] [3,6] LogOff()
+[2017-02-18 10:57:22] [2,6] AsyncDisconnect()
+[2017-02-18 10:57:22] [2,6] Log session ended
+
+
+[2017-02-18 11:40:49] Log session started
+[2017-02-18 11:40:49] [0,0] SetSteamID( [U:1:0] )
+[2017-02-18 11:40:49] CCMInterface::OnNetworkDeviceStateChange -- Saw device up, connecting to Steam
+[2017-02-18 11:40:49] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 11:40:49] [0,0] SetSteamID( [U:1:62599858] )
+[2017-02-18 11:40:49] [1,6] Connect() starting connection (eNetQOSLevelHigh, 146.66.152.11:27018, UDP)
+[2017-02-18 11:40:50] [1,6] ConnectionCompleted() (162.254.197.40:27018, UDP)
+[2017-02-18 11:40:50] [1,6] RecvMsgClientLogOnResponse() : [U:1:62599858] 'OK'
+[2017-02-18 11:41:14] [3,6] ResetVoiceRecording() (was recording: 0) (last get voice time: 25 seconds ago)
+[2017-02-18 11:41:14] [3,6] LogOff()
+[2017-02-18 11:41:14] [2,6] AsyncDisconnect()
+[2017-02-18 11:41:14] [2,6] Log session ended

@@ -1,0 +1,96 @@
+
+
+[2017-02-18 09:43:15] Failed to read store 'install' from 'C:\Users\root\Desktop\steamcmd\config\config.vdf.tmp'
+[2017-02-18 09:43:15] Failed to read store 'install' from 'C:\Users\root\Desktop\steamcmd\config\config.vdf.tmp'
+[2017-02-18 09:43:16] Flushed store 'install' to 'C:\Users\root\Desktop\steamcmd\config\config.vdf'
+
+
+[2017-02-18 09:50:32] Loaded store 'install' from 'C:\Users\root\Desktop\steamcmd\config\config.vdf' successfully
+[2017-02-18 09:50:32] Loaded store 'install' from 'C:\Users\root\Desktop\steamcmd\config\config.vdf' successfully
+
+
+[2017-02-18 09:52:57] Loaded store 'install' from 'C:\Users\root\Desktop\arma_update\config\config.vdf' successfully
+[2017-02-18 09:52:57] Loaded store 'install' from 'C:\Users\root\Desktop\arma_update\config\config.vdf' successfully
+
+
+[2017-02-18 09:55:59] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:55:59] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:55:59] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:55:59] Loaded store 'userlocal' from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf' successfully
+[2017-02-18 09:55:59] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:55:59] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:01] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:56:01] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:01] Roaming config - failed to load write-aside store from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\sharedconfig.vdf'
+[2017-02-18 09:56:01] Roaming config - read via RemoteStorage().FileRead
+[2017-02-18 09:56:01] Roaming config - integrating write-aside store into cloud store
+[2017-02-18 09:56:02] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:02] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:56:06] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+
+
+[2017-02-18 09:56:47] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:56:47] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:56:47] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 09:56:47] Loaded store 'userlocal' from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf' successfully
+[2017-02-18 09:56:48] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:56:48] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:49] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:56:50] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:50] Roaming config - failed to load write-aside store from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\sharedconfig.vdf'
+[2017-02-18 09:56:50] Roaming config - read via RemoteStorage().FileRead
+[2017-02-18 09:56:50] Roaming config - integrating write-aside store into cloud store
+[2017-02-18 09:56:50] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 09:56:51] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 09:56:55] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+
+
+[2017-02-18 10:10:02] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:10:02] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:10:02] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:10:02] Loaded store 'userlocal' from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf' successfully
+[2017-02-18 10:10:03] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:10:03] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:10:05] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:10:05] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:10:05] Roaming config - failed to load write-aside store from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\sharedconfig.vdf'
+[2017-02-18 10:10:05] Roaming config - read via RemoteStorage().FileRead
+[2017-02-18 10:10:05] Roaming config - integrating write-aside store into cloud store
+[2017-02-18 10:10:05] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:10:06] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:10:10] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:10:28] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:10:28] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+
+
+[2017-02-18 10:56:53] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:56:53] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:56:53] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 10:56:53] Loaded store 'userlocal' from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf' successfully
+[2017-02-18 10:56:54] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:56:54] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:56:55] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:56:56] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:56:56] Roaming config - failed to load write-aside store from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\sharedconfig.vdf'
+[2017-02-18 10:56:56] Roaming config - read via RemoteStorage().FileRead
+[2017-02-18 10:56:56] Roaming config - integrating write-aside store into cloud store
+[2017-02-18 10:56:56] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:56:57] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 10:57:01] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 10:57:20] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+
+
+[2017-02-18 11:40:49] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 11:40:49] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 11:40:49] Loaded store 'install' from 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf' successfully
+[2017-02-18 11:40:49] Loaded store 'userlocal' from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf' successfully
+[2017-02-18 11:40:49] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 11:40:49] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 11:40:51] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 11:40:51] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 11:40:52] Roaming config - failed to load write-aside store from 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\sharedconfig.vdf'
+[2017-02-18 11:40:52] Roaming config - read via RemoteStorage().FileRead
+[2017-02-18 11:40:52] Roaming config - integrating write-aside store into cloud store
+[2017-02-18 11:40:52] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'
+[2017-02-18 11:40:53] Flushed store 'install' to 'C:\Users\root\Desktop\5.0\arma_update\config\config.vdf'
+[2017-02-18 11:40:56] Flushed store 'userlocal' to 'C:\Users\root\Desktop\5.0\arma_update\userdata\62599858\config\localconfig.vdf'

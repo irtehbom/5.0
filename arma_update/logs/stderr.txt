@@ -1,0 +1,4 @@
+Assert( Assertion Failed: Failed to write app state file c:\a3gaming_server\steamapps\appmanifest_233780.acf ):applicationmanager.cpp:1106
+
+Assert( Assertion Failed: m_bStateChangesSavedToDisk ):applicationmanager.cpp:861
+

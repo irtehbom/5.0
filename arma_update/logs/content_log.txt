@@ -1,0 +1,140 @@
+
+
+[2017-02-18 09:43:15] Loaded 0 apps from install folder "C:\Users\root\Desktop\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2017-02-18 09:50:32] Loaded 0 apps from install folder "C:\Users\root\Desktop\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2017-02-18 09:52:57] Loaded 0 apps from install folder "C:\Users\root\Desktop\arma_update\steamapps\appmanifest_*.acf".
+
+
+[2017-02-18 09:55:59] Loaded 0 apps from install folder "C:\Users\root\Desktop\5.0\arma_update\steamapps\appmanifest_*.acf".
+[2017-02-18 09:56:00] Loaded 1 apps from install folder "c:\a3gaming_server\steamapps\appmanifest_*.acf".
+[2017-02-18 09:56:01] Start validating appID 233780
+[2017-02-18 09:56:01] Scheduler update appID 233780: Priority First, legacy=no, restore="", timeSinceLastPlayed=1487411761, appDisableSecondsRemaining=0
+[2017-02-18 09:56:01] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 09:56:01] AppID 233780 update changed : Running,
+[2017-02-18 09:56:01] AppID 233780 update changed : Running,Reconfiguring,
+[2017-02-18 09:56:01] AppID 233780 update changed : Running,
+[2017-02-18 09:56:01] AppID 233780 update changed : Running,Validating,
+[2017-02-18 09:56:01] Validating files (all active,full) ...
+[2017-02-18 09:56:24] File validation finished: 604 files (4360266976 bytes) total, 0 files (0 bytes) mismatched (22451 msec).
+[2017-02-18 09:56:24] AppID 233780 update changed : Running,
+[2017-02-18 09:56:24] AppID 233780 update changed : None
+[2017-02-18 09:56:24] AppID 233780 state changed : Fully Installed,
+[2017-02-18 09:56:24] AppID 233780 scheduler finished : removed from schedule
+
+
+[2017-02-18 09:56:47] Loaded 0 apps from install folder "C:\Users\root\Desktop\5.0\arma_update\steamapps\appmanifest_*.acf".
+[2017-02-18 09:56:49] Loaded 1 apps from install folder "c:\a3gaming_server\steamapps\appmanifest_*.acf".
+[2017-02-18 09:56:50] Start validating appID 233780
+[2017-02-18 09:56:50] Scheduler update appID 233780: Priority First, legacy=no, restore="", timeSinceLastPlayed=1487411810, appDisableSecondsRemaining=0
+[2017-02-18 09:56:50] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 09:56:50] AppID 233780 update changed : Running,
+[2017-02-18 09:56:50] AppID 233780 update changed : Running,Reconfiguring,
+[2017-02-18 09:56:50] AppID 233780 update changed : Running,
+[2017-02-18 09:56:50] AppID 233780 update changed : Running,Validating,
+[2017-02-18 09:56:50] Validating files (all active,full) ...
+[2017-02-18 09:57:12] File validation finished: 604 files (4360266976 bytes) total, 0 files (0 bytes) mismatched (22016 msec).
+[2017-02-18 09:57:12] AppID 233780 update changed : Running,
+[2017-02-18 09:57:12] AppID 233780 update changed : None
+[2017-02-18 09:57:12] AppID 233780 state changed : Fully Installed,
+[2017-02-18 09:57:12] AppID 233780 scheduler finished : removed from schedule
+
+
+[2017-02-18 10:10:02] Loaded 0 apps from install folder "C:\Users\root\Desktop\5.0\arma_update\steamapps\appmanifest_*.acf".
+[2017-02-18 10:10:04] Loaded 1 apps from install folder "c:\a3gaming_server\steamapps\appmanifest_*.acf".
+[2017-02-18 10:10:05] Start validating appID 233780
+[2017-02-18 10:10:05] Scheduler update appID 233780: Priority First, legacy=no, restore="", timeSinceLastPlayed=1487412605, appDisableSecondsRemaining=0
+[2017-02-18 10:10:05] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 10:10:05] AppID 233780 update changed : Running,
+[2017-02-18 10:10:05] AppID 233780 update changed : Running,Reconfiguring,
+[2017-02-18 10:10:05] AppID 233780 update changed : Running,
+[2017-02-18 10:10:05] AppID 233780 update changed : Running,Validating,
+[2017-02-18 10:10:05] Validating files (all active,full) ...
+[2017-02-18 10:10:06] Validation: file missing "c:\a3gaming_server\battleye\beserver.dll"
+[2017-02-18 10:10:20] Validation: file missing "c:\a3gaming_server\battleye\eula.txt"
+[2017-02-18 10:10:27] File validation finished: 604 files (4360266976 bytes) total, 2 files (295171 bytes) mismatched (21454 msec).
+[2017-02-18 10:10:27] AppID 233780 state changed : Update Required,Fully Installed,Files Missing,Update Running,
+[2017-02-18 10:10:27] AppID 233780 update changed : Running,
+[2017-02-18 10:10:27] AppID 233780 update changed : Running,Preallocating,
+[2017-02-18 10:10:27] AppID 233780 update changed : Running,
+[2017-02-18 10:10:27] AppID 233780 update started : download 0/127536, store 0/0, reuse 0/0, stage 0/295171
+[2017-02-18 10:10:27] AppID 233780 state changed : Update Required,Fully Installed,Files Missing,Update Running,Update Started,
+[2017-02-18 10:10:27] AppID 233780 update changed : Running,Downloading,
+[2017-02-18 10:10:27] AppID 233780 update changed : Running,Downloading,Staging,
+[2017-02-18 10:10:27] Got 20 download sources via "/serverlist/14/20/" from 162.254.196.21:80
+[2017-02-18 10:10:27] Created download interface of type 'CS' (1) to host valve418.steampipe.steamcontent.com (valve418.steamcontent.com)
+[2017-02-18 10:10:27] Created download interface of type 'CS' (1) to host valve408.steampipe.steamcontent.com (valve408.steamcontent.com)
+[2017-02-18 10:10:27] Created download interface of type 'CS' (1) to host valve402.steampipe.steamcontent.com (valve402.steamcontent.com)
+[2017-02-18 10:10:27] HTTP (CS,408) - valve408.steampipe.steamcontent.com (valve408.steamcontent.com): AuthenticateDepotID (233781) - Success!
+[2017-02-18 10:10:28] HTTP (CS,408) - valve408.steampipe.steamcontent.com (valve408.steamcontent.com): AuthenticateDepotID (233782) - Success!
+[2017-02-18 10:10:29] AppID 233780 update changed : Running,
+[2017-02-18 10:10:29] AppID 233780 update changed : Running,Committing,
+[2017-02-18 10:10:29] AppID 233780 file commit : 18 updated, 0 moved, 0 deleted
+[2017-02-18 10:10:29] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 10:10:29] Finished update AppID 233780, mounted depots (BuildID 1516343): 233781 (8663195163417058957),233782 (1607716483253583538),
+[2017-02-18 10:10:29] AppID 233780 update changed : Running,
+[2017-02-18 10:10:29] AppID 233780 update changed : None
+[2017-02-18 10:10:29] AppID 233780 state changed : Fully Installed,
+[2017-02-18 10:10:29] AppID 233780 scheduler finished : removed from schedule
+[2017-02-18 10:10:29] HTTP (CS,402) - valve402.steampipe.steamcontent.com (valve402.steamcontent.com): Closing connection
+[2017-02-18 10:10:29] HTTP (CS,408) - valve408.steampipe.steamcontent.com (valve408.steamcontent.com): Closing connection
+[2017-02-18 10:10:29] HTTP (CS,418) - valve418.steampipe.steamcontent.com (valve418.steamcontent.com): Closing connection
+
+
+[2017-02-18 10:56:53] Loaded 0 apps from install folder "C:\Users\root\Desktop\5.0\arma_update\steamapps\appmanifest_*.acf".
+[2017-02-18 10:56:55] Loaded 1 apps from install folder "c:\a3gaming_server\steamapps\appmanifest_*.acf".
+[2017-02-18 10:56:56] Start validating appID 233780
+[2017-02-18 10:56:56] Scheduler update appID 233780: Priority First, legacy=no, restore="", timeSinceLastPlayed=1487415416, appDisableSecondsRemaining=0
+[2017-02-18 10:56:56] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 10:56:56] AppID 233780 update changed : Running,
+[2017-02-18 10:56:56] AppID 233780 update changed : Running,Reconfiguring,
+[2017-02-18 10:56:56] AppID 233780 update changed : Running,
+[2017-02-18 10:56:56] AppID 233780 update changed : Running,Validating,
+[2017-02-18 10:56:56] Validating files (all active,full) ...
+[2017-02-18 10:56:56] Validation: file missing "c:\a3gaming_server\battleye\beserver.dll"
+[2017-02-18 10:57:19] File validation finished: 604 files (4360266976 bytes) total, 1 files (293384 bytes) mismatched (23126 msec).
+[2017-02-18 10:57:19] AppID 233780 state changed : Update Required,Fully Installed,Files Missing,Update Running,
+[2017-02-18 10:57:19] AppID 233780 update changed : Running,
+[2017-02-18 10:57:19] AppID 233780 update changed : Running,Preallocating,
+[2017-02-18 10:57:19] AppID 233780 update changed : Running,
+[2017-02-18 10:57:19] AppID 233780 update started : download 0/126640, store 0/0, reuse 0/0, stage 0/293384
+[2017-02-18 10:57:19] AppID 233780 state changed : Update Required,Fully Installed,Files Missing,Update Running,Update Started,
+[2017-02-18 10:57:19] AppID 233780 update changed : Running,Downloading,
+[2017-02-18 10:57:19] AppID 233780 update changed : Running,Downloading,Staging,
+[2017-02-18 10:57:19] Got 20 download sources via "/serverlist/14/20/" from 162.254.198.76:80
+[2017-02-18 10:57:19] Created download interface of type 'CS' (1) to host valve421.steampipe.steamcontent.com (valve421.steamcontent.com)
+[2017-02-18 10:57:19] Created download interface of type 'CS' (1) to host valve420.steampipe.steamcontent.com (valve420.steamcontent.com)
+[2017-02-18 10:57:19] Created download interface of type 'CS' (1) to host valve406.steampipe.steamcontent.com (valve406.steamcontent.com)
+[2017-02-18 10:57:20] HTTP (CS,406) - valve406.steampipe.steamcontent.com (valve406.steamcontent.com): AuthenticateDepotID (233782) - Success!
+[2017-02-18 10:57:22] AppID 233780 update changed : Running,
+[2017-02-18 10:57:22] AppID 233780 update changed : Running,Committing,
+[2017-02-18 10:57:22] AppID 233780 file commit : 17 updated, 0 moved, 0 deleted
+[2017-02-18 10:57:22] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 10:57:22] Finished update AppID 233780, mounted depots (BuildID 1516343): 233781 (8663195163417058957),233782 (1607716483253583538),
+[2017-02-18 10:57:22] AppID 233780 update changed : Running,
+[2017-02-18 10:57:22] AppID 233780 update changed : None
+[2017-02-18 10:57:22] AppID 233780 state changed : Fully Installed,
+[2017-02-18 10:57:22] AppID 233780 scheduler finished : removed from schedule
+[2017-02-18 10:57:22] HTTP (CS,406) - valve406.steampipe.steamcontent.com (valve406.steamcontent.com): Closing connection
+[2017-02-18 10:57:22] HTTP (CS,420) - valve420.steampipe.steamcontent.com (valve420.steamcontent.com): Closing connection
+[2017-02-18 10:57:22] HTTP (CS,421) - valve421.steampipe.steamcontent.com (valve421.steamcontent.com): Closing connection
+
+
+[2017-02-18 11:40:49] Loaded 0 apps from install folder "C:\Users\root\Desktop\5.0\arma_update\steamapps\appmanifest_*.acf".
+[2017-02-18 11:40:50] Loaded 1 apps from install folder "c:\a3gaming_server\steamapps\appmanifest_*.acf".
+[2017-02-18 11:40:52] Start validating appID 233780
+[2017-02-18 11:40:52] Scheduler update appID 233780: Priority First, legacy=no, restore="", timeSinceLastPlayed=1487418052, appDisableSecondsRemaining=0
+[2017-02-18 11:40:52] AppID 233780 state changed : Fully Installed,Update Running,
+[2017-02-18 11:40:52] AppID 233780 update changed : Running,
+[2017-02-18 11:40:52] AppID 233780 update changed : Running,Reconfiguring,
+[2017-02-18 11:40:52] AppID 233780 update changed : Running,
+[2017-02-18 11:40:52] AppID 233780 update changed : Running,Validating,
+[2017-02-18 11:40:52] Validating files (all active,full) ...
+[2017-02-18 11:41:14] File validation finished: 604 files (4360266976 bytes) total, 0 files (0 bytes) mismatched (22775 msec).
+[2017-02-18 11:41:14] AppID 233780 update changed : Running,
+[2017-02-18 11:41:14] AppID 233780 update changed : None
+[2017-02-18 11:41:14] AppID 233780 state changed : Fully Installed,
+[2017-02-18 11:41:14] AppID 233780 scheduler finished : removed from schedule

@@ -1,0 +1,71 @@
+
+
+[2017-02-18 09:53:48] [AppID 7] Init cache request complete
+[2017-02-18 09:53:48] Starting sync job
+[2017-02-18 09:53:48] [AppID 7] Starting sync (init)
+[2017-02-18 09:54:18] Starting sync job
+[2017-02-18 09:54:18] [AppID 7] Starting sync (eval)
+[2017-02-18 09:54:18] [AppID 7] Need to download file serverbrowser_hist.vdf
+[2017-02-18 09:54:18] [AppID 7] Need to download file sharedconfig.vdf
+[2017-02-18 09:54:18] [AppID 7] Eval complete
+[2017-02-18 09:54:18] Starting sync job
+[2017-02-18 09:54:18] [AppID 7] Starting sync (download)
+[2017-02-18 09:54:18] [AppID 7] Need to download file serverbrowser_hist.vdf
+[2017-02-18 09:54:18] [AppID 7] Need to download file sharedconfig.vdf
+[2017-02-18 09:54:19] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamclouduksouth.blob.core.windows.net' beginning. . .
+[2017-02-18 09:54:19] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamclouduksouth.blob.core.windows.net' - Success.
+[2017-02-18 09:54:19] [AppID 7] Download OK for file serverbrowser_hist.vdf
+[2017-02-18 09:54:19] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamclouduksouth.blob.core.windows.net' beginning. . .
+[2017-02-18 09:54:20] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamclouduksouth.blob.core.windows.net' - Success.
+[2017-02-18 09:54:20] [AppID 7] Download OK for file sharedconfig.vdf
+[2017-02-18 09:54:20] [AppID 7] Download complete, result OK
+
+
+[2017-02-18 09:55:59] [AppID 7] Init cache request complete
+[2017-02-18 09:55:59] Starting sync job
+[2017-02-18 09:55:59] [AppID 7] Starting sync (init)
+[2017-02-18 09:56:01] Starting sync job
+[2017-02-18 09:56:01] [AppID 7] Starting sync (eval)
+[2017-02-18 09:56:01] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2017-02-18 09:56:01] [AppID 7] File is in sync sharedconfig.vdf
+[2017-02-18 09:56:01] [AppID 7] Eval complete
+
+
+[2017-02-18 09:56:48] [AppID 7] Init cache request complete
+[2017-02-18 09:56:48] Starting sync job
+[2017-02-18 09:56:48] [AppID 7] Starting sync (init)
+[2017-02-18 09:56:49] Starting sync job
+[2017-02-18 09:56:49] [AppID 7] Starting sync (eval)
+[2017-02-18 09:56:50] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2017-02-18 09:56:50] [AppID 7] File is in sync sharedconfig.vdf
+[2017-02-18 09:56:50] [AppID 7] Eval complete
+
+
+[2017-02-18 10:10:03] [AppID 7] Init cache request complete
+[2017-02-18 10:10:03] Starting sync job
+[2017-02-18 10:10:03] [AppID 7] Starting sync (init)
+[2017-02-18 10:10:04] Starting sync job
+[2017-02-18 10:10:04] [AppID 7] Starting sync (eval)
+[2017-02-18 10:10:04] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2017-02-18 10:10:04] [AppID 7] File is in sync sharedconfig.vdf
+[2017-02-18 10:10:04] [AppID 7] Eval complete
+
+
+[2017-02-18 10:56:53] [AppID 7] Init cache request complete
+[2017-02-18 10:56:53] Starting sync job
+[2017-02-18 10:56:53] [AppID 7] Starting sync (init)
+[2017-02-18 10:56:55] Starting sync job
+[2017-02-18 10:56:55] [AppID 7] Starting sync (eval)
+[2017-02-18 10:56:55] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2017-02-18 10:56:55] [AppID 7] File is in sync sharedconfig.vdf
+[2017-02-18 10:56:55] [AppID 7] Eval complete
+
+
+[2017-02-18 11:40:49] [AppID 7] Init cache request complete
+[2017-02-18 11:40:49] Starting sync job
+[2017-02-18 11:40:49] [AppID 7] Starting sync (init)
+[2017-02-18 11:40:51] Starting sync job
+[2017-02-18 11:40:51] [AppID 7] Starting sync (eval)
+[2017-02-18 11:40:51] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2017-02-18 11:40:51] [AppID 7] File is in sync sharedconfig.vdf
+[2017-02-18 11:40:51] [AppID 7] Eval complete

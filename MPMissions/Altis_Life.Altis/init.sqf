@@ -13,4 +13,13 @@ if (hasInterface) then {
 [] execVM "KRON_Strings.sqf";
 [] execVM "findKeyValue.sqf";
 
+/* This is for the sitdown and standup script */
+MAC_fnc_switchMove = {
+    private["_object","_anim"];
+    _object = _this select 0;
+    _anim = _this select 1;
+
+    _object switchMove _anim; 
+};
+
 StartProgress = true;

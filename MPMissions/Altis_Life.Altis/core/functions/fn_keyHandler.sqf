@@ -409,6 +409,15 @@ switch (_code) do {
 			
         };
     };
+	
+	//W Key
+	if (_code in (actionKeys "MoveForward")) then {
+		if (!isNull life_sitting) then {
+			[] execVM "core\actions\fn_standup.sqf";
+			_handled = true;
+		};
+	};
+	
 };
 
 _handled;

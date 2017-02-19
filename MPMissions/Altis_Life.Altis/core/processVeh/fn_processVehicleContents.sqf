@@ -13,7 +13,7 @@ _vehicleWeight = 0;
 _vehicleArr = [];
 _multipleVehicles = 0;
 _sleep_amount = 0;
- 
+_multipleItems = false;
  
 {
       if (_x isKindOf "Air" || _x isKindOf "Car") then
@@ -22,6 +22,16 @@ _sleep_amount = 0;
         if (_vehicleID == _playerID) then
         {
             _trunkContents = _x getVariable ["Trunk",[[],0]];
+			_count_items = _trunkContents select 0;
+			
+			if (count _count_items > 1) then {
+				_multipleItems = true;
+			};
+			
+			diag_log format ["_trunkContents %1",_trunkContents select 0];
+			diag_log format ["_count_items %1",count _count_items];
+			diag_log format ["_multipleItems %1",_multipleItems];
+			
             _vehicleWeight = _trunkContents select 1;
             _itemInVeh = _trunkContents select 0 select 0 select 0;
             _amount = _trunkContents select 0 select 0 select 1;
@@ -31,15 +41,15 @@ _sleep_amount = 0;
         };
       };
      
-     
 } foreach (nearestObjects [player,[],25]);
 
 if (_multipleVehicles == 0) exitWith { hint format["You need a vehicle that is owned by you to process %1",_itemType] };
 if (_multipleVehicles > 1) exitWith {  hint 'Only one vehicle owned by you can be within 25 meters of the trader'; };
 if (isNil "_amount") exitWith { hint format["You don't have any %1 in your vehicle",_itemType] };
-
-if (_itemInVeh find _itemType == -1) exitWith { hint format["You can only process %1 at this trader. Remove any other items from your cars trunk.",_itemType] };
-_sleep_amount = 0;
+if (_multipleItems) exitWith { _multipleItems = false; hint format["Only %1 can be in your vehicle when using vehicle processing - remove the other items",_itemType] };
+diag_log format ["_itemInVeh %1",_itemInVeh];
+diag_log format ["_itemType %1",_itemType];
+if (_itemInVeh find _itemType == -1) exitWith { hint format["You can only process %1 at this trader.",_itemType] };
  
 
 if (_amount <= 10) 
@@ -57,11 +67,7 @@ if (_amount > 199)
 if (_amount > 249) 
 	then { _sleep_amount =  6.0; }; //10:00
 
- 
 
-
-
-	
 if (isClass (missionConfigFile >> "ProcessAction" >> _itemType)) then {
     _filter = false;
     _materialsRequired = M_CONFIG(getArray,"ProcessAction",_itemType,"MaterialsReq");
@@ -71,10 +77,7 @@ if (isClass (missionConfigFile >> "ProcessAction" >> _itemType)) then {
 } else {_filter = true;};
 
 
-
-
 _itemInfo = [_materialsRequired,_materialsGiven,_noLicenseCost,(localize format ["%1",_text])];
-
  
 _action = [
     format["Process <t color='#8cff9b'>%1</t> <t color='#ffffff'>%2</t>",

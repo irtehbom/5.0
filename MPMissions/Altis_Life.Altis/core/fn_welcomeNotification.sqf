@@ -25,7 +25,7 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
+_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\splash_logo.jpg' /></t><br /><br />";
 _message = _message + "Useful links (click on the links to open your browser)<br /><br />";
 _message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
 _message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";

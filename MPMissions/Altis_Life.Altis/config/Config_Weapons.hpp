@@ -26,31 +26,40 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "hgun_Rook40_F", "", 6500, 3250, "" },
-            { "hgun_Pistol_01_F", "", 7000, 3500, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_02_F", "", 9850, 4925, "" },
-            { "hgun_ACPC2_F", "", 11500, 5750, "" },
-            { "SMG_05_F", "", 18000, 9000, "" }, //Apex DLC
-            { "hgun_PDW2000_F", "", 20000, 10000, "" }
+            { "hgun_Rook40_F", "", 6500, -1, "" },
+            { "hgun_Pistol_01_F", "", 7000, -1, "" }, //Apex DLC
+            { "hgun_Pistol_heavy_02_F", "", 9850, -1, "" },
+            { "hgun_ACPC2_F", "", 11500, -1, "" },
+            { "SMG_05_F", "", 18000, -1, "" }, //Apex DLC
+            { "hgun_PDW2000_F", "", 20000, -1, "" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "6Rnd_45ACP_Cylinder", "", 150, 75, "" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "" },
-            { "30Rnd_9x21_Mag_SMG_02", "", 250, 125, "" }, //Apex DLC
-            { "10Rnd_9x21_Mag", "", 250, 125, "" } //Apex DLC
+            { "16Rnd_9x21_Mag", "", 125, -1, "" },
+            { "6Rnd_45ACP_Cylinder", "", 150, -1, "" },
+            { "9Rnd_45ACP_Mag", "", 200, -1, "" },
+            { "30Rnd_9x21_Mag", "", 250, -1, "" },
+            { "30Rnd_9x21_Mag_SMG_02", "", 250, -1, "" }, //Apex DLC
+            { "10Rnd_9x21_Mag", "", 250, -1, "" } //Apex DLC
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500, 1250, "" }
+            { "optic_ACO_grn_smg", "", 2500, -1, "" }
         };
     };
-
+ 
     class rebel {
         name = "Mohammed's Jihadi Shop";
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
+            { "Binocular", "", 100, -1, "" },
+            { "ItemGPS", "", 100, -1, "" },
+            { "FirstAidKit", "", 150, -1, "" },
+            { "NVGoggles", "", 2000, -1, "" }, //Brown
+            { "NVGoggles_OPFOR", "", 2000, -1, "" }, //Black
+            { "NVGoggles_INDEP", "", 2000, -1, "" }, //Green
+            { "NVGoggles_tna_F", "", 2000, -1, "" }, //Tropic
+            { "ToolKit", "", 500, -1, "" },
+            { "Rangefinder", "", 10000, -1, "" },
             { "hgun_ACPC2_F", "", 2500, 1250, "" }, //ACPC2
             { "hgun_Pistol_heavy_01_F", "", 3500, 1750, "" }, //4Five
             { "hgun_Pistol_heavy_02_F", "", 5000, 2500, "" }, //Zubr
@@ -59,195 +68,248 @@ class WeaponShops {
             { "arifle_AKS_F", "", 30000, 15000, "" }, //AKS74U
             { "arifle_TRG21_F", "", 40000, 20000, "" }, //TRG21
             { "arifle_CTAR_blk_F", "", 45000, 22500, "" }, //CAR95
+            { "arifle_CTAR_ghex_F", "", 45000, 22500, "" }, //CAR95GreenHex
+            { "arifle_CTAR_hex_F", "", 45000, 22500, "" }, //CAR95Hex
             { "arifle_ARX_blk_F", "", 65000, 32500, "" }, //Type115
+            { "arifle_ARX_ghex_F", "", 65000, 32500, "" }, //Type115GreenHex
+            { "arifle_ARX_hex_F", "", 65000, 32500, "" }, //Type115Hex
             { "arifle_Katiba_F", "", 65000, 32500, "" }, //Katiba
-			{ "srifle_DMR_07_blk_F", "", 70000, 35000, "" }, //CMR76
-			{ "arifle_CTARS_blk_F", "", 80000, 40000, "" }, //CAR951
-			{ "LMG_03_F", "", 115000, 57500, "" }, //LIM
-			{ "LMG_Zafir_F", "", 200000, 100000, "" }, //Zafir
-			{ "arifle_AKM_F", "", 75000, 37500, "" }, //AKM
-			{ "srifle_DMR_01_F", "", 100000, 50000, "" }, //Rahim
-			{ "arifle_AK12_F", "", 105000, 52500, "" }, //AK12
-			{ "srifle_DMR_06_camo_khs_F", "", 110000, 55000, "" }, //MK14
-			{ "srifle_EBR_F", "", 125000, 62500, "" }, //MK18A
-			{ "srifle_DMR_03_woodland_F", "", 150000, 75000, "" } //MKIEMR
+            { "arifle_Katiba_C_F", "", 60000, 30000, "" }, //KatibaCarbine
+            { "srifle_DMR_07_blk_F", "", 70000, 35000, "" }, //CMR76
+            { "srifle_DMR_07_ghex_F", "", 70000, 35000, "" }, //CMR76GreenHex
+            { "srifle_DMR_07_hex_F", "", 70000, 35000, "" }, //CMR76Hex
+            { "arifle_CTARS_blk_F", "", 80000, 40000, "" }, //CAR951
+            { "arifle_CTARS_ghex_F", "", 80000, 40000, "" }, //CAR951GreenHex
+            { "arifle_CTARS_hex_F", "", 80000, 40000, "" }, //CAR951Hex
+            { "LMG_03_F", "", 115000, 57500, "" }, //LIM
+            { "LMG_Zafir_F", "", 200000, 100000, "" }, //Zafir
+            { "arifle_AKM_F", "", 75000, 37500, "" }, //AKM
+            { "srifle_DMR_01_F", "", 100000, 50000, "" }, //Rahim
+            { "arifle_AK12_F", "", 105000, 52500, "" }, //AK12
+            { "srifle_DMR_06_camo_khs_F", "", 110000, 55000, "" }, //MK14Camo
+            { "srifle_DMR_06_olive_F", "", 40000, -1, "" }, //MK14Olive
+            { "srifle_EBR_F", "", 125000, 62500, "" }, //MK18A
+            { "srifle_DMR_03_multicam_F", "", 150000, 75000, "" }, //MKIEMRCamo
+            { "srifle_DMR_03_khaki_F", "", 150000, 75000, "" }, //MKIEMRKhaki
+            { "srifle_DMR_03_tan_F", "", 150000, 75000, "" }, //MKIEMRSand
+            { "srifle_DMR_03_woodland_F", "", 150000, 75000, "" } //MKIEMRWoodland
         };
         mags[] = {
-            { "30Rnd_556x45_Stanag", "", 300, 150, "" },
-            { "30Rnd_762x39_Mag_F", "", 300, 150, "" }, //Apex DLC
-            { "30Rnd_545x39_Mag_F", "", 300, 150, "" }, //Apex DLC
-            { "30Rnd_65x39_caseless_green", "", 275, 140, "" },
-            { "10Rnd_762x54_Mag", "", 500, 250, "" },
-            { "20Rnd_556x45_UW_mag", "", 125, 60, "" },
-            { "30Rnd_580x42_Mag_F", "", 125, 60, "" } //Apex DLC
+            { "9Rnd_45ACP_Mag", "", 50, -1, "" },
+            { "11Rnd_45ACP_Mag", "", 50, -1, "" },
+            { "6Rnd_45ACP_Cylinder", "", 50, -1, "" },
+            { "30Rnd_45ACP_Mag_SMG_01", "", 50, -1, "" },
+            { "30Rnd_9x21_Mag_SMG_02", "", 50, -1, "" },
+            { "30Rnd_545x39_Mag_F", "", 250, -1, "" },
+            { "30Rnd_556x45_Stanag", "", 250, -1, "" },
+            { "30Rnd_580x42_Mag_F", "", 250, -1, "" },
+            { "30Rnd_65x39_caseless_green", "", 500, -1, "" },
+            { "20Rnd_650x39_Cased_Mag_F", "", 500, -1, "" },
+            { "100Rnd_580x42_Mag_Tracer_F", "", 750, -1, "" },
+            { "200Rnd_556x45_Box_Red_F", "", 1500, -1, "" },
+            { "150Rnd_762x54_Box_Tracer", "", 2500, -1, "" },
+            { "30Rnd_762x39_Mag_F", "", 800, -1, "" },
+            { "10Rnd_762x54_Mag", "", 700, -1, "" },
+            { "20Rnd_762x51_Mag", "", 850, -1, "" }
         };
         accs[] = {
-            { "optic_ACO_grn", "", 3500, 1750, "" },
-            { "optic_Holosight", "", 3600, 1800, "" },
-            { "optic_Hamr", "", 7500, 3750, "" },
-            { "acc_flashlight", "", 1000, 500, "" }
+            { "acc_pointer_IR", "", 100, -1, "" }, //LaserPointer
+            { "acc_flashlight", "", 100, -1, "" }, //Flashlight
+            { "optic_ACO_grn", "", 500, -1, "" }, //ACOGreen
+            { "optic_Holosight", "", 500, -1, "" }, //Mk17Holosight
+            { "optic_MRCO", "", 5000, -1, "" }, //MRCO
+            { "optic_Hamr", "", 5000, -1, "" }, //RCO
+            { "optic_Hamr_khk_F", "", 5000, -1, "" }, //RCOKhaki
+            { "optic_Arco", "", 5000, -1, "" }, //ARCO
+            { "optic_Arco_blk_F", "", 5000, -1, "" }, //ARCOBlack
+            { "optic_Arco_ghex_F", "", 5000, -1, "" }, //ARCOHex
+            { "optic_ERCO_blk_F", "", 5000, -1, "" }, //ERCO
+            { "optic_ERCO_snd_F", "", 5000, -1, "" }, //ERCOSand
+            { "optic_ERCO_khk_F", "", 5000, -1, "" }, //ERCOKhaki
+            { "muzzle_snds_L", "", 5000, -1, "" }, //9MMSuppressor
+            { "muzzle_snds_M", "", 8500, -1, "" }, //5.56mmSuppressorBlack
+            { "muzzle_snds_m_khk_F", "", 8500, -1, "" }, //5.56mmSuppressorKhaki
+            { "muzzle_snds_m_snd_F", "", 8500, -1, "" }, //5.56mmSuppressorSand
+            { "muzzle_snds_58_blk_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorBlack
+            { "muzzle_snds_58_ghex_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorGreenHex
+            { "muzzle_snds_58_hex_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorHex
+            { "muzzle_snds_65_TI_blk_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorBlack
+            { "muzzle_snds_65_TI_ghex_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorGreenHex
+            { "muzzle_snds_65_TI_hex_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorHex
+            { "muzzle_snds_H", "", 12500, -1, "" }, //6.5mmSupressorBlack
+            { "muzzle_snds_H_khk_F", "", 12500, -1, "" }, //6.5mmSupressorKhaki
+            { "muzzle_snds_H_snd_F", "", 12500, -1, "" }, //6.5mmSupressorSand
+            { "muzzle_snds_B", "", 15000, -1, "" }, //7.62SupressorBlack
+            { "muzzle_snds_B_khk_F", "", 15000, -1, "" }, //7.62SupressorKhaki
+            { "muzzle_snds_B_snd_F", "", 15000, -1, "" }, //7.62SupressorSand
+            { "bipod_01_F_blk", "", 3500, -1, "" }, //NATOBipodBlack
+            { "bipod_01_F_khk", "", 3500, -1, "" }, //NATOBipodKhaki
+            { "bipod_01_F_mtp", "", 3500, -1, "" }, //NATOBipodMTP
+            { "bipod_01_F_snd", "", 3500, -1, "" }, //NATOBipodSand
+            { "optic_SOS", "", 12500, -1, "" }, //SOS
+            { "optic_SOS_khk_F", "", 12500, -1, "" }, //SOSKhaki
+            { "optic_DMS", "", 15000, -1, "" }, //DMS
+            { "optic_DMS_ghex_F", "", 15000, -1, "" }, //DMSHex
+            { "optic_LRPS", "", 20000, -1, "" }, //LRPS
+            { "optic_LRPS_tna_F", "", 20000, -1, "" }, //LRPSTropic
+            { "optic_LRPS_ghex_F", "", 20000, -1, "" }, //LRPSHex
+            { "optic_AMS", "", 15000, -1, "" }, //AMS
+            { "optic_AMS_khk", "", 15000, -1, "" }, //AMSKhaki
+            { "optic_AMS_snd", "", 15000, -1, "" }, //AMSSand
+            { "optic_KHS_blk", "", 12500, -1, "" }, // Kahlia
+            { "optic_KHS_hex", "", 12500, -1, "" }, // KahliaHex
+            { "optic_KHS_tan", "", 12500, -1, "" } // KahliaTan
         };
     };
-
+ 
     class gang {
         name = "Hideout Armament";
         side = "civ";
         conditions = "";
         items[] = {
-            { "hgun_Rook40_F", "", 1500, 750, "" },
-            { "hgun_Pistol_heavy_02_F", "", 2500, 1250, "" },
-            { "hgun_ACPC2_F", "", 4500, 2250, "" },
-            { "hgun_PDW2000_F", "", 9500, 4750, "" }
+            { "hgun_Rook40_F", "", 1500, -1, "" },
+            { "hgun_Pistol_heavy_02_F", "", 2500, -1, "" },
+            { "hgun_ACPC2_F", "", 4500, -1, "" },
+            { "hgun_PDW2000_F", "", 9500, -1, "" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "6Rnd_45ACP_Cylinder", "", 150, 75, "" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "" }
+            { "16Rnd_9x21_Mag", "", 125, -1, "" },
+            { "6Rnd_45ACP_Cylinder", "", 150, -1, "" },
+            { "9Rnd_45ACP_Mag", "", 200, -1, "" },
+            { "30Rnd_9x21_Mag", "", 250, -1, "" }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 950, 475, "" }
+            { "optic_ACO_grn_smg", "", 950, -1, "" }
         };
     };
-
+ 
     //Basic Shops
     class genstore {
         name = "Altis General Store";
         side = "civ";
         conditions = "";
         items[] = {
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "ItemMap", "", 50, 25, "" },
-            { "ItemCompass", "", 50, 25, "" },
-            { "ItemWatch", "", 50, 25, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 2000, 1000, "" },
-            { "Chemlight_red", "", 300, 150, "" },
-            { "Chemlight_yellow", "", 300, 150, "" },
-            { "Chemlight_green", "", 300, 150, "" },
-            { "Chemlight_blue", "", 300, 150, "" }
+            { "Binocular", "", 100, -1, "" },
+            { "ItemGPS", "", 100, -1, "" },
+            { "ItemMap", "", 50, -1, "" },
+            { "ItemCompass", "", 50, -1, "" },
+            { "ItemWatch", "", 50, -1, "" },
+            { "FirstAidKit", "", 150, -1, "" },
+            { "NVGoggles", "", 2000, -1, "" }, //Brown
+            { "NVGoggles_OPFOR", "", 2000, -1, "" }, //Black
+            { "NVGoggles_INDEP", "", 2000, -1, "" }, //Green
+            { "NVGoggles_tna_F", "", 2000, -1, "" }, //Tropic
+            { "Chemlight_red", "", 300, -1, "" },
+            { "Chemlight_yellow", "", 300, -1, "" },
+            { "Chemlight_green", "", 300, -1, "" },
+            { "Chemlight_blue", "", 300, -1, "" }
         };
         mags[] = {};
         accs[] = {};
     };
-
+ 
     class f_station_store {
         name = "Altis Fuel Station Store";
         side = "";
         conditions = "";
         items[] = {
-            { "Binocular", "", 750, 75, "" },
-            { "ItemGPS", "", 500, 50, "" },
-            { "ItemMap", "", 250, 25, "" },
-            { "ItemCompass", "", 250, 25, "" },
-            { "ItemWatch", "", 250, 25, "" },
-            { "FirstAidKit", "", 750, 75, "" },
-            { "NVGoggles", "", 10000, 1000, "" },
-            { "Chemlight_red", "", 1500, 150, "" },
-            { "Chemlight_yellow", "", 1500, 150, "" },
-            { "Chemlight_green", "", 1500, 150, "" },
-            { "Chemlight_blue", "", 1500, 150, "" }
+            { "Binocular", "", 100, -1, "" },
+            { "ItemGPS", "", 100, -1, "" },
+            { "ItemMap", "", 50, -1, "" },
+            { "ItemCompass", "", 50, -1, "" },
+            { "ItemWatch", "", 50, -1, "" },
+            { "FirstAidKit", "", 150, -1, "" },
+            { "NVGoggles", "", 2000, -1, "" }, //Brown
+            { "NVGoggles_OPFOR", "", 2000, -1, "" }, //Black
+            { "NVGoggles_INDEP", "", 2000, -1, "" }, //Green
+            { "NVGoggles_tna_F", "", 2000, -1, "" }, //Tropic
+            { "Chemlight_red", "", 300, -1, "" },
+            { "Chemlight_yellow", "", 300, -1, "" },
+            { "Chemlight_green", "", 300, -1, "" },
+            { "Chemlight_blue", "", 300, -1, "" }
         };
         mags[] = {};
         accs[] = {};
     };
-
+ 
     //Cop Shops
     class cop_basic {
         name = "Altis Cop Shop";
         side = "cop";
         conditions = "";
         items[] = {
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 2000, 1000, "" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "" },
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
-            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
-            { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC			
-            { "SMG_01_F", "", 10000, 3750, "" }, //Vermin
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" }, //NX Carbide
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" }, //Apex DLC Sniper
-            { "hgun_Pistol_heavy_02_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Revolver
-            { "arifle_MX_SW_Black_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MXSW
-            { "arifle_MXM_Black_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MXM
-            { "LMG_Mk200_F", "", 10000, 6000, "call life_coplevel >= 4" }, //MK200
-            { "LMG_Zafir_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Zafir
-			{ "srifle_DMR_01_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Rahim
-			{ "srifle_EBR_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Mk 18
-			{ "srifle_DMR_02_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Mark 10
-			{ "srifle_DMR_05_blk_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Cyrus
-			{ "srifle_GM6_camo_F", "", 10000, 6000, "call life_coplevel >= 4" }, //Lynx
-			{ "srifle_LRR_camo_F", "", 10000, 6000, "call life_coplevel >= 4" }, //M320
-			{ "srifle_DMR_06_olive_F", "", 10000, 6000, "call life_coplevel >= 4" } //MK14
-
-
+            { "Binocular", "", 100, -1, "call life_coplevel >= 1" },
+            { "ItemGPS", "", 100, -1, "call life_coplevel >= 1" },
+            { "FirstAidKit", "", 150, -1, "call life_coplevel >= 1" },
+            { "NVGoggles_OPFOR", "", 500, -1, "call life_coplevel >= 1" },
+            { "ToolKit", "", 500, -1, "call life_coplevel >= 1" },
+            { "Medikit", "", 500, -1, "call life_coplevel >= 1" },
+            { "Rangefinder", "", 1000, -1, "call life_coplevel >= 1" },
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 0, -1, "call life_coplevel >= 1" }, //TaserPistol
+            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 0, -1, "call life_coplevel >= 1" }, //TaserRifle
+            { "SMG_05_F", "", 2500, -1, "call life_coplevel >= 1" }, //Protector
+            { "arifle_Mk20_plain_F", "", 7500, -1, "call life_coplevel >= 1" }, //MK20     
+            { "arifle_SPAR_01_blk_F", "", 10000, -1, "call life_coplevel >= 1" }, //SPAR16
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1000, -1, "call life_coplevel >= 2" }, //Flashbang
+            { "arifle_MXC_Black_F", "", 20000, -1, "call life_coplevel >= 2" }, //MXC
+            { "arifle_MX_Black_F", "", 22500, -1, "call life_coplevel >= 2" }, //MX
+            { "arifle_MXM_Black_F", "", 25000, -1, "call life_coplevel >= 2" }, //MXM
+            { "arifle_SPAR_01_blk_F", "", 30000, -1, "call life_coplevel >= 3" }, //SPAR16S
+            { "arifle_SPAR_03_blk_F", "", 35000, -1, "call life_coplevel >= 3" }, //SPAR17
+            { "srifle_DMR_06_olive_F", "", 40000, -1, "call life_coplevel >= 3" }, //MK14
+            { "srifle_EBR_F", "", 50000, -1, "call life_coplevel >= 3" }, //MK18
+            { "arifle_MX_SW_Black_F", "", 35000, -1, "call life_coplevel >= 4" }, //MXSW
+            { "srifle_DMR_03_F", "", 60000, -1, "call life_coplevel >= 4" }, //MKIEMR
+            { "LMG_Mk200_F", "", 55000, -1, "call life_coplevel >= 4" }, //MK200
+            { "srifle_DMR_02_F", "", 100000, -1, "call life_coplevel >= 5" } //MAR10
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
-            { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" }, //Apex DLC
-            { "6Rnd_45ACP_Cylinder", "", 200, 100, "call life_coplevel >= 4" }, //MXSW
-            { "100Rnd_65x39_caseless_mag", "", 200, 100, "call life_coplevel >= 4" }, //MXSW
-            { "200Rnd_65x39_cased_Box", "", 200, 100, "call life_coplevel >= 4" }, //MK200
-            { "200Rnd_65x39_cased_Box_Tracer", "", 200, 100, "call life_coplevel >= 4" }, //MK200
-            { "150Rnd_762x54_Box", "", 200, 100, "call life_coplevel >= 4" }, //Zafir
-            { "150Rnd_762x54_Box_Tracer", "", 200, 100, "call life_coplevel >= 4" }, //Zafir
-            { "10Rnd_762x54_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Rahim
-            { "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Mk18
-            { "10Rnd_338_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Mark 10
-            { "10Rnd_93x64_DMR_05_Mag", "", 200, 100, "call life_coplevel >= 4" }, //Cyrus
-            { "5Rnd_127x108_Mag", "", 200, 100, "call life_coplevel >= 4" }, //5Rnd_127x108_Mag //Lynx
-            { "5Rnd_127x108_APDS_Mag", "", 200, 100, "call life_coplevel >= 4" }, //5Rnd_127x108_APDS_Mag //Lynx
-            { "7Rnd_408_Mag", "", 200, 100, "call life_coplevel >= 4" } //7Rnd_408_Mag //M320
+            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 0, -1, "call life_coplevel >= 1" },
+            { "16Rnd_9x21_Mag", "", 0, -1, "call life_coplevel >= 1" },
+            { "30Rnd_9x21_Mag_SMG_02", "", 25, -1, "call life_coplevel >= 1" },
+            { "30Rnd_556x45_Stanag", "", 100, -1, "call life_coplevel >= 1" },
+            { "30Rnd_65x39_caseless_mag", "", 200, -1, "call life_coplevel >= 2" },
+            { "150Rnd_556x45_Drum_Mag_F", "", 400, -1, "call life_coplevel >= 3" },
+            { "20Rnd_762x51_Mag", "", 500, -1, "call life_coplevel >= 3" },
+            { "100Rnd_65x39_caseless_mag", "", 500, -1, "call life_coplevel >= 4" },
+            { "200Rnd_65x39_cased_Box", "", 600, -1, "call life_coplevel >= 4" },
+            { "10Rnd_338_Mag", "", 1000, -1, "call life_coplevel >= 5" }
         };
         accs[] = {
-            { "muzzle_snds_L", "", 650, 325, "" }, //9MM Suppressor
-            { "optic_MRD", "", 2750, 1375, "call life_coplevel >= 1" },
-            { "acc_flashlight", "", 750, 375, "call life_coplevel >= 2" },
-            { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
-            { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
-            { "muzzle_snds_B", "", 2750, 1375, "call life_coplevel >= 2" }, //7.62 Suppressor
-            { "muzzle_snds_H_MG", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 6.5mm HMG
-            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 6.5mm
-            { "muzzle_snds_M", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 5.56mm
-            { "optic_SOS", "", 2750, 1375, "call life_coplevel >= 2" }, //SOS Scope
-            { "optic_DMS", "", 2750, 1375, "call life_coplevel >= 2" }, //DMS Scope
-            { "optic_LRPS", "", 2750, 1375, "call life_coplevel >= 2" }, //LRPS Scope
-            { "muzzle_snds_338_green", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor .338
-            { "muzzle_snds_93mmg", "", 2750, 1375, "call life_coplevel >= 2" }, //Suppressor 9.3mm
-            { "optic_AMS", "", 2750, 1375, "call life_coplevel >= 2" }, //AMS Scope
-            { "bipod_01_F_blk", "", 2750, 1375, "call life_coplevel >= 2" }, //Bipod Black
-            { "bipod_02_F_hex", "", 2750, 1375, "call life_coplevel >= 2" }, //Bipod Hex
-            { "bipod_01_F_mtp", "", 2750, 1375, "call life_coplevel >= 2" } //Bipod MTP
+            { "muzzle_snds_L", "", 0, -1, "call life_coplevel >= 1" }, //9MMSuppressor
+            { "acc_pointer_IR", "", 50, -1, "call life_coplevel >= 1" }, //Laser Pointer
+            { "acc_flashlight", "", 50, -1, "call life_coplevel >= 1" }, //Flashlight
+            { "optic_ACO_grn", "", 100, -1, "call life_coplevel >= 1" }, //ACO Green
+            { "optic_Holosight", "", 100, -1, "call life_coplevel >= 1" }, //Mk17Holosight
+            { "optic_MRCO", "", 2500, -1, "call life_coplevel >= 1" }, //MRCO
+            { "optic_Hamr", "", 2500, -1, "call life_coplevel >= 1" }, //RCO
+            { "optic_Arco_blk_F", "", 2500, -1, "call life_coplevel >= 1" }, //ARCOBlack
+            { "optic_ERCO_blk_F", "", 2500, -1, "call life_coplevel >= 1" }, //ERCO
+            { "bipod_01_F_blk", "", 3500, -1, "call life_coplevel >= 2" }, //NATOBipod
+            { "muzzle_snds_M", "", 5000, -1, "call life_coplevel >= 2" }, //5.56mmSuppressor
+            { "muzzle_snds_H", "", 5000, -1, "call life_coplevel >= 2" }, //6.5mmSuppressor
+            { "optic_SOS", "", 7500, -1, "call life_coplevel >= 3" }, //SOS
+            { "optic_DMS", "", 7500, -1, "call life_coplevel >= 3" }, //DMS
+            { "optic_LRPS", "", 10000, -1, "call life_coplevel >= 3" }, //LRPS
+            { "optic_AMS", "", 7500, -1, "call life_coplevel >= 3" }, //AMS
+            { "optic_KHS_blk", "", 7500, -1, "call life_coplevel >= 3" }, //Kahlia
+            { "muzzle_snds_B", "", 5000, -1, "call life_coplevel >= 3" }, //7.62mmSuppressor
+            { "muzzle_snds_H_MG", "", 5000, -1, "call life_coplevel >= 4" } //6.5mmLMGSuppressor
         };
     };
-
+ 
     //Medic Shops
     class med_basic {
         name = "store";
         side = "med";
         conditions = "";
         items[] = {
-            { "Medikit", "", 100, 50, "" },			
-            { "Toolkit", "", 250, 50, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "Binocular", "", 150, 75, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 1200, 600, "" }
+            { "Medikit", "", 0, -1, "" },          
+            { "Toolkit", "", 250, -1, "" },
+            { "ItemGPS", "", 100, -1, "" },
+            { "Binocular", "", 150, -1, "" },
+            { "FirstAidKit", "", 0, -1, "" },
+            { "NVGoggles", "", 1000, -1, "" }
         };
         mags[] = {};
         accs[] = {};

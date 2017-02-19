@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=110;
+	toggles=238;
 	class ItemIDProvider
 	{
-		nextID=3846;
+		nextID=3847;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3831.0967,57.394653,13167.117};
-		dir[]={0.47383925,-0.5753085,-0.66676438};
-		up[]={0.3333686,0.81780756,-0.46909881};
-		aside[]={-0.81516218,9.9862518e-008,-0.57930225};
+		pos[]={3808.395,161.99675,13683.456};
+		dir[]={-0.77529049,-0.54274827,0.32317513};
+		up[]={-0.50114018,0.83977151,0.20889623};
+		aside[]={0.38476938,-1.5164551e-007,0.92306417};
 	};
 };
 binarizationWanted=0;
@@ -106,13 +106,14 @@ addons[]=
 	"A3_Supplies_F_Heli_Bladders",
 	"A3_Structures_F_EPC_Items_Electronics",
 	"A3_Props_F_Exp_A_Military_Equipment",
-	"A3_Structures_F_Heli_Ind_Cargo"
+	"A3_Structures_F_Heli_Ind_Cargo",
+	"A3_Misc_F_Helpers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -280,6 +281,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item24
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
 	};
 };
 randomSeed=2639488;
@@ -313,24 +321,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -345,6 +335,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -52731,24 +52739,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3619.0371,11.693345,13124.775};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowdamage false; this setObjectTexture [0, ""textures\billboards\bblogobig.jpg""]";
-				name="onetwothree";
-			};
-			id=3828;
-			type="Land_Billboard_F";
-			atlOffset=0.0050010681;
-		};
-		class Item1771
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={3684.75,10.625,13111};
 				angles[]={6.2658539,0,0.049288094};
 			};
@@ -52761,7 +52751,7 @@ class Mission
 			type="Land_HelipadEmpty_F";
 			atlOffset=0.02165699;
 		};
-		class Item1772
+		class Item1771
 		{
 			dataType="Object";
 			class PositionInfo
@@ -52778,7 +52768,7 @@ class Mission
 			type="Land_HelipadEmpty_F";
 			atlOffset=0.056509018;
 		};
-		class Item1773
+		class Item1772
 		{
 			dataType="Object";
 			class PositionInfo
@@ -52796,7 +52786,7 @@ class Mission
 			type="Pole_F";
 			atlOffset=-0.0066690445;
 		};
-		class Item1774
+		class Item1773
 		{
 			dataType="Object";
 			class PositionInfo
@@ -52812,7 +52802,7 @@ class Mission
 			id=3843;
 			type="Land_HelipadEmpty_F";
 		};
-		class Item1775
+		class Item1774
 		{
 			dataType="Object";
 			class PositionInfo
@@ -52828,7 +52818,7 @@ class Mission
 			id=3844;
 			type="Land_HelipadEmpty_F";
 		};
-		class Item1776
+		class Item1775
 		{
 			dataType="Object";
 			class PositionInfo
@@ -52844,6 +52834,24 @@ class Mission
 			id=3845;
 			type="Land_CncWall1_F";
 			atlOffset=0.030831099;
+		};
+		class Item1776
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3615.25,9.875,13121.625};
+				angles[]={0,1.6755161,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowdamage false; this setObjectTexture [0, ""textures\billboards\bblogobig.jpg""]";
+			};
+			id=3846;
+			type="UserTexture10m_F";
+			atlOffset=-0.071662903;
 		};
 	};
 };

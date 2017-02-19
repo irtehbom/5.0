@@ -87,7 +87,7 @@ class WeaponShops {
             { "srifle_DMR_01_F", "", 100000, 50000, "" }, //Rahim
             { "arifle_AK12_F", "", 105000, 52500, "" }, //AK12
             { "srifle_DMR_06_camo_khs_F", "", 110000, 55000, "" }, //MK14Camo
-            { "srifle_DMR_06_olive_F", "", 40000, -1, "" }, //MK14Olive
+            { "srifle_DMR_06_olive_F", "", 110000, 55000, "" }, //MK14Olive
             { "srifle_EBR_F", "", 125000, 62500, "" }, //MK18A
             { "srifle_DMR_03_multicam_F", "", 150000, 75000, "" }, //MKIEMRCamo
             { "srifle_DMR_03_khaki_F", "", 150000, 75000, "" }, //MKIEMRKhaki

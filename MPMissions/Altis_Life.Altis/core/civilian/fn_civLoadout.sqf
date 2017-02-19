@@ -14,6 +14,7 @@ player forceAddUniform (selectRandom _clothings);
 
 /* ITEMS */
 player linkItem "ItemMap";
+player linkItem "ItemGPS";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 

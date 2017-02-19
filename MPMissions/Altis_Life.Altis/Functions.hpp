@@ -106,7 +106,7 @@ class Life_Client_Core {
         class robReceive {};
         class tazed {};
 		class civInteractionMenu{};
-		class gpsMarker{};
+		//class gpsMarker{};
     };
 
     class Config {

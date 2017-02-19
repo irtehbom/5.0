@@ -60,7 +60,6 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
-	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_Addons",
 	"A3_Supplies_F_Heli_CargoNets",
@@ -293,6 +292,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -310,10 +327,15 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
+			property="Init";
+			expression="if !(is3DEN) then {[] call compile _value;};";
 			class Value
 			{
 				class data
@@ -322,18 +344,14 @@ class CustomAttributes
 					{
 						type[]=
 						{
-							"ARRAY"
+							"STRING"
 						};
 					};
+					value="west setFriend [independent, 1];" \n "independent setFriend [west, 1];" \n "west setFriend [east, 1];" \n "east setFriend [west, 1];";
 				};
 			};
 		};
-		nAttributes=2;
-	};
-	class Category1
-	{
-		name="Scenario";
-		class Attribute0
+		class Attribute1
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -352,7 +370,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -2314,7 +2332,7 @@ class Mission
 			name="atm_marker_1_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=358.78683;
+			angle=358.7868;
 			id=204;
 			atlOffset=0.013666153;
 		};

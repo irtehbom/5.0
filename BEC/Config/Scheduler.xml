@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Scheduler>
+
+<!-- REGULAR MESSAGES --> 
+
+<!-- this job will start after 10 minutes and will run every 30 minutes.  -->
+<job id='0'>
+<day>1,2,3,4,5,6,7</day>
+<start>000010</start>
+<runtime>003000</runtime>
+<loop>-1</loop>
+<cmd>say -1 THIS SERVER RESTARTS EVERY 4 HOURS - TYPE !UPTIME IN SIDE CHAT TO SEE THE SERVER UPTIME</cmd>
+</job>
+<!-- this job will start after 30 minutes and will run every 30 minutes.  -->
+<job id='1'>
+<day>1,2,3,4,5,6,7</day>
+<start>003000</start>
+<runtime>003000</runtime>
+<loop>-1</loop>
+<cmd>say -1 TEAMSPEAK IP  -- ts.a3gaming.co.uk </cmd>
+</job>
+<!-- this job will start after 15 minutes and will run every 30 minutes.  -->
+<job id='2'>
+<day>1,2,3,4,5,6,7</day>
+<start>001500</start>
+<runtime>003000</runtime>
+<loop>-1</loop>
+<cmd>say -1 STAY UP TO DATE JOIN OUR WEBSITE WWW.A3GAMING.CO.UK</cmd>
+</job>
+<!-- this job will start after 20 minutes and will run every 30 minutes.  -->
+<job id='3'>
+<day>1,2,3,4,5,6,7</day>
+<start>002000</start>
+<runtime>003000</runtime>
+<loop>-1</loop>
+<cmd>say -1 IF YOU REPORT A PLAYER ON THE FORUMS ATTACH VIDEO PROOF </cmd>
+</job>
+
+
+<!--  SERVER RESTART MESSAGES -->
+
+<!--  30 MINUTE RESTART MESSAGES -->
+<job id='4'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+<job id='5'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+<job id='6'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+<job id='7'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+<job id='8'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+<job id='9'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:30:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 SERVER RESTART IN 30 MINUTES </cmd>
+</job>
+
+<!--  15 MINUTE RESTART MESSAGES -->
+<job id='10'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:45:00</start>
+<runtime>034500</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='11'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:45:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='12'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:45:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='13'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:45:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='14'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:45:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='15'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:45:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 15 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+
+<!--  10 MINUTE RESTART MESSAGES -->
+<job id='16'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:50:00</start>
+<runtime>034500</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='17'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:50:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='18'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:50:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='19'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:50:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='20'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:50:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='21'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:50:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 10 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+
+<!--  5 MINUTE RESTART MESSAGES -->
+<job id='22'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:55:00</start>
+<runtime>034500</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='23'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:55:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='24'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:55:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='25'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:55:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='26'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:55:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+<job id='27'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:55:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 5 MINUTES - START PREPARING TO LOG OUT</cmd>
+</job>
+
+<!--  2 MINUTE RESTART MESSAGES -->
+<job id='28'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:58:00</start>
+<runtime>034500</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='29'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:58:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='30'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:58:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='31'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:58:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='32'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:58:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='33'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:58:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 2 MINUTES - SAVE GEAR AND LOG OUT</cmd>
+</job>
+
+<!--  1 MINUTE RESTART MESSAGES -->
+<job id='34'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:59:00</start>
+<runtime>034500</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='35'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:59:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='36'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:59:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='37'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:59:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='38'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:59:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+<job id='39'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:59:00</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>say -1 RESTART IN 1 MINUTE - SAVE GEAR AND LOG OUT</cmd>
+</job>
+
+
+<!-- STOP SERVER JOBS-->
+<job id='40'>
+<day>1,2,3,4,5,6,7</day>
+<start>03:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+<job id='41'>
+<day>1,2,3,4,5,6,7</day>
+<start>07:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+<job id='42'>
+<day>1,2,3,4,5,6,7</day>
+<start>11:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+<job id='43'>
+<day>1,2,3,4,5,6,7</day>
+<start>15:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+<job id='44'>
+<day>1,2,3,4,5,6,7</day>
+<start>19:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+<job id='45'>
+<day>1,2,3,4,5,6,7</day>
+<start>23:59:59</start>
+<runtime>000000</runtime>
+<loop>0</loop>
+<cmd>C:\A3Gaming_Server\stopserver.bat</cmd>
+</job>
+
+</Scheduler>

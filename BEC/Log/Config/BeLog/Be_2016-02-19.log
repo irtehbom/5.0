@@ -1,0 +1,550 @@
+﻿21:07:41 : Rcon client logging in
+﻿21:07:41 : RCon admin #0 (127.0.0.1:57746) logged in
+﻿21:10:55 : Player #0 Rob (86.129.115.197:2304) connected
+﻿21:10:57 : Player #0 Rob - GUID: 4a11be7a426036c4ac7ff4c8d82fdbf4 (unverified)
+﻿21:10:57 : Player #0 Rob (4a11be7a426036c4ac7ff4c8d82fdbf4) has been kicked by BattlEye: Admin Kick (BEC : You are not whitelisted on this server.)
+﻿21:12:03 : Lost Connection!
+﻿21:12:03 : Closing socket & exiting!
+﻿21:18:52 : Rcon client logging in
+﻿21:18:52 : RCon admin #0 (127.0.0.1:59167) logged in
+﻿21:20:04 : Player #0 Antony-J (86.171.7.197:2304) connected
+﻿21:20:05 : Player #0 Antony-J - GUID: 9fc1206751f839eeddbd99119f2d3d49 (unverified)
+﻿21:20:08 : Verified GUID (9fc1206751f839eeddbd99119f2d3d49) of player #0 Antony-J
+﻿21:21:01 : Player #1 Rob (86.129.115.197:2316) connected
+﻿21:21:03 : Player #1 Rob - GUID: 4a11be7a426036c4ac7ff4c8d82fdbf4 (unverified)
+﻿21:21:03 : Verified GUID (4a11be7a426036c4ac7ff4c8d82fdbf4) of player #1 Rob
+﻿21:21:07 : Player #2 General Tank (146.200.36.33:2304) connected
+﻿21:21:10 : Player #2 General Tank - GUID: af4a93395b84c498f5a9cc3df8f839d3 (unverified)
+﻿21:21:11 : Player #3 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:21:13 : Player #3 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:21:13 : Player #3 [APD] Chief. Hamilton (a52e73af709687986f698a859a2d1cf9) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:21:31 : Player #3 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:21:32 : Verified GUID (af4a93395b84c498f5a9cc3df8f839d3) of player #2 General Tank
+﻿21:21:33 : Player #3 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:21:33 : Player #3 [APD] Chief. Hamilton (a52e73af709687986f698a859a2d1cf9) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:22:13 : Player #3 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:22:14 : Player #3 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:22:14 : Player #3 [APD] Chief. Hamilton (a52e73af709687986f698a859a2d1cf9) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:22:43 : Player #3 [APD] Chf Insp. MrDunis (81.227.56.15:2304) connected
+﻿21:22:45 : Player #3 [APD] Chf Insp. MrDunis - GUID: 9212fd7adff964a2f3a4ae09f7c9333f (unverified)
+﻿21:22:45 : Player #3 [APD] Chf Insp. MrDunis (9212fd7adff964a2f3a4ae09f7c9333f) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:23:00 : Player #3 [APD] Chf Insp. MrDunis (81.227.56.15:2304) connected
+﻿21:23:01 : Player #3 [APD] Chf Insp. MrDunis - GUID: 9212fd7adff964a2f3a4ae09f7c9333f (unverified)
+﻿21:23:01 : Player #3 [APD] Chf Insp. MrDunis (9212fd7adff964a2f3a4ae09f7c9333f) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:23:08 : Player #3 DonGino (143.177.58.156:60382) connected
+﻿21:23:09 : Player #3 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿21:23:10 : Verified GUID (f969552a9a4820a9c9b91a638f9607c1) of player #3 DonGino
+﻿21:23:33 : Player #4 felix (81.227.56.15:1024) connected
+﻿21:23:35 : Player #4 felix - GUID: 055af53ff24a1f282288297aac7f5f02 (unverified)
+﻿21:23:35 : Verified GUID (055af53ff24a1f282288297aac7f5f02) of player #4 felix
+﻿21:23:36 : Player #4 felix disconnected
+﻿21:24:06 : Player #4 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:24:08 : Player #4 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:24:08 : Player #4 [APD] Chief. Hamilton (a52e73af709687986f698a859a2d1cf9) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:24:51 : Player #4 [APD] Chf insp. MrDunis (81.227.56.15:2304) connected
+﻿21:24:52 : Player #5 felix (81.227.56.15:1024) connected
+﻿21:24:52 : Player #4 [APD] Chf insp. MrDunis - GUID: 9212fd7adff964a2f3a4ae09f7c9333f (unverified)
+﻿21:24:53 : Player #4 [APD] Chf insp. MrDunis (9212fd7adff964a2f3a4ae09f7c9333f) has been kicked by BattlEye: Admin Kick (BEC : Your player name is to long)
+﻿21:24:54 : Player #5 felix - GUID: 055af53ff24a1f282288297aac7f5f02 (unverified)
+﻿21:24:54 : Verified GUID (055af53ff24a1f282288297aac7f5f02) of player #5 felix
+﻿21:25:05 : (Unknown) DonGino: Ts is offline?
+﻿21:25:42 : Player #4 Stalks (82.46.69.116:2304) connected
+﻿21:25:43 : Player #4 Stalks - GUID: 9989a452e2c074cfce95c31bfec8d53b (unverified)
+﻿21:25:44 : Verified GUID (9989a452e2c074cfce95c31bfec8d53b) of player #4 Stalks
+﻿21:25:44 : Player #4 Stalks disconnected
+﻿21:25:49 : Lost Connection!
+﻿21:25:49 : Closing socket & exiting!
+﻿21:26:30 : Rcon client logging in
+﻿21:26:30 : RCon admin #0 (127.0.0.1:54045) logged in
+﻿21:26:30 : Player #3 [APD] Stalks (82.46.69.116:2304) connected
+﻿21:26:30 : Player #2 [APD] Chf insp. MrDunis - GUID: 9212fd7adff964a2f3a4ae09f7c9333f (unverified)
+﻿21:26:31 : Verified GUID (9212fd7adff964a2f3a4ae09f7c9333f) of player #2 [APD] Chf insp. MrDunis
+﻿21:26:31 : Player #3 [APD] Stalks - GUID: 9989a452e2c074cfce95c31bfec8d53b (unverified)
+﻿21:26:32 : Verified GUID (9989a452e2c074cfce95c31bfec8d53b) of player #3 [APD] Stalks
+﻿21:26:37 : Player #4 DonGino (143.177.58.156:60382) connected
+﻿21:26:39 : Player #4 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿21:26:50 : Player #2 [APD] Chf insp. MrDunis disconnected
+﻿21:26:51 : Player #4 DonGino disconnected
+﻿21:27:08 : Player #2 [APD] Chf Insp. MrDunis (81.227.56.15:2304) connected
+﻿21:27:10 : Player #2 [APD] Chf Insp. MrDunis - GUID: 9212fd7adff964a2f3a4ae09f7c9333f (unverified)
+﻿21:27:10 : Verified GUID (9212fd7adff964a2f3a4ae09f7c9333f) of player #2 [APD] Chf Insp. MrDunis
+﻿21:27:46 : Player #4 felix (81.227.56.15:1024) connected
+﻿21:27:47 : Player #4 felix - GUID: 055af53ff24a1f282288297aac7f5f02 (unverified)
+﻿21:27:48 : Verified GUID (055af53ff24a1f282288297aac7f5f02) of player #4 felix
+﻿21:27:48 : Player #5 DonGino (143.177.58.156:62565) connected
+﻿21:27:50 : Player #5 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿21:28:06 : Player #5 DonGino disconnected
+﻿21:28:14 : Player #5 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:28:15 : Player #5 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:28:15 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #5 [APD] Chief. Hamilton
+﻿21:28:30 : Player #6 General Tank (146.200.36.33:2304) connected
+﻿21:28:32 : Player #6 General Tank - GUID: af4a93395b84c498f5a9cc3df8f839d3 (unverified)
+﻿21:28:54 : Player #7 Potato (217.46.108.240:2304) connected
+﻿21:28:55 : Player #7 Potato - GUID: 1ab711ce140d0b3948e1bfae755d77dd (unverified)
+﻿21:28:55 : Verified GUID (1ab711ce140d0b3948e1bfae755d77dd) of player #7 Potato
+﻿21:29:11 : Player #3 [APD] Stalks disconnected
+﻿21:29:12 : Player #3 [APD] Insp. Eukanubae (93.166.193.34:2304) connected
+﻿21:29:15 : Player #3 [APD] Insp. Eukanubae - GUID: 9f9b0fa625edc909e0ee3df0206a4095 (unverified)
+﻿21:29:15 : Verified GUID (9f9b0fa625edc909e0ee3df0206a4095) of player #3 [APD] Insp. Eukanubae
+﻿21:29:20 : Player #8 [IRA] BigDickPatrica (86.179.169.166:2304) connected
+﻿21:29:22 : Player #8 [IRA] BigDickPatrica - GUID: 7d403a5bf65d694e321517bedd0c6a06 (unverified)
+﻿21:29:23 : Verified GUID (7d403a5bf65d694e321517bedd0c6a06) of player #8 [IRA] BigDickPatrica
+﻿21:29:34 : Player #9 Major Mint (86.172.104.95:2304) connected
+﻿21:29:37 : Player #9 Major Mint - GUID: 294706745b5a0cd57e7c53f045ca3f07 (unverified)
+﻿21:29:41 : Verified GUID (af4a93395b84c498f5a9cc3df8f839d3) of player #6 General Tank
+﻿21:30:02 : Player #10 Rob (86.129.115.197:2316) connected
+﻿21:30:03 : Player #10 Rob - GUID: 4a11be7a426036c4ac7ff4c8d82fdbf4 (unverified)
+﻿21:30:04 : Verified GUID (4a11be7a426036c4ac7ff4c8d82fdbf4) of player #10 Rob
+﻿21:30:11 : Player #11 [APD] Chief. Stalks (82.46.69.116:2304) connected
+﻿21:30:12 : Player #11 [APD] Chief. Stalks - GUID: 9989a452e2c074cfce95c31bfec8d53b (unverified)
+﻿21:30:12 : Verified GUID (9989a452e2c074cfce95c31bfec8d53b) of player #11 [APD] Chief. Stalks
+﻿21:30:18 : Player #9 Major Mint disconnected
+﻿21:30:23 : Player #9 Major Mint (86.172.104.95:2304) connected
+﻿21:30:25 : Player #9 Major Mint - GUID: 294706745b5a0cd57e7c53f045ca3f07 (unverified)
+﻿21:30:35 : Verified GUID (294706745b5a0cd57e7c53f045ca3f07) of player #9 Major Mint
+﻿21:30:43 : (Unknown) Potato: rob
+﻿21:30:48 : (Unknown) Rob: yo
+﻿21:30:54 : (Unknown) Potato: can i have my reward
+﻿21:30:56 : (Unknown) Potato: wink wink
+﻿21:31:09 : (Unknown) Rob: yeah give me 5 :D
+﻿21:31:10 : (Unknown) BIGDICKFINGER: can u move me rob to domhanall
+﻿21:31:18 : (Unknown) Potato: dope thank you
+﻿21:32:02 : Player #11 [APD] Chief. Stalks disconnected
+﻿21:32:06 : Player #11 [APD] Chief. Stalks (82.46.69.116:2304) connected
+﻿21:32:07 : Player #11 [APD] Chief. Stalks - GUID: 9989a452e2c074cfce95c31bfec8d53b (unverified)
+﻿21:32:08 : Verified GUID (9989a452e2c074cfce95c31bfec8d53b) of player #11 [APD] Chief. Stalks
+﻿21:32:55 : Player #5 [APD] Chief. Hamilton disconnected
+﻿21:33:11 : Player #5 Flames (2.127.94.186:2304) connected
+﻿21:33:13 : Player #12 John Rookie (178.24.224.234:2304) connected
+﻿21:33:13 : Player #13 DonGino (143.177.58.156:62347) connected
+﻿21:33:13 : Player #5 Flames - GUID: afa8de839c4ccab412386b798c3f0af7 (unverified)
+﻿21:33:14 : Verified GUID (afa8de839c4ccab412386b798c3f0af7) of player #5 Flames
+﻿21:33:14 : Player #12 John Rookie - GUID: 6b205420823559d00b9dab73b98a8395 (unverified)
+﻿21:33:15 : Player #13 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿21:33:15 : Verified GUID (6b205420823559d00b9dab73b98a8395) of player #12 John Rookie
+﻿21:33:18 : Verified GUID (f969552a9a4820a9c9b91a638f9607c1) of player #13 DonGino
+﻿21:33:58 : Player #14 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:34:00 : Player #14 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:34:00 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #14 [APD] Chief. Hamilton
+﻿21:34:09 : RCon admin #0: (To [IRA] BigDickPatrica) Do not use Direct chat. Warnings left:16
+﻿21:34:36 : RCon admin #0: (To DonGino) Do not use Direct chat. Warnings left:16
+﻿21:34:47 : (Unknown) DonGino: sup with ts?
+﻿21:34:54 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:16
+﻿21:35:07 : (Unknown) DonGino: kk i will try again
+﻿21:35:19 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:15
+﻿21:35:21 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:14
+﻿21:35:24 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:13
+﻿21:35:25 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:12
+﻿21:35:26 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:11
+﻿21:35:27 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:10
+﻿21:35:28 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:9
+﻿21:35:28 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:8
+﻿21:35:30 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:7
+﻿21:35:30 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:6
+﻿21:35:31 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:5
+﻿21:35:49 : Player #12 John Rookie disconnected
+﻿21:35:53 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:4
+﻿21:35:54 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:3
+﻿21:35:55 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:2
+﻿21:36:02 : RCon admin #0: (To Antony-J) Do not use Direct chat. Warnings left:1
+﻿21:36:04 : RCon admin #0: (To Antony-J) Do not use Direct chat. No Warnings left, Next Direct message will result in kick
+﻿21:36:07 : Player #0 Antony-J (9fc1206751f839eeddbd99119f2d3d49) has been kicked by BattlEye: Admin Kick (BEC : Violation of direct chat restriction)
+﻿21:36:14 : Player #0 Antony-J (86.171.7.197:2304) connected
+﻿21:36:16 : Player #0 Antony-J - GUID: 9fc1206751f839eeddbd99119f2d3d49 (unverified)
+﻿21:36:16 : Verified GUID (9fc1206751f839eeddbd99119f2d3d49) of player #0 Antony-J
+﻿21:36:41 : (Unknown) DonGino: nope failed to connect
+﻿21:36:50 : (Unknown) DonGino: weird 5 hours ago it worked
+﻿21:37:12 : (Unknown) DonGino: ts3.rebelgaming.co.uk
+﻿21:37:33 : RCon admin #0: (To Major Mint) Do not use Direct chat. Warnings left:16
+﻿21:37:55 : (Unknown) DonGino: k
+﻿21:37:59 : Player #3 [APD] Insp. Eukanubae disconnected
+﻿21:38:10 : Player #14 [APD] Chief. Hamilton disconnected
+﻿21:38:16 : Player #5 Flames disconnected
+﻿21:38:19 : Player #3 420BigBeanJanine (86.171.10.36:2304) connected
+﻿21:38:23 : Player #3 420BigBeanJanine - GUID: c6d1390fd169fd9c3da64bded279c474 (unverified)
+﻿21:38:24 : Player #5 [EMS] John Rookie (178.24.224.234:2304) connected
+﻿21:38:24 : Verified GUID (c6d1390fd169fd9c3da64bded279c474) of player #3 420BigBeanJanine
+﻿21:38:25 : Player #5 [EMS] John Rookie - GUID: 6b205420823559d00b9dab73b98a8395 (unverified)
+﻿21:38:26 : Verified GUID (6b205420823559d00b9dab73b98a8395) of player #5 [EMS] John Rookie
+﻿21:38:29 : Player #12 Flames (2.127.94.186:2304) connected
+﻿21:38:31 : Player #12 Flames - GUID: afa8de839c4ccab412386b798c3f0af7 (unverified)
+﻿21:38:32 : Verified GUID (afa8de839c4ccab412386b798c3f0af7) of player #12 Flames
+﻿21:38:54 : Player #14 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:38:55 : Player #14 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:38:56 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #14 [APD] Chief. Hamilton
+﻿21:40:10 : (Unknown) DonGino: thats not a ts server
+﻿21:40:30 : Player #15 [APD] PC. NickB (86.135.31.183:2304) connected
+﻿21:40:32 : Player #15 [APD] PC. NickB - GUID: c3ce7b029eaf2ab857bd5dd838259e29 (unverified)
+﻿21:40:32 : Verified GUID (c3ce7b029eaf2ab857bd5dd838259e29) of player #15 [APD] PC. NickB
+﻿21:40:35 : Player #14 [APD] Chief. Hamilton disconnected
+﻿21:41:00 : RCon admin #0: (To Major Mint) Do not use Direct chat. Warnings left:15
+﻿21:41:07 : Player #14 [APD] Insp. Eukanubae (93.166.193.34:2304) connected
+﻿21:41:09 : Player #14 [APD] Insp. Eukanubae - GUID: 9f9b0fa625edc909e0ee3df0206a4095 (unverified)
+﻿21:41:09 : Verified GUID (9f9b0fa625edc909e0ee3df0206a4095) of player #14 [APD] Insp. Eukanubae
+﻿21:41:15 : Player #16 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:41:16 : Player #17 Inferno (94.192.49.28:2304) connected
+﻿21:41:17 : Player #16 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:41:17 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #16 [APD] Chief. Hamilton
+﻿21:41:18 : Player #17 Inferno - GUID: cf35562e3032c771b054b19d808802dc (unverified)
+﻿21:41:18 : Verified GUID (cf35562e3032c771b054b19d808802dc) of player #17 Inferno
+﻿21:41:30 : (Unknown) DonGino: the ip for ts was 86.129.115.197  no port numbers needed
+﻿21:42:00 : RCon admin #0: (To Major Mint) Do not use Direct chat. Warnings left:14
+﻿21:43:23 : Player #16 [APD] Chief. Hamilton disconnected
+﻿21:43:37 : Player #16 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:43:39 : Player #16 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:43:39 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #16 [APD] Chief. Hamilton
+﻿21:44:37 : (Unknown) DonGino: wtf only arma has port option ts doesnt
+﻿21:44:47 : Player #18 Thomas (90.43.120.27:2304) connected
+﻿21:44:49 : Player #18 Thomas - GUID: e7aa7c080ee2c6bfa66811f9bcc806fc (unverified)
+﻿21:44:49 : Verified GUID (e7aa7c080ee2c6bfa66811f9bcc806fc) of player #18 Thomas
+﻿21:44:53 : (Unknown) [APD] PC. NickB: put port after in ts
+﻿21:45:05 : (Unknown) DonGino: :s lol
+﻿21:45:28 : Player #16 [APD] Chief. Hamilton disconnected
+﻿21:45:32 : Player #16 [APD] Chief. Hamilton (86.130.253.45:2304) connected
+﻿21:45:34 : Player #16 [APD] Chief. Hamilton - GUID: a52e73af709687986f698a859a2d1cf9 (unverified)
+﻿21:45:34 : Verified GUID (a52e73af709687986f698a859a2d1cf9) of player #16 [APD] Chief. Hamilton
+﻿21:46:41 : Player #18 Thomas disconnected
+﻿21:47:24 : RCon admin #0: (To General Tank) Do not use Direct chat. Warnings left:16
+﻿21:47:37 : Player #13 DonGino disconnected
+﻿21:47:54 : Player #13 Preskamatt (81.99.252.190:2304) connected
+﻿21:47:56 : Player #13 Preskamatt - GUID: acb0a817b99f78fce2dd045a663d30e9 (unverified)
+﻿21:47:56 : Verified GUID (acb0a817b99f78fce2dd045a663d30e9) of player #13 Preskamatt
+﻿21:47:56 : Player #13 Preskamatt disconnected
+﻿21:49:16 : Player #13 [FK] Hptm. Tex (94.224.66.46:2304) connected
+﻿21:49:17 : Player #13 [FK] Hptm. Tex - GUID: 584b63e7d7fb95a3cad69e9015f857c0 (unverified)
+﻿21:49:18 : Verified GUID (584b63e7d7fb95a3cad69e9015f857c0) of player #13 [FK] Hptm. Tex
+﻿21:49:34 : Player #13 [FK] Hptm. Tex disconnected
+﻿21:49:46 : RCon admin #0: (To BIGDICKFINGER) Do not use Direct chat. Warnings left:16
+﻿21:49:59 : Player #17 Inferno disconnected
+﻿21:50:03 : Player #13 [APD] Insp. Tex (94.224.66.46:2304) connected
+﻿21:50:04 : Player #13 [APD] Insp. Tex - GUID: 584b63e7d7fb95a3cad69e9015f857c0 (unverified)
+﻿21:50:05 : Verified GUID (584b63e7d7fb95a3cad69e9015f857c0) of player #13 [APD] Insp. Tex
+﻿21:50:06 : Player #17 Inferno (94.192.49.28:2304) connected
+﻿21:50:08 : Player #17 Inferno - GUID: cf35562e3032c771b054b19d808802dc (unverified)
+﻿21:50:08 : Verified GUID (cf35562e3032c771b054b19d808802dc) of player #17 Inferno
+﻿21:50:11 : Player #18 Preskamatt (81.99.252.190:2304) connected
+﻿21:50:14 : Player #18 Preskamatt - GUID: acb0a817b99f78fce2dd045a663d30e9 (unverified)
+﻿21:50:14 : Verified GUID (acb0a817b99f78fce2dd045a663d30e9) of player #18 Preskamatt
+﻿21:50:32 : Player #19 Phill Massa (109.149.172.207:2304) connected
+﻿21:50:33 : Player #20 DonGino (143.177.58.156:62712) connected
+﻿21:50:34 : Player #20 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿21:50:37 : Player #19 Phill Massa - GUID: e9374970c54cfde815e94462987889c2 (unverified)
+﻿21:50:37 : Verified GUID (e9374970c54cfde815e94462987889c2) of player #19 Phill Massa
+﻿21:51:39 : Verified GUID (f969552a9a4820a9c9b91a638f9607c1) of player #20 DonGino
+﻿21:52:05 : Player #20 DonGino (f969552a9a4820a9c9b91a638f9607c1) has been kicked by BattlEye: Client not responding
+﻿21:52:33 : Player #20 Thomas (90.43.120.27:2304) connected
+﻿21:52:34 : Player #20 Thomas - GUID: e7aa7c080ee2c6bfa66811f9bcc806fc (unverified)
+﻿21:52:35 : Verified GUID (e7aa7c080ee2c6bfa66811f9bcc806fc) of player #20 Thomas
+﻿21:52:50 : Player #21 Baerdar (86.195.181.223:2304) connected
+﻿21:52:51 : Player #21 Baerdar - GUID: 4f064e946b41c6a63af32920a2e60077 (unverified)
+﻿21:52:51 : Verified GUID (4f064e946b41c6a63af32920a2e60077) of player #21 Baerdar
+﻿21:53:22 : Player #21 Baerdar (4f064e946b41c6a63af32920a2e60077) has been kicked by BattlEye: Client not responding
+﻿21:54:02 : Player #21 Baerdar (86.195.181.223:2304) connected
+﻿21:54:04 : Player #21 Baerdar - GUID: 4f064e946b41c6a63af32920a2e60077 (unverified)
+﻿21:54:04 : Verified GUID (4f064e946b41c6a63af32920a2e60077) of player #21 Baerdar
+﻿21:54:05 : Player #21 Baerdar disconnected
+﻿21:54:20 : Player #9 Major Mint (294706745b5a0cd57e7c53f045ca3f07) has been kicked by BattlEye: Client not responding
+﻿21:54:44 : (Unknown) Inferno: invit me into AFF gang
+﻿21:56:59 : Player #9 Major Mint (109.156.235.5:2304) connected
+﻿21:57:00 : Player #9 Major Mint - GUID: 294706745b5a0cd57e7c53f045ca3f07 (unverified)
+﻿21:57:01 : Verified GUID (294706745b5a0cd57e7c53f045ca3f07) of player #9 Major Mint
+﻿21:58:06 : Player #19 Phill Massa disconnected
+﻿21:59:46 : Player #20 Thomas disconnected
+﻿22:00:22 : Player #19 Phill Massa (109.149.172.207:2304) connected
+﻿22:00:23 : Player #19 Phill Massa - GUID: e9374970c54cfde815e94462987889c2 (unverified)
+﻿22:00:24 : Verified GUID (e9374970c54cfde815e94462987889c2) of player #19 Phill Massa
+﻿22:00:37 : (Unknown) [IRA] BigDickPatrica: Alright guys! Finally up :) :)
+﻿22:00:51 : (Unknown) Inferno: thats what she said
+﻿22:00:56 : RCon admin #0: (To [APD] Chief. Stalks) Do not use Group chat. Warnings left:8
+﻿22:01:05 : (Unknown) [IRA] BigDickPatrica: IF ONLY
+﻿22:03:21 : Player #20 | Vertex | (81.132.145.22:2304) connected
+﻿22:03:23 : Player #20 | Vertex | - GUID: 9f83688b94f12019f8b1a6ab4bafeaf8 (unverified)
+﻿22:03:23 : Verified GUID (9f83688b94f12019f8b1a6ab4bafeaf8) of player #20 | Vertex |
+﻿22:04:04 : Player #5 [EMS] John Rookie disconnected
+﻿22:06:20 : RCon admin #0: (To [APD] Insp. Tex) Do not use Group chat. Warnings left:8
+﻿22:10:11 : Player #5 Wookie (212.159.162.162:2304) connected
+﻿22:10:12 : Player #5 Wookie - GUID: 4ba3771069daf389c69088a553ba33fb (unverified)
+﻿22:10:13 : Verified GUID (4ba3771069daf389c69088a553ba33fb) of player #5 Wookie
+﻿22:11:30 : Player #21 PV2 D. Decoteau (32.213.53.53:2304) connected
+﻿22:11:32 : Player #21 PV2 D. Decoteau - GUID: 2d21c517f09cb903020e5c698bc87bd1 (unverified)
+﻿22:11:32 : Verified GUID (2d21c517f09cb903020e5c698bc87bd1) of player #21 PV2 D. Decoteau
+﻿22:12:37 : (Unknown) Inferno: side
+﻿22:13:31 : (Unknown) | Vertex |: how u gather stuff?
+﻿22:13:40 : (Unknown) Flames: left windows key
+﻿22:14:01 : (Unknown) | Vertex |: buggy as fuck
+﻿22:14:12 : (Unknown) | Vertex |: i bought 2 pickaxe and they disappeared?
+﻿22:14:37 : RCon admin #0: (To [APD] Chief. Hamilton) Do not use Group chat. Warnings left:8
+﻿22:14:41 : RCon admin #0: (To [APD] Chf Insp. MrDunis) Do not use Group chat. Warnings left:8
+﻿22:14:46 : (Unknown) Inferno: Are they in your Y inventory?
+﻿22:14:56 : RCon admin #0: (To [APD] Insp. Tex) Do not use Group chat. Warnings left:7
+﻿22:14:58 : (Unknown) | Vertex |: they wre
+﻿22:15:01 : (Unknown) | Vertex |: were
+﻿22:15:05 : (Unknown) | Vertex |: now they disappeared
+﻿22:15:15 : (Unknown) Inferno: its working fine for us
+﻿22:15:17 : Player #22 Scott (82.43.122.131:2304) connected
+﻿22:15:20 : Player #22 Scott - GUID: e9956ac29868a5dbf605c61c150b30d8 (unverified)
+﻿22:15:20 : Verified GUID (e9956ac29868a5dbf605c61c150b30d8) of player #22 Scott
+﻿22:15:32 : (Unknown) Rob: make sure you click +1 on the market when you buy something
+﻿22:15:42 : (Unknown) | Vertex |: i did
+﻿22:15:50 : (Unknown) | Vertex |: i saw them in my inventory
+﻿22:15:59 : (Unknown) | Vertex |: i bought 1 for a friend too
+﻿22:16:10 : (Unknown) | Vertex |: now they gone
+﻿22:16:15 : RCon admin #0: (To [APD] Chief. Stalks) Do not use Group chat. Warnings left:7
+﻿22:16:19 : Player #23 [EMS] John Rookie (178.24.224.234:2304) connected
+﻿22:16:20 : Player #23 [EMS] John Rookie - GUID: 6b205420823559d00b9dab73b98a8395 (unverified)
+﻿22:16:20 : Verified GUID (6b205420823559d00b9dab73b98a8395) of player #23 [EMS] John Rookie
+﻿22:18:57 : (Unknown) BIGDICKFINGER: yo rob we got a problem
+﻿22:19:04 : (Unknown) BIGDICKFINGER: btw is me alex
+﻿22:19:19 : (Unknown) Wookie: hi alex
+﻿22:19:20 : (Unknown) Inferno: whats wrong
+﻿22:19:23 : (Unknown) Wookie: its rob
+﻿22:19:25 : (Unknown) [EMS] John Rookie: Felix, i'm coming for u :o
+﻿22:19:31 : (Unknown) BIGDICKFINGER: move me up mate
+﻿22:20:21 : (Unknown) | Vertex |: is base building back in?
+﻿22:20:34 : Player #24 DonGino (143.177.58.156:63604) connected
+﻿22:20:34 : (Unknown) [IRA] BigDickPatrica: YEp
+﻿22:20:36 : Player #24 DonGino - GUID: f969552a9a4820a9c9b91a638f9607c1 (unverified)
+﻿22:20:37 : Verified GUID (f969552a9a4820a9c9b91a638f9607c1) of player #24 DonGino
+﻿22:23:37 : Player #25 Padawan (82.23.137.232:2304) connected
+﻿22:23:38 : Player #25 Padawan - GUID: b934095d398ef2c86acf0ffbc1666ce1 (unverified)
+﻿22:23:39 : Verified GUID (b934095d398ef2c86acf0ffbc1666ce1) of player #25 Padawan
+﻿22:27:06 : (Unknown) | Vertex |: wtf
+﻿22:27:11 : (Unknown) | Vertex |: still cant gather
+﻿22:27:18 : (Unknown) | Vertex |: i have 3 pickaxe
+﻿22:27:42 : (Unknown) Inferno: You pressing WIndows key?
+﻿22:27:55 : (Unknown) | Vertex |: yes?
+﻿22:28:29 : (Unknown) | Vertex |: broken as fuck
+﻿22:28:32 : (Unknown) | Vertex |: cant farm
+﻿22:29:49 : (Unknown) | Vertex |: can only use from inventory
+﻿22:29:58 : (Unknown) | Vertex |: doesnt work with windows key
+﻿22:30:21 : Player #7 Potato disconnected
+﻿22:31:11 : (Unknown) Wookie: what do you need to go turtle paoching?
+﻿22:31:22 : (Unknown) | Vertex |: guys u need to fix that asap
+﻿22:31:25 : (Unknown) Flames: diving gear, underwater gun
+﻿22:31:26 : Player #7 Potato (217.46.108.240:2304) connected
+﻿22:31:27 : Player #7 Potato - GUID: 1ab711ce140d0b3948e1bfae755d77dd (unverified)
+﻿22:31:28 : Verified GUID (1ab711ce140d0b3948e1bfae755d77dd) of player #7 Potato
+﻿22:31:35 : (Unknown) Wookie: where to get underwater gun?
+﻿22:31:46 : (Unknown) | Vertex |: lmao
+﻿22:31:49 : (Unknown) Flames: rebel base and maybe gang hideout
+﻿22:31:54 : (Unknown) | Vertex |: farming is x not windows
+﻿22:32:06 : (Unknown) Flames: tried left windows key?
+﻿22:32:09 : (Unknown) Wookie: ffs i need 250k for a rebel licence
+﻿22:32:14 : (Unknown) | Vertex |: u press x not windows
+﻿22:32:27 : (Unknown) | Vertex |: jeez dont even know hhow to farm on ur own server?
+﻿22:32:37 : (Unknown) Flames: works for me
+﻿22:32:38 : (Unknown) Wookie: LOL
+﻿22:32:45 : (Unknown) Major Mint: same
+﻿22:33:36 : Player #26 Geoff (82.28.2.68:2304) connected
+﻿22:33:38 : Player #26 Geoff - GUID: db756da65a0c5756469e587e0208a3a6 (unverified)
+﻿22:33:38 : Verified GUID (db756da65a0c5756469e587e0208a3a6) of player #26 Geoff
+﻿22:34:55 : Player #5 Wookie disconnected
+﻿22:38:44 : Player #5 Papa Emeritus III (109.255.119.90:2304) connected
+﻿22:38:46 : Player #5 Papa Emeritus III - GUID: f6594ce4510fbba9e1c2a361b03b0a84 (unverified)
+﻿22:38:47 : Verified GUID (f6594ce4510fbba9e1c2a361b03b0a84) of player #5 Papa Emeritus III
+﻿22:39:02 : (Unknown) [APD] Chief. Hamilton: .
+﻿22:41:29 : Player #27 Macca (86.22.5.239:2304) connected
+﻿22:41:31 : Player #27 Macca - GUID: 42032717fe056b92bc9e3242e1191e90 (unverified)
+﻿22:41:31 : Verified GUID (42032717fe056b92bc9e3242e1191e90) of player #27 Macca
+﻿22:42:12 : Player #28 Cold (151.227.120.190:2304) connected
+﻿22:42:13 : Player #28 Cold - GUID: 49f45e489a5b2eb5b1e129816c229923 (unverified)
+﻿22:42:14 : Verified GUID (49f45e489a5b2eb5b1e129816c229923) of player #28 Cold
+﻿22:45:15 : Player #5 Papa Emeritus III disconnected
+﻿22:46:26 : Player #5 Nakusuru (193.11.129.91:2304) connected
+﻿22:46:28 : Player #29 Papa Emeritus III (109.255.119.90:2304) connected
+﻿22:46:29 : Player #30 BardzyBear (86.135.12.6:2304) connected
+﻿22:46:29 : Player #5 Nakusuru - GUID: b839762e33c491ee4711f435507ab377 (unverified)
+﻿22:46:30 : Verified GUID (b839762e33c491ee4711f435507ab377) of player #5 Nakusuru
+﻿22:46:31 : Player #30 BardzyBear - GUID: 779c8ac3e949f49c2021f59b60b3286a (unverified)
+﻿22:46:31 : Player #29 Papa Emeritus III - GUID: f6594ce4510fbba9e1c2a361b03b0a84 (unverified)
+﻿22:46:31 : Verified GUID (779c8ac3e949f49c2021f59b60b3286a) of player #30 BardzyBear
+﻿22:46:31 : Verified GUID (f6594ce4510fbba9e1c2a361b03b0a84) of player #29 Papa Emeritus III
+﻿22:51:57 : RCon admin #0: (To Papa Emeritus III) Do not use Direct chat. Warnings left:16
+﻿22:53:47 : RCon admin #0: (To [EMS] John Rookie) Do not use Vehicle chat. Warnings left:10
+﻿22:57:10 : Player #31 GeneralDolphin (185.37.87.67:2304) connected
+﻿22:57:12 : Player #31 GeneralDolphin - GUID: bb44fdc14bfb10825d880c031411c1f9 (unverified)
+﻿22:57:12 : Verified GUID (bb44fdc14bfb10825d880c031411c1f9) of player #31 GeneralDolphin
+﻿22:58:35 : (Unknown) [EMS] John Rookie: Coming for you felix ;_;, ETA 2 minutes max
+﻿22:58:50 : (Unknown) felix: :D
+﻿22:59:33 : Player #29 Papa Emeritus III disconnected
+﻿23:01:17 : (Unknown) Geoff: where do we get plotpoles ?
+﻿23:01:26 : Player #18 Preskamatt disconnected
+﻿23:01:39 : Player #18 Preskamatt (81.99.252.190:2304) connected
+﻿23:01:41 : Player #18 Preskamatt - GUID: acb0a817b99f78fce2dd045a663d30e9 (unverified)
+﻿23:01:41 : Verified GUID (acb0a817b99f78fce2dd045a663d30e9) of player #18 Preskamatt
+﻿23:01:49 : (Unknown) Potato: where tf the cops at
+﻿23:01:49 : (Unknown) Inferno: Felix pls stop
+﻿23:01:51 : (Unknown) [IRA] BigDickPatrica: felix stop
+﻿23:01:58 : (Unknown) Inferno: STOP
+﻿23:02:06 : (Unknown) Inferno: felix stop talking on side chat 
+﻿23:02:11 : Player #18 Preskamatt disconnected
+﻿23:02:15 : (Unknown) felix: sry wrong chat
+﻿23:02:15 : (Unknown) General Tank: watching us all of em lol
+﻿23:02:16 : (Unknown) Inferno: DOnt speak on side chat to tell him to stop you idiot
+﻿23:02:21 : (Unknown) GeneralDolphin: LETS ROB THE BANK
+﻿23:02:39 : Player #18 SGT fatruff3 (69.21.57.242:2304) connected
+﻿23:02:40 : Player #18 SGT fatruff3 - GUID: ff75b4fa697e69b6d7075cf8d024223d (unverified)
+﻿23:02:41 : Verified GUID (ff75b4fa697e69b6d7075cf8d024223d) of player #18 SGT fatruff3
+﻿23:02:48 : (Unknown) GeneralDolphin: wtf
+﻿23:02:53 : Player #18 SGT fatruff3 disconnected
+﻿23:03:00 : (Unknown) Inferno: what?
+﻿23:03:06 : (Unknown) GeneralDolphin: u guys already starting with the rdm
+﻿23:03:10 : (Unknown) GeneralDolphin: random chopper landing
+﻿23:03:13 : (Unknown) Inferno: Who?
+﻿23:03:14 : (Unknown) GeneralDolphin: starting to shot at me
+﻿23:03:21 : (Unknown) GeneralDolphin: decoteau
+﻿23:03:26 : (Unknown) Geoff: dolphin you troll
+﻿23:03:27 : Player #18 [APD] Sgt. fatruff3 (69.21.57.242:2304) connected
+﻿23:03:27 : (Unknown) Inferno: we dont know who that is?
+﻿23:03:28 : Player #18 [APD] Sgt. fatruff3 - GUID: ff75b4fa697e69b6d7075cf8d024223d (unverified)
+﻿23:03:29 : Verified GUID (ff75b4fa697e69b6d7075cf8d024223d) of player #18 [APD] Sgt. fatruff3
+﻿23:03:38 : (Unknown) GeneralDolphin: and fkin potato
+﻿23:03:55 : (Unknown) Inferno: Please report rule breaks via www.gamepointeu.co.uk and they will be investigated if evidence provided
+﻿23:04:31 : Player #29 Kagutsuchi (81.99.252.190:2304) connected
+﻿23:04:32 : Player #29 Kagutsuchi - GUID: acb0a817b99f78fce2dd045a663d30e9 (unverified)
+﻿23:04:33 : Verified GUID (acb0a817b99f78fce2dd045a663d30e9) of player #29 Kagutsuchi
+﻿23:04:35 : (Unknown) GeneralDolphin: they stopped<3
+﻿23:06:05 : (Unknown) felix: sry about accidently talking guys
+﻿23:06:07 : Player #18 [APD] Sgt. fatruff3 disconnected
+﻿23:06:31 : (Unknown) [EMS] John Rookie: I love you
+﻿23:07:24 : Player #18 [APD] Sgt. fatruff3 (69.21.57.242:2304) connected
+﻿23:07:25 : Player #18 [APD] Sgt. fatruff3 - GUID: ff75b4fa697e69b6d7075cf8d024223d (unverified)
+﻿23:07:25 : Verified GUID (ff75b4fa697e69b6d7075cf8d024223d) of player #18 [APD] Sgt. fatruff3
+﻿23:07:35 : Player #32 MrK (89.74.129.208:2304) connected
+﻿23:07:36 : Player #32 MrK - GUID: 326525ceae38eaef55c2ec1481da2266 (unverified)
+﻿23:07:37 : Verified GUID (326525ceae38eaef55c2ec1481da2266) of player #32 MrK
+﻿23:11:20 : Player #33 [APD] PC. Thorben (109.102.10.251:2304) connected
+﻿23:11:24 : Player #33 [APD] PC. Thorben disconnected
+﻿23:11:38 : Player #33 [APD] PC. Thorben (109.102.10.251:2304) connected
+﻿23:11:40 : Player #33 [APD] PC. Thorben - GUID: 12ade13a26be871a62dae230d1cd7da7 (unverified)
+﻿23:11:40 : Verified GUID (12ade13a26be871a62dae230d1cd7da7) of player #33 [APD] PC. Thorben
+﻿23:12:47 : Player #32 MrK (326525ceae38eaef55c2ec1481da2266) has been kicked by BattlEye: Client not responding
+﻿23:12:57 : (Unknown) GeneralDolphin: i get them here, and u dont even murder their ass
+﻿23:12:58 : (Unknown) GeneralDolphin: meh
+﻿23:13:50 : (Unknown) | Vertex |: where we buy plot pole?
+﻿23:13:57 : Player #32 MrK (89.74.129.208:2304) connected
+﻿23:13:58 : Player #32 MrK - GUID: 326525ceae38eaef55c2ec1481da2266 (unverified)
+﻿23:13:59 : Verified GUID (326525ceae38eaef55c2ec1481da2266) of player #32 MrK
+﻿23:15:32 : (Unknown) GeneralDolphin: price of rebel license?
+﻿23:15:42 : (Unknown) Antony-J: 250k
+﻿23:15:45 : (Unknown) Flames: first born son
+﻿23:15:57 : (Unknown) GeneralDolphin: ^i wish
+﻿23:16:53 : (Unknown) GeneralDolphin: so basicly u can start on the server and become a rebel instantly
+﻿23:17:06 : (Unknown) Inferno: If thats whaty ou want to do yes
+﻿23:17:24 : (Unknown) BardzyBear: how much is a rebel liscence?
+﻿23:17:28 : (Unknown) GeneralDolphin: meh
+﻿23:17:33 : (Unknown) Flames: 250k
+﻿23:17:41 : (Unknown) GeneralDolphin: wish it was abit more like other servers on that matter
+﻿23:17:44 : (Unknown) [EMS] John Rookie: Contract 9-1-1 accepted, ETA 1 minute
+﻿23:17:45 : (Unknown) BardzyBear: noice
+﻿23:17:52 : (Unknown) Inferno: If you have a server improvement idea post it on www.gamepointeu.co.uk and we can look into it?
+﻿23:18:16 : (Unknown) | Vertex |: damn his nose is sooooo brown
+﻿23:18:32 : (Unknown) | Vertex |: inferno= brown nose
+﻿23:18:38 : (Unknown) | Vertex |: be warned
+﻿23:18:40 : (Unknown) Geoff: bumferno
+﻿23:18:41 : (Unknown) Inferno: Inferno = head admin
+﻿23:18:52 : (Unknown) | Vertex |: head brown nose
+﻿23:19:01 : (Unknown) GeneralDolphin: dont bother with the forums, just saying other servers has rebel license at 2mil, thous having many players around in kavala etc.
+﻿23:19:29 : (Unknown) Inferno: Vertex you're a faggot and not even your mum likes you, pls leave thanks bye
+﻿23:19:29 : (Unknown) [IRA] BigDickPatrica: yeh thats a good point 
+﻿23:19:40 : (Unknown) Geoff: top admin work there bumferno
+﻿23:19:42 : (Unknown) Flames: why cant we be friends?
+﻿23:19:43 : (Unknown) GeneralDolphin: it gives the server abit of life
+﻿23:19:43 : (Unknown) | Vertex |: top head asmin setting example there
+﻿23:19:48 : (Unknown) [APD] PC. Thorben: gg too the police
+﻿23:19:51 : (Unknown) | Vertex |: admin*
+﻿23:19:57 : (Unknown) Padawan: top kek
+﻿23:19:59 : (Unknown) Inferno: if you want to act like a child over side chat I'll treat you like one
+﻿23:20:17 : (Unknown) Padawan: i like children
+﻿23:20:57 : Player #34 Mike (80.192.196.211:2304) connected
+﻿23:20:58 : Player #34 Mike - GUID: aa4ffa86105deff0491528d06cff408b (unverified)
+﻿23:20:59 : Verified GUID (aa4ffa86105deff0491528d06cff408b) of player #34 Mike
+﻿23:22:57 : Player #6 General Tank (af4a93395b84c498f5a9cc3df8f839d3) has been kicked by BattlEye: Client not responding
+﻿23:23:16 : RCon admin #0: (To [APD] PC. NickB) Do not use Vehicle chat. Warnings left:10
+﻿23:23:18 : RCon admin #0: (To [APD] PC. NickB) Do not use Vehicle chat. Warnings left:9
+﻿23:23:46 : RCon admin #0: (To [APD] PC. NickB) Do not use Vehicle chat. Warnings left:8
+﻿23:24:34 : Player #9 Major Mint (294706745b5a0cd57e7c53f045ca3f07) has been kicked by BattlEye: Client not responding
+﻿23:25:10 : Player #6 General Tank (146.200.36.33:2304) connected
+﻿23:25:11 : Player #6 General Tank - GUID: af4a93395b84c498f5a9cc3df8f839d3 (unverified)
+﻿23:25:12 : Verified GUID (af4a93395b84c498f5a9cc3df8f839d3) of player #6 General Tank
+﻿23:25:26 : Player #9 Blackop [AFF Major] (94.210.64.22:2304) connected
+﻿23:25:28 : Player #9 Blackop [AFF Major] - GUID: 7010078de74fa72efeef9f848661db9f (unverified)
+﻿23:25:28 : Verified GUID (7010078de74fa72efeef9f848661db9f) of player #9 Blackop [AFF Major]
+﻿23:25:59 : Player #34 Mike disconnected
+﻿23:26:42 : (Unknown) GeneralDolphin: was just checking out the base <3
+﻿23:27:46 : (Unknown) Padawan: can we have day time please?
+﻿23:28:00 : (Unknown) Flames: write vote day in chat
+﻿23:28:01 : (Unknown) [EMS] John Rookie: Take 2
+﻿23:28:48 : (Unknown) Inferno: The gather key witha pick axe should be X btw
+﻿23:29:00 : (Unknown) [IRA] BigDickPatrica: make a macro
+﻿23:29:01 : (Unknown) | Vertex |: no shit
+﻿23:29:09 : (Unknown) Geoff: who has base ?
+﻿23:29:14 : (Unknown) | Vertex |: i asked a million times earlier and u didnt even know
+﻿23:32:18 : Player #34 Major Mint (109.146.216.118:2304) connected
+﻿23:32:19 : Player #34 Major Mint - GUID: 294706745b5a0cd57e7c53f045ca3f07 (unverified)
+﻿23:32:20 : Verified GUID (294706745b5a0cd57e7c53f045ca3f07) of player #34 Major Mint
+﻿23:33:44 : Player #30 BardzyBear disconnected
+﻿23:34:09 : RCon admin #0: (To [EMS] John Rookie) Do not use Direct chat. Warnings left:16
+﻿23:34:18 : RCon admin #0: (To [APD] PC. NickB) Do not use Direct chat. Warnings left:16
+﻿23:34:23 : RCon admin #0: (To [EMS] John Rookie) Do not use Direct chat. Warnings left:15
+﻿23:35:05 : RCon admin #0: (To [APD] PC. NickB) Do not use Direct chat. Warnings left:15
+﻿23:35:06 : RCon admin #0: (To [APD] PC. NickB) Do not use Direct chat. Warnings left:14
+﻿23:35:41 : (Unknown) [EMS] John Rookie: Oh cold, u died? shame
+﻿23:35:44 : Player #14 [APD] Insp. Eukanubae disconnected
+﻿23:35:45 : (Unknown) [EMS] John Rookie: ETA 1 minute
+﻿23:35:53 : (Unknown) Flames: i will bank transfer $100 to the next person who kills a cop
+﻿23:38:18 : (Unknown) Inferno: You cannot attack a medic in anyway
+﻿23:38:25 : (Unknown) Inferno: Cold pleasestop
+﻿23:38:41 : (Unknown) Geoff: extraneous in*
+﻿23:38:42 : Player #7 Potato disconnected
+﻿23:38:43 : (Unknown) Flames: Verbally is allowed, i doubt they would heal you though
+﻿23:38:46 : Player #21 PV2 D. Decoteau disconnected
+﻿23:38:49 : (Unknown) [EMS] John Rookie: Cold pls stop destroying my vehicle
+﻿23:38:59 : (Unknown) Cold: OH SORRY DIDNT KNOW
+﻿23:39:22 : (Unknown) Cold: i didnt
+﻿23:40:57 : RCon admin #0: (To Flames) Do not use Direct chat. Warnings left:16
+﻿23:42:43 : (Unknown) | Vertex |: tbh john rookie is a boss
+﻿23:42:53 : (Unknown) | Vertex |: just sayin
+﻿23:43:01 : (Unknown) [EMS] John Rookie: ahhh youu <3
+﻿23:43:03 : (Unknown) Geoff: I love john and his bunker
+﻿23:43:07 : Player #4 felix disconnected
+﻿23:44:01 : RCon admin #0: (To Geoff) Do not use Direct chat. Warnings left:16
+﻿23:44:16 : (Unknown) | Vertex |: nice head adimin rdm us
+﻿23:44:23 : (Unknown) | Vertex |: great head admin
+﻿23:44:29 : (Unknown) Scott: nice admin
+﻿23:44:30 : (Unknown) Padawan: head admin amazing
+﻿23:44:34 : (Unknown) [IRA] BigDickPatrica: rdm where?
+﻿23:44:51 : (Unknown) Padawan: server back up for few hours already rdm
+﻿23:44:59 : (Unknown) [IRA] BigDickPatrica: report it
+﻿23:45:05 : Player #2 [APD] Chf Insp. MrDunis disconnected
+﻿23:45:08 : (Unknown) | Vertex |: he is head asmin ffs
+﻿23:45:23 : Player #1 BIGDICKFINGER disconnected
+﻿23:45:23 : RCon admin #0: (To | Vertex |) Do not use Group chat. Warnings left:8
+﻿23:45:24 : (Unknown) [IRA] BigDickPatrica: yeh well give me the evidence and i will go to the owner
+﻿23:45:28 : (Unknown) [IRA] BigDickPatrica: if it really was rdm
+﻿23:45:28 : (Unknown) Inferno: Sorry I thought cocaine field was PVP, we will be comping you
+﻿23:45:33 : RCon admin #0: (To [EMS] John Rookie) Do not use Direct chat. Warnings left:14
+﻿23:45:36 : (Unknown) Flames: Hop on ts
+﻿23:45:44 : (Unknown) Padawan: ts full??? :/
+﻿23:45:49 : (Unknown) Scott: cant ts server is full
+﻿23:46:09 : (Unknown) | Vertex |: how many slots is ts?
+﻿23:46:17 : (Unknown) Flames: Who was in the heli?
+﻿23:46:21 : (Unknown) [EMS] John Rookie: So Macca and Cold are just trolls
+﻿23:46:26 : (Unknown) Scott: me
+﻿23:46:30 : (Unknown) | Vertex |: and me
+﻿23:46:34 : (Unknown) | Vertex |: and padawan
+﻿23:46:39 : (Unknown) Scott: and geoff
+﻿23:46:57 : (Unknown) Flames: whos was the heli?
+﻿23:47:07 : (Unknown) | Vertex |: padawan
+﻿23:47:30 : Player #1 optimus (82.24.100.27:2304) connected
+﻿23:47:31 : Player #1 optimus - GUID: 042dc89f8c00c9a09c024f6c57e07373 (unverified)
+﻿23:47:32 : Verified GUID (042dc89f8c00c9a09c024f6c57e07373) of player #1 optimus
+﻿23:47:34 : (Unknown) Flames: padawan your getting 800k in comp
+﻿23:47:53 : (Unknown) Flames: go back to lobby until we say so, so that we can comp you the money
+﻿23:48:36 : (Unknown) [IRA] BigDickPatrica: admin rdm lol
+﻿23:48:57 : (Unknown) Flames: padawan come back in
+﻿23:49:02 : (Unknown) Flames: you should have the comp
+﻿23:52:00 : RCon admin #0: (To [APD] Chief. Stalks) Do not use Group chat. Warnings left:8
+﻿23:52:47 : Player #32 MrK disconnected
+﻿23:54:33 : RCon admin #0: (To [APD] PC. NickB) Do not use Direct chat. Warnings left:13
+﻿23:55:49 : RCon admin #0: (To [APD] PC. NickB) Do not use Direct chat. Warnings left:12

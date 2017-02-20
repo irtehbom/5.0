@@ -25,7 +25,7 @@ class playersController extends Controller
     {
         
         $altis_database = \DB::connection('altis_life');
-        $players = $altis_database->table('players')->get();
+        $players = $altis_database->table('players')->select('name', 'aliases', 'pid', 'cash','bankacc')->get();
         
         
         return view('players', 

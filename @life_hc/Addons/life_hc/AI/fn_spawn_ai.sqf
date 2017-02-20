@@ -2,6 +2,18 @@
 //  Author: Rob
 // =========================================================================================================
 
+
+clean_up_ai = {
+
+	_unit = [_this, 0, ObjNull, [ObjNull]] call BIS_fnc_param;
+	//_killer = [_this, 1, ObjNull, [ObjNull]] call BIS_fnc_param;   Not currently in use, may use this later to let the police know the AI is under attack.
+	
+	removeallweapons _unit;
+	removebackpack _unit;
+	deleteVehicle _unit;
+	
+};
+
 spawn_ai = {
 
 	diag_log "================  AI Spawn Start =======================";
@@ -11,14 +23,13 @@ spawn_ai = {
 	_markerPos = getMarkerPos _markerName;
 	_markerSize =  getMarkerSize _markerName;
 
-	_units = [];
 	_grp = createGroup independent;
 	_grp allowFleeing 0;
 	_grp setBehaviour "COMBAT";
 	_grp setCombatMode "RED";
 	
 	for [{_i=0},{_i!=_snipers},{_i=_i+1}] do {
-	
+
 		_unit = _grp createUnit ["O_sniper_F",_markerPos,[],15,"NONE"];
 		[_unit] join _grp;
 		removeAllWeapons _unit;
@@ -37,7 +48,7 @@ spawn_ai = {
 		_unit addMagazine "20Rnd_762x51_Mag";
 		_unit addMagazine "20Rnd_762x51_Mag";
 		_unit addMagazine "20Rnd_762x51_Mag";
-		_unit addMagazine "20Rnd_762x51_Mag";	
+		_unit addMagazine "20Rnd_762x51_Mag";
 			
 	};
 	
@@ -65,8 +76,6 @@ spawn_ai = {
 		_unit addWeapon "launch_B_Titan_short_F";
 		_unit addMagazine "Titan_AT";
 		_unit addMagazine "Titan_AT";
-		
-		
 	
 	};
 	
@@ -94,8 +103,6 @@ spawn_ai = {
 		_unit addWeapon "launch_B_Titan_F";
 		_unit addMagazine "Titan_AA";
 		_unit addMagazine "Titan_AA";
-		
-		
 	
 	};
 	
@@ -122,14 +129,17 @@ spawn_ai = {
 		_unit addMagazine "20Rnd_762x51_Mag";
 			
 	};
+	
+	{
+		_x addEventHandler["Killed", { [_this select 0, _this select 1] call clean_up_ai }];
+	
+	} forEach (units _grp); 
+	
 
-	_timeStamp = diag_tickTime;
-
-	diag_log format ["================  AI Spawn Finish %1 =======================",(diag_tickTime) - _timeStamp];
+	diag_log format ["================  AI Spawn Finish %1 ======================="];
 	
 };
 
 //PARAMS "_markerName", "_snipers","_at","_aa","_spotters"
 
-["ai_military_base",10,2,2,2] call spawn_ai;
 ["ai_drugs_stash",10,2,2,2] call spawn_ai;

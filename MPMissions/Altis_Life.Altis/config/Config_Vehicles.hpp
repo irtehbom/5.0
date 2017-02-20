@@ -100,7 +100,7 @@ class CarShops {
             { "B_Heli_Light_01_stripped_F", "" }, //Hummingbird
 			{ "O_Heli_Transport_04_F", "" }, //Taru (Lift)
 			{ "O_Heli_Transport_04_bench_F", "" }, //Taru Bench
-			{ "O_Heli_Transport_04_box_F", "" } //Taru Cargo
+			{ "O_Heli_Transport_04_box_F", "" }, //Taru Cargo
 			{ "O_Heli_Light_02_unarmed_F", "" }, //Orca
 			{ "I_Heli_Transport_02_F", "" }, //Mohawk
 			{ "B_Heli_Transport_03_unarmed_F", "" } //Huron

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class playersControl extends Controller
+class playersController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +23,13 @@ class playersControl extends Controller
      */
     public function index()
     {
-        return view('players');
+        
+        $altis_database = \DB::connection('altis_life');
+        $players = $altis_database->table('players')->get();
+        
+        
+        return view('players', 
+                ['Players' => $players]
+        );
     }
 }

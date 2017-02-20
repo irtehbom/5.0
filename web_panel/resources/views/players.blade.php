@@ -8,7 +8,7 @@
                 <div class="panel-heading">Players</div>
 
                 <div class="panel-body">
-                   
+                   {{$Players}}
                 </div>
             </div>
         </div>

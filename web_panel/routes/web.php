@@ -19,6 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/players', function () {
-    return view('players');
-});
+Route::get('/players', 'playersController@index');

@@ -96,14 +96,14 @@ class CarShops {
 			{ "O_T_LSV_02_unarmed_arid_F", "" }, //QilinArid
 			{ "O_T_LSV_02_unarmed_ghex_F", "" }, //QilinHex
             { "O_MRAP_02_F", "" }, //Ifrit
-			{ "C_Heli_light_01_digital_F", "" } //MH900
-            { "B_Heli_Light_01_stripped_F", "" } //Hummingbird
+			{ "C_Heli_light_01_digital_F", "" }, //MH900
+            { "B_Heli_Light_01_stripped_F", "" }, //Hummingbird
 			{ "O_Heli_Transport_04_F", "" }, //Taru (Lift)
 			{ "O_Heli_Transport_04_bench_F", "" }, //Taru Bench
 			{ "O_Heli_Transport_04_box_F", "" } //Taru Cargo
 			{ "O_Heli_Light_02_unarmed_F", "" }, //Orca
 			{ "I_Heli_Transport_02_F", "" }, //Mohawk
-			{ "B_Heli_Transport_03_unarmed_F", "" }, //Huron
+			{ "B_Heli_Transport_03_unarmed_F", "" } //Huron
 			
 			
         };
@@ -138,7 +138,7 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", "call life_coplevel >= 1" }, //Offroad
             { "C_SUV_01_F", "call life_coplevel >= 1" }, //SUV
-			{ "C_Offroad_02_unarmed_F", "call life_coplevel >= 1" } //MB4WD
+			{ "C_Offroad_02_unarmed_F", "call life_coplevel >= 1" }, //MB4WD
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" }, //Hatchback Sport
 			{ "B_LSV_01_unarmed_black_F", "call life_coplevel >= 3" }, //Prowler
             { "B_MRAP_01_F", "call life_coplevel >= 4" }, //Hunter

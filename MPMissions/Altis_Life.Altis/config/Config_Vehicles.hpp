@@ -574,10 +574,10 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
 			{ "Medic", "med", {
-                "textures\medic\offroad.jpg"
+                ""
             }, "" },			
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\cop\police_offroad.paa"
             }, "" }
         };
     };
@@ -625,7 +625,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Sports Hatchback", "cop", {
-                "textures\cop\GP_HatchbackS.jpg"
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
             }, "" }
         };
     };
@@ -732,7 +732,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             }, "" },
             { "Medic", "med", {
-                "textures\medic\medic_hatchback.jpg"
+                ""
             }, "" }
         };
     };
@@ -752,13 +752,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
 			{ "Medic", "med", {
-                "textures\medic\medic_suv.jpg"
+                ""
             }, "" },
-			{ "Police White", "cop", {
-                "textures\cop\APD_Interceptor_SUV_white.jpg"
-            }, "" },
-            { "Police Blue", "cop", {
-                "textures\cop\APD_Interceptor_SUV.jpg"
+            { "Police", "cop", {
+                "textures\cop\police_suv.paa"
             }, "" }
         };
     };
@@ -790,15 +787,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" }
         };
     };
-
+	
+	//Hunter
     class B_MRAP_01_F {
         vItemSpace = 65;
         conditions = "";
         price = 35000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Cop", "cop", {
+                "textures\cop\police_hunter.paa"
             }, "" }
         };
     };
@@ -820,7 +817,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 155000;
         textures[] = {
             { "Police", "cop", {
-                "textures\cop\hummingbird.jpg"
+                "textures\cop\police_hummingbird.paa"
             }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -890,7 +887,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Medic Red", "med", {
-                "textures\medic\orca.jpg"
+                ""
             }, "" }
         };
     };
@@ -945,7 +942,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 80000;
         textures[] = {
 			{ "APD", "cop", {
-                "textures\cop\strider.jpg"
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             }, "" }
         };
     };
@@ -1005,7 +1002,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 600000;
         textures[] = {
             { "Hellcat", "cop", {
-                "textures\cop\hellcat.jpg"
+                ""
             }, "" }
         };
     };

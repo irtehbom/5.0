@@ -133,6 +133,7 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
+            { "B_Carryall_ghex_F", "", 7500, "" },
             { "B_Bergen_dgtl_F", "", 9500, "" }, //ApexBergenDigital
             { "B_Bergen_hex_F", "", 9500, "" }, //ApexBergenHex
             { "B_Bergen_mcamo_F", "", 9500, "" }, //ApexBergenMTP
@@ -146,10 +147,7 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "" },
-            { "U_B_CombatUniform_mcam_tshirt", "", 250, "call life_coplevel >= 1" },
-            { "U_B_CombatUniform_mcam_worn", "", 250, "call life_coplevel >= 1" },
-            { "U_B_survival_uniform", "", 250, "call life_coplevel >= 1" },
+            { "U_B_CombatUniform_mcam", $STR_C_Cop_uniforms, 0, "" }, //DefaultCop
             { "U_B_GEN_Soldier_F", "", 250, "call life_coplevel >= 1" }, //GendarmarieUniform
             { "U_B_GEN_Commander_F", "", 500, "call life_coplevel >= 2" } //GendarmarieCommander
         };
@@ -160,7 +158,7 @@ class Clothing {
             { "H_HelmetB_black", "", 250, "call life_coplevel >= 2" }, //CombatHelmetBlack
             { "H_MilCap_gen_F", "", 25, "call life_coplevel >= 2" }, //MilitaryCapGendarmarie
             { "H_HelmetSpecB_blk", "", 350, "call life_coplevel >= 3" }, //EnhancedCombatHelmet
-            { "H_Beret_blk", "", 25, "call life_coplevel >= 4" }, //BeretBlack
+            { "H_Beret_02", "", 25, "call life_coplevel >= 4" }, //BeretNATO
             { "H_PilotHelmetHeli_B", "", 500, "call life_coplevel >= 4" }, //HeliPilotHelmetNATO
             { "H_Beret_gen_F", "", 25, "call life_coplevel >= 5" } //BeretGendarmarie
         };
@@ -183,7 +181,6 @@ class Clothing {
             { "NONE", $STR_C_Remove_backpacks, 0, "call life_coplevel >= 1" },
             { "B_AssaultPack_blk", "", 500, "call life_coplevel >= 1" }, //AssaultPack
             { "B_FieldPack_blk", "", 1000, "call life_coplevel >= 1" }, //FieldPack
-            { "B_Kitbag_rgr", "", 1500, "call life_coplevel >= 1" }, //Kitbag
             { "B_TacticalPack_blk", "", 2000, "call life_coplevel >= 1" }, //TacticalPack
             { "B_ViperHarness_blk_F", "", 2250, "call life_coplevel >= 1" }, //ViperHarness
             { "B_Bergen_blk", "", 2500, "call life_coplevel >= 1" }, //Bergen
@@ -392,7 +389,7 @@ class Clothing {
             { "H_HelmetSpecB_sand", "", 2500, "" }, //EnhancedCombatHelmetSand
             { "H_HelmetSpecB_snakeskin", "", 2500, "" }, //EnhancedCombatHelmetSnakeskin
             { "H_HelmetB_Enh_tna_F", "", 2500, "" }, //EnhancedCombatHelmetTropic
-            { "H_Beret_Colonel", "", 500, "" } //BeretColonel
+            { "H_Beret_blk", "", 500, "" } //BeretBlack
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -422,10 +419,16 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_Chestrig_blk", "", 500, "" }, //ChestRigBlack
-            { "V_Chestrig_rgr", "", 500, "" }, //ChestRigGreen
-            { "V_Chestrig_khk", "", 500, "" }, //ChestRigKhaki
-            { "V_Chestrig_oli", "", 500, "" }, //ChestRigOlive
+            { "V_TacChestrig_cbr_F", "", 500, "" }, //TacticalChestRigCoyote
+            { "V_TacChestrig_grn_F", "", 500, "" }, //TacticalChestRigGreen
+            { "V_TacChestrig_oli_F", "", 500, "" }, //TacticalChestRigOlive
+            { "V_Chestrig_blk", "", 550, "" }, //ChestRigBlack
+            { "V_Chestrig_rgr", "", 550, "" }, //ChestRigGreen
+            { "V_Chestrig_khk", "", 550, "" }, //ChestRigKhaki
+            { "V_Chestrig_oli", "", 550, "" }, //ChestRigOlive
+            { "V_HarnessO_brn", "", 750, "" }, //LBVHarnessBrown
+            { "V_HarnessO_gry", "", 750, "" }, //LBVHarnessGrey
+            { "V_HarnessO_ghex_F", "", 750, "" }, //LBVHarnessHex
             { "V_TacVest_blk", "", 1500, "" }, //TacticalVestBlack
             { "V_TacVest_brn", "", 1500, "" }, //TacticalVestBrown
             { "V_TacVest_camo", "", 1500, "" }, //TacticalVestCamo
@@ -447,10 +450,12 @@ class Clothing {
             { "B_AssaultPack_blk", "", 2000, "" },
             { "B_AssaultPack_cbr", "", 2000, "" },
             { "B_AssaultPack_mcamo", "", 2000, "" },
+            { "B_AssaultPack_tna_F", "", 2000, "" },
             { "B_TacticalPack_oli", "", 2500, "" },
             { "B_FieldPack_blk", "", 5000, "" },
             { "B_FieldPack_ocamo", "", 5000, "" },
             { "B_FieldPack_oucamo", "", 5000, "" },
+            { "B_FieldPack_ghex_f", "", 5000, "" },
             { "B_Kitbag_mcamo", "", 3500, "" },
             { "B_Kitbag_sgg", "", 3500, "" },
             { "B_Kitbag_cbr", "", 3500, "" },
@@ -468,6 +473,7 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
+            { "B_Carryall_ghex_F", "", 7500, "" },
             { "B_Bergen_dgtl_F", "", 9500, "" }, //ApexBergenDigital
             { "B_Bergen_hex_F", "", 9500, "" }, //ApexBergenHex
             { "B_Bergen_mcamo_F", "", 9500, "" }, //ApexBergenMTP

@@ -28,3 +28,5 @@ Route::post('/players/{player_id}/compensate', 'playerInfoPageController@ajax_co
 Route::post('/players/{player_id}/blacklist', 'playerInfoPageController@ajax_blacklist');
 Route::post('/players/{player_id}/delete_vehicle', 'playerInfoPageController@ajax_delete_vehicle');
 Route::post('/players/{player_id}/delete_house', 'playerInfoPageController@ajax_delete_house');
+Route::post('/players/{player_id}/whitelist_police', 'playerInfoPageController@ajax_whitelist_police');
+Route::post('/players/{player_id}/whitelist_medic', 'playerInfoPageController@ajax_whitelist_medic');

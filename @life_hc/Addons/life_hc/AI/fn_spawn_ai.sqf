@@ -143,3 +143,6 @@ spawn_ai = {
 //PARAMS "_markerName", "_snipers","_at","_aa","_spotters"
 
 ["ai_drugs_stash",10,2,2,2] call spawn_ai;
+["ai_military_base",4,1,1,1] call spawn_ai;
+["ai_military_base_two",4,1,1,1] call spawn_ai;
+["ai_military_base_three",4,1,1,1] call spawn_ai;

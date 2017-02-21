@@ -16,10 +16,7 @@
 
 
                     <div class="col-md-6">
-                        
-                        
-                        
-                        
+
                         <table id="player_info" class="table borderless">
                             <tbody>
                                 <tr>
@@ -64,6 +61,53 @@
                                     <td><button type="button" id="blacklist_button" class="btn btn-danger" data-player_id="{{$player_data->pid}}" data-player_blacklisted="{{$player_data->blacklist}}" >Remove Blacklist</button></td>
                                     @endif
 
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Medic Whitelist
+                                    </td>
+                                    <td>
+                                        Police Whitelist
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Level {{$player_data->mediclevel}}
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul id="dropdown-menu-medic"class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="#" data-value="0">Level 0</a></li>
+                                                <li><a href="#" data-value="1">Level 1</a></li>
+                                                <li><a href="#" data-value="2">Level 2</a></li>
+                                                <li><a href="#" data-value="3">Level 3</a></li>
+                                                <li><a href="#" data-value="4">Level 4</a></li>
+                                                <li><a href="#" data-value="5">Level 5</a></li>
+                                                <li><a href="#" data-value="6">Level 6</a></li>
+                                                <li><a href="#" data-value="7">Level 7</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Level {{$player_data->coplevel}}
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul id="dropdown-menu-police"class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="#" data-value="0">Level 0</a></li>
+                                                <li><a href="#" data-value="1">Level 1</a></li>
+                                                <li><a href="#" data-value="2">Level 2</a></li>
+                                                <li><a href="#" data-value="3">Level 3</a></li>
+                                                <li><a href="#" data-value="4">Level 4</a></li>
+                                                <li><a href="#" data-value="5">Level 5</a></li>
+                                                <li><a href="#" data-value="6">Level 6</a></li>
+                                                <li><a href="#" data-value="7">Level 7</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -286,8 +330,15 @@
     <script>
 
         jQuery(document).ready(function () {
-            
+
             jQuery('#vehicle_info').DataTable();
+
+            $(".dropdown-menu li a").click(function () {
+                $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+                $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+            });
+
+
 
             $('#myTabs a').click(function (e) {
                 e.preventDefault()
@@ -305,7 +356,6 @@
                 });
 
                 $.ajax({
-
                     type: "POST",
                     url: '{{ Request::url() }}/compensate',
                     data: {player_id: '{{$player_data->pid}}', compensation_amount: input_compensate},
@@ -333,7 +383,6 @@
                 });
 
                 $.ajax({
-
                     type: "POST",
                     url: '{{ Request::url() }}/blacklist',
                     data: {player_id: '{{$player_data->pid}}', blacklist_value: blacklist_value},
@@ -367,14 +416,14 @@
                     url: '{{ Request::url() }}/delete_vehicle',
                     data: {vehicle_id: vehicle_id},
                     success: function (data) {
-                        
-                        var $div = $(".delete_vehicle_row").filter(function() {
+
+                        var $div = $(".delete_vehicle_row").filter(function () {
                             return $(this).data("vehicle_id") == data; // where value == product id to find
                         });
                         $div.remove();
-                        
-                            $.notifyBar({ cssClass: "success", html: "Vehicle Deleted Successfully" });
-                        
+
+                        $.notifyBar({cssClass: "success", html: "Vehicle Deleted Successfully"});
+
 
                     },
                     error: function (data) {
@@ -382,7 +431,7 @@
                     }
                 });
             });
-            
+
             $('.delete_house').click(function (e) {
                 var house_id = $(this).data("house_id");
 
@@ -397,14 +446,14 @@
                     url: '{{ Request::url() }}/delete_house',
                     data: {house_id: house_id},
                     success: function (data) {
-                        
-                        var $div = $(".delete_house_row").filter(function() {
+
+                        var $div = $(".delete_house_row").filter(function () {
                             return $(this).data("house_id") == data; // where value == product id to find
                         });
                         $div.remove();
-                        
-                            $.notifyBar({ cssClass: "success", html: "House Deleted Successfully" });
-                        
+
+                        $.notifyBar({cssClass: "success", html: "House Deleted Successfully"});
+
 
                     },
                     error: function (data) {
@@ -413,10 +462,70 @@
                 });
             });
 
+            $("#dropdown-menu-police li a").click(function () {
+
+
+                var level_selected = $(this).data("value");
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: '{{ Request::url() }}/whitelist_police',
+                    data: {player_id: '{{$player_data->pid}}',level_selected: level_selected},
+                    success: function (data) {
+
+                        console.log(data);
+
+                        $.notifyBar({cssClass: "success", html: "Police Level Updated"});
+
+
+                    },
+                    error: function (data) {
+                        console.log('Error:', data);
+                    }
+                });
+
+            });
+            
+             $("#dropdown-menu-medic li a").click(function () {
+
+
+                var level_selected = $(this).data("value");
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: '{{ Request::url() }}/whitelist_medic',
+                    data: {player_id: '{{$player_data->pid}}',level_selected: level_selected},
+                    success: function (data) {
+
+                        console.log(data);
+
+                        $.notifyBar({cssClass: "success", html: "Medic Level Updated"});
+
+
+                    },
+                    error: function (data) {
+                        console.log('Error:', data);
+                    }
+                });
+
+            });
+
 
 
         });
-</script>
+    </script>
 
-@endsection
+    @endsection
 

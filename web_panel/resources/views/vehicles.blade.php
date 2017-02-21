@@ -13,37 +13,35 @@
                 <div class="panel-heading">Players</div>
 
                 <div class="panel-body">
-                    <table id="players">
+                    <table id="vehicles">
 
                         <thead>
                             <tr>
-                                <th>Names</th>
-                                <th>Aliases</th>
+                                <th>Class Name</th>
                                 <th>Player ID</th>
-                                <th>Cash in Hand</th>
-                                <th>Bank Account</th>
+                                <th>Vehicle Alive</th>
+                                <th>Insertion Date</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($Players as $player)
+                            @foreach ($Vehicles as $vehicle)
                             <tr>
-                                <td><a href="{{ url('/players') . '/' . $player->pid }}">{{ $player->name }}</a></td>
-                                <td>{{ $player->aliases }}</td>
-                                <td>{{ $player->pid }}</td>
-                                <td>{{ $player->cash }}</td>
-                                <td>{{ $player->bankacc }}</td>
+                                <td>{{ $vehicle->classname }}</td>
+                                <td>{{ $vehicle->pid }}</td>
+                                <td>{{ $vehicle->alive }}</td>
+                                <td>{{ $vehicle->insert_time }}</td>
                             </tr>
                             @endforeach
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Names</th>
-                                <th>Aliases</th>
+                                <th>Class Name</th>
                                 <th>Player ID</th>
-                                <th>Cash in Hand</th>
-                                <th>Bank Account</th>
+                                <th>Vehicle Alive</th>
+                                <th>Insertion Date</th>
                             </tr>
                         </tfoot>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -53,7 +51,7 @@
 
 <script>
     jQuery(document).ready(function () {
-        jQuery('#players').DataTable();
+        jQuery('#vehicles').DataTable();
     });
 </script>
 

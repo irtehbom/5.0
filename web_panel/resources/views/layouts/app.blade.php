@@ -90,9 +90,8 @@
                             <!-- Authentication Links -->
                             @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
-                           
+                            <li><a href="{{ route('register') }}">Register</a></li>
                             @else
-                            <li><a href="{{ route('register') }}">Register User</a></li>
                             <li><a href="{{ url('/vehicles') }}" class="dropdown-toggle">
                                     Vehicles
                                 </a>

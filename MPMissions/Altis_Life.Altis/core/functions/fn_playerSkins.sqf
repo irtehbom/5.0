@@ -36,11 +36,11 @@ switch (playerSide) do {
     };
 
     case west: {
-        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
-            _skinName = "textures\cop\police_uniform.paa";
+        if (uniform player isEqualTo "U_Rangemaster") then {
+            _skinName = "textures\cop\cop_uniform.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop\police_uniform_",(FETCH_CONST(life_coplevel)),".paa"] joinString "";
+                    _skinName = ["textures\cop\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
@@ -48,7 +48,7 @@ switch (playerSide) do {
     };
 
     case independent: {
-        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
+        if (uniform player isEqualTo "U_Rangemaster") then {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
     };

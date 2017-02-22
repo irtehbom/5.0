@@ -2171,6 +2171,9 @@
             <Portuguese>Garagem de Veículos</Portuguese>
             <Polish>Garaż</Polish>
         </Key>
+		       <Key ID="STR_Garage_TitleAir">
+            <Original>Air Garage</Original>
+        </Key>
         <Key ID="STR_Garage_GetVehicle">
             <Original>Get Vehicle</Original>
             <Czech>Získat vozidlo</Czech>
@@ -7748,14 +7751,6 @@
 		</Key>
         <Key ID="STR_Process_vehicle">
             <Original>Process Vehicle Contents</Original>
-            <Czech>Casting měděných ingotů</Czech>
-            <Spanish>Fundiendo Lingotes de Cobre</Spanish>
-            <Russian></Russian>
-            <French>Fonte du Cuivre</French>
-            <German>Kupfer wird verarbeitet...</German>
-            <Italian>Processando in lingotti di Rame</Italian>
-            <Portuguese>Processando Cobre</Portuguese>
-            <Polish>Wytop miedzi</Polish>
         </Key>
         <Key ID="STR_Process_Iron">
             <Original>Casting Iron Ingots</Original>

@@ -879,7 +879,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
  
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 250;
-        conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
+        conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)} || license_civ_rebel";
         price = 300000;
         textures[] = {
             { "Black", "cop", {

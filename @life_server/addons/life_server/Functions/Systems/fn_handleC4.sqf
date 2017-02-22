@@ -2,7 +2,7 @@
     File Name: fn_handlec4.sqf
 */
 private ["_bomb","_time"];
-_time = time + (0.1 * 60);
+_time = time + (7 * 60);
 waitUntil{(round(_time - time) < 1)};
 sleep 0.9;
 if (!(oil_rig getVariable["chargeplaced",false])) exitWith {};

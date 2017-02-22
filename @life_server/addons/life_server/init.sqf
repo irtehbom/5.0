@@ -150,6 +150,12 @@ life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT
 
 fed_bank setVariable ["safe",count playableUnits,true];
 oil_rig setVariable ["safe",count playableUnits,true];
+
+clearWeaponCargoGlobal drugs_stash;
+clearItemCargoGlobal drugs_stash;
+clearMagazineCargoGlobal drugs_stash;
+clearBackpackCargoGlobal drugs_stash;
+
 drugs_stash setVariable ["seized_drugs_array",[],true];
 [] spawn TON_fnc_federalUpdate;
 

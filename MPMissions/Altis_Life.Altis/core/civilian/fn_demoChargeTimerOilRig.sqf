@@ -11,7 +11,7 @@ disableSerialization;
 "lifeTimer" cutRsc ["life_timer","PLAIN"];
 _uiDisp = uiNamespace getVariable "life_timer";
 _timer = _uiDisp displayCtrl 38301;
-_time = time + (0.1 * 60);
+_time = time + (7 * 60);
 
 for "_i" from 0 to 1 step 0 do {
     if (isNull _uiDisp) then {

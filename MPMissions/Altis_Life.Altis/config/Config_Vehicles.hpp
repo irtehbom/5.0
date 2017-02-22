@@ -153,7 +153,6 @@ class CarShops {
             { "B_Heli_Light_01_F", "call life_coplevel >= 2" }, //Hummingbird
             { "O_Heli_Light_02_unarmed_F", "call life_coplevel >= 3" }, //Orca
             { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" }, //Hellcat
-            { "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 5" } //Huron
             { "B_T_VTOL_01_infantry_blue_F", "call life_coplevel >= 5" } //VTOL
         };
     };
@@ -536,9 +535,9 @@ class LifeCfgVehicles {
     };
  
     class O_MRAP_02_F {
-        vItemSpace = 60;
+        vItemSpace = 90;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 400000;
+        price = 350000;
         textures[] = { };
     };
  
@@ -870,6 +869,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 135000;
         textures[] = {};
     };
+   
+    class C_Heli_light_01_digital_F {
+        vItemSpace = 70;
+        conditions = "";
+        price = 135000;
+        textures[] = {};
+    };
  
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 250;
@@ -950,9 +956,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
    
     class B_LSV_01_unarmed_black_F {
-        vItemSpace = 25;
+        vItemSpace = 90;
         conditions = "";
-        price = 40000;
+        price = 50000;
         textures[] = {};
     };
    

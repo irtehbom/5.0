@@ -23,9 +23,10 @@ MAC_fnc_switchMove = {
 };
 
 /* Disable fatigue */
-if (local player) then {
-  player enableFatigue false;
-  player addEventhandler ["Respawn", {player enableFatigue false}];
+if (hasinterface) then {
+	waitUntil {!isnull player};
+	player enableStamina false;
+	player addEventHandler ["Respawn", {player enableStamina  false}];
 };
 
 StartProgress = true;

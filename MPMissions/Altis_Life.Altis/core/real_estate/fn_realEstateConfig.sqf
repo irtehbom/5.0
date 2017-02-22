@@ -9,8 +9,7 @@ real_estate_houses = [
 "Land_i_House_Big_01_V1_F"
 ];
 
-real_estate_rent = 100000;
-test = getMarkerPos "re_marker_1";
+real_estate_rent = 70000;
  
 real_estate_markers = [
 "re_marker_1",

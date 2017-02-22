@@ -11,6 +11,7 @@ _value = parseNumber(ctrlText 2702);
 _gFund = GANG_FUNDS;
 group player setVariable ["gbank_in_use_by",player,true];
 
+
 //Series of stupid checks
 if (_value > 999999) exitWith {hint localize "STR_ATM_WithdrawMax";};
 if (_value < 0) exitWith {};
@@ -18,7 +19,21 @@ if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_not
 if (_value > _gFund) exitWith {hint localize "STR_ATM_NotEnoughFundsG"};
 if (_val < 100 && _gFund > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}; //Temp fix for something.
 if ((group player getVariable ["gbank_in_use_by",player]) != player) exitWith {hint localize "STR_ATM_WithdrawInUseG"}; //Check if it's in use.
-sleep 1;
+
+
+if (gang_withdraw_time != 0 && time - gang_withdraw_time < 1) then {
+	if (gang_withdraw_clicks >= 5) then {
+		[profileName,"Exploit on gang bank withdraw"] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
+		failMission "clickDetection";
+		gang_withdraw_time = 0;
+	} else {
+		gang_withdraw_clicks = gang_withdraw_clicks + 1;
+	};
+} else {
+	gang_withdraw_time = time; gang_withdraw_clicks = 0;
+};
+
+
 _gFund = _gFund - _value;
 CASH = CASH + _value;
 group player setVariable ["gang_bank",_gFund,true];

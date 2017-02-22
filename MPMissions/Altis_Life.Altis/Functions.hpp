@@ -33,6 +33,7 @@ class Life_Client_Core {
         class setupEVH {};
         class survival {};
         class welcomeNotification {};
+		class exploitCheck {};
     };
 
     class Actions {

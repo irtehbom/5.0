@@ -49,6 +49,11 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 
+gang_withdraw_clicks = 0;
+gang_withdraw_time = 0;
+life_selling_clicks = 0;
+life_selling_time = 0;
+
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];

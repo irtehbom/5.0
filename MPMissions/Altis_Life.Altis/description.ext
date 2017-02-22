@@ -111,6 +111,16 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+	
+	class clickDetection
+	{
+		title = "A3Gaming anti-exploit";
+		subTitle = "You got detected auto clicking or clicking extremely fast";
+		description = "You've tried to exploit the game by clicking fast - the admins have been notified. If this is a mistake please join our teampseak at ts.a3gaming.co.uk";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
 class CfgNotifications {

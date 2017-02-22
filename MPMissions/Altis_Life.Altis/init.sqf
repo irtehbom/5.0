@@ -22,4 +22,10 @@ MAC_fnc_switchMove = {
     _object switchMove _anim; 
 };
 
+/* Disable fatigue */
+if (local player) then {
+  player enableFatigue false;
+  player addEventhandler ["Respawn", {player enableFatigue false}];
+};
+
 StartProgress = true;

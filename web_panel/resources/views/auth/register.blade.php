@@ -70,11 +70,11 @@
                                         <span class="caret"></span>
                                     </button>
                                     <ul id="dropdown-menu-access"class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                        <li><a href="#" data-value="master_admin">Master Admin</a></li>
-                                        <li><a href="#" data-value="admin">Admin</a></li>
-                                        <li><a href="#" data-value="moderator">Moderator</a></li>
-                                        <li><a href="#" data-value="whitelist_police">Whitelist Police</a></li>
-                                        <li><a href="#" data-value="whitelist_medic">Whitelist Medic</a></li>
+                                        <li><a href="#" data-value="5">Master Admin</a></li>
+                                        <li><a href="#" data-value="4">Admin</a></li>
+                                        <li><a href="#" data-value="3">Moderator</a></li>
+                                        <li><a href="#" data-value="2">Whitelist Police</a></li>
+                                        <li><a href="#" data-value="1">Whitelist Medic</a></li>
 
                                     </ul>
                                 </div>

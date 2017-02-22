@@ -56,3 +56,4 @@ if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     };
     publicVariableServer "money_log";
 };
+closeDialog 0;

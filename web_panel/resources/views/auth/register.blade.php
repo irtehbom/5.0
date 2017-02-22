@@ -17,9 +17,9 @@
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                                 @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
                                 @endif
                             </div>
                         </div>
@@ -31,9 +31,9 @@
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
                                 @endif
                             </div>
                         </div>
@@ -45,9 +45,9 @@
                                 <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
                                 @endif
                             </div>
                         </div>
@@ -61,16 +61,55 @@
                         </div>
 
                         <div class="form-group">
+
+                            <label for="password" class="col-md-4 control-label">Access Level</label>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Access 
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul id="dropdown-menu-access"class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                        <li><a href="#" data-value="master_admin">Master Admin</a></li>
+                                        <li><a href="#" data-value="admin">Admin</a></li>
+                                        <li><a href="#" data-value="moderator">Moderator</a></li>
+                                        <li><a href="#" data-value="whitelist_police">Whitelist Police</a></li>
+                                        <li><a href="#" data-value="whitelist_medic">Whitelist Medic</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input id="access_level" type="hidden" class="form-control" name="access_level" value="">
+
+                        <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
                             </div>
                         </div>
+
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+
+    jQuery(document).ready(function () {
+        $(".dropdown-menu li a").click(function () {
+            $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+            var access = $(this).data("value");
+            
+            $('#access_level').val(access);
+            
+            
+        });
+    });
+</script>
 @endsection

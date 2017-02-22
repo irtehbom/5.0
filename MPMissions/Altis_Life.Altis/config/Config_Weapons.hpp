@@ -250,8 +250,8 @@ class WeaponShops {
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 0, -1, "call life_coplevel >= 1" }, //TaserPistol
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 0, -1, "call life_coplevel >= 1" }, //TaserRifle
             { "SMG_05_F", "", 2500, -1, "call life_coplevel >= 1" }, //Protector	
-			{ "SMG_02_F", "", 2500, -1, "" }, //Sting
-			{ "arifle_Mk20_F", "", 8500, -1, "" }, //Mk20
+			{ "SMG_02_F", "", 2500, -1, "call life_coplevel >= 1" }, //Sting
+			{ "arifle_Mk20_F", "", 8500, -1, "call life_coplevel >= 1" }, //Mk20
             { "arifle_SPAR_01_blk_F", "", 10000, -1, "call life_coplevel >= 1" }, //SPAR16
 			{ "HandGrenade_Stone", $STR_W_items_Flashbang, 2000, -1, "call life_coplevel >= 3" }, //Flashbang
             { "arifle_MXC_Black_F", "", 20000, -1, "call life_coplevel >= 2" }, //MXC

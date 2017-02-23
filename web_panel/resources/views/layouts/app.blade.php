@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -44,6 +44,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.13/b-1.2.4/b-colvis-1.2.4/b-flash-1.2.4/datatables.min.css"/>
          <link href="{{ asset('css/jquery.notifyBar.css') }}" rel="stylesheet">
         <!-- Scripts -->
@@ -58,6 +59,9 @@
 
 
         </script>
+        
+    
+      
     </head>
     <body>
         <div id="app">
@@ -93,6 +97,10 @@
                            <li><a href="{{ route('register') }}">Register User</a></li>
                             @else
                             <li><a href="{{ route('register') }}">Register User</a></li>
+                            <li><a href="{{ url('/logs') }}" class="dropdown-toggle">
+                                    Logs
+                                </a>
+                            </li>
                             <li><a href="{{ url('/vehicles') }}" class="dropdown-toggle">
                                     Vehicles
                                 </a>
@@ -124,9 +132,7 @@
                                 </ul>
                             </li>
 
-
                             @endif
-
                             
                         </ul>
                     </div>

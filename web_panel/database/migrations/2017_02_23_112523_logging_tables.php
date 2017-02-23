@@ -15,9 +15,11 @@ class LoggingTables extends Migration
     {
         Schema::create('logging', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('action');
+            $table->string('actionType');
+            $table->string('value');
             $table->string('admin');
             $table->string('targetUser');
+            $table->string('message');
             $table->timestamps();
         });
     }

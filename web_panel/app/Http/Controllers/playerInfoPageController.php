@@ -36,8 +36,6 @@ class playerInfoPageController extends Controller {
         $wanted_data = (count($wanted_data) == 0) ? new \stdClass() : $wanted_data[0];
         $gang_data = (count($gang_data) == 0) ? new \stdClass() : $gang_data[0];
         
-        
-        
 
         return view('players_info', [
             "player_data" => $player_data,
@@ -56,27 +54,22 @@ class playerInfoPageController extends Controller {
 
         $comp = (int) $request->input('compensation_amount');
         $player_id = $request->input('player_id');
+        $message = $request->input('reason_text');
 
         $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
         $update_bank = $player_data->bankacc + $comp;
         
         $user = Auth::user();
-        
-        $action = array (
-            'action_compensate' =>
-            array (
-                'name' => 'Compensation',
-                'amount' => $comp
-            )
-        );
-        
-                
+ 
         \DB::table('logging')->insert(
             [
-            'action' => serialize($action),
+            'actionType' => 'Compensate',
             'admin' => $user->name,
             'targetUser' => $player_data->name,
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s')    
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => (string)$comp,
+            'message' => $message
             ]
         );
 
@@ -94,6 +87,10 @@ class playerInfoPageController extends Controller {
         $altis_database = \DB::connection('altis_life');
 
         $player_id = $request->input('player_id');
+        $message = $request->input('reason_text');
+        
+        $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
+        
         $blacklist_value = $request->input('blacklist_value');
 
         if ($blacklist_value == 0) {
@@ -101,10 +98,26 @@ class playerInfoPageController extends Controller {
         } else {
             $blacklist_value = 0;
         }
+        
+        $user = Auth::user();
+ 
+        \DB::table('logging')->insert(
+            [
+            'actionType' => 'Blacklist',
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => (string)$blacklist_value,
+            'message' => $message
+            ]
+        );
 
         $altis_database->table('players')
                 ->where('pid', $player_id)
                 ->update(['blacklist' => $blacklist_value]);
+        
+        
 
         echo $blacklist_value;
     }
@@ -114,10 +127,33 @@ class playerInfoPageController extends Controller {
         $altis_database = \DB::connection('altis_life');
 
         $vehicle_id = $request->input('vehicle_id');
+        $player_id = $request->input('player_id');
+        $message = $request->input('reason_text');
+        
+        $vehicle_name = $altis_database->table('vehicles')
+                ->where('id', $vehicle_id)
+                ->first();
 
         $altis_database->table('vehicles')
                 ->where('id', $vehicle_id)
                 ->delete();
+        
+        
+        $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
+        
+        $user = Auth::user();
+ 
+        \DB::table('logging')->insert(
+            [
+            'actionType' => 'DeleteVehicle',
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => $vehicle_name->classname,
+            'message' => $message
+            ]
+        );
 
         echo $vehicle_id;
     }
@@ -127,10 +163,32 @@ class playerInfoPageController extends Controller {
         $altis_database = \DB::connection('altis_life');
 
         $house_id = $request->input('house_id');
+        $player_id = $request->input('player_id');
+        $message = $request->input('reason_text');
+        
+        $house_name = $altis_database->table('houses')
+                ->where('id', $house_id)
+                ->first();
 
         $altis_database->table('houses')
                 ->where('id', $house_id)
                 ->delete();
+        
+        $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
+        
+        $user = Auth::user();
+ 
+        \DB::table('logging')->insert(
+            [
+            'actionType' => 'DeleteHouse',
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => $house_name->pos,
+            'message' => $message
+            ]
+        );
 
         echo $house_id;
     }
@@ -141,6 +199,21 @@ class playerInfoPageController extends Controller {
 
         $player_id = $request->input('player_id');
         $level_selected = $request->input('level_selected');
+        
+        $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
+        
+        $user = Auth::user();
+ 
+        \DB::table('logging')->insert(
+            [
+            'actionType' => 'WhitelistPolice',
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => $level_selected
+            ]
+        );
 
         $altis_database->table('players')
                 ->where('pid', $player_id)
@@ -153,6 +226,21 @@ class playerInfoPageController extends Controller {
 
         $player_id = $request->input('player_id');
         $level_selected = $request->input('level_selected');
+        
+        $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
+        
+        $user = Auth::user();
+ 
+        \DB::table('logging')->insert(
+            [
+            'actionType' => 'WhitelistMedic',
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'value' => $level_selected,
+            ]
+        );
 
         $altis_database->table('players')
                 ->where('pid', $player_id)

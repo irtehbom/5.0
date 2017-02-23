@@ -111,9 +111,26 @@
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
 
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="reason_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Enter the reason for your decsision <span style='color:red'>REQUIRED</span></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <textarea class="form-control" rows="5" id="reason_text" name='reason_text'></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" id='reason_modal_button'>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -347,118 +364,150 @@
 
             $('#compensate_button').click(function () {
 
-                var input_compensate = $('#compensate').val();
+                $('#reason_modal').modal('show');
 
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
+                $('#reason_modal_button').click(function () {
 
-                $.ajax({
-                    type: "POST",
-                    url: '{{ Request::url() }}/compensate',
-                    data: {player_id: '{{$player_data->pid}}', compensation_amount: input_compensate},
-                    success: function (data) {
-                        $('#cash_in_bank').text(data).addClass("flash");
-                        setTimeout(function () {
-                            $('#cash_in_bank').removeClass('flash');
-                        }, 3000);
-                    },
-                    error: function (data) {
-                        console.log('Error:', data);
-                    }
+                    $('#reason_modal').modal('hide');
+                    var reason_text = $('#reason_text').val();
+                    var input_compensate = $('#compensate').val();
 
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        type: "POST",
+                        url: '{{ Request::url() }}/compensate',
+                        data: {player_id: '{{$player_data->pid}}', reason_text: reason_text, compensation_amount: input_compensate},
+                        success: function (data) {
+                            $('#cash_in_bank').text(data).addClass("flash");
+                            setTimeout(function () {
+                                $('#cash_in_bank').removeClass('flash');
+                            }, 3000);
+                        },
+                        error: function (data) {
+                            console.log('Error:', data);
+                        }
+
+                    });
                 });
             });
 
             $('#blacklist_button').click(function () {
 
-                var blacklist_value = $('#blacklist_button').data("player_blacklisted");
+                $('#reason_modal').modal('show');
 
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
+                $('#reason_modal_button').click(function () {
 
-                $.ajax({
-                    type: "POST",
-                    url: '{{ Request::url() }}/blacklist',
-                    data: {player_id: '{{$player_data->pid}}', blacklist_value: blacklist_value},
-                    success: function (data) {
+                    $('#reason_modal').modal('hide');
+                    var reason_text = $('#reason_text').val();
 
-                        if (data == 1) {
-                            $('#blacklist_button').text('Remove Blacklist').removeClass("btn-warning").addClass("btn-danger");
-                        } else {
-                            $('#blacklist_button').text('Blacklist').removeClass("btn-danger").addClass("btn-warning");
+                    var blacklist_value = $('#blacklist_button').data("player_blacklisted");
+
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        type: "POST",
+                        url: '{{ Request::url() }}/blacklist',
+                        data: {player_id: '{{$player_data->pid}}', reason_text: reason_text, blacklist_value: blacklist_value},
+                        success: function (data) {
+
+                            if (data == 1) {
+                                $('#blacklist_button').text('Remove Blacklist').removeClass("btn-warning").addClass("btn-danger");
+                            } else {
+                                $('#blacklist_button').text('Blacklist').removeClass("btn-danger").addClass("btn-warning");
+                            }
+
+                        },
+                        error: function (data) {
+                            console.log('Error:', data);
                         }
 
-                    },
-                    error: function (data) {
-                        console.log('Error:', data);
-                    }
-
+                    });
                 });
             });
 
             $('.delete_vehicle').click(function (e) {
+
+                $('#reason_modal').modal('show');
+
                 var vehicle_id = $(this).data("vehicle_id");
 
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
+                $('#reason_modal_button').click(function () {
 
-                $.ajax({
-                    type: "POST",
-                    url: '{{ Request::url() }}/delete_vehicle',
-                    data: {vehicle_id: vehicle_id},
-                    success: function (data) {
+                    $('#reason_modal').modal('hide');
+                    var reason_text = $('#reason_text').val();
 
-                        var $div = $(".delete_vehicle_row").filter(function () {
-                            return $(this).data("vehicle_id") == data; // where value == product id to find
-                        });
-                        $div.remove();
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
-                        $.notifyBar({cssClass: "success", html: "Vehicle Deleted Successfully"});
+                    $.ajax({
+                        type: "POST",
+                        url: '{{ Request::url() }}/delete_vehicle',
+                        data: {player_id: '{{$player_data->pid}}', reason_text: reason_text, vehicle_id: vehicle_id},
+                        success: function (data) {
+
+                            var $div = $(".delete_vehicle_row").filter(function () {
+                                return $(this).data("vehicle_id") == data; // where value == product id to find
+                            });
+                            $div.remove();
+
+                            $.notifyBar({cssClass: "success", html: "Vehicle Deleted Successfully"});
 
 
-                    },
-                    error: function (data) {
-                        console.log('Error:', data);
-                    }
+                        },
+                        error: function (data) {
+                            console.log('Error:', data);
+                        }
+                    });
                 });
             });
 
             $('.delete_house').click(function (e) {
+
+                $('#reason_modal').modal('show');
+
                 var house_id = $(this).data("house_id");
 
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
+                $('#reason_modal_button').click(function () {
 
-                $.ajax({
-                    type: "POST",
-                    url: '{{ Request::url() }}/delete_house',
-                    data: {house_id: house_id},
-                    success: function (data) {
+                    $('#reason_modal').modal('hide');
+                    var reason_text = $('#reason_text').val();
 
-                        var $div = $(".delete_house_row").filter(function () {
-                            return $(this).data("house_id") == data; // where value == product id to find
-                        });
-                        $div.remove();
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
-                        $.notifyBar({cssClass: "success", html: "House Deleted Successfully"});
+                    $.ajax({
+                        type: "POST",
+                        url: '{{ Request::url() }}/delete_house',
+                        data: {player_id: '{{$player_data->pid}}', reason_text: reason_text, house_id: house_id},
+                        success: function (data) {
 
+                            var $div = $(".delete_house_row").filter(function () {
+                                return $(this).data("house_id") == data; // where value == product id to find
+                            });
+                            $div.remove();
 
-                    },
-                    error: function (data) {
-                        console.log('Error:', data);
-                    }
+                            $.notifyBar({cssClass: "success", html: "House Deleted Successfully"});
+
+                        },
+                        error: function (data) {
+                            console.log('Error:', data);
+                        }
+                    });
                 });
             });
 
@@ -476,7 +525,7 @@
                 $.ajax({
                     type: "POST",
                     url: '{{ Request::url() }}/whitelist_police',
-                    data: {player_id: '{{$player_data->pid}}',level_selected: level_selected},
+                    data: {player_id: '{{$player_data->pid}}', level_selected: level_selected},
                     success: function (data) {
 
                         console.log(data);
@@ -491,8 +540,8 @@
                 });
 
             });
-            
-             $("#dropdown-menu-medic li a").click(function () {
+
+            $("#dropdown-menu-medic li a").click(function () {
 
 
                 var level_selected = $(this).data("value");
@@ -506,7 +555,7 @@
                 $.ajax({
                     type: "POST",
                     url: '{{ Request::url() }}/whitelist_medic',
-                    data: {player_id: '{{$player_data->pid}}',level_selected: level_selected},
+                    data: {player_id: '{{$player_data->pid}}', level_selected: level_selected},
                     success: function (data) {
 
                         console.log(data);

@@ -21,6 +21,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/players', 'playersController@index');
 Route::get('/vehicles', 'vehiclesController@index');
+Route::get('/logs', 'logsController@index');
 
 //pages single routes
 Route::get('/players/{player_id}', 'playerInfoPageController@index');

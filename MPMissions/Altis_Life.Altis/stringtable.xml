@@ -10217,7 +10217,7 @@
             <Italian>Gioielliere</Italian>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout1">
-            <Original>Gang Hideout 1</Original>
+            <Original>Gang Hideout - Marijuana</Original>
             <Czech>Gang Hideout 1</Czech>
             <French>Planque 1</French>
             <Spanish>Escondite de Pandillas 1</Spanish>
@@ -10228,7 +10228,7 @@
             <Italian>Covo Gang 1</Italian>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout2">
-            <Original>Gang Hideout 2</Original>
+            <Original>Gang Hideout - Cocaine</Original>
             <Czech>Gang Hideout 2</Czech>
             <French>Planque 2</French>
             <Spanish>Escondite de Pandillas 2</Spanish>
@@ -10239,7 +10239,7 @@
             <Italian>Covo Gang 2</Italian>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout3">
-            <Original>Gang Hideout 3</Original>
+            <Original>Gang Hideout - Heroin</Original>
             <Czech>Gang Hideout 3</Czech>
             <French>Planque 3</French>
             <Spanish>Escondite de Pandillas 3</Spanish>

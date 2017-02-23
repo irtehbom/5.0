@@ -49,7 +49,7 @@ switch (playerSide) do {
 
     case independent: {
         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
-            player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+            player setObjectTextureGlobal [0, "textures\medic_uniform.paa"];
         };
     };
 };

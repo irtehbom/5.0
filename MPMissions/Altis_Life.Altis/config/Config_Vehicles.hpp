@@ -744,7 +744,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Medic", "med", {
-                ""
+                "textures\medic\medic_suv.paa"
             }, "" },
             { "Police", "cop", {
                 "textures\cop\police_suv.paa"
@@ -888,7 +888,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Medic Red", "med", {
-                ""
+                "textures\medic\medic_orca.paa"
             }, "" }
         };
     };

@@ -68,9 +68,8 @@ class CarShops {
             { "I_Heli_Transport_02_F", "" }, //Mohawk
             { "O_Heli_Transport_04_F", "" }, //Taru (Lift)
             { "O_Heli_Transport_04_bench_F", "" }, //Taru Bench
-            { "O_Heli_Transport_04_box_F", "" } //Taru Cargo
-           
-           
+            { "O_Heli_Transport_04_box_F", "" }, //Taru Cargo
+			{ "B_Heli_Transport_03_unarmed_F", "" } //Huron     
         };
     };
  
@@ -103,9 +102,7 @@ class CarShops {
             { "O_Heli_Transport_04_box_F", "" }, //Taru Cargo
             { "O_Heli_Light_02_unarmed_F", "" }, //Orca
             { "I_Heli_Transport_02_F", "" }, //Mohawk
-            { "B_Heli_Transport_03_unarmed_F", "" } //Huron
-           
-           
+            { "B_Heli_Transport_03_unarmed_F", "" } //Huron      
         };
     };
  
@@ -113,12 +110,9 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "C_Hatchback_01_F", "" }, //Hatchback
+            { "C_Hatchback_01_sport_F", "" }, //Hatchback
             { "C_Offroad_01_F", "" }, //Offroad
             { "C_SUV_01_F", "" }, //SUV
-            { "I_Truck_02_medical_F", "" },
-            { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
         };
     };
  
@@ -128,7 +122,6 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", "" }, //Hummingbird
             { "O_Heli_Light_02_unarmed_F", "" }, //Orca
-            { "O_Heli_Transport_04_medevac_F", "" } //Taru
         };
     };
  

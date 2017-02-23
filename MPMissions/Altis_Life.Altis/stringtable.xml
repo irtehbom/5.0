@@ -1575,6 +1575,17 @@
             <Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
             <Polish>Twój gang aktualnie kontroluje tę kryjówkę !</Polish>
         </Key>
+		<Key ID="STR_GNOTF_Neutral">
+            <Original>This hideout is not controlled by any gangs!</Original>
+            <Czech>Naše parta už má kontrolu nad tímto úkrytu!</Czech>
+            <Spanish>Tu Pandilla ya tiene control de este escondite!</Spanish>
+            <Russian></Russian>
+            <German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>
+            <French>Votre gang a déjà le contrôle de cette planque !</French>
+            <Italian>La tua Gang ha già il controllo di questo Covo</Italian>
+            <Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
+            <Polish>Twój gang aktualnie kontroluje tę kryjówkę !</Polish>
+        </Key>
         <Key ID="STR_GNOTF_onePersonAtATime">
             <Original>Only one person shall capture at once!</Original>
             <Czech>Pouze jedna osoba musí být schopná zachytit najednou!</Czech>
@@ -1630,6 +1641,17 @@
             <Portuguese>Capturando Esconderijo</Portuguese>
             <Polish>Przejmowanie kryjówki</Polish>
         </Key>
+		<Key ID="STR_GNOTF_Neutralizing">
+            <Original>Neutralizing Hideout</Original>
+            <Czech>zachycení Hideout</Czech>
+            <Spanish>Capturando el Escondite</Spanish>
+            <Russian></Russian>
+            <German>Versteck einnehmen</German>
+            <French>Capture de la planque</French>
+            <Italian>Catturando il Covo</Italian>
+            <Portuguese>Capturando Esconderijo</Portuguese>
+            <Polish>Przejmowanie kryjówki</Polish>
+        </Key>
         <Key ID="STR_GNOTF_Captured">
             <Original>Hideout has been captured.</Original>
             <Czech>Úkryt byl zajat.</Czech>
@@ -1651,6 +1673,17 @@
             <Italian>%1 e la sua Gang: %2 - hanno preso il controllo di un Covo!</Italian>
             <Portuguese>%1 e sua gangue: %2 - agora têm o controle de um esconderijo!</Portuguese>
             <Polish>%1 i jego gang: %2 - przejął kontrolę nad kryjówką!</Polish>
+        </Key>
+		<Key ID="STR_GNOTF_NeutralizeSuccess">
+            <Original>The Police have neutralized a hideout!</Original>
+            <Czech>The Police- vzali kontrolu místního úkrytu!</Czech>
+            <Spanish>The Police - han tomado control de un Escondite!</Spanish>
+            <Russian></Russian>
+            <German>The Polizei - haben die Kontrolle über ein lokales Versteck übernommen!</German>
+            <French>The Police ont pris le controle de la planque !</French>
+            <Italian>The Police - hanno preso il controllo di un Covo!</Italian>
+            <Portuguese>The Police - agora têm o controle de um esconderijo!</Portuguese>
+            <Polish>The Police - przejął kontrolę nad kryjówką!</Polish>
         </Key>
         <Key ID="STR_GNOTF_Over32">
             <Original>You can't have a gang name longer then 32 characters.</Original>

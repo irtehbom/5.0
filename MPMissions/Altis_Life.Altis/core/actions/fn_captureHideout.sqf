@@ -14,13 +14,29 @@ private _hideoutObjs = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call T
 private _hideout = (nearestObjects[getPosATL player,_hideoutObjs,25]) select 0;
 private _group = _hideout getVariable ["gangOwner",grpNull];
 
-if (isNil {group player getVariable "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};
-if (_group == group player) exitWith {titleText[localize "STR_GNOTF_Controlled","PLAIN"]};
-if ((_hideout getVariable ["inCapture",false])) exitWith {hint localize "STR_GNOTF_onePersonAtATime";};
+diag_log("HIDEOUT STATUS:");
+diag_log(_hideout getVariable["gangOwner",grpNull]);
+
+private _exit = false;
+private _exitMessage = "";
+
+switch (playerSide) do {
+    case west: {
+        if (isNull _group) exitWith {_exit = true; _exitMessage = "STR_GNOTF_Neutral";};
+		if ((_hideout getVariable ["inCapture",false])) exitWith {_exit = true; _exitMessage = "STR_GNOTF_onePersonAtATime";};
+    };
+    case default {
+        if (isNil {group player getVariable "gang_name"}) exitWith{_exit = true; _exitMessage = "STR_GNOTF_CreateGang";};
+		if (_group == group player) exitWith{_exit = true; _exitMessage = "STR_GNOTF_Controlled"};
+		if ((_hideout getVariable ["inCapture",false])) exitWith{_exit = true; _exitMessage = "STR_GNOTF_onePersonAtATime";};
+    };
+};
+
+if (_exit) exitWith {titleText[localize _exitMessage,"PLAIN"];};
 
 private "_action";
 private "_cpRate";
-if (!isNull _group) then {
+if (!isNull _group && !(playerSide == west)) then {
     _gangName = _group getVariable ["gang_name",""];
     _action = [
         format [localize "STR_GNOTF_AlreadyControlled",_gangName],
@@ -39,7 +55,15 @@ life_action_inUse = true;
 
 //Setup the progress bar
 disableSerialization;
-private _title = localize "STR_GNOTF_Capturing";
+private _title = "";
+switch (playerSide) do {
+    case west: {
+        _title = localize "STR_GNOTF_Neutralizing";
+    };
+    case default {
+        _title = localize "STR_GNOTF_Capturing";
+    };
+}; 
 "progressBar" cutRsc ["life_progress","PLAIN"];
 private _ui = uiNamespace getVariable "life_progress";
 private _progressBar = _ui displayCtrl 38201;
@@ -91,6 +115,20 @@ private _flagTexture = [
         "\A3\Data_F\Flags\flag_fd_orange_CO.paa"
     ] call BIS_fnc_selectRandom;
 _this select 0 setFlagTexture _flagTexture;
-[[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-_hideout setVariable ["inCapture",false,true];
-_hideout setVariable ["gangOwner",group player,true];
+
+switch (playerSide) do {
+    case west: {
+        titleText[localize "STR_GNOTF_NeutralizeSuccess","PLAIN"] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+		_hideout setVariable ["inCapture",false,true];
+		_hideout setVariable ["gangOwner",grpNull,true];
+    };
+    case default {
+        [[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+		_hideout setVariable ["inCapture",false,true];
+		_hideout setVariable ["gangOwner",group player,true];
+		diag_log("HIDEOUT STATUS:");
+		diag_log(_hideout getVariable["gangOwner",grpNull]);
+    };
+}; 
+
+

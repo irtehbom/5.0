@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9150.6729,263.3576,21381.412};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={9046.4746,508.16406,21094.711};
+		dir[]={-0.067161895,-0.50594717,0.85995102};
+		up[]={-0.039394185,0.86256415,0.50440884};
+		aside[]={0.996966,4.4208718e-008,0.077863127};
 	};
 };
 binarizationWanted=0;
@@ -60,6 +60,7 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
+	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_Households_Addons",
@@ -20283,20 +20284,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11692.287,41.536949,15904.482};
-				angles[]={6.256525,0,0.0039967569};
+				position[]={11692.287,41.535492,15904.482};
+				angles[]={6.2565165,0,0.0039968039};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];";
+				init="this allowDamage false;   " \n "this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];  " \n "this addAction[""Neutralize hideout!"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo west '];";
 				name="gang_flag_1";
 			};
 			id=664;
 			type="FlagPole_F";
-			atlOffset=0.0014610291;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21529,7 +21530,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];";
+				init="this allowDamage false;   " \n "this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];  " \n "this addAction[""Neutralize hideout!"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo west '];";
 				name="gang_flag_2";
 			};
 			id=694;
@@ -22754,20 +22755,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18383.055,31.100756,15258.516};
-				angles[]={6.2818484,2.9764843,6.2818484};
+				position[]={18383.055,31.100754,15258.516};
+				angles[]={6.2818413,2.9764843,6.2818413};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];";
+				init="this allowDamage false;   " \n "this addAction[localize""STR_NOTF_captureGangHideout"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}'];  " \n "this addAction[""Neutralize hideout!"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide isEqualTo west '];";
 				name="gang_flag_3";
 			};
 			id=724;
 			type="FlagPole_F";
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30610,6 +30610,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56652,7 +56653,6 @@ class Mission
 					};
 					id=4686;
 					type="O_Soldier_F";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56701,7 +56701,6 @@ class Mission
 			{
 			};
 			id=4685;
-			atlOffset=-7.6293945e-006;
 		};
 		class Item1959
 		{
@@ -56709,7 +56708,7 @@ class Mission
 			position[]={20058.25,100.875,6697.375};
 			name="reb_v_3";
 			type="Empty";
-			angle=226.46979;
+			angle=226.46973;
 			id=4687;
 			atlOffset=2.1691971;
 		};

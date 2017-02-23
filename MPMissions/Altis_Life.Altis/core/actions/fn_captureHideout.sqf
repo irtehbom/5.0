@@ -118,7 +118,7 @@ _this select 0 setFlagTexture _flagTexture;
 
 switch (playerSide) do {
     case west: {
-        [[0,1],"STR_GNOTF_NeutralizeSuccess",true,[name player] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+        titleText[localize "STR_GNOTF_NeutralizeSuccess","PLAIN"] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		_hideout setVariable ["inCapture",false,true];
 		_hideout setVariable ["gangOwner",grpNull,true];
     };

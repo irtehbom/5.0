@@ -25,11 +25,16 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\splash_logo.jpg' /></t><br /><br />";
-_message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/sEcQdPn' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+
+_message = "<br /><br />";
+_message = _message + "Welcome to A3Gaming Altis Life UK!<br /><br />";
+_message = _message + "We look forward to you playing here. Before you get started, please take a few minutes to read our rules found on our website so you won't run into any trouble. <br /><br />";
+_message = _message + "This server is run on Altis Life v5.0 and has many custom features. If you are a new player to our server or have been with us for some time, if you need any help at anytime please contact a member of staff.<br /><br />";
+_message = _message + "We invite you to join our forums where you can stay up to date with the latest news and events, tell us what's on your mind or simply just say hello!<br /><br />";
+_message = _message + "We also welcome you to join our Teamspeak where you can setup your own channels and talk to your friends. Thankyou for joining the A3Gaming community.<br /><br /><br />";
+_message = _message + "Information<br /><br />";
+_message = _message + "Forums - a3gaming.co.uk";
+_message = _message + "Teamspeak - 85.236.101.154:10897";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);

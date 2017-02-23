@@ -39,9 +39,9 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 
-diag_log format["_Btn1 %1", _Btn1];
 
 life_pInact_curTarget = _curTarget;
+
 
 if (player getVariable ["isEscorting",false]) then {
 			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6];
@@ -58,11 +58,13 @@ if (player getVariable ["isEscorting",false]) then {
 _Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
+
 //SeizeWeapons Button
 _Btn5 ctrlSetText localize "STR_pInAct_Seize";
 _Btn5 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
 
-if ((_curTarget getVariable ["blindfolded", false])) then {
+
+if ((cursorObject getVariable ["blindfolded", false])) then {
 	_Btn2 ctrlSetText "Remove blindfold";
 	_Btn2 buttonSetAction "[] call life_fnc_untieb; closeDialog 0;";
 } else {
@@ -70,7 +72,7 @@ if ((_curTarget getVariable ["blindfolded", false])) then {
 	_Btn2 buttonSetAction "[] call life_fnc_tieingActionb; closeDialog 0;";
 };
 
-if ((_curTarget getVariable ["gagged", false])) then {
+if ((cursorObject getVariable ["gagged", false])) then {
 	_Btn6 ctrlSetText "Remove Gag";
 	_Btn6 buttonSetAction "[] call life_fnc_removeGagAction; closeDialog 0;";
 } else {
@@ -78,7 +80,8 @@ if ((_curTarget getVariable ["gagged", false])) then {
 	_Btn6 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
 };
 
-if (!(_curTarget getVariable ["tied", false])) then {
+if (!(cursorObject getVariable ["tied", false])) then {
+	
 	_Btn1 ctrlSetText "Ziptie Person";
 	_Btn1 buttonSetAction "[] call life_fnc_tieingAction; closeDialog 0;";
 	_Btn2 ctrlEnable false;

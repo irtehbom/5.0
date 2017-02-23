@@ -7,7 +7,7 @@
     Finds the nearest vehicle and loads the target into the vehicle.
 */
 private ["_unit"];
-_unit = param [0,objNull,[objNull]];
+_unit = cursorObject;
 if (isNull _unit || !isPlayer _unit) exitWith {};
 
 _nearestVehicle = nearestObjects[getPosATL player,["Car","Ship","Submarine","Air"],10] select 0;

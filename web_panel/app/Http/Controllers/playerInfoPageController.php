@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class playerInfoPageController extends Controller {
 
@@ -34,6 +35,9 @@ class playerInfoPageController extends Controller {
         $player_data = (count($player_data) == 0) ? new \stdClass() : $player_data[0];
         $wanted_data = (count($wanted_data) == 0) ? new \stdClass() : $wanted_data[0];
         $gang_data = (count($gang_data) == 0) ? new \stdClass() : $gang_data[0];
+        
+        
+        
 
         return view('players_info', [
             "player_data" => $player_data,
@@ -55,10 +59,32 @@ class playerInfoPageController extends Controller {
 
         $player_data = $altis_database->table('players')->where('pid', $player_id)->first();
         $update_bank = $player_data->bankacc + $comp;
+        
+        $user = Auth::user();
+        
+        $action = array (
+            'action_compensate' =>
+            array (
+                'name' => 'Compensation',
+                'amount' => $comp
+            )
+        );
+        
+                
+        \DB::table('logging')->insert(
+            [
+            'action' => serialize($action),
+            'admin' => $user->name,
+            'targetUser' => $player_data->name,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s')    
+            ]
+        );
 
         $altis_database->table('players')
                 ->where('pid', $player_id)
                 ->update(['bankacc' => $update_bank]);
+        
+        
 
         echo $update_bank;
     }

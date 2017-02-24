@@ -256,6 +256,21 @@ switch (_code) do {
             };
         };
     };
+	
+	case 62: {
+		  if (_alt) then {_handled = true;};
+			[8] call SOCK_fnc_updatePartial;
+		}
+	};
+	
+	case 56: {
+			[8] call SOCK_fnc_updatePartial;
+	};
+	
+	case 62: {
+			[8] call SOCK_fnc_updatePartial;
+	};
+	
 
     //U Key
     case 22: {

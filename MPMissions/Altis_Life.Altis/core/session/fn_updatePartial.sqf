@@ -54,6 +54,13 @@ switch (_mode) do {
     case 7: {
         // Tonic is using for keychain..?
     };
+	case 8: {
+        //Anti exploit
+		_packet set[2,CASH];
+        _packet set[4,BANK];
+		[] call life_fnc_saveGear;
+        _packet set[2,life_gear];
+    };
 };
 
 if (life_HC_isActive) then {

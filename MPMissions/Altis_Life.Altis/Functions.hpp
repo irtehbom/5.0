@@ -34,6 +34,7 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
 		class exploitCheck {};
+		class notifyServer {};
     };
 
     class Actions {

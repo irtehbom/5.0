@@ -64,6 +64,7 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_F", "", 3500, 1750, "" }, //4Five
             { "hgun_Pistol_heavy_02_F", "", 5000, 2500, "" }, //Zubr
             { "SMG_01_F", "", 10000, 5000, "" }, //Vermin
+            { "arifle_SDAR_F", "", 35000, 15000, "" }, //SDAR
             { "arifle_AKS_F", "", 30000, 15000, "" }, //AKS74U
             { "arifle_TRG21_F", "", 40000, 20000, "" }, //TRG21
             { "arifle_CTAR_blk_F", "", 50000, 25000, "" }, //CAR95Black
@@ -109,6 +110,7 @@ class WeaponShops {
 			{ "150Rnd_762x54_Box_Tracer", "", 2500, -1, "" },
 			{ "30Rnd_762x39_Mag_F", "", 800, -1, "" },
 			{ "10Rnd_762x54_Mag", "", 700, -1, "" },
+			{ "20Rnd_556x45_UW_mag", "", 350, -1, "" },			
 			{ "20Rnd_762x51_Mag", "", 850, -1, "" }
         };
         accs[] = {

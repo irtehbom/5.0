@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3308.4702,19.753626,12952.524};
-		dir[]={-0.0087222699,-0.64665473,0.76274711};
-		up[]={-0.0073947548,0.76277429,0.6466248};
-		aside[]={0.9999482,2.3141956e-007,0.011435221};
+		pos[]={3629.6963,23.690651,13112.825};
+		dir[]={-0.43786862,-0.76082879,0.47912639};
+		up[]={-0.5133158,0.64886212,0.56167811};
+		aside[]={0.73822719,-1.1350494e-007,0.67465669};
 	};
 };
 binarizationWanted=0;
@@ -550,7 +550,7 @@ class Mission
 			position[]={3274.875,2.25,12950.75};
 			name="cop_spawn_1";
 			type="Empty";
-			angle=359.00848;
+			angle=359.00842;
 			id=8;
 			atlOffset=0.065662861;
 		};
@@ -756,7 +756,7 @@ class Mission
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
 			colorName="ColorCIV";
-			angle=0.010999996;
+			angle=0.010999995;
 			id=35;
 			atlOffset=3.0200122e+024;
 		};
@@ -944,7 +944,7 @@ class Mission
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
 			colorName="ColorCIV";
-			angle=359.19186;
+			angle=359.1918;
 			id=56;
 			atlOffset=1.7310792e+023;
 		};
@@ -1597,7 +1597,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=118;
-			atlOffset=2.7725487;
+			atlOffset=2.7798691;
 		};
 		class Item107
 		{
@@ -4933,7 +4933,6 @@ class Mission
 				angles[]={0,3.1949127,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4941,6 +4940,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.3253021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25217,7 +25217,6 @@ class Mission
 						angles[]={0,4.0052385,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -25226,6 +25225,7 @@ class Mission
 					};
 					id=951;
 					type="C_man_1";
+					atlOffset=0.39696693;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27772,7 +27772,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -27781,7 +27780,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.046899796;
+					atlOffset=1.4344749;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30632,6 +30631,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33578,12 +33578,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3632.75,10.626158,13124.375};
-				angles[]={0,4.7657418,0};
+				angles[]={0,4.7657437,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=1904;
 			type="Land_City_8m_F";
@@ -56893,8 +56894,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3608.5,13.625,13116.25};
-				angles[]={0,4.8345623,0};
+				position[]={3608.625,13.625,13116.125};
+				angles[]={0,4.8171091,0};
 			};
 			side="Empty";
 			class Attributes
@@ -56903,7 +56904,7 @@ class Mission
 			};
 			id=4753;
 			type="UserTexture10m_F";
-			atlOffset=3.5027142;
+			atlOffset=3.4982948;
 		};
 		class Item1972
 		{
@@ -57128,7 +57129,7 @@ class Mission
 			position[]={3309.0859,-1.5418982e-021,12969.77};
 			name="cop_car_1_1";
 			type="Empty";
-			angle=178.63098;
+			angle=178.63095;
 			id=4766;
 			atlOffset=-2.3184538;
 		};

@@ -235,7 +235,6 @@ switch (_code) do {
                 titleText [localize "STR_MISC_SirensON","PLAIN"];
                 _veh setVariable ["siren",true,true];
                 if (playerSide isEqualTo west) then {
-				diag_log "KEY HANDLER TEST";
                     [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
                 } else {
                     [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
@@ -256,21 +255,13 @@ switch (_code) do {
             };
         };
     };
-	
+	//Anti exploit
 	case 62: {
 		  if (_alt) then {_handled = true;};
-			[8] call SOCK_fnc_updatePartial;
-		}
+		  [8] call SOCK_fnc_updatePartial;
+		  ["Attempted Exploit",profileName,"Used ALT+F4 to exit the game."] call life_fnc_notifyServer;
 	};
-	
-	case 56: {
-			[8] call SOCK_fnc_updatePartial;
-	};
-	
-	case 62: {
-			[8] call SOCK_fnc_updatePartial;
-	};
-	
+
 
     //U Key
     case 22: {

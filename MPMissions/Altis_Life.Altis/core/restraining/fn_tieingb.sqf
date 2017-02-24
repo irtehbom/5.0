@@ -20,7 +20,7 @@ if(isNull _civ) exitWith {};
 			hint "You managed to remove the blindfold!";
 		};
 
-		if(!([east,getPos player,50] call life_fnc_nearUnits) && !([east,getPos player,50] call life_fnc_nearUnits) && (player getVariable["blindfolded", false]) && isNull objectParent player) exitWith {
+		if(!([east,getPos player,50] call life_fnc_nearUnits) && !([civilian,getPos player,50] call life_fnc_nearUnits) && (player getVariable["blindfolded", false]) && isNull objectParent player) exitWith {
 
 			player setVariable["blindfolded", nil, true];
 			"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
@@ -49,7 +49,7 @@ player addheadgear "mgsr_headbag";
 			cutText ["You are no longer blind folded.!","PLAIN",2];	
 			player setVariable ["blindfolded", nil, true];
 		};
-		if(deadPlayer) exitWith
+		if(!alive player) exitWith
 		{
 			cutText ["You are no longer blind folded.!","PLAIN",2];	
 			player setVariable ["blindfolded", nil, true];
@@ -72,7 +72,7 @@ player addheadgear "mgsr_headbag";
 	"colorCorrections" ppEffectEnable false;	
 
 	removeHeadGear player;
-	if(!deadPlayer) then
+	if(!alive player) then
 	{
 		player switchMove "AmovPercMstpSlowWrflDnon_SaluteIn";
 		player setVariable ["blindfolded", nil, true];

@@ -14,11 +14,7 @@ _unit = cursorObject;
 diag_log format["_unit 1 %1",_unit];
 
 if (!isNull(player getVariable ["escortingPlayer",objNull])) exitWith {};
-
 if (isNil "_unit" || isNull _unit || !isPlayer _unit) exitWith {};
-
-if (!(side _unit in [east,independent])) exitWith {};
-
 if (player distance _unit > 3) exitWith {};
 
 

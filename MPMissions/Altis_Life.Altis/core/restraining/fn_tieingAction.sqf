@@ -7,21 +7,21 @@
 */
 
 private["_unit"];
-_unit = cursorObject;
-
+_unit = cursorTarget;
 
 if(life_inv_zipties < 1) exitWith {
-	hintSilent "You need to buy zipties from the rebel market to do this..";
+	hintSilent "You need to buy zipties from the market to do this..";
 };
 
 if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVariable ["restrained", false])) exitWith {
 	hintSilent "You can not do that.";
 };
 
-if(animationState cursorObject != "Incapacitated") exitWith {
-	hintSilent "Your target has to surrender or be knocked outfirst!";
-};
 
+_surrender = _unit getVariable ["playerSurrender",false];
+_animationState = animationState _unit;
+
+if(_surrender || _animationState == "Incapacitated") then {
 
 
 if(isNull _unit) exitWith {}; //Not valid
@@ -36,16 +36,25 @@ life_inv_zipties = life_inv_zipties - 1;
 life_action_inUse = true;
 hintSilent "Restraining!";
 
+
+
 _randycunt = 3;
 _num = 1;
 _myposy = getPos player;
-while {_randycunt > _num} do {
-	_randycunt = _randycunt - 1;
-	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
-	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-};
+	while {_randycunt > _num} do {
+		_randycunt = _randycunt - 1;
+		player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	};
 
 _unit setVariable["tied", true, true];
 [player] remoteExecCall ["life_fnc_tieing", _unit];
 
+} else {
+
+	hintSilent "The player needs to be knocked out or be surrendered!";
+
+};
+
 life_action_inUse = false;
+
+

@@ -23,21 +23,21 @@ life_inv_blindfold = life_inv_blindfold - 1;
 
 
 hintSilent "Blindfolding...";
-_cme = 1;
-_myposy = getPos player;
 
-while {true} do {
-life_action_inUse = true;
-	if( player distance _myposy > 2.5 ) exitwith { 
-			hint "To far away!";
+	_cme = 1;
+	_myposy = getPos player;
+	while {true} do {
+	life_action_inUse = true;
+		if( player distance _myposy > 2.5 ) exitwith { 
+				hint "To far away!";
+		};
+		player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+		
+		_cme = _cme + 1;
+		if(_cme > 3) exitwith {
+			cursorTarget setVariable["blindfolded", true, true];
+			[player] remoteExecCall ["life_fnc_tieingb", cursorTarget];
+		};
 	};
-	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
-	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-	_cme = _cme + 1;
-	if(_cme > 3) exitwith {
-		cursorTarget setVariable["blindfolded", true, true];
-		[player] remoteExecCall ["life_fnc_tieingb", cursorTarget];
-	};
-};
 life_action_inUse = false;
 

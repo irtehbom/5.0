@@ -2,7 +2,7 @@
 	File: fn_untie.sqf
 */
 private["_unit"];
-_unit = cursorObject;
+_unit = cursorTarget;
 if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVariable ["restrained", false])) exitWith {
 	hintSilent "You can not do that."
 };

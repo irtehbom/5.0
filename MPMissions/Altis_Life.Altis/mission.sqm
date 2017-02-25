@@ -8,7 +8,7 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=7162;
+		nextID=7166;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3655.0083,93.323723,13071.159};
-		dir[]={-0.29896858,-0.77247888,0.56028467};
-		up[]={-0.36366645,0.63503188,0.6815322};
-		aside[]={0.88226581,1.792796e-008,0.4707779};
+		pos[]={3645.1147,98.587631,13040.771};
+		dir[]={-0.10879057,-0.77002996,0.6287415};
+		up[]={-0.13129099,0.63798296,0.75878173};
+		aside[]={0.98539996,-5.0931703e-007,0.17050178};
 	};
 };
 binarizationWanted=0;
@@ -359,24 +359,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -391,6 +373,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -468,7 +468,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3935;
+		items=3938;
 		class Item0
 		{
 			dataType="Marker";
@@ -113795,6 +113795,60 @@ class Mission
 			angle=358.09689;
 			id=7161;
 			atlOffset=2.6260188e+029;
+		};
+		class Item3935
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3740.75,23.544052,13323.5};
+				angles[]={0,3.9095378,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=7162;
+			type="Land_LampAirport_F";
+			atlOffset=-0.15032673;
+		};
+		class Item3936
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3736.375,25.169052,13265.375};
+				angles[]={0,0.8552115,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=7163;
+			type="Land_LampAirport_F";
+			atlOffset=0.17475986;
+		};
+		class Item3937
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3223,14.669052,12949.5};
+				angles[]={0,3.1939528,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=7165;
+			type="Land_LampAirport_F";
+			atlOffset=-0.17065597;
 		};
 	};
 };

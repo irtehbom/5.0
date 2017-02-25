@@ -8,7 +8,7 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=4923;
+		nextID=4926;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3642.8806,70.450005,13032.665};
-		dir[]={-0.065890573,-0.63092035,0.77319932};
-		up[]={-0.053578053,0.77580619,0.62871861};
-		aside[]={0.99649614,-2.3924513e-006,0.084926516};
+		pos[]={3646.3374,69.5392,13056.741};
+		dir[]={-0.051299095,-0.65329421,0.75537491};
+		up[]={-0.04426441,0.75710088,0.65179402};
+		aside[]={0.99770975,-1.0048097e-007,0.067756265};
 	};
 };
 binarizationWanted=0;
@@ -370,24 +370,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -402,6 +384,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -33912,7 +33912,7 @@ class Mission
 			};
 			id=1929;
 			type="Pole_F";
-			atlOffset=-0.0036621094;
+			atlOffset=-0.0036659241;
 		};
 		class Item869
 		{
@@ -45368,8 +45368,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3575.625,35.625,12477.75};
-				angles[]={0,3.1415932,6.2826972};
+				position[]={3577.125,35.625,12476.375};
+				angles[]={0,3.8571784,0};
 			};
 			side="Empty";
 			class Attributes
@@ -45378,7 +45378,7 @@ class Mission
 			};
 			id=3968;
 			type="B_Bergen_mcamo_F";
-			atlOffset=3.3005981;
+			atlOffset=3.3014946;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58673,7 +58673,7 @@ class Mission
 			};
 			id=4917;
 			type="Pole_F";
-			atlOffset=-0.0050001144;
+			atlOffset=-0.0050067902;
 		};
 		class Item1987
 		{
@@ -58744,7 +58744,7 @@ class Mission
 			};
 			id=4922;
 			type="Land_LampDecor_F";
-			atlOffset=0.76999998;
+			atlOffset=0.7699995;
 		};
 	};
 };

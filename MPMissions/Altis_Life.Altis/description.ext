@@ -5,7 +5,6 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
-#include "maverick\maverick_master.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -21,15 +20,11 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
-	#include "maverick\tuning\dialogs\titles.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
-	#include "maverick\maverick_functions_master.cpp"
 };
-
-
 
 class CfgSounds {
     sounds[] = {};

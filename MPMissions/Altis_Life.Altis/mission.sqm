@@ -8,7 +8,7 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=4999;
+		nextID=5003;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3642.8464,64.632629,13071.116};
-		dir[]={-0.071618527,-0.73870558,0.67040658};
-		up[]={-0.078471109,0.67397612,0.73460978};
-		aside[]={0.9944312,4.6828063e-008,0.10622898};
+		pos[]={3742.0964,19.203037,13271};
+		dir[]={-0.56563997,-0.64928532,-0.50841558};
+		up[]={-0.48289227,0.7605437,-0.43403882};
+		aside[]={-0.6684863,-2.2002496e-007,0.74372774};
 	};
 };
 binarizationWanted=0;
@@ -360,24 +360,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -392,6 +374,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -469,7 +469,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1990;
+		items=1994;
 		class Item0
 		{
 			dataType="Marker";
@@ -16415,7 +16415,7 @@ class Mission
 			};
 			id=562;
 			type="Land_LampAirport_F";
-			atlOffset=0.27866125;
+			atlOffset=0.2786622;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17296,7 +17296,7 @@ class Mission
 			};
 			id=588;
 			type="Land_LampAirport_F";
-			atlOffset=0.11999989;
+			atlOffset=0.12000036;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -38281,7 +38281,7 @@ class Mission
 			};
 			id=3374;
 			type="Land_LampAirport_F";
-			atlOffset=0.26998818;
+			atlOffset=0.26998794;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58460,7 +58460,7 @@ class Mission
 			};
 			id=4919;
 			type="Land_LampAirport_F";
-			atlOffset=0.70400023;
+			atlOffset=0.70399976;
 		};
 		class Item1977
 		{
@@ -58709,6 +58709,67 @@ class Mission
 			id=4997;
 			type="Land_Rampart_F";
 			atlOffset=-1.799984;
+		};
+		class Item1990
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3673.2422,10.70237,13155.765};
+				angles[]={6.2605309,0,0.0026529003};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="npc_tuning_1 = this; this allowDamage false;";
+				name="Vehicle_Tuning";
+			};
+			id=4999;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item1991
+		{
+			dataType="Marker";
+			position[]={3673.25,1636.0405,13155.125};
+			name="Vehicle_Tuning";
+			text="@STR_MAR_DMV";
+			type="n_mech_inf";
+			colorName="ColorGreen";
+			angle=358.09695;
+			id=5000;
+			atlOffset=1625.9324;
+		};
+		class Item1992
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3738.2075,13.382027,13266.498};
+				angles[]={0.022654373,3.996804,6.2618575};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="npc_tuning_1 = this; this allowDamage false;";
+				name="Vehicle_Tuning_2";
+			};
+			id=5001;
+			type="Land_InfoStand_V2_F";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item1993
+		{
+			dataType="Marker";
+			position[]={3739.5,2.6260188e+029,13267.75};
+			name="Vehicle_Tuning_2";
+			text="@STR_MAR_DMV";
+			type="n_mech_inf";
+			colorName="ColorGreen";
+			angle=358.09695;
+			id=5002;
+			atlOffset=2.6260188e+029;
 		};
 	};
 };

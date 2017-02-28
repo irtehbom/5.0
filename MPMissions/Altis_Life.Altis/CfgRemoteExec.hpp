@@ -177,6 +177,8 @@ class CfgRemoteExec {
 		F(life_fnc_bankalarmsound,ANYONE)
 		F(AI_HC_fnc_spawn_ai,ANYONE)
 		F(TON_fnc_updateMarketPrices,ANYONE)
+		F(TON_fnc_saveVehicleTuningData,ANYONE)
+		
     };
 
     class Commands {

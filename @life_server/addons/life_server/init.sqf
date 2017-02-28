@@ -160,6 +160,9 @@ clearMagazineCargoGlobal drugs_stash;
 clearBackpackCargoGlobal drugs_stash;
 
 drugs_stash setVariable ["seized_drugs_array",[],true];
+publicVariable "drugs_stash";
+
+
 [] spawn TON_fnc_federalUpdate;
 
 /* Event handler for disconnecting players */

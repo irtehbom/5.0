@@ -2508,6 +2508,9 @@
             <Portuguese>Lista de Foragidos</Portuguese>
             <Polish>Poszukiwani</Polish>
         </Key>
+		<Key ID="STR_PM_MarketData">
+			 <Original>Market Data</Original>
+		</Key>
         <Key ID="STR_PM_CellPhone">
             <Original>Cell Phone</Original>
             <Czech>Mobilní telefon</Czech>

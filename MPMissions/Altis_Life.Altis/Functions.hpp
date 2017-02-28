@@ -293,8 +293,13 @@ class Life_Client_Core {
 		class realEstateMarkers {};
 		class realEstatePayRent {};
 		class locksRealEstate {};
-		
 	};
+	
+	class market {
+		file = "core\market";
+		class loadMarketData {};
+		class marketSelection {};
+	}
 	
 	class realEstateDialog
 	{

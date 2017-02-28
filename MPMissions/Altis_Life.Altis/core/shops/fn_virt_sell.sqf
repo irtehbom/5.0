@@ -9,8 +9,30 @@
 private ["_type","_index","_price","_amount","_name"];
 if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+
+//Dynamic Market by Rob
+
+_price = -2;
+
+_virtItemName = _type;
+{
+	_getName = _x select 0;
+	_getPrice = _x select 1;
+	
+	if (_getName == _virtItemName) then {
+		_price = _getPrice
+	};
+	
+} forEach MarketPrices;
+
+//
+
 if (_price isEqualTo -1) exitWith {};
+if (_price isEqualTo -2) then {
+  _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+  if (_price isEqualTo -1) exitWith {};
+};
+
 
 _amount = ctrlText 2405;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};

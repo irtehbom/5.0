@@ -254,6 +254,8 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
+		
+		
 
         class ButtonAdminMenu: Life_RscButtonMenu {
             idc = 2021;
@@ -286,5 +288,15 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
+		class ButtonMarket: Life_RscButtonMenu {
+            idc = 20143;
+            text = "$STR_PM_MarketData";
+            onButtonClick = "createDialog ""life_market"";";
+            x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+            y = 0.805;
+            w = (6.25 / 40);
+            h = (1 / 25);
+        };
     };
 };

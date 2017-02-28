@@ -119,6 +119,7 @@ class CfgRemoteExec {
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
 		F(TON_fnc_handleC4,SERVER)
+		
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -173,6 +174,7 @@ class CfgRemoteExec {
 		F(life_fnc_demoChargeTimerOilRig,ANYONE)
 		F(life_fnc_bankalarmsound,ANYONE)
 		F(AI_HC_fnc_spawn_ai,ANYONE)
+		F(TON_fnc_updateMarketPrices,ANYONE)
     };
 
     class Commands {

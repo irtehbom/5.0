@@ -117,6 +117,7 @@ class CfgFunctions {
 		{
 			file = "\life_server\Functions\VehicleTuning";
 			class saveVehicleTuningData {};
+			class getVehicleTuningData {};
 		};
 
         class Gangs {

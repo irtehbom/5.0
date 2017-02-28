@@ -88,8 +88,9 @@ switch (playerSide) do {
                 if (life_civ_position distance (getMarkerPos "respawn_civilian") < 300) then {life_is_alive = false;};
             };
         };
+		/*
 		
-				diag_log format["SELECT 1: %1", _this select 1];
+		diag_log format["SELECT 1: %1", _this select 1];
 		diag_log format["SELECT 2: %1", _this select 2];
 		diag_log format["SELECT 3: %1", _this select 3];
 		diag_log format["SELECT 4: %1", _this select 4];
@@ -104,7 +105,8 @@ switch (playerSide) do {
 		diag_log format["SELECT 13: %1", _this select 13];
 		diag_log format["SELECT 14: %1", _this select 14];
 		diag_log format["SELECT 15: %1", _this select 15];
-	
+		
+		*/
 
 		
         {

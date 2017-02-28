@@ -103,6 +103,12 @@ scriptName "fn_initTuningClient";
 	// Give all NPCs their addaction
 	{
 		_npcNameString = format["npc_tuning_%1", _x];
+		diag_log format["TUNING TEST %1 ",_npcNameString];
+		diag_log format["TUNING TEST %1 ",_npcNameString];
+		diag_log format["TUNING TEST %1 ",_npcNameString];
+		diag_log format["TUNING TEST %1 ",_npcNameString];
+		diag_log format["TUNING TEST %1 ",_npcNameString];
+		
 		_npc = missionNamespace getVariable [_npcNameString, objNull];
 		if (!isNull _npc) then {
 			player addAction ["Tuning Shop", {[vehicle player] spawn mav_tuning_fnc_start}, nil, 50, true, false, "", format["(%1 distance2d player) < 10", _npcNameString]];
@@ -116,7 +122,7 @@ scriptName "fn_initTuningClient";
 				_npcNameString = format["npc_tuning_%1", _x];
 				_npc = missionNamespace getVariable [_npcNameString, objNull];
 				if (!isNull _npc) then {
-					player addAction ["Tuningshop betreten", {[vehicle player] spawn mav_tuning_fnc_start}, nil, 50, true, false, "", format["(%1 distance2d player) < 10", _npcNameString]];
+					player addAction ["Tuning Shop", {[vehicle player] spawn mav_tuning_fnc_start}, nil, 50, true, false, "", format["(%1 distance2d player) < 10", _npcNameString]];
 				};
 			} forEach [1,2,3,4,5,6,7,8,9,10];
 		};

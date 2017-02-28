@@ -5,8 +5,6 @@
 */
 private["_query","_queryResult"];
 
-diag_log "--------------- UPDATE START ------------------";
-
 MarketPrices = [];
 
 _query = format["SELECT * FROM market"];

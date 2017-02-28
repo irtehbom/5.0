@@ -35,44 +35,55 @@ if (life_cash < _price) exitWith {
 	["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>You do not have enough money to purchase this modification</t>"] spawn mav_tuning_fnc_displayText;
 };
 
-// RGB COLOR
-if (_subConfig == "RGB" AND _class == "Colors") exitWith {
-	createDialog "mav_tuning_dialog_rgbcolor";
-	// Money duh
- 	life_cash = life_cash - _price;
- 	mav_tuning_rgbprice = _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+_action = [
+	format["This modification costs<t color='#8cff9b'> $%1</t><br/><br/>",
+	[_price] call life_fnc_numberText, _price], "Purchase Modification?","Accept","Cancel"
+] call BIS_fnc_guiMessage;
 
-	[] spawn mav_tuning_fnc_rgbColorSelection;
-};
-// UNDERGLOW
-if (_subConfig == "UnderglowRGB" AND _class == "Underglow") exitWith {
-	createDialog "mav_tuning_dialog_rgbcolor";
-	// Money duh
- 	life_cash = life_cash - _price;
- 	mav_tuning_rgbprice = _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+if (_action) then {
 
-	[] spawn mav_tuning_fnc_rgbColorSelectionLight;
-};
+	// RGB COLOR
+	if (_subConfig == "RGB" AND _class == "Colors") exitWith {
+		createDialog "mav_tuning_dialog_rgbcolor";
+		// Money duh
+		life_cash = life_cash - _price;
+		mav_tuning_rgbprice = _price;
+		[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
 
-// EVERYTHING ELSE
-if (true) then {
-	_originalData = (vehicle player) getVariable ["mav_tuning",[]];
+		[] spawn mav_tuning_fnc_rgbColorSelection;
+	};
+	// UNDERGLOW
+	if (_subConfig == "UnderglowRGB" AND _class == "Underglow") exitWith {
+		createDialog "mav_tuning_dialog_rgbcolor";
+		// Money duh
+		life_cash = life_cash - _price;
+		mav_tuning_rgbprice = _price;
+		[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
 
-	if (isNil "mav_tuning_previewData") exitWith {};
-	if ((str _originalData) == (str mav_tuning_previewData)) exitWith {
-		["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>You already own this modification</t>"] spawn mav_tuning_fnc_displayText;
+		[] spawn mav_tuning_fnc_rgbColorSelectionLight;
 	};
 
-	_newArray = mav_tuning_previewData;
-	[_newArray,vehicle player] spawn mav_tuning_fnc_loadVehicleModification;
- 	_veh setVariable ["mav_tuning",_newArray,true];
+	// EVERYTHING ELSE
+	if (true) then {
+		_originalData = (vehicle player) getVariable ["mav_tuning",[]];
 
- 	// Money duh
- 	life_cash = life_cash - _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[_price] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+		if (isNil "mav_tuning_previewData") exitWith {};
+		if ((str _originalData) == (str mav_tuning_previewData)) exitWith {
+			["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>You already own this modification</t>"] spawn mav_tuning_fnc_displayText;
+		};
 
-	// Select nothing
-	_ctrl lbSetCurSel -1;
+		_newArray = mav_tuning_previewData;
+		[_newArray,vehicle player] spawn mav_tuning_fnc_loadVehicleModification;
+		_veh setVariable ["mav_tuning",_newArray,true];
+
+		// Money duh
+		life_cash = life_cash - _price;
+		[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[_price] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+
+		// Select nothing
+		_ctrl lbSetCurSel -1;
+	};
+	
+	_action = false;
+
 };

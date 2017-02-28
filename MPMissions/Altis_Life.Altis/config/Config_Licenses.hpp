@@ -68,7 +68,7 @@ class Licenses {
     class oil {
         variable = "oil";
         displayName = "STR_License_Oil";
-        price = 10000;
+        price = 5000;
         illegal = false;
         side = "civ";
     };
@@ -76,7 +76,7 @@ class Licenses {
     class diamond {
         variable = "diamond";
         displayName = "STR_License_Diamond";
-        price = 35000;
+        price = 12500;
         illegal = false;
         side = "civ";
     };
@@ -84,7 +84,7 @@ class Licenses {
     class salt {
         variable = "salt";
         displayName = "STR_License_Salt";
-        price = 12000;
+        price = 7500;
         illegal = false;
         side = "civ";
     };
@@ -92,7 +92,7 @@ class Licenses {
     class sand {
         variable = "sand";
         displayName = "STR_License_Sand";
-        price = 14500;
+        price = 4000;
         illegal = false;
         side = "civ";
     };
@@ -100,7 +100,7 @@ class Licenses {
     class iron {
         variable = "iron";
         displayName = "STR_License_Iron";
-        price = 9500;
+        price = 3000;
         illegal = false;
         side = "civ";
     };
@@ -108,7 +108,7 @@ class Licenses {
     class copper {
         variable = "copper";
         displayName = "STR_License_Copper";
-        price = 8000;
+        price = 2500;
         illegal = false;
         side = "civ";
     };
@@ -116,7 +116,7 @@ class Licenses {
     class cement {
         variable = "cement";
         displayName = "STR_License_Cement";
-        price = 6500;
+        price = 3000;
         illegal = false;
         side = "civ";
     };
@@ -124,7 +124,7 @@ class Licenses {
     class medmarijuana {
         variable = "medmarijuana";
         displayName = "STR_License_Medmarijuana";
-        price = 15000;
+        price = 11500;
         illegal = false;
         side = "civ";
     };

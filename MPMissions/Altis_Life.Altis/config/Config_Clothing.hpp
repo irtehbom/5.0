@@ -133,11 +133,7 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
-            { "B_Carryall_ghex_F", "", 7500, "" },
-            { "B_Bergen_dgtl_F", "", 9500, "" }, //ApexBergenDigital
-            { "B_Bergen_hex_F", "", 9500, "" }, //ApexBergenHex
-            { "B_Bergen_mcamo_F", "", 9500, "" }, //ApexBergenMTP
-            { "B_Bergen_tna_F", "", 9500, "" } //ApexBergenTropic
+            { "B_Carryall_ghex_F", "", 7500, "" }
         };
     };
  
@@ -472,12 +468,7 @@ class Clothing {
             { "B_Carryall_mcamo", "", 7500, "" },
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
-            { "B_Carryall_cbr", "", 7500, "" },
-            { "B_Carryall_ghex_F", "", 7500, "" },
-            { "B_Bergen_dgtl_F", "", 9500, "" }, //ApexBergenDigital
-            { "B_Bergen_hex_F", "", 9500, "" }, //ApexBergenHex
-            { "B_Bergen_mcamo_F", "", 9500, "" }, //ApexBergenMTP
-            { "B_Bergen_tna_F", "", 9500, "" } //ApexBergenTropic
+            { "B_Carryall_cbr", "", 7500, "" }
         };
     };
  

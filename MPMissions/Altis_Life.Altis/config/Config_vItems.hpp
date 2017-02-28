@@ -233,7 +233,7 @@ class VirtualItems {
     class spikeStrip {
         variable = "spikeStrip";
         displayName = "STR_Item_SpikeStrip";
-        weight = 15;
+        weight = 4;
         buyPrice = 500;
         sellPrice = 200;
         illegal = true;
@@ -535,7 +535,7 @@ class VirtualItems {
     class cannabis {
         variable = "cannabis";
         displayName = "STR_Item_Cannabis";
-        weight = 4;
+        weight = 6;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;

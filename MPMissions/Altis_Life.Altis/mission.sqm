@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3651.9531,71.049683,13047.054};
+		pos[]={3651.98,72.092087,13044.913};
 		dir[]={-0.16480963,-0.69383788,0.70116979};
 		up[]={-0.15877011,0.72009355,0.67547178};
 		aside[]={0.9735679,-1.2671808e-007,0.22883682};
@@ -359,6 +359,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -373,24 +391,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -468,7 +468,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1761;
+		items=1760;
 		class Item0
 		{
 			dataType="Marker";
@@ -1484,7 +1484,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=118;
-			atlOffset=2.7725487;
+			atlOffset=2.7798691;
 		};
 		class Item97
 		{
@@ -4695,7 +4695,6 @@ class Mission
 				angles[]={0,3.1949127,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4703,6 +4702,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.3253021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14251,13 +14251,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.35447693;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15662,7 +15662,6 @@ class Mission
 						angles[]={0,4.0052385,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15671,6 +15670,7 @@ class Mission
 					};
 					id=951;
 					type="C_man_1";
+					atlOffset=0.39696693;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18018,7 +18018,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -18027,7 +18026,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.046899796;
+					atlOffset=1.4344749;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19197,7 +19196,6 @@ class Mission
 						angles[]={0,2.5830052,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -19206,6 +19204,7 @@ class Mission
 					};
 					id=1034;
 					type="C_man_1";
+					atlOffset=0.38654613;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20855,6 +20854,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32445,6 +32445,7 @@ class Mission
 			};
 			id=3894;
 			type="Land_SatelliteAntenna_01_F";
+			atlOffset=0.0083694458;
 		};
 		class Item967
 		{
@@ -48623,7 +48624,7 @@ class Mission
 			};
 			id=7578;
 			type="Land_Billboard_F";
-			atlOffset=3.3592491;
+			atlOffset=3.5429974;
 		};
 		class Item1701
 		{
@@ -49612,19 +49613,6 @@ class Mission
 		};
 		class Item1756
 		{
-			dataType="Marker";
-			position[]={-526.125,-2.1963119e-011,1497.875};
-			name="marker_235";
-			text=" Dynamic Market Implemented, you can view it by pressing "" Y """;
-			type="mil_pickup";
-			colorName="ColorGUER";
-			a=0.5;
-			b=0.5;
-			id=7644;
-			atlOffset=185.97;
-		};
-		class Item1757
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -49640,7 +49628,7 @@ class Mission
 			type="Land_HelipadEmpty_F";
 			atlOffset=1.8183788;
 		};
-		class Item1758
+		class Item1757
 		{
 			dataType="Object";
 			class PositionInfo
@@ -49658,7 +49646,7 @@ class Mission
 			type="Land_W_sharpRock_spike";
 			atlOffset=-17.218964;
 		};
-		class Item1759
+		class Item1758
 		{
 			dataType="Object";
 			class PositionInfo
@@ -49676,7 +49664,7 @@ class Mission
 			type="Land_W_sharpRock_spike";
 			atlOffset=-9.0035515;
 		};
-		class Item1760
+		class Item1759
 		{
 			dataType="Object";
 			class PositionInfo

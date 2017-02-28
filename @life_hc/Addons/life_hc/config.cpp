@@ -83,6 +83,7 @@ class CfgFunctions
 		{
 			file = "\life_server\MySQL\VehicleTuning";
 			class saveVehicleTuningData {};
+			class getVehicleTuningData {};
 		};
 
         class Gangs

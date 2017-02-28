@@ -19,11 +19,16 @@ sleep _delay;
 
 _vehicle setVariable ["vehicleID",_vehicleID, true];
 
-_query = format["SELECT tuning_data FROM vehicles WHERE id='%1'",_vehicleID];
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
+_data = [];
 
-if (count _queryResult > 0) then {
-	_result = _queryResult select 0;
+if (life_HC_isActive) then {
+	_data = [_vehicleID] remoteExecCall ["TON_fnc_getVehicleTuningData",HC_Life];
+} else {
+	_data = [_vehicleID] remoteExecCall ["TON_fnc_getVehicleTuningData",RSERV];
+};
+
+if (count _data > 0) then {
+	_result = _data select 0;
 
 	if (count _result > 0) then {
 		_resultConverted = call compile ([false,(_result select 0)] call mav_tuning_fnc_tuning_prepareString);

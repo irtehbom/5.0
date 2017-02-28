@@ -103,11 +103,6 @@ scriptName "fn_initTuningClient";
 	// Give all NPCs their addaction
 	{
 		_npcNameString = format["npc_tuning_%1", _x];
-		diag_log format["TUNING TEST %1 ",_npcNameString];
-		diag_log format["TUNING TEST %1 ",_npcNameString];
-		diag_log format["TUNING TEST %1 ",_npcNameString];
-		diag_log format["TUNING TEST %1 ",_npcNameString];
-		diag_log format["TUNING TEST %1 ",_npcNameString];
 		
 		_npc = missionNamespace getVariable [_npcNameString, objNull];
 		if (!isNull _npc) then {

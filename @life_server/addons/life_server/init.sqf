@@ -80,6 +80,9 @@ publicVariable "life_server_extDB_notLoaded";
 ["CALL deleteOldHouses",1] call DB_fnc_asyncCall;
 ["CALL deleteOldGangs",1] call DB_fnc_asyncCall;
 
+MarketPrices = [];
+publicVariable "MarketPrices";
+
 _timeStamp = diag_tickTime;
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log "---------------------------------- Starting Altis Life Server Init ---------------------------------";

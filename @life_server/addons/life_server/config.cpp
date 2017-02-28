@@ -112,6 +112,12 @@ class CfgFunctions {
 			file = "\life_server\Functions\Market";
 			class updateMarketPrices {};
 		};
+		
+		class VehicleTuning
+		{
+			file = "\life_server\Functions\VehicleTuning";
+			class saveVehicleTuningData {};
+		};
 
         class Gangs {
             file = "\life_server\Functions\Gangs";

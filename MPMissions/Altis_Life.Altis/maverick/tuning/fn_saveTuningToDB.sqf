@@ -1,12 +1,7 @@
 scriptName "fn_saveTuningToDB";
-/*--------------------------------------------------------------------
-	Author: Maverick (ofpectag: MAV)
-    File: fn_saveTuningToDB.sqf
 
-	<Maverick Applications>
-    Written by Maverick Applications (www.maverick-apps.de)
-    You're not allowed to use this file without permission from the author!
---------------------------------------------------------------------*/
+#include "..\..\script_macros.hpp"
+
 #define __filename "fn_saveTuningToDB.sqf"
 
 _vehicleID = param[0,-1,[-1]];
@@ -16,5 +11,8 @@ if (!isServer && hasInterface) exitWith {};
 if (count _data == 0) exitWith {};
 _dataString = [true,str _data] call mav_tuning_fnc_tuning_prepareString;
 
-_query = format["UPDATE vehicles SET tuning_data='%2' WHERE id='%1';",_vehicleID, _dataString];
-[_query,1] call DB_fnc_asyncCall;
+if (life_HC_isActive) then {
+	[_vehicleID, _dataString] remoteExecCall ["TON_fnc_saveVehicleTuningData",HC_Life];
+} else {
+	[_vehicleID, _dataString] remoteExecCall ["TON_fnc_saveVehicleTuningData",RSERV];
+};

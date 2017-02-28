@@ -78,6 +78,12 @@ class CfgFunctions
 			class sellEstate {};
 			class payRentRealEstate {};
 		};
+		
+		class VehicleTuning
+		{
+			file = "\life_server\MySQL\VehicleTuning";
+			class saveVehicleTuningData {};
+		};
 
         class Gangs
         {

@@ -13,3 +13,4 @@ waitUntil{!DB_Async_Active};
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
 
 _queryResult;
+

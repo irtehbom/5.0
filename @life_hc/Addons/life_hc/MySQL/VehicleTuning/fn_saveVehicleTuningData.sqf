@@ -11,5 +11,5 @@ _dataString = _this select 1;
 _query = format["UPDATE vehicles SET tuning_data='%2' WHERE id='%1';",_vehicleID, _dataString];
 
 waitUntil{!DB_Async_Active};
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
+[_query,2,true] call DB_fnc_asyncCall;
 

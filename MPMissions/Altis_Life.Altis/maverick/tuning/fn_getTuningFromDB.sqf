@@ -1,12 +1,7 @@
 scriptName "fn_getTuningFromDB";
-/*--------------------------------------------------------------------
-	Author: Maverick (ofpectag: MAV)
-    File: fn_getTuningFromDB.sqf
 
-	<Maverick Applications>
-    Written by Maverick Applications (www.maverick-apps.de)
-    You're not allowed to use this file without permission from the author!
---------------------------------------------------------------------*/
+#include "..\..\script_macros.hpp"
+
 #define __filename "fn_getTuningFromDB.sqf"
 
 _vehicleID = param[0,-1,[-1]];
@@ -19,13 +14,7 @@ sleep _delay;
 
 _vehicle setVariable ["vehicleID",_vehicleID, true];
 
-_data = [];
-
-if (life_HC_isActive) then {
-	_data = [_vehicleID] remoteExecCall ["TON_fnc_getVehicleTuningData",HC_Life];
-} else {
-	_data = [_vehicleID] remoteExecCall ["TON_fnc_getVehicleTuningData",RSERV];
-};
+_data = [_vehicleID] call TON_fnc_getVehicleTuningData;
 
 if (count _data > 0) then {
 	_result = _data select 0;

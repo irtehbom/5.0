@@ -106,6 +106,12 @@ class CfgFunctions {
 			class sellEstate {};
 			class payRentRealEstate {};
 		};
+		
+		class Market
+		{
+			file = "\life_server\Functions\Market";
+			class updateMarketPrices {};
+		};
 
         class Gangs {
             file = "\life_server\Functions\Gangs";

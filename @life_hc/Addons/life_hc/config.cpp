@@ -81,7 +81,7 @@ class CfgFunctions
 		
 		class VehicleTuning
 		{
-			file = "\life_server\MySQL\VehicleTuning";
+			file = "\life_hc\MySQL\VehicleTuning";
 			class saveVehicleTuningData {};
 			class getVehicleTuningData {};
 		};

@@ -1,0 +1,32 @@
+/*
+Sends the player to court
+*/
+private["_bad","_unit"];
+_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if(isNull _unit) exitWith {}; //Not valid
+if(isNil "_unit") exitwith {}; //Not Valid
+if(!(_unit isKindOf "Man")) exitWith {}; //Not a unit
+if(!isPlayer _unit) exitWith {}; //Not a human
+if(!(_unit getVariable "restrained")) exitWith {}; //He's not restrained.
+if(!((side _unit) in [civilian,independent])) exitWith {}; //Not a civ
+if(isNull _unit) exitWith {}; //Not valid
+
+
+
+if (side player == east) then {
+	[[_unit,player,false],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+	
+	if(isNull _unit) exitWith {}; //Not valid
+	detach _unit;
+} else {
+	[[_unit,player,false],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+
+	if(isNull _unit) exitWith {}; //Not valid
+	detach _unit;
+	[[_unit],"life_fnc_courtAddPlayer",false,false] spawn life_fnc_MP;
+	[[0,"STR_NOTF_Arrested_1",true, [_unit getVariable["realname",name _unit], profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	
+	[[6, player, (call life_donator)], "life_fnc_xpGenericXPGain", false, false] spawn life_fnc_MP;
+};
+
+_unit setPos (getMarkerPos "court_marker");

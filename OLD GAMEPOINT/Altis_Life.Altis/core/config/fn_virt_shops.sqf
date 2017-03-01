@@ -1,0 +1,55 @@
+/*
+	File: fn_virt_shops.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Config for virtual shops.
+*/
+private["_shop"];
+_shop = _this select 0;
+
+switch (_shop) do
+{
+	case "market": {["Altis Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig","uwsl"]]};
+	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","gpzipties","c4","uwsl"]]};
+	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","c4","uwsl"]]};
+	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
+	case "coffee": {["Stratis Coffee Club",["coffee","donuts","sroll"]]};
+	case "heroin": {["Drug Dealer",["cocainep","heroinp","marijuana","opium"]]};
+	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
+	case "fishmarket": {["Altis Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
+	case "glass": {["Altis Glass Dealer",["glass"]]};
+	case "iron": {["Altis Industrial Trader",["iron_r","copper_r"]]};
+	case "diamond": {["Diamond Dealer",["diamond","diamondc"]]};
+	case "salt": {["Salt Dealer",["salt_r"]]};
+	case "cop": {["Cop Item Shop",["donuts","sroll","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
+	case "cement": {["Cement Dealer",["cement"]]};
+	case "bonds_dealer": {["Bonds Dealer",["bonds"]]};
+	case "gold": {["Altis Treasurer",["goldbar","treasure"]]};
+	case "silver": {["Silver Trader",["silver"]]};
+	case "clay": {["Clay Trader",["clay"]]};
+	case "cobalt": {["Cobalt Trader",["cobalt"]]};
+	case "lead": {["Lead Trader",["lead"]]};
+	case "titanium": {["Titanium Trader",["titanium"]]};
+	case "firearms": {["Firearms Trader",["firearms"]]};
+	case "Build":
+	{
+		_gangLevel = (group player) getVariable["gangLevel", -1];
+		_result = ["Building supplies", []];
+		_arr = _result select 1;
+		_arr set [count _arr, "crowbar"];
+		{
+			if (_gangLevel != -1) then {
+				if (count _x > 5) then {
+					if (_x select 5 <= _gangLevel) then {
+						_arr set[count _arr, "build_" + (_x select 1)];
+					};
+				} else {
+					_arr set[count _arr, "build_" + (_x select 1)];
+				};
+			};
+		} forEach (call life_build_objects);
+		_result set[1, _arr];
+		_result;
+	};
+};

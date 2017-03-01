@@ -1,0 +1,302 @@
+
+author = "Levia, Rob and Scib";
+onLoadName = "GamePoint Altis Life";
+onLoadMission = "For more information visit www.gamepointeu.co.uk";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[]={0,1,2};
+enableDebugConsole = 1;
+respawnDialog = 0;
+LoadScreen  = "gamepoint.jpg";
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 300;
+};
+
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+#include "dialog\MasterHandler.h"
+
+SPY_Enable = true;
+
+#include "Config_Spyglass.hpp"
+#include "dialog\GP_Welcome.h"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.h"
+	#include "dialog\Build\buildingHud.hpp"
+	#include "dialog\XPTicker.hpp"
+	#include "dialog\RankUpIcon.hpp"
+	#include "dialog\GP_Title.hpp"
+	#include "dialog\XPBar.hpp"
+	#include "dialog\Medic.hpp"
+	#include "dialog\realEstate.hpp"
+	#include "dialog\realEstateGarage.hpp"
+	#include "dialog\houseMenu.hpp"
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+
+class CfgMusic
+{
+
+class introMusic
+    {
+    name = "intro_music";
+    sound[] = {"\sounds\introMusic.ogg", 1.0, 1};
+    titles[] = {};
+    };
+};
+class CfgSounds
+{
+	sounds[] = {};
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class SirenMedic
+	{
+		name = "SirenMedic";
+		sound[] = {"\sounds\SirenMedic.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class tazersound
+	{
+		name = "Tazersound";
+		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		titles[] = {};
+	};
+	
+	class bank_alarm
+    {
+    name = "bank_alarm";
+    sound[] = {"\sounds\bank.ogg", 1.0, 1};
+    titles[] = {};
+    };
+	
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class car_lock
+    {
+    name = "car_lock";
+    sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+    titles[] = {};
+    };
+	
+    class unlock
+    {
+    name = "unlock";
+    sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+    titles[] = {};
+    };
+	
+	class Cuff 
+	{
+		name = "cuff";
+		sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};
+		titles[] = {};
+	};
+	
+	class carAlarm
+	{
+		name = "caralarm";
+		sound[] = {"\sounds\caralarm.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class xpRankUp
+	{
+		name = "xpRankUp";
+		sound[] = {"\xp\sounds\rankup.wav", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class courtHammer
+    {
+    name = "court_hammer";
+    sound[] = {"\sounds\court_hammer.ogg", 1.0, 1};
+    titles[] = {};
+    };
+	
+
+};
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are not white-listed to use this slot please join our Teamspeak";
+		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class Blacklisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are blacklisted from cops";
+		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SpyGlass
+	{
+		title = "The SpyGlass sees you";
+		subTitle = "You were detected by the SpyGlass";
+		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class Clicker
+	{
+		title = "GamePoint anti-exploit";
+		subTitle = "You got detected by Levia";
+		description = "You used an auto clicker to attempt to exploit the game. If you did, kindly fuck off. If you didn't, contact us on Teamspeak.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+	
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+	
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+	
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+	
+	class TextMessage
+	{
+		title = "Received A Text Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};
+
+class CfgVehicles
+{
+	
+	class House;
+	class House_F: House
+	{
+		class DestructionEffects;
+	};
+	class Ruins_F;
+
+	
+	class Mailbox: House_F
+	{
+		scope = 2; 
+		displayName = "Mailbox"; 
+		model = "A3\plants_f\Clutter\c_Thistle_Thorn_Green.p3d"; // filepath
+		vehicleClass = Structures; // Object in the in-game editor
+		mapSize = 20.27; 
+		cost = 40000;
+
+		class DestructionEffects: DestructionEffects
+		{
+		};
+		class HitPoints 
+		{
+		};
+		class Damage
+		{
+		};
+		
+		class UserActions
+		{
+		};
+		
+	};
+};
+#include "infiSTAR_AdminMenu.hpp"

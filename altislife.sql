@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-02-11 22:31:17
+Date: 2017-03-03 17:00:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -57,7 +57,7 @@ CREATE TABLE `gangs` (
 -- ----------------------------
 -- Records of gangs
 -- ----------------------------
-INSERT INTO `gangs` VALUES ('1', '76561198022865586', 'Your Gang Namedwadawdaw', '\"[`76561198022865586`]\"', '8', '0', '1', '2017-02-04 14:20:39');
+INSERT INTO `gangs` VALUES ('1', '76561198022865586', 'Your Gang Namedwadawdaw', '\"[`76561198022865586`]\"', '8', '599572', '1', '2017-02-04 14:20:39');
 
 -- ----------------------------
 -- Table structure for `houses`
@@ -77,6 +77,35 @@ CREATE TABLE `houses` (
 -- Records of houses
 -- ----------------------------
 INSERT INTO `houses` VALUES ('2', '76561198022865586', '[3350.52,13161,0.387996]', '1', '0', '2017-02-04 13:26:33');
+
+-- ----------------------------
+-- Table structure for `market`
+-- ----------------------------
+DROP TABLE IF EXISTS `market`;
+CREATE TABLE `market` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `itemName` varchar(50) NOT NULL,
+  `minimumPrice` int(10) NOT NULL,
+  `maximumPrice` int(10) NOT NULL,
+  `currentPrice` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of market
+-- ----------------------------
+INSERT INTO `market` VALUES ('1', 'copper_refined', '390', '525', '462');
+INSERT INTO `market` VALUES ('2', 'iron_refined', '450', '600', '593');
+INSERT INTO `market` VALUES ('3', 'cement', '500', '700', '586');
+INSERT INTO `market` VALUES ('4', 'glass', '600', '800', '749');
+INSERT INTO `market` VALUES ('5', 'oil_processed', '750', '1050', '880');
+INSERT INTO `market` VALUES ('6', 'salt_refined', '500', '750', '684');
+INSERT INTO `market` VALUES ('7', 'diamond_cut', '700', '900', '860');
+INSERT INTO `market` VALUES ('8', 'heroin_processed', '950', '1250', '1191');
+INSERT INTO `market` VALUES ('9', 'marijuana', '1150', '1450', '1425');
+INSERT INTO `market` VALUES ('10', 'cocaine_processed', '1300', '1550', '1382');
+INSERT INTO `market` VALUES ('15', 'goldbar', '25000', '25000', '25000');
+INSERT INTO `market` VALUES ('16', 'bonds', '100000', '100000', '100000');
 
 -- ----------------------------
 -- Table structure for `players`
@@ -113,12 +142,16 @@ CREATE TABLE `players` (
   UNIQUE KEY `pid` (`pid`),
   KEY `name` (`name`),
   KEY `blacklist` (`blacklist`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of players
 -- ----------------------------
-INSERT INTO `players` VALUES ('12', 'hellokitty', '\"[`Rob`]\"', '76561198022865586', '0', '1346818', '0', '0', '\"[[`license_civ_driver`,1],[`license_civ_boat`,0],[`license_civ_pilot`,1],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,1],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,1],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[[`license_cop_cAir`,0],[`license_cop_cg`,0]]\"', '\"[]\"', '\"[`U_C_Poloshirt_stripped`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],[],[],[],[`20Rnd_762x51_Mag`],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[`U_Rangemaster`,`V_Rangemaster_belt`,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,`hgun_P07_snds_F`,[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`],[],[],[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`],[``,``,``,``],[`muzzle_snds_L`,``,``,``],[]]\"', '\"[]\"', '\"[100,80,0.114537]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '3', '0', '0', '1', '\"[3625.48,13124.8,0.00141525]\"', '\"[12,0,117]\"', '2017-02-04 01:27:53', '2017-02-11 22:11:33');
+INSERT INTO `players` VALUES ('12', 'Rob', '\"[`Rob`]\"', '76561198022865586', '0', '6724809', '7', '0', '\"[[`license_civ_driver`,1],[`license_civ_boat`,0],[`license_civ_pilot`,1],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,1],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,1],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,1],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,1]]\"', '\"[[`license_cop_cAir`,0],[`license_cop_cg`,0]]\"', '\"[]\"', '\"[`U_C_Poloshirt_stripped`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[`U_B_CombatUniform_mcam`,`V_Rangemaster_belt`,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,`hgun_P07_snds_F`,[],[],[],[],[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`],[``,``,``,``],[`muzzle_snds_L`,``,``,``],[]]\"', '\"[]\"', '\"[70,60,0]\"', '\"[70,50,0]\"', '\"[100,100,0]\"', '0', '3', '0', '0', '1', '\"[14074.1,18572.5,0.00128555]\"', '\"[438,0,204]\"', '2017-02-04 01:27:53', '2017-03-03 16:44:49');
+INSERT INTO `players` VALUES ('13', 'CarlS', '\"[`CarlS`]\"', '76561198024323552', '0', '3000', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[`U_C_Poloshirt_burgundy`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],[],[],[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3618.96,13092,0.00146103]\"', '\"[0,0,3]\"', '2017-02-19 12:26:07', '2017-02-19 12:29:03');
+INSERT INTO `players` VALUES ('14', 'Qwerty', '\"[`Qwerty`]\"', '76561198023100736', '0', '3000', '0', '0', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '0', '\"[]\"', '\"[0,0,0]\"', '2017-02-19 13:06:20', '2017-02-19 13:06:20');
+INSERT INTO `players` VALUES ('15', 'AntonyJ', '\"[`AntonyJ`]\"', '76561198015198428', '0', '3000', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[`U_C_Poloshirt_salmon`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3612.77,12970.4,0.00149632]\"', '\"[0,0,4]\"', '2017-02-23 18:48:38', '2017-02-23 19:05:49');
+INSERT INTO `players` VALUES ('16', 'Grim', '\"[`Lasher`]\"', '76561198023684678', '0', '3345', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[``,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3410.58,13120.5,0.00146818]\"', '\"[0,0,19]\"', '2017-02-24 10:16:08', '2017-02-28 09:53:44');
 
 -- ----------------------------
 -- Table structure for `realestate`
@@ -134,12 +167,11 @@ CREATE TABLE `realestate` (
   `rent` int(11) NOT NULL DEFAULT '0',
   `playername` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of realestate
 -- ----------------------------
-INSERT INTO `realestate` VALUES ('119', '76561198022865586', '[7031.59,16009.8,7.62939e-006]', '\"[[],0]\"', '\"[]\"', '1', '0', 'Rob');
 
 -- ----------------------------
 -- Table structure for `vehicles`
@@ -161,57 +193,19 @@ CREATE TABLE `vehicles` (
   `fuel` double NOT NULL DEFAULT '1',
   `damage` varchar(256) NOT NULL,
   `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `tuning_data` varchar(300) NOT NULL DEFAULT '[]',
   PRIMARY KEY (`id`),
   KEY `side` (`side`),
   KEY `pid` (`pid`),
   KEY `type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of vehicles
 -- ----------------------------
-INSERT INTO `vehicles` VALUES ('1', 'civ', 'B_Heli_Light_01_F', 'Air', '76561198022865586', '1', '0', '1', '37592', '5', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 16:23:27');
-INSERT INTO `vehicles` VALUES ('2', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '826705', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 18:16:44');
-INSERT INTO `vehicles` VALUES ('3', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '222346', '5', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 18:25:40');
-INSERT INTO `vehicles` VALUES ('4', 'civ', 'C_Heli_Light_01_civil_F', 'Air', '76561198022865586', '1', '0', '1', '934907', '11', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 18:55:46');
-INSERT INTO `vehicles` VALUES ('5', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '767795', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 18:56:53');
-INSERT INTO `vehicles` VALUES ('6', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '115452', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 19:28:45');
-INSERT INTO `vehicles` VALUES ('7', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '746324', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 19:32:05');
-INSERT INTO `vehicles` VALUES ('8', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '431611', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 19:35:43');
-INSERT INTO `vehicles` VALUES ('9', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '781564', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 19:59:43');
-INSERT INTO `vehicles` VALUES ('10', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '765194', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:14:19');
-INSERT INTO `vehicles` VALUES ('11', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '444898', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:17:02');
-INSERT INTO `vehicles` VALUES ('12', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '399099', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:20:14');
-INSERT INTO `vehicles` VALUES ('13', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '859984', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:23:55');
-INSERT INTO `vehicles` VALUES ('14', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '316817', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:41:16');
-INSERT INTO `vehicles` VALUES ('15', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '499297', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 20:59:43');
-INSERT INTO `vehicles` VALUES ('16', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '583826', '0', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 21:06:04');
-INSERT INTO `vehicles` VALUES ('17', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '833546', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 21:09:10');
-INSERT INTO `vehicles` VALUES ('18', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '309381', '5', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 21:14:40');
-INSERT INTO `vehicles` VALUES ('19', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '360674', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 21:19:00');
-INSERT INTO `vehicles` VALUES ('20', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '641349', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:01:45');
-INSERT INTO `vehicles` VALUES ('21', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '998367', '0', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:04:08');
-INSERT INTO `vehicles` VALUES ('22', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '928018', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:12:34');
-INSERT INTO `vehicles` VALUES ('23', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '560024', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:14:16');
-INSERT INTO `vehicles` VALUES ('24', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '858478', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:17:37');
-INSERT INTO `vehicles` VALUES ('25', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '938634', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:20:24');
-INSERT INTO `vehicles` VALUES ('26', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '64213', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:29:07');
-INSERT INTO `vehicles` VALUES ('27', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '725991', '4', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:32:23');
-INSERT INTO `vehicles` VALUES ('28', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '68632', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:36:27');
-INSERT INTO `vehicles` VALUES ('29', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '417768', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:39:05');
-INSERT INTO `vehicles` VALUES ('30', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '1', '634375', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:40:27');
-INSERT INTO `vehicles` VALUES ('31', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '254527', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:48:23');
-INSERT INTO `vehicles` VALUES ('32', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '474310', '0', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-04 22:52:25');
-INSERT INTO `vehicles` VALUES ('33', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '456065', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-05 10:56:36');
-INSERT INTO `vehicles` VALUES ('34', 'cop', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '597640', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-06 19:20:30');
-INSERT INTO `vehicles` VALUES ('35', 'cop', 'C_SUV_01_F', 'Car', '76561198022865586', '1', '0', '1', '417909', '3', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-06 21:58:43');
-INSERT INTO `vehicles` VALUES ('36', 'civ', 'C_Offroad_02_unarmed_F', 'Car', '76561198022865586', '1', '0', '1', '700083', '4', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-07 19:17:51');
-INSERT INTO `vehicles` VALUES ('37', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '996533', '5', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:09:35');
-INSERT INTO `vehicles` VALUES ('38', 'cop', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '497164', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:16:27');
-INSERT INTO `vehicles` VALUES ('39', 'cop', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '587160', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:18:27');
-INSERT INTO `vehicles` VALUES ('40', 'cop', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '735765', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:19:55');
-INSERT INTO `vehicles` VALUES ('41', 'cop', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '1', '399615', '7', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:21:35');
-INSERT INTO `vehicles` VALUES ('42', 'civ', 'C_Heli_Light_01_civil_F', 'Air', '76561198022865586', '0', '0', '1', '277852', '9', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-08 20:59:34');
+INSERT INTO `vehicles` VALUES ('82', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '0', '827532', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-25 11:12:04', '[[1,1,0,0,1],^\\A3\\soft_F\\Offroad_01\\Data\\offroad_01_ext_BASE01_CO.paa^,0,3,[0,0,0.9],^maverick\\tuning\\bin\\materials\\fade.rvmat^]');
+INSERT INTO `vehicles` VALUES ('83', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '0', '415257', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-25 11:58:12', '[]');
+INSERT INTO `vehicles` VALUES ('84', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '0', '149124', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-28 12:09:22', '[[0,0,0,1,0],^a3\\soft_f\\offroad_01\\data\\offroad_01_ext_base03_co.paa^,0,0,[-1,-1,-1],^maverick\\tuning\\bin\\materials\\shine_blue.rvmat^]');
 
 -- ----------------------------
 -- Table structure for `wanted`
@@ -230,14 +224,14 @@ CREATE TABLE `wanted` (
 -- ----------------------------
 -- Records of wanted
 -- ----------------------------
-INSERT INTO `wanted` VALUES ('76561198022865586', 'hellokitty', '[]', '0', '0', '2017-02-08 19:33:17');
+INSERT INTO `wanted` VALUES ('76561198022865586', 'Rob', '[]', '0', '0', '2017-02-08 19:33:17');
 
 -- ----------------------------
 -- Procedure structure for `deleteDeadVehicles`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `deleteDeadVehicles`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
   DELETE FROM `vehicles` WHERE `alive` = 0;
 END
@@ -249,7 +243,7 @@ DELIMITER ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `deleteOldContainers`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldContainers`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldContainers`()
 BEGIN
   DELETE FROM `containers` WHERE `owned` = 0;
 END
@@ -261,7 +255,7 @@ DELIMITER ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `deleteOldGangs`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END
@@ -273,7 +267,7 @@ DELIMITER ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `deleteOldHouses`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END
@@ -285,7 +279,7 @@ DELIMITER ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `deleteOldWanted`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldWanted`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldWanted`()
 BEGIN
   DELETE FROM `wanted` WHERE `active` = 0;
 END
@@ -297,7 +291,7 @@ DELIMITER ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `resetLifeVehicles`;
 DELIMITER ;;
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
   UPDATE `vehicles` SET `active`= 0;
 END

@@ -16,6 +16,7 @@ private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
 private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 
+if( ( lastRobbed  != 0 ) && time >= (time - lastRobbed + 14400) ) exitWith {hint "This location has already been robbed recently"};
 if (isNull _building) exitWith {};
 if (!(_building isKindOf "House_F")) exitWith {hint localize "STR_ISTR_Bolt_NotNear";};
 if (((nearestObject [_pos,"Land_Dome_Big_F"]) == _building || (nearestObject [_pos,_vaultHouse]) == _building) && (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops")))) exitWith {

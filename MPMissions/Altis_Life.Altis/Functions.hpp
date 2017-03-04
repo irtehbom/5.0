@@ -109,6 +109,7 @@ class Life_Client_Core {
         class tazed {};
 		class civInteractionMenu{};
 		//class gpsMarker{};
+		class bankMissionReward {};
     };
 
     class Config {

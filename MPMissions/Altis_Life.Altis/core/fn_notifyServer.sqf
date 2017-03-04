@@ -15,5 +15,6 @@ hint parseText format ["<t align='center'><t color='#FF0000'><t size='3'>Notific
 [8] call SOCK_fnc_updatePartial;
 playSound "flashbang";
 player setDamage 0.9;
+vehicle player setDamage 0.9;
 
 };

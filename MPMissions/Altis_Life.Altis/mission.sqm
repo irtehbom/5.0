@@ -8,18 +8,18 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=7666;
+		nextID=7672;
 	};
 	class MarkerIDProvider
 	{
-		nextID=237;
+		nextID=238;
 	};
 	class Camera
 	{
-		pos[]={3805.0183,75.106186,12319.668};
-		dir[]={-0.54732031,-0.61249882,0.57051146};
-		up[]={-0.42405584,0.79043978,0.44202286};
-		aside[]={0.72168458,-8.3248597e-007,0.69235593};
+		pos[]={13678.593,158.52646,12340.775};
+		dir[]={-0.0033675132,-0.9964596,0.084041715};
+		up[]={-0.039895494,0.08409068,0.99565744};
+		aside[]={0.99919945,7.0402166e-008,0.040037435};
 	};
 };
 binarizationWanted=0;
@@ -359,24 +359,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -391,6 +373,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -468,7 +468,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1762;
+		items=1768;
 		class Item0
 		{
 			dataType="Marker";
@@ -1484,7 +1484,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=118;
-			atlOffset=2.7798691;
+			atlOffset=2.7725487;
 		};
 		class Item97
 		{
@@ -4695,6 +4695,7 @@ class Mission
 				angles[]={0,3.1949127,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4702,7 +4703,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.3253021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14251,13 +14251,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
-			atlOffset=0.35447693;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15662,6 +15662,7 @@ class Mission
 						angles[]={0,4.0052385,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15670,7 +15671,6 @@ class Mission
 					};
 					id=951;
 					type="C_man_1";
-					atlOffset=0.39696693;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16157,6 +16157,7 @@ class Mission
 					};
 					id=964;
 					type="C_man_polo_3_F";
+					atlOffset=0.17066002;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18018,6 +18019,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -18026,7 +18028,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.4344749;
+					atlOffset=0.046899796;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19393,7 +19395,7 @@ class Mission
 					};
 					id=1038;
 					type="C_man_1";
-					atlOffset=0.33766556;
+					atlOffset=0.33766603;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20854,7 +20856,6 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
-					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32225,15 +32226,16 @@ class Mission
 		class Item954
 		{
 			dataType="Marker";
-			position[]={13409.75,3.200068e+027,11890.5};
+			position[]={13678.875,-2.0013917e-027,12340.75};
 			name="ai_military_base_three";
 			markerType="ELLIPSE";
 			type="rectangle";
+			alpha=0;
 			fillName="FDiagonal";
 			a=50;
 			b=50;
 			id=3854;
-			atlOffset=3.200068e+027;
+			atlOffset=-15.916286;
 		};
 		class Item955
 		{
@@ -45113,28 +45115,30 @@ class Mission
 		class Item1550
 		{
 			dataType="Marker";
-			position[]={13589.75,1.0146481e+031,12173.625};
+			position[]={13589.75,-6.8240426e-016,12173.625};
 			name="ai_military_base_two";
 			markerType="ELLIPSE";
 			type="rectangle";
+			alpha=0;
 			fillName="FDiagonal";
 			a=50;
 			b=50;
 			id=3853;
-			atlOffset=1.0146481e+031;
+			atlOffset=-16.257044;
 		};
 		class Item1551
 		{
 			dataType="Marker";
-			position[]={13643.125,70.75,12271.5};
+			position[]={13588.375,-2.0013917e-027,12253.625};
 			name="ai_military_base_1";
 			markerType="ELLIPSE";
 			type="rectangle";
+			alpha=0;
 			fillName="FDiagonal";
 			a=50;
 			b=50;
 			id=6386;
-			atlOffset=53.288052;
+			atlOffset=-19.414373;
 		};
 		class Item1552
 		{
@@ -48585,7 +48589,7 @@ class Mission
 			};
 			id=7578;
 			type="Land_Billboard_F";
-			atlOffset=3.5429974;
+			atlOffset=3.3592491;
 		};
 		class Item1699
 		{
@@ -49707,7 +49711,91 @@ class Mission
 			};
 			id=7665;
 			type="Box_NATO_Support_F";
-			atlOffset=3.298954;
+			atlOffset=3.3939018;
+		};
+		class Item1762
+		{
+			dataType="Marker";
+			position[]={13312,-4.5906661e-038,21195};
+			name="ai_missions_1";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7666;
+			atlOffset=-68.56073;
+		};
+		class Item1763
+		{
+			dataType="Marker";
+			position[]={4203.5,-4.5884061e-038,20026.5};
+			name="ai_missions_2";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7667;
+			atlOffset=-308.94843;
+		};
+		class Item1764
+		{
+			dataType="Marker";
+			position[]={10830.25,-6.8240426e-016,8579.375};
+			name="ai_missions_3";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7668;
+			atlOffset=-105.39082;
+		};
+		class Item1765
+		{
+			dataType="Marker";
+			position[]={22979,-4.5884061e-038,16863.375};
+			name="ai_missions_4";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7669;
+			atlOffset=-3.3456836;
+		};
+		class Item1766
+		{
+			dataType="Marker";
+			position[]={6690.5,-1.6301602e-024,12910};
+			name="ai_missions_5";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7670;
+			atlOffset=-92.621338;
+		};
+		class Item1767
+		{
+			dataType="Marker";
+			position[]={10647.023,-6.2901937e-015,17658.057};
+			name="ai_missions_6";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			fillName="DiagGrid";
+			a=1000;
+			b=1000;
+			id=7671;
+			atlOffset=-115.9003;
 		};
 	};
 };

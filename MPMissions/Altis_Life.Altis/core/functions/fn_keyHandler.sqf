@@ -161,7 +161,7 @@ switch (_code) do {
                 };
             } else {
                 private "_list";
-                _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
+                _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F","Box_IND_AmmoVeh_F"], 2.5]) select 0;
                 if (!(isNil "_list")) then {
                     _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
                     if (_house getVariable ["locked", false]) then {

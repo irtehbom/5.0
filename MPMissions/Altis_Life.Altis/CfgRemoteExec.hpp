@@ -156,7 +156,7 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
-
+		
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
         F(BIS_fnc_effectKilledSecondaries,ANYONE)
@@ -175,9 +175,18 @@ class CfgRemoteExec {
         F(SPY_fnc_notifyAdmins,ANYONE)
 		F(life_fnc_demoChargeTimerOilRig,ANYONE)
 		F(life_fnc_bankalarmsound,ANYONE)
-		F(AI_HC_fnc_spawn_ai,ANYONE)
 		F(TON_fnc_updateMarketPrices,ANYONE)
 		F(TON_fnc_saveVehicleTuningData,ANYONE)
+		F(TON_fnc_getVehicleTuningData,ANYONE)
+		
+		F(HC_fnc_missions_handler,ANYONE)
+		F(HC_fnc_missionCrashedHeli,ANYONE)
+		F(HC_fnc_static_ai,ANYONE)
+		F(HC_fnc_clean_up_ai,ANYONE)
+		F(HC_fnc_spawn_mission_marker,ANYONE)
+		F(HC_fnc_spawn_soldiers,ANYONE)
+		F(HC_fnc_spawn_weapons_crate,ANYONE)
+		F(HC_fnc_bankMissionReward,ANYONE)
 		
     };
 

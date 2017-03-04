@@ -42,7 +42,29 @@ class CfgFunctions
 		class AI
         {
             file = "\life_hc\AI";
-            class spawn_ai {};
+            class static_ai {};
+			class missions_handler {};
+        };
+		
+		class AIMissions
+        {
+            file = "\life_hc\AI\AIMissions";
+            class CrashedHeli {};
+			class drugsHouse {};
+			class crashedMilitaryTruck {};
+			class assassinationMission {};
+        };
+		
+		class AIFunctions
+        {
+            file = "\life_hc\AI\Functions";
+            class clean_up_ai {};
+			class end_mission {};
+			class spawn_mission_marker {};
+			class spawn_soldiers {};
+			class spawn_weapons_crate {};
+			class spawn_yinv_crate {};
+			class spawn_unit {};
         };
 
         class PlayTime

@@ -11,7 +11,6 @@ if (EXTDB_SETTING(getNumber,"HeadlessSupport") isEqualTo 0) exitWith {};
 
 [] execVM "\life_hc\KRON_Strings.sqf";
 
-
 _extDBNotLoaded = "";
 
 life_save_civilian_position = if (LIFE_SETTINGS(getNumber,"save_civilian_position") isEqualTo 0) then {false} else {true};
@@ -79,6 +78,7 @@ diag_log "----------------------------------------------------------------------
 // A list of allowed funcs to be passed on the hc (by external sources)
 // Have to be written in only lower capitals
 HC_MPAllowedFuncs = [
+	"hc_fnc_spawn_ai",
     "hc_fnc_insertrequest",
     "hc_fnc_insertvehicle",
     "hc_fnc_queryrequest",
@@ -121,25 +121,15 @@ HC_MPAllowedFuncs = [
 	"hc_fnc_insertrealestate",
 	"hc_fnc_sellestate",
 	"hc_fnc_payrentrealestate",
-	"hc_fnc_saveinventoryrealestate",
-	"hc_fnc_missions_handler",
-	"hc_fnc_static_ai",
-	"hc_fnc_missionCrashedHeli",
-	"hc_fnc_clean_up_ai",
-	"hc_fnc_spawn_mission_marker",
-	"hc_fnc_spawn_soldiers",
-	"hc_fnc_spawn_weapons_crate",
-	"hc_fnc_spawn_yinv_crate",
-	"hc_fnc_spawn_unit",
-	"hc_fnc_money_reward"
+	"hc_fnc_saveinventoryrealestate"
 ];
 
 CONSTVAR(HC_MPAllowedFuncs);
 
 life_HC_isActive = true;
 
-[] remoteExec ["HC_fnc_missions_handler"];
-[] remoteExec ["HC_fnc_static_ai"];
+
+[] spawn HC_fnc_spawn_ai;
 
 publicVariable "life_HC_isActive";
 diag_log "----------------------------------------------------------------------------------------------------";

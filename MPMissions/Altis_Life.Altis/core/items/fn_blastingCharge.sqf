@@ -9,6 +9,7 @@
 private ["_vault","_handle"];
 _vault = param [0,ObjNull,[ObjNull]];
 
+if( ( lastRobbed  != 0 ) && time >= (time - lastRobbed + 14400) ) exitWith {hint "This location has already been robbed recently"};
 if (isNull _vault) exitWith {}; //Bad object
 if (typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
 if (_vault getVariable ["chargeplaced",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyPlaced"};
@@ -29,6 +30,7 @@ if (!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 _vault setVariable ["chargeplaced",true,true];
 [0,"STR_ISTR_Blast_Placed",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 hint localize "STR_ISTR_Blast_KeepOff";
+lastRobbed = time;
 
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 [] remoteExec ["TON_fnc_handleBlastingCharge",2];

@@ -13,8 +13,14 @@ scriptName "fn_tuning_prepareString";
 _toDatabase = param[0,false,[false]];
 _string		= param[1,"",[""]];
 
+
+diag_log format["_toDatabase %1", _toDatabase];
+diag_log format["_string %1", _string];
+
 // Exceptions
 if (_string == "") then {""};
+
+
 
 // Code
 _stringArray = [];
@@ -50,5 +56,8 @@ if (_toDatabase) then {
 		};
 	} forEach _stringArray;
 };
+
+diag_log format["_stringArray %1", _stringArray];
+diag_log format["toString _stringArray %1", toString _stringArray];
 
 (toString _stringArray)

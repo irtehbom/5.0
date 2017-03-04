@@ -7,4 +7,4 @@ _killer = _this select 0;
 
 hint "You've killed the informer and been credited 100k into your bank account!";
 
-BANK = BANK + 200000;
+BANK = BANK + 100000;

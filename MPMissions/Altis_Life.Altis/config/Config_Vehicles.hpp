@@ -468,6 +468,14 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+	
+	class Box_IND_AmmoVeh_F {
+        vItemSpace = 80000;
+        conditions = "";
+        price = -1;
+        textures[] = {};
+    };
+   
    
     class CargoNet_01_box_F {
         vItemSpace = 5000;

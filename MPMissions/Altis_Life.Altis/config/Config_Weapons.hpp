@@ -61,38 +61,38 @@ class WeaponShops {
 			{ "Rangefinder", "", 5000, -1, "" },
 			{ "SmokeShellRed", "", 850, -1, "" }, //SmokeRed
             { "hgun_ACPC2_F", "", 2500, 1250, "" }, //ACPC2
-            { "hgun_Pistol_heavy_01_F", "", 3500, 1750, "" }, //4Five
-            { "hgun_Pistol_heavy_02_F", "", 5000, 2500, "" }, //Zubr
-            { "SMG_01_F", "", 10000, 5000, "" }, //Vermin
-            { "arifle_SDAR_F", "", 35000, 15000, "" }, //SDAR
-            { "arifle_AKS_F", "", 30000, 15000, "" }, //AKS74U
-            { "arifle_TRG21_F", "", 40000, 20000, "" }, //TRG21
-            { "arifle_CTAR_blk_F", "", 50000, 25000, "" }, //CAR95Black
-			{ "arifle_CTAR_ghex_F", "", 50000, 25000, "" }, //CAR95GreenHex
-			{ "arifle_CTAR_hex_F", "", 50000, 25000, "" }, //CAR95Hex
-			{ "arifle_Katiba_C_F", "", 60000, 30000, "" }, //KatibaCarbine
-			{ "arifle_Katiba_F", "", 65000, 32500, "" }, //Katiba
-            { "arifle_ARX_blk_F", "", 65000, 32500, "" }, //Type115Black
-			{ "arifle_ARX_ghex_F", "", 65000, 32500, "" }, //Type115GreenHex
-			{ "arifle_ARX_hex_F", "", 65000, 32500, "" }, //Type115Hex
-			{ "srifle_DMR_07_blk_F", "", 70000, 35000, "" }, //CMR76Black
-			{ "srifle_DMR_07_ghex_F", "", 70000, 35000, "" }, //CMR76GreenHex
-			{ "srifle_DMR_07_hex_F", "", 70000, 35000, "" }, //CMR76Hex
-			{ "arifle_CTARS_blk_F", "", 80000, 40000, "" }, //CAR951Black
-			{ "arifle_CTARS_ghex_F", "", 80000, 40000, "" }, //CAR951GreenHex
-			{ "arifle_CTARS_hex_F", "", 80000, 40000, "" }, //CAR951Hex
-			{ "LMG_03_F", "", 125000, 62500, "" }, //LIM
-			{ "LMG_Zafir_F", "", 200000, 100000, "" }, //Zafir
-			{ "arifle_AKM_F", "", 75000, 37500, "" }, //AKM
-			{ "srifle_DMR_01_F", "", 85000, 42500, "" }, //Rahim
-			{ "arifle_AK12_F", "", 125000, 62500, "" }, //AK12
-			{ "srifle_DMR_06_camo_khs_F", "", 120000, 60000, "" }, //MK14Camo
-			{ "srifle_DMR_06_olive_F", "", 120000, 60000, "" }, //MK14Olive
-			{ "srifle_EBR_F", "", 135000, 67500, "" }, //MK18A
-			{ "srifle_DMR_03_multicam_F", "", 150000, 75000, "" }, //MKIEMRCamo
-			{ "srifle_DMR_03_khaki_F", "", 150000, 75000, "" }, //MKIEMRKhaki
-			{ "srifle_DMR_03_tan_F", "", 150000, 75000, "" }, //MKIEMRSand
-			{ "srifle_DMR_03_woodland_F", "", 150000, 75000, "" } //MKIEMRWoodland
+            { "hgun_Pistol_heavy_01_F", "", 3500, -1, "" }, //4Five
+            { "hgun_Pistol_heavy_02_F", "", 5000, -1, "" }, //Zubr
+            { "SMG_01_F", "", 10000, -1, "" }, //Vermin
+            { "arifle_SDAR_F", "", 35000, -1, "" }, //SDAR
+            { "arifle_AKS_F", "", 30000, -1, "" }, //AKS74U
+            { "arifle_TRG21_F", "", 40000, -1, "" }, //TRG21
+            { "arifle_CTAR_blk_F", "", 50000, -1, "" }, //CAR95Black
+			{ "arifle_CTAR_ghex_F", "", 50000, -1, "" }, //CAR95GreenHex
+			{ "arifle_CTAR_hex_F", "", 50000, -1, "" }, //CAR95Hex
+			{ "arifle_Katiba_C_F", "", 60000, -1, "" }, //KatibaCarbine
+			{ "arifle_Katiba_F", "", 65000, -1, "" }, //Katiba
+            { "arifle_ARX_blk_F", "", 65000, -1, "" }, //Type115Black
+			{ "arifle_ARX_ghex_F", "", 65000, -1, "" }, //Type115GreenHex
+			{ "arifle_ARX_hex_F", "", 65000, -1, "" }, //Type115Hex
+			{ "srifle_DMR_07_blk_F", "", 70000, -1, "" }, //CMR76Black
+			{ "srifle_DMR_07_ghex_F", "", 70000, -1, "" }, //CMR76GreenHex
+			{ "srifle_DMR_07_hex_F", "", 70000, -1, "" }, //CMR76Hex
+			{ "arifle_CTARS_blk_F", "", 80000, -1, "" }, //CAR951Black
+			{ "arifle_CTARS_ghex_F", "", 80000, -1, "" }, //CAR951GreenHex
+			{ "arifle_CTARS_hex_F", "", 80000, -1, "" }, //CAR951Hex
+			{ "LMG_03_F", "", 125000, -1, "" }, //LIM
+			{ "LMG_Zafir_F", "", 200000, -1, "" }, //Zafir
+			{ "arifle_AKM_F", "", 75000, -1, "" }, //AKM
+			{ "srifle_DMR_01_F", "", 85000, -1, "" }, //Rahim
+			{ "arifle_AK12_F", "", 125000, -1, "" }, //AK12
+			{ "srifle_DMR_06_camo_khs_F", "", 120000, -1, "" }, //MK14Camo
+			{ "srifle_DMR_06_olive_F", "", 120000, -1, "" }, //MK14Olive
+			{ "srifle_EBR_F", "", 135000, -1, "" }, //MK18A
+			{ "srifle_DMR_03_multicam_F", "", 150000, -1, "" }, //MKIEMRCamo
+			{ "srifle_DMR_03_khaki_F", "", 150000, -1, "" }, //MKIEMRKhaki
+			{ "srifle_DMR_03_tan_F", "", 150000, -1, "" }, //MKIEMRSand
+			{ "srifle_DMR_03_woodland_F", "", 150000, -1, "" } //MKIEMRWoodland
         };
         mags[] = {
             { "9Rnd_45ACP_Mag", "", 50, -1, "" },

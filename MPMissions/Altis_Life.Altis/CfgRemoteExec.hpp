@@ -187,7 +187,9 @@ class CfgRemoteExec {
 		F(HC_fnc_spawn_soldiers,ANYONE)
 		F(HC_fnc_spawn_weapons_crate,ANYONE)
 		F(HC_fnc_bankMissionReward,ANYONE)
-		
+		F(HC_fnc_updateGangArea,ANYONE)
+		F(HC_fnc_getGangAreaOwner,ANYONE)
+		F(HC_fnc_gangFunds,ANYONE)
     };
 
     class Commands {
@@ -199,5 +201,8 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
+		F(BIS_fnc_hint,ANYONE)
+		F(life_fnc_hint,ANYONE)
+		F(hint,ANYONE)
     };
 };

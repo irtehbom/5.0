@@ -2,8 +2,8 @@
 //  Author: Rob
 // =========================================================================================================
 
-#define MissionDelay (60 * 30) 
-#define firstMissionDelay (60 * 5)
+#define MissionDelay (60 * 0) 
+#define firstMissionDelay (60 * 1)
 
 
 private["_availableMissions","_firstMission","_nextMission","_missionRunning"];

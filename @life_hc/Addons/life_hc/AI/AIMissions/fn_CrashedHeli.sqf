@@ -7,8 +7,8 @@ private["_missionTimeout"];
 
 _destroyArray = [];
 
-_timer = 15;
-_missionTimeout = (60 * 15);
+_timer = 20;
+_missionTimeout = (60 * 20);
 
 _spawnMarker = spawnMarkers call BIS_fnc_selectRandom;
  _area = markerSize _spawnMarker;

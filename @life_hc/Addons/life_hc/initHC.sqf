@@ -131,7 +131,10 @@ HC_MPAllowedFuncs = [
 	"hc_fnc_spawn_weapons_crate",
 	"hc_fnc_spawn_yinv_crate",
 	"hc_fnc_spawn_unit",
-	"hc_fnc_money_reward"
+	"hc_fnc_money_reward",
+	"hc_fnc_updategangarea",
+	"hc_fnc_getgangareaowner",
+	"hc_fnc_gangfunds"
 ];
 
 CONSTVAR(HC_MPAllowedFuncs);

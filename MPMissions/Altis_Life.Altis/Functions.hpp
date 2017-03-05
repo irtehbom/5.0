@@ -302,6 +302,11 @@ class Life_Client_Core {
 		class marketSelection {};
 	}
 	
+	class kartel {
+		file = "core\kartel";
+		class captureArea {};
+	}
+	
 	class realEstateDialog
 	{
 		file = "core\real_estate\dialog";

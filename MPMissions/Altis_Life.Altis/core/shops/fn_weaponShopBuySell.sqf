@@ -55,11 +55,24 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
             } else {
                 [1,group player] remoteExecCall ["TON_fnc_updateGang",RSERV];
             };
+			
+			if (life_HC_isActive) then {
+					["arms_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["arms_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+			};
 
 
         } else {
             if (_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
             hint parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
+			
+			if (life_HC_isActive) then {
+					["arms_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["arms_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+			};
+			
             CASH = CASH - _price;
             [_item,true] spawn life_fnc_handleItem;
         };
@@ -67,6 +80,13 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
         if (_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
         hint parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
         CASH = CASH - _price;
+		
+		if (life_HC_isActive) then {
+					["arms_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["arms_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+		};
+		
         [_item,true] spawn life_fnc_handleItem;
     };
 };

@@ -43,8 +43,10 @@ life_action_delay = time;
 
 _price = (_price * _amount);
 _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");
+_itemVariable = M_CONFIG(getText,"VirtualItems",_type,"variable");
 if ([false,_type,_amount] call life_fnc_handleInv) then {
     hint format [localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
+	
     CASH = CASH + _price;
     [0] call SOCK_fnc_updatePartial;
     [] call life_fnc_virt_update;
@@ -55,6 +57,37 @@ if (life_shop_type isEqualTo "drugdealer") then {
     _array = life_shop_npc getVariable ["sellers",[]];
     _ind = [getPlayerUID player,_array] call TON_fnc_index;
     if (!(_ind isEqualTo -1)) then {
+		
+		switch (_itemVariable) do {
+			case "heroinProcessed": {
+			
+				if (life_HC_isActive) then {
+					["heroin_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["heroin_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+				};
+				
+			};
+			case "marijuana": {
+			
+				if (life_HC_isActive) then {
+					["weed_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["weed_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+				};
+			   
+			};
+			case "cocaineProcessed": {
+			
+				if (life_HC_isActive) then {
+					["cocaine_capture",_price] remoteExec ["HC_fnc_getGangAreaOwner",HC_Life];
+				} else {
+					["cocaine_capture",_price] remoteExec ["TON_fnc_getGangAreaOwner",RSERV];
+				};
+				
+			};
+		};
+	
         _val = ((_array select _ind) select 2);
         _val = _val + _price;
         _array set[_ind,[getPlayerUID player,profileName,_val]];

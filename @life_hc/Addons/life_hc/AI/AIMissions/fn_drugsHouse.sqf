@@ -7,8 +7,8 @@ private["_missionTimeout"];
 
 _destroyArray = [];
 
-_timer = 15;
-_missionTimeout = (60 * 15);
+_timer = 20;
+_missionTimeout = (60 * 20);
 
 _spawnMarker = spawnMarkers call BIS_fnc_selectRandom;
 
@@ -25,7 +25,7 @@ _hint = parseText format["
 	<t align='center' color='#52bf90' shadow='2' size='1.75'>Drugs House Discovered</t><br/><br/>
 	<t align='center' color='#FFFFFF'>A Cartel Gang is defending their drugs house.</t><br/><br/>
 	<t align='center' color='#FFFFFF'>You have %1 minutes to take the drugs before they dispose of their contraband!</t><br/><br/>",
-	_missionTimeout];
+	_timer];
 
 _hint remoteExec ["hint",0];
 

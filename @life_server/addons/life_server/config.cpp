@@ -126,6 +126,15 @@ class CfgFunctions {
             class queryPlayerGang {};
             class removeGang {};
             class updateGang {};
+			class gangFunds {};
+        };
+		
+		class Kartel
+        {
+            file = "\life_server\Functions\Kartel";
+            class updateGangArea {};
+			class getGangAreaOwner {};
+			class setKartelOwners {};
         };
 
         class Actions {

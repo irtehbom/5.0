@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=110;
+	toggles=238;
 	class ItemIDProvider
 	{
-		nextID=7672;
+		nextID=7679;
 	};
 	class MarkerIDProvider
 	{
@@ -468,7 +468,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1768;
+		items=1772;
 		class Item0
 		{
 			dataType="Marker";
@@ -20600,7 +20600,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=0.20682526;
+					atlOffset=0.031738281;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20856,6 +20856,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -49796,6 +49797,176 @@ class Mission
 			b=1000;
 			id=7671;
 			atlOffset=-115.9003;
+		};
+		class Item1768
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14033.646,28.685127,18777.543};
+				angles[]={0,2.7829626,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; ";
+				name="weed_capture";
+			};
+			id=7675;
+			type="FlagPole_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1769
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14037.642,28.705297,18776.711};
+				angles[]={0,2.7829626,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; ";
+				name="heroin_capture";
+			};
+			id=7676;
+			type="FlagPole_F";
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1770
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14045.798,28.779961,18772.633};
+				angles[]={0,2.7829626,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; ";
+				name="arms_capture";
+			};
+			id=7677;
+			type="FlagPole_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1771
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14038.968,28.810209,18773.664};
+				angles[]={0,2.7829626,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; ";
+				name="cocaine_capture";
+			};
+			id=7678;
+			type="FlagPole_F";
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

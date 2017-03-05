@@ -66,6 +66,13 @@ class CfgFunctions
 			class spawn_yinv_crate {};
 			class spawn_unit {};
         };
+		
+		class Kartel
+        {
+            file = "\life_hc\MySQL\Kartel";
+            class updateGangArea {};
+			class getGangAreaOwner {};
+        };
 
         class PlayTime
         {
@@ -115,6 +122,7 @@ class CfgFunctions
             class queryPlayerGang {};
             class removeGang {};
             class updateGang {};
+			class gangFunds {};
         };
 
         class Vehicles

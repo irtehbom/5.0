@@ -10,9 +10,6 @@ if (isNull drugs_stash) exitWith {};
 if (playerSide != east) exitWith {};
 if (count (drugs_stash getVariable ["seized_drugs_array",[]]) isEqualTo 0) exitWith {hint localize "STR_Civ_VaultEmpty";};
 if (drugs_stash getVariable ["inUse",false]) exitWith {hint localize "STR_Civ_VaultInUse"};
-if (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops_drugs_stash"))) exitWith {
-    hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops_drugs_stash"))];
-};
 if (!createDialog "Drugs_Stash") exitWith {localize "STR_MISC_DialogError"};
 
 disableSerialization;

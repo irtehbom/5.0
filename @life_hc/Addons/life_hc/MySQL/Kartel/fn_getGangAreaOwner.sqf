@@ -11,7 +11,7 @@ _price =  _this select 1;
 
 if (_captureZone == "arms_capture") then {
 
-	_price = _price / 5;
+	_price = 5 / 100 * _price;
 	
 } else {
 

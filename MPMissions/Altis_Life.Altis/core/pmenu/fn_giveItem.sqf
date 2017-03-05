@@ -8,6 +8,7 @@
     removes the item & amount of it from the players virtual
     inventory.
 */
+if (life_action_inUse) exitWith {hint format ["No duping!"]};
 private ["_unit","_val"];
 _val = ctrlText 2010;
 ctrlShow[2002,false];

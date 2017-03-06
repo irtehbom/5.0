@@ -324,6 +324,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -338,24 +356,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -16122,6 +16122,7 @@ class Mission
 					};
 					id=964;
 					type="C_man_polo_3_F";
+					atlOffset=0.17066002;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19162,7 +19163,6 @@ class Mission
 						angles[]={0,2.5830052,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -19171,6 +19171,7 @@ class Mission
 					};
 					id=1034;
 					type="C_man_1";
+					atlOffset=0.38654613;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20564,7 +20565,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=0.031738281;
+					atlOffset=0.20682526;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20820,6 +20821,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22323,7 +22325,7 @@ class Mission
 			};
 			id=1606;
 			type="Land_i_House_Big_01_V1_F";
-			atlOffset=0.90299988;
+			atlOffset=0.90300179;
 		};
 		class Item535
 		{
@@ -29351,28 +29353,28 @@ class Mission
 		class Item791
 		{
 			dataType="Marker";
-			position[]={13620.125,-9.8179162e-034,12257.625};
+			position[]={13620.125,-1.9321585e-025,12257.625};
 			name="oilrig_marker_2";
-			text="Military Island | High Security Zone **";
+			text="Military Island | AI Defended";
 			type="mil_warning";
-			colorName="ColorRed";
-			a=0.69999999;
-			b=0.69999999;
+			colorName="ColorGreen";
+			a=1.5;
+			b=1.5;
 			id=2836;
 			atlOffset=-15.689041;
 		};
 		class Item792
 		{
 			dataType="Marker";
-			position[]={8317.5,-9.8142134e-034,10100};
+			position[]={8211.75,8.3129966e+036,10082.75};
 			name="drugs_stash_warning";
-			text="Narcotics Hold | High Security Zone **";
-			type="mil_warning";
+			text="Narcotics Hold | AI Defended";
+			type="mil_destroy";
 			colorName="ColorRed";
-			a=0.69999999;
-			b=0.69999999;
+			a=1.5;
+			b=1.5;
 			id=3573;
-			atlOffset=-74.893303;
+			atlOffset=8.3129966e+036;
 		};
 		class Item793
 		{
@@ -33659,7 +33661,7 @@ class Mission
 			};
 			id=4412;
 			type="Land_i_House_Big_01_V1_F";
-			atlOffset=1.2349997;
+			atlOffset=1.2349987;
 		};
 		class Item1029
 		{
@@ -47169,7 +47171,7 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; this addAction[""Neutralise Area"",life_fnc_neutraliseArea,"""",0,false,false,"""",'playerSide isEqualTo west'];";
-				name="weed_capture_1";
+				name="weed_capture";
 			};
 			id=7679;
 			type="FlagPole_F";
@@ -47225,7 +47227,7 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; this addAction[""Neutralise Area"",life_fnc_neutraliseArea,"""",0,false,false,"""",'playerSide isEqualTo west'];";
-				name="heroin_capture_1";
+				name="heroin_capture";
 			};
 			id=7681;
 			type="FlagPole_F";
@@ -48034,7 +48036,7 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; this addAction[""Neutralise Area"",life_fnc_neutraliseArea,"""",0,false,false,"""",'playerSide isEqualTo west'];";
-				name="arms_capture_1";
+				name="arms_capture";
 			};
 			id=7832;
 			type="FlagPole_F";
@@ -48066,7 +48068,7 @@ class Mission
 		class Item1668
 		{
 			dataType="Marker";
-			position[]={6378.625,140.25,12129.875};
+			position[]={6378.625,140.25,12146.25};
 			name="marker_242";
 			text="Cartel - Gun Control";
 			type="hd_flag";
@@ -48075,7 +48077,7 @@ class Mission
 			b=0.69999999;
 			angle=9;
 			id=7833;
-			atlOffset=-15.478027;
+			atlOffset=-21.268845;
 		};
 		class Item1669
 		{
@@ -48091,11 +48093,11 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false;    " \n "this addAction[""Capture Area"",life_fnc_captureArea,"""",0,false,false,"""",' playerSide isEqualTo east && !isNil {(group player) getVariable ""gang_owner""}']; this addAction[""Neutralise Area"",life_fnc_neutraliseArea,"""",0,false,false,"""",'playerSide isEqualTo west'];";
-				name="cocaine_capture_1";
+				name="cocaine_capture";
 			};
 			id=7834;
 			type="FlagPole_F";
-			atlOffset=0.010999203;
+			atlOffset=0.01099968;
 			class CustomAttributes
 			{
 				class Attribute0

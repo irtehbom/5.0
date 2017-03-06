@@ -72,6 +72,7 @@ class CfgFunctions
             file = "\life_hc\MySQL\Kartel";
             class updateGangArea {};
 			class getGangAreaOwner {};
+			class neutraliseArea {};
         };
 
         class PlayTime

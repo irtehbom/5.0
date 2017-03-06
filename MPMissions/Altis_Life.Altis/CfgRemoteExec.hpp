@@ -190,6 +190,11 @@ class CfgRemoteExec {
 		F(HC_fnc_updateGangArea,ANYONE)
 		F(HC_fnc_getGangAreaOwner,ANYONE)
 		F(HC_fnc_gangFunds,ANYONE)
+		F(HC_fnc_neutraliseArea,ANYONE)
+		F(TON_fnc_updateGangArea,ANYONE)
+		F(TON_fnc_neutraliseArea,ANYONE)
+		F(TON_fnc_getGangAreaOwner,ANYONE)
+		F(TON_fnc_bankMissionReward,ANYONE)
     };
 
     class Commands {

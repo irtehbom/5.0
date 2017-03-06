@@ -9,8 +9,9 @@ _flagObject = _this select 0;
 _player = _this select 1;
 _exit = false;
 _exitMessage = "";
-_cpRate = 0.1000;
+_cpRate = 0.0003;
 _gangName = group player getVariable "gang_name";
+_gangNameFlag = _flagObject getVariable ["gang_name",""];
 _message = "";
 _benefits = "";
 _gangOwner = format["Controlled by %1",_gangName];
@@ -22,6 +23,42 @@ if (_exit) exitWith {titleText[localize _exitMessage,"PLAIN"];};
 if (_flagObject getVariable "gang_name" == group player getVariable "gang_name") exitWith {hint "You already have control of this area!"};
 if (!isNil "_action" && {!_action}) exitWith {titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"];};
 life_action_inUse = true;
+
+switch (_flagObject) do {
+    case weed_capture: {
+        _message = "Weed Area";
+		_benefits = "The gang will now gain a 10% profit on all Weed sold by anybody!";
+		_markerName = "weedCaptureMarker";
+    };
+    case cocaine_capture: {
+        _message = "Cocaine Area";
+	    _benefits = "The gang will now gain a 10% profit on all Cocaine sold by anybody!";
+	    _markerName = "cocaineCaptureMarker";
+		
+    };
+	case heroin_capture: {
+        _message = "Heroin Area";
+		_benefits = "The gang will now gain a 10% profit on all Heroin sold by anybody!";
+		_markerName = "heroinCaptureMarker";
+    };
+	case arms_capture: {
+        _message = "Arms Area";
+		_benefits = "The gang will now gain a 5% profit on all weapons bought by anybody!";
+		_markerName = "armsCaptureMarker";
+    };
+};
+
+if (_gangNameFlag != "") then {
+
+	_hint = parseText format["
+	<t align='center' color='#52bf90' shadow='2' size='1.75'>%1 Being Captured</t><br/><br/>
+	<t align='center' color='#FFFFFF'>The gang %2 is capturing the %1 from the gang %3 </t><br/><br/>",
+	_message,_gangName,_gangNameFlag];
+	
+	_hint remoteExec ["hint",0];
+};
+
+
 
 disableSerialization;
 _title = "Capturing Area";
@@ -81,29 +118,6 @@ _flagObject setFlagTexture _flagTexture;
 _flagObject setVariable ["area_controlled",true,true];
 _flagObject setVariable ["gang_name",group player getVariable "gang_name",true];
 
-switch (_flagObject) do {
-    case weed_capture: {
-        _message = "Weed Area";
-		_benefits = "The gang will now gain a 10% profit on all Weed sold by anybody!";
-		_markerName = "weedCaptureMarker";
-    };
-    case cocaine_capture: {
-        _message = "Cocaine Area";
-	    _benefits = "The gang will now gain a 10% profit on all Cocaine sold by anybody!";
-	    _markerName = "cocaineCaptureMarker";
-		
-    };
-	case heroin_capture: {
-        _message = "Heroin Area";
-		_benefits = "The gang will now gain a 10% profit on all Heroin sold by anybody!";
-		_markerName = "heroinCaptureMarker";
-    };
-	case arms_capture: {
-        _message = "Arms Area";
-		_benefits = "The gang will now gain a 5% profit on all weapons bought by anybody!";
-		_markerName = "armsCaptureMarker";
-    };
-};
 
 if (life_HC_isActive) then {
 		[_flagObject,_gangName] remoteExecCall ["HC_fnc_updateGangArea",HC_Life];

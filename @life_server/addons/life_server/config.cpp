@@ -135,6 +135,7 @@ class CfgFunctions {
             class updateGangArea {};
 			class getGangAreaOwner {};
 			class setKartelOwners {};
+			class neutraliseArea {};
         };
 
         class Actions {

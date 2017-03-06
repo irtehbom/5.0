@@ -19,17 +19,6 @@
 class Housing {
   
     class Altis {
-
-        class Land_i_House_Big_02_V1_F {
-            price = 1550000;
-            numberCrates = 3;
-            restrictedPos[] = {0,1,2,3,4};
-            canGarage = false;
-            garageSpawnPos[] = {};
-            garageSpawnDir = 0;
-            garageBlacklists[] = {};
-            lightPos[] = {2,0,3.5};
-        };
 		
 		class Land_Laptop_unfolded_F {
             price = -1;
@@ -42,13 +31,28 @@ class Housing {
             lightPos[] = {};
         };
 		
+        class Land_i_House_Big_02_V1_F {
+            price = 1550000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,2,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,3.5};
+        };
 		
+		
+
         
         class Land_i_House_Big_02_V2_F : Land_i_House_Big_02_V1_F{};
         class Land_i_House_Big_02_V3_F : Land_i_House_Big_02_V1_F{};
-
-        class Land_i_House_Big_01_V2_F;
-        class Land_i_House_Big_01_V3_F;
+		
+		class Land_i_House_Big_01_V1_F : Land_i_House_Big_02_V1_F{};
+		class Land_i_House_Big_01_V2_F : Land_i_House_Big_02_V1_F{};
+		class Land_i_House_Big_01_V3_F : Land_i_House_Big_02_V1_F{};
+		
+		
 
         class Land_i_House_Small_01_V1_F {
             price = 1050000;

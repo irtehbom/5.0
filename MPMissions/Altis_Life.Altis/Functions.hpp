@@ -305,6 +305,7 @@ class Life_Client_Core {
 	class kartel {
 		file = "core\kartel";
 		class captureArea {};
+		class neutraliseArea {};
 	}
 	
 	class realEstateDialog

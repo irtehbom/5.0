@@ -134,7 +134,8 @@ HC_MPAllowedFuncs = [
 	"hc_fnc_money_reward",
 	"hc_fnc_updategangarea",
 	"hc_fnc_getgangareaowner",
-	"hc_fnc_gangfunds"
+	"hc_fnc_gangfunds",
+	"hc_fnc_neutralisearea"
 ];
 
 CONSTVAR(HC_MPAllowedFuncs);

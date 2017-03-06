@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4166.6865,39.838032,16798.225};
-		dir[]={0.55479902,-0.59874994,0.5777486};
-		up[]={0.41474834,0.80090392,0.4319064};
-		aside[]={0.7213186,4.7846697e-008,-0.69267046};
+		pos[]={3662.9519,80.585625,13004.282};
+		dir[]={-0.10510795,-0.51157248,0.85285228};
+		up[]={-0.062583119,0.85920876,0.50779057};
+		aside[]={0.99254429,-2.8382055e-007,0.12232257};
 	};
 };
 binarizationWanted=0;
@@ -350,6 +350,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -364,24 +382,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -49600,13 +49600,13 @@ class Mission
 				angles[]={0,2.7280369,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=7829;
 			type="Land_Laptop_unfolded_F";
+			atlOffset=0.80755806;
 		};
 		class Item1756
 		{

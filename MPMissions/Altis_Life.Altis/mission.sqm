@@ -8,18 +8,18 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=7952;
+		nextID=7961;
 	};
 	class MarkerIDProvider
 	{
-		nextID=239;
+		nextID=242;
 	};
 	class Camera
 	{
-		pos[]={4970.6167,449.36362,21856.176};
-		dir[]={-0.58862323,-0.65955913,0.46747795};
-		up[]={-0.51657438,0.75155544,0.41025898};
-		aside[]={0.62192792,-2.3335451e-007,0.78309613};
+		pos[]={16551.18,73.729233,19763.326};
+		dir[]={0.77923799,-0.35677126,0.51527202};
+		up[]={0.29759428,0.93419069,0.19678447};
+		aside[]={0.55156946,4.703179e-008,-0.83412993};
 	};
 };
 binarizationWanted=0;
@@ -325,6 +325,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -339,24 +357,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -434,7 +434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1687;
+		items=1693;
 		class Item0
 		{
 			dataType="Marker";
@@ -13978,7 +13978,6 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
-			atlOffset=0.22998428;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45834,7 +45833,7 @@ class Mission
 			};
 			id=7557;
 			type="Land_HelipadEmpty_F";
-			atlOffset=1.6014843;
+			atlOffset=1.1751184;
 		};
 		class Item1550
 		{
@@ -45869,7 +45868,7 @@ class Mission
 			};
 			id=7559;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.74555206;
+			atlOffset=0.68944263;
 		};
 		class Item1552
 		{
@@ -48403,6 +48402,318 @@ class Mission
 			id=7950;
 			type="Land_HumanSkeleton_F";
 			atlOffset=0.049987793;
+		};
+		class Item1687
+		{
+			dataType="Marker";
+			position[]={18419,2.1347255e+036,8130.25};
+			name="marker_241";
+			text="Gem Dealer";
+			type="mil_triangle";
+			colorName="ColorYellow";
+			id=7952;
+			atlOffset=2.1347255e+036;
+		};
+		class Item1688
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18423.875,2.8084872,8129.1748};
+						angles[]={0,4.7647491,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[""Gems Dealer"",life_fnc_virt_menu,""gems_dealer""];";
+						name="Gem_Dealer_1";
+						isPlayer=1;
+					};
+					id=7954;
+					type="B_Protagonist_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7953;
+		};
+		class Item1689
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12019.25,11.272082,12324.3};
+						angles[]={0,3.5779262,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[""Gems Dealer"",life_fnc_virt_menu,""gems_dealer""];";
+						name="Gem_Dealer_2";
+					};
+					id=7956;
+					type="B_Protagonist_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7955;
+		};
+		class Item1690
+		{
+			dataType="Marker";
+			position[]={12017.125,10.125,12321.125};
+			name="marker_243";
+			text="Gem Dealer";
+			type="mil_triangle";
+			colorName="ColorYellow";
+			id=7957;
+			atlOffset=-1.1433516;
+		};
+		class Item1691
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7140.25,4.0014391,11007.925};
+						angles[]={0,6.0912004,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[""Gems Dealer"",life_fnc_virt_menu,""gems_dealer""];";
+						name="Gem_Dealer_3";
+					};
+					id=7959;
+					type="B_Protagonist_VR_F";
+					atlOffset=-0.007683754;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7958;
+			atlOffset=-0.007683754;
+		};
+		class Item1692
+		{
+			dataType="Marker";
+			position[]={7140.25,2.25,11007.125};
+			name="marker_244";
+			text="Gem Dealer";
+			type="mil_triangle";
+			colorName="ColorYellow";
+			id=7960;
+			atlOffset=-1.7376645;
 		};
 	};
 };

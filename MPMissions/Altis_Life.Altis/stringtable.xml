@@ -6778,6 +6778,13 @@
 		<Key ID="STR_Item_ruby">
 			  <Original>Ruby</Original>
 		</Key>
+		<Key ID="STR_Item_emerald">
+			  <Original>Emerald</Original>
+		</Key>
+		
+		<Key ID="STR_Item_gemDealer">
+			  <Original>Gem Dealer</Original>
+		</Key>
 		
         <Key ID="STR_Item_IronOre">
             <Original>Iron Ore</Original>

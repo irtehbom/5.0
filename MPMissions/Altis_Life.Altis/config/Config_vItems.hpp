@@ -44,6 +44,8 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "bonds" };
 	};
+	
+	
 
     class wongs {
         name = "STR_Shops_Wongs";
@@ -87,7 +89,7 @@ class VirtualShops {
         items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
     };
 	
-	class gems {
+	class gems_dealer {
 		 name = "Gems Dealer";
 		 side = "civ";
 		 conditions = "";

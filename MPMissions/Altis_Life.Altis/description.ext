@@ -22,6 +22,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	#include "maverick\tuning\dialogs\titles.hpp"
+	#include "dialog\gemGained.hpp"
 };
 
 class CfgFunctions {
@@ -85,6 +86,14 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
+	
+	class gemFound
+	{
+		name = "gemFound";
+		sound[] = {"\sounds\gem.wav", 1.0, 1};
+		titles[] = {};
+	};
+	
 };
 
 class CfgDebriefing {

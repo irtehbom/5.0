@@ -7,7 +7,7 @@
         Description:
         Same as fn_gather,but it allows use of probabilities for mining.
     */
-private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
+private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined","_result"];
 if (life_action_inUse) exitWith {};
 if !(isNull objectParent player) exitWith {};
 if (player getVariable "restrained") exitWith {
@@ -48,6 +48,7 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
         if ((_percent >= _prob) && (_percent <= _probdiff)) exitWith {
             _mined = _resource;
         };
+		
     };
 
     {
@@ -98,6 +99,32 @@ for "_i" from 0 to 4 do {
 };
 
 if (([true, _mined, _diff] call life_fnc_handleInv)) then {
+		
+		if (5 >= random 100) then {
+			_result = [] call life_fnc_getGemsRandom;
+			[true,_result,1] call life_fnc_handleInv;
+			
+			_gemName = M_CONFIG(getText, "VirtualItems", _result, "displayName");
+			
+			disableSerialization;
+			
+			5 cutRsc["A3_gemGained", "PLAIN"];
+			
+			_display = displayNull;
+			waitUntil {
+				_display = uiNamespace getVariable["gemGained", displayNull];
+				!isNull (_display);
+			};
+
+			_pic = _display displayCtrl 1;
+			_text = _display displayCtrl 2;
+
+			_pic ctrlSetText "icons\gemicon.paa";
+			_text ctrlSetText format["You've just found a %1!",localize _gemName];
+			
+			[player,"gemFound"] remoteExec ["life_fnc_say3D",RANY];
+		};
+
     _itemName = M_CONFIG(getText, "VirtualItems", _mined, "displayName");
     titleText[format [localize "STR_NOTF_Mine_Success", (localize _itemName), _diff], "PLAIN"];
 };

@@ -86,6 +86,13 @@ class VirtualShops {
         conditions = "";
         items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
     };
+	
+	class gems {
+		 name = "Gems Dealer";
+		 side = "civ";
+		 conditions = "";
+		 items[] = { "Amethyst","Ametrine","Aquamarine","Bloodstone","Blue Saphire","Citrine","Emerald","Opal","Quartz","Ruby"};
+	};
 
     class glass {
         name = "STR_Shops_Glass";
@@ -920,4 +927,118 @@ class VirtualItems {
         edible = 100;
         icon = "icons\ico_muttonLeg.paa";
     };
+	
+	
+	class amethyst {
+        variable = "amethyst";
+        displayName = "STR_Item_amethyst";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class ametrine {
+        variable = "Ametrine";
+        displayName = "STR_Item_ametrine";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 7000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class aquamarine {
+        variable = "aquamarine";
+        displayName = "STR_Item_aquamarine";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 9000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class bloodstone {
+        variable = "bloodstone";
+        displayName = "STR_Item_bloodstone";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 11000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	
+	class citrine {
+        variable = "citrine";
+        displayName = "STR_Item_citrine";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 13000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class opal {
+        variable = "opal";
+        displayName = "STR_Item_opal";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 15000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class quartz {
+        variable = "quartz";
+        displayName = "STR_Item_quartz";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 17000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class ruby {
+        variable = "ruby";
+        displayName = "STR_Item_ruby";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 19000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class blue_saphire {
+        variable = "blue_saphire";
+        displayName = "STR_Item_blue_saphire";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 21000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+	
+	class emerald {
+        variable = "emerald";
+        displayName = "STR_Item_emerald";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 50000;
+        illegal = false;
+        edible = false;
+        icon = "icons\ico_diamondCut.paa";
+    };
+
+	
 };

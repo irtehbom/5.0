@@ -35,3 +35,4 @@
 #include "DrugsStash.hpp"
 #include "civInteractionMenu.hpp"
 #include "market.hpp"
+#include "gemGained.hpp"

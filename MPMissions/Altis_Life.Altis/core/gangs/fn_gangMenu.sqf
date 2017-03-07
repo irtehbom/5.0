@@ -12,11 +12,11 @@ if (isNull (findDisplay 2620)) then {
     if (!(createDialog "Life_My_Gang_Diag")) exitWith {}; //NOOOOOOOOOOOOOOOOOOOOOOOoooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000oooooo
 };
 
-_ownerID = group player getVariable ["gang_owner",""];
-if (_ownerID isEqualTo "") exitWith {closeDialog 0;}; //Bad juju
+_ownerID = _this select 0;
+_gangName = _this select 1;
+_gangBank = _this select 2;
 
-_gangName = group player getVariable "gang_name";
-_gangBank = [_gangName] call TON_fnc_gangFunds;
+diag_log format["_gangBank %1", _gangBank];
 
 _gangMax = group player getVariable "gang_maxMembers";
 

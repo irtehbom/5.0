@@ -126,7 +126,6 @@ class CfgFunctions {
             class queryPlayerGang {};
             class removeGang {};
             class updateGang {};
-			class gangFunds {};
         };
 		
 		class Kartel
@@ -136,6 +135,7 @@ class CfgFunctions {
 			class getGangAreaOwner {};
 			class setKartelOwners {};
 			class neutraliseArea {};
+			class getGangFundsDB {};
         };
 
         class Actions {

@@ -16,7 +16,7 @@ if(visibleMap) then {
 		_marker setMarkerPosLocal (visiblePosition player);
 		
 		if(!visibleMap) exitWith {};
-		sleep 0.02;
+		sleep 0.50;
 	};
 
 	deleteMarkerLocal _marker;

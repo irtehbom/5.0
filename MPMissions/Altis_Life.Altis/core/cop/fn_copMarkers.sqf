@@ -34,7 +34,7 @@ if (visibleMap) then {
             };
         } forEach _markers;
         if (!visibleMap) exitWith {};
-        sleep 0.02;
+        sleep 0.50;
     };
 
     {deleteMarkerLocal (_x select 0);} forEach _markers;

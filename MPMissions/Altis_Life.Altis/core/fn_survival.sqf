@@ -104,5 +104,5 @@ for "_i" from 0 to 1 step 0 do {
         _lastPos = visiblePosition player;
         _lastPos = (_lastPos select 0) + (_lastPos select 1);
     };
-    uiSleep 1;
+    uiSleep 5;
 };

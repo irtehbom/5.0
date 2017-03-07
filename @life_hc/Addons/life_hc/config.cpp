@@ -73,6 +73,7 @@ class CfgFunctions
             class updateGangArea {};
 			class getGangAreaOwner {};
 			class neutraliseArea {};
+			class getGangFundsDB {};
         };
 
         class PlayTime

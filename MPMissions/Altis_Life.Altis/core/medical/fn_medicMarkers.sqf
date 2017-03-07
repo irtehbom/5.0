@@ -51,7 +51,7 @@ if (visibleMap) then {
             };
         } forEach _markersMedecin;
         if (!visibleMap) exitWith {};
-        sleep 0.02;
+        sleep 0.50;
     };
     {deleteMarkerLocal (_x select 0);} forEach _markersMedecin;
     _markersMedecin = [];

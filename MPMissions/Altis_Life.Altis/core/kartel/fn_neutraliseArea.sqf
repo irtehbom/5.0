@@ -8,7 +8,7 @@ private ["_action","_cpRate"];
 _flagObject = _this select 0;
 _exit = false;
 _exitMessage = "";
-_cpRate = 0.0003;
+_cpRate = 0.0008;
 _gangName = _flagObject getVariable ["gang_name",""];
 _message = "";
 _benefits = "";

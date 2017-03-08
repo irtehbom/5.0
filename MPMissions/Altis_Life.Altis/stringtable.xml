@@ -7157,6 +7157,17 @@
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening rebelianta</Polish>
         </Key>
+		<Key ID="STR_License_RebelAdvanced">
+            <Original>Advanced Rebel Training</Original>
+            <Czech>Advanced Rebel Training</Czech>
+            <Spanish>Advanced Entrenamiento Rebelde</Spanish>
+            <Russian></Russian>
+            <German>Advanced Rebellenausbildung</German>
+            <French>Advanced Entrainement rebelle</French>
+            <Italian>Advanced Licenza da Ribelle</Italian>
+            <Portuguese>Advanced Treinamento Rebelde</Portuguese>
+            <Polish>Advanced Trening rebelianta</Polish>
+        </Key>
         <Key ID="STR_License_Truck">
             <Original>Truck License</Original>
             <Czech>Truck licence</Czech>

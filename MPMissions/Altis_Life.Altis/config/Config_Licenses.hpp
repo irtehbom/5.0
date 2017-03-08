@@ -153,15 +153,23 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
-
+	
     class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
-        price = 75000;
-        illegal = true;
+        price = 750000;
+        illegal = false;
         side = "civ";
     };
-
+	
+	class rebelAdvanced {
+		variable = "rebelAdvanced";
+		displayName = "STR_License_RebelAdvanced"
+		price = 1500000;
+		illegal = false;
+		side = "civ";
+	};
+	
     //Cop Licenses
     class cAir {
         variable = "cAir";

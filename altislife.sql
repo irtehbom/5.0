@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-03-03 17:00:41
+Date: 2017-03-08 17:47:49
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -50,14 +50,17 @@ CREATE TABLE `gangs` (
   `bank` int(100) DEFAULT '0',
   `active` tinyint(1) DEFAULT '1',
   `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `weed_capture` int(1) NOT NULL DEFAULT '0',
+  `heroin_capture` int(1) NOT NULL DEFAULT '0',
+  `cocaine_capture` int(1) NOT NULL DEFAULT '0',
+  `arms_capture` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of gangs
 -- ----------------------------
-INSERT INTO `gangs` VALUES ('1', '76561198022865586', 'Your Gang Namedwadawdaw', '\"[`76561198022865586`]\"', '8', '599572', '1', '2017-02-04 14:20:39');
 
 -- ----------------------------
 -- Table structure for `houses`
@@ -71,12 +74,24 @@ CREATE TABLE `houses` (
   `garage` tinyint(1) NOT NULL DEFAULT '0',
   `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`,`pid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of houses
 -- ----------------------------
-INSERT INTO `houses` VALUES ('2', '76561198022865586', '[3350.52,13161,0.387996]', '1', '0', '2017-02-04 13:26:33');
+
+-- ----------------------------
+-- Table structure for `kartel`
+-- ----------------------------
+DROP TABLE IF EXISTS `kartel`;
+CREATE TABLE `kartel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of kartel
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `market`
@@ -94,16 +109,16 @@ CREATE TABLE `market` (
 -- ----------------------------
 -- Records of market
 -- ----------------------------
-INSERT INTO `market` VALUES ('1', 'copper_refined', '390', '525', '462');
-INSERT INTO `market` VALUES ('2', 'iron_refined', '450', '600', '593');
-INSERT INTO `market` VALUES ('3', 'cement', '500', '700', '586');
-INSERT INTO `market` VALUES ('4', 'glass', '600', '800', '749');
-INSERT INTO `market` VALUES ('5', 'oil_processed', '750', '1050', '880');
-INSERT INTO `market` VALUES ('6', 'salt_refined', '500', '750', '684');
-INSERT INTO `market` VALUES ('7', 'diamond_cut', '700', '900', '860');
-INSERT INTO `market` VALUES ('8', 'heroin_processed', '950', '1250', '1191');
-INSERT INTO `market` VALUES ('9', 'marijuana', '1150', '1450', '1425');
-INSERT INTO `market` VALUES ('10', 'cocaine_processed', '1300', '1550', '1382');
+INSERT INTO `market` VALUES ('1', 'copper_refined', '1300', '1800', '1555');
+INSERT INTO `market` VALUES ('2', 'iron_refined', '1300', '1800', '1611');
+INSERT INTO `market` VALUES ('3', 'cement', '1300', '1800', '1301');
+INSERT INTO `market` VALUES ('4', 'glass', '1300', '1800', '1582');
+INSERT INTO `market` VALUES ('5', 'oil_processed', '1300', '1800', '1800');
+INSERT INTO `market` VALUES ('6', 'salt_refined', '1300', '1800', '1790');
+INSERT INTO `market` VALUES ('7', 'diamond_cut', '1300', '1800', '1550');
+INSERT INTO `market` VALUES ('8', 'heroin_processed', '1400', '2200', '1719');
+INSERT INTO `market` VALUES ('9', 'marijuana', '2200', '2800', '2546');
+INSERT INTO `market` VALUES ('10', 'cocaine_processed', '2400', '3000', '2652');
 INSERT INTO `market` VALUES ('15', 'goldbar', '25000', '25000', '25000');
 INSERT INTO `market` VALUES ('16', 'bonds', '100000', '100000', '100000');
 
@@ -142,16 +157,12 @@ CREATE TABLE `players` (
   UNIQUE KEY `pid` (`pid`),
   KEY `name` (`name`),
   KEY `blacklist` (`blacklist`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of players
 -- ----------------------------
-INSERT INTO `players` VALUES ('12', 'Rob', '\"[`Rob`]\"', '76561198022865586', '0', '6724809', '7', '0', '\"[[`license_civ_driver`,1],[`license_civ_boat`,0],[`license_civ_pilot`,1],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,1],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,1],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,1],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,1]]\"', '\"[[`license_cop_cAir`,0],[`license_cop_cg`,0]]\"', '\"[]\"', '\"[`U_C_Poloshirt_stripped`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[`U_B_CombatUniform_mcam`,`V_Rangemaster_belt`,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,`hgun_P07_snds_F`,[],[],[],[],[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`],[``,``,``,``],[`muzzle_snds_L`,``,``,``],[]]\"', '\"[]\"', '\"[70,60,0]\"', '\"[70,50,0]\"', '\"[100,100,0]\"', '0', '3', '0', '0', '1', '\"[14074.1,18572.5,0.00128555]\"', '\"[438,0,204]\"', '2017-02-04 01:27:53', '2017-03-03 16:44:49');
-INSERT INTO `players` VALUES ('13', 'CarlS', '\"[`CarlS`]\"', '76561198024323552', '0', '3000', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[`U_C_Poloshirt_burgundy`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],[],[],[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3618.96,13092,0.00146103]\"', '\"[0,0,3]\"', '2017-02-19 12:26:07', '2017-02-19 12:29:03');
-INSERT INTO `players` VALUES ('14', 'Qwerty', '\"[`Qwerty`]\"', '76561198023100736', '0', '3000', '0', '0', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '0', '\"[]\"', '\"[0,0,0]\"', '2017-02-19 13:06:20', '2017-02-19 13:06:20');
-INSERT INTO `players` VALUES ('15', 'AntonyJ', '\"[`AntonyJ`]\"', '76561198015198428', '0', '3000', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[`U_C_Poloshirt_salmon`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3612.77,12970.4,0.00149632]\"', '\"[0,0,4]\"', '2017-02-23 18:48:38', '2017-02-23 19:05:49');
-INSERT INTO `players` VALUES ('16', 'Grim', '\"[`Lasher`]\"', '76561198023684678', '0', '3345', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[``,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]\"', '\"[]\"', '\"[]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[3410.58,13120.5,0.00146818]\"', '\"[0,0,19]\"', '2017-02-24 10:16:08', '2017-02-28 09:53:44');
+INSERT INTO `players` VALUES ('17', 'Rob', '\"[`Rob`]\"', '76561198022865586', '19000', '57000', '0', '0', '\"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,0],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_rebel`,0]]\"', '\"[]\"', '\"[]\"', '\"[`U_C_Poloshirt_blue`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[[`pickaxe`,1]]]\"', '\"[]\"', '\"[]\"', '\"[80,40,0]\"', '\"[100,100,0]\"', '\"[100,100,0]\"', '0', '0', '0', '0', '1', '\"[23810.3,18602.6,0.00143886]\"', '\"[0,0,155]\"', '2017-03-07 15:32:59', '2017-03-07 19:51:42');
 
 -- ----------------------------
 -- Table structure for `realestate`
@@ -198,7 +209,7 @@ CREATE TABLE `vehicles` (
   KEY `side` (`side`),
   KEY `pid` (`pid`),
   KEY `type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of vehicles
@@ -206,6 +217,7 @@ CREATE TABLE `vehicles` (
 INSERT INTO `vehicles` VALUES ('82', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '0', '827532', '6', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-25 11:12:04', '[[1,1,0,0,1],^\\A3\\soft_F\\Offroad_01\\Data\\offroad_01_ext_BASE01_CO.paa^,0,3,[0,0,0.9],^maverick\\tuning\\bin\\materials\\fade.rvmat^]');
 INSERT INTO `vehicles` VALUES ('83', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '0', '415257', '2', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-25 11:58:12', '[]');
 INSERT INTO `vehicles` VALUES ('84', 'civ', 'C_Offroad_01_F', 'Car', '76561198022865586', '1', '0', '0', '149124', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-02-28 12:09:22', '[[0,0,0,1,0],^a3\\soft_f\\offroad_01\\data\\offroad_01_ext_base03_co.paa^,0,0,[-1,-1,-1],^maverick\\tuning\\bin\\materials\\shine_blue.rvmat^]');
+INSERT INTO `vehicles` VALUES ('85', 'civ', 'C_Hatchback_01_F', 'Car', '76561198022865586', '1', '0', '0', '596221', '1', '\"[[],0]\"', '\"[]\"', '1', '\"[]\"', '2017-03-04 01:35:12', '[]');
 
 -- ----------------------------
 -- Table structure for `wanted`

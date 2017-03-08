@@ -233,7 +233,7 @@
 
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="houses">
-
+                                    $house_data
                                 @if(count($house_data) > 0) 
 
                                 <table id="vehicle_info" class="table">
@@ -251,7 +251,7 @@
                                         <tr data-house_id="{{$house->id}}" class="delete_house_row">
                                             <td>{{ $house->pos }}</a></td>
                                             <td>
-                                                @if($gang_data->active == 1)
+                                                @if($house->owned == 1)
                                                 <span style="color:green">Yes</span> 
                                                 @else
                                                 <span style="color:red">No</span> 

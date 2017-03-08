@@ -93,7 +93,7 @@ class VirtualShops {
 		 name = "Gems Dealer";
 		 side = "civ";
 		 conditions = "";
-		 items[] = { "Amethyst","Ametrine","Aquamarine","Bloodstone","Blue Saphire","Citrine","Emerald","Opal","Quartz","Ruby"};
+		 items[] = { "Amethyst","Ametrine","Aquamarine","Bloodstone","Blue_Saphire","Citrine","Emerald","Opal","Quartz","Ruby"};
 	};
 
     class glass {
@@ -939,7 +939,7 @@ class VirtualItems {
         sellPrice = 5000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_amethystCut.paa";
     };
 	
 	class ametrine {
@@ -950,7 +950,7 @@ class VirtualItems {
         sellPrice = 7000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_ametrineCut.paa";
     };
 	
 	class aquamarine {
@@ -961,7 +961,7 @@ class VirtualItems {
         sellPrice = 9000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_aquamarineCut.paa";
     };
 	
 	class bloodstone {
@@ -972,7 +972,7 @@ class VirtualItems {
         sellPrice = 11000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_bloodstoneCut.paa";
     };
 	
 	
@@ -984,7 +984,7 @@ class VirtualItems {
         sellPrice = 13000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_citrineCut.paa";
     };
 	
 	class opal {
@@ -995,7 +995,7 @@ class VirtualItems {
         sellPrice = 15000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_opalCut.paa";
     };
 	
 	class quartz {
@@ -1006,7 +1006,7 @@ class VirtualItems {
         sellPrice = 17000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_quartzCut.paa";
     };
 	
 	class ruby {
@@ -1017,7 +1017,7 @@ class VirtualItems {
         sellPrice = 19000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_rubyCut.paa";
     };
 	
 	class blue_saphire {
@@ -1028,7 +1028,7 @@ class VirtualItems {
         sellPrice = 21000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_sapphireCut.paa";
     };
 	
 	class emerald {
@@ -1039,7 +1039,7 @@ class VirtualItems {
         sellPrice = 50000;
         illegal = false;
         edible = false;
-        icon = "icons\ico_diamondCut.paa";
+        icon = "icons\ico_emeraldCut.paa";
     };
 
 	

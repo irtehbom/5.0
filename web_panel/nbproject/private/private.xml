@@ -3,14 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/web_panel/app/Http/Middleware/RedirectIfAuthenticated.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/server.php</file>
+            <file>file:/C:/xampp/htdocs/web_panel/app/Http/Controllers/playerInfoPageController.php</file>
+            <file>file:/C:/xampp/htdocs/web_panel/resources/views/players_info.blade.php</file>
+            <file>file:/C:/xampp/htdocs/web_panel/app/User.php</file>
             <file>file:/C:/xampp/htdocs/web_panel/resources/views/layouts/app.blade.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/public/index.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/app/Providers/EventServiceProvider.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/app/Http/Middleware/checkPermission.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/app/Http/Controllers/Auth/RegisterController.php</file>
-            <file>file:/C:/xampp/htdocs/web_panel/app/Providers/AppServiceProvider.php</file>
+            <file>file:/C:/xampp/htdocs/web_panel/public/js/app.js</file>
+            <file>file:/C:/xampp/htdocs/web_panel/resources/views/logs.blade.php</file>
         </group>
     </open-files>
 </project-private>

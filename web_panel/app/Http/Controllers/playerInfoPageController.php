@@ -31,6 +31,8 @@ class playerInfoPageController extends Controller {
         $gang_data = $altis_database->table('gangs')->where('owner', $params["player_id"])->get();
         $real_estate_data = $altis_database->table('realestate')->where('pid', $params["player_id"])->get();
         $house_data = $altis_database->table('houses')->where('pid', $params["player_id"])->get();
+        
+        var_dump($gang_data);
 
         $player_data = (count($player_data) == 0) ? new \stdClass() : $player_data[0];
         $wanted_data = (count($wanted_data) == 0) ? new \stdClass() : $wanted_data[0];

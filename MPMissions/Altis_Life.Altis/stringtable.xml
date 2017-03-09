@@ -83,6 +83,17 @@
             <Polish>Sklep samobójców AKBAR</Polish>
             <German>Mohammed's Ausrüstungen</German>
         </Key>
+		<Key ID="STR_Shops_C_RebelAdvanced">
+            <Original>Dru's PegLeg Shop</Original>
+            <Czech>Dru's PegLeg Shop</Czech>
+            <French>Dru's PegLeg Shop</French>
+            <Spanish>Dru's PegLeg Shop</Spanish>
+            <Italian>Dru's PegLeg Shop</Italian>
+            <Russian></Russian>
+            <Portuguese>Dru's PegLeg Shop</Portuguese>
+            <Polish>Dru's PegLeg Shop</Polish>
+            <German>Dru's PegLeg Shop</German>
+        </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Steve's Diving Shop</Original>
             <Czech>Steve je potápění obchod</Czech>
@@ -7157,6 +7168,17 @@
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening rebelianta</Polish>
         </Key>
+		<Key ID="STR_License_RebelAdvanced">
+            <Original>Advanced Rebel Training</Original>
+            <Czech>Advanced Rebel Training</Czech>
+            <Spanish>Advanced Entrenamiento Rebelde</Spanish>
+            <Russian></Russian>
+            <German>Advanced Rebellenausbildung</German>
+            <French>Advanced Entrainement rebelle</French>
+            <Italian>Advanced Licenza da Ribelle</Italian>
+            <Portuguese>Advanced Treinamento Rebelde</Portuguese>
+            <Polish>Advanced Trening rebelianta</Polish>
+        </Key>
         <Key ID="STR_License_Truck">
             <Original>Truck License</Original>
             <Czech>Truck licence</Czech>
@@ -10865,9 +10887,6 @@
             <Portuguese>North Eastern Rebel Base</Portuguese>
             <Polish>North Eastern Rebel Base</Polish>
         </Key>
-		 <Key ID="STR_SP_EMS_Kav">
-            <Original>Sophia Hospital</Original>
-		</Key>	
         <Key ID="STR_SP_EMS_Kav">
             <Original>Kavala Hospital</Original>
             <Czech>Kavala Hospital</Czech>

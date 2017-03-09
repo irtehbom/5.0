@@ -6,7 +6,6 @@ while {true} do
 	{
 		if(speed vehicle player > 40) then
 		{
-		hint "working";
 			oldVehVelocity = velocity (vehicle player);
 			sleep 0.5;
 			if(speed vehicle player < 2) then

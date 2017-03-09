@@ -100,7 +100,7 @@ for "_i" from 0 to 4 do {
 
 if (([true, _mined, _diff] call life_fnc_handleInv)) then {
 		
-		if (5 >= random 100) then {
+		if (2 >= random 100) then {
 			_result = [] call life_fnc_getGemsRandom;
 			[true,_result,1] call life_fnc_handleInv;
 			

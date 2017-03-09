@@ -10865,6 +10865,9 @@
             <Portuguese>North Eastern Rebel Base</Portuguese>
             <Polish>North Eastern Rebel Base</Polish>
         </Key>
+		 <Key ID="STR_SP_EMS_Kav">
+            <Original>Sophia Hospital</Original>
+		</Key>	
         <Key ID="STR_SP_EMS_Kav">
             <Original>Kavala Hospital</Original>
             <Czech>Kavala Hospital</Czech>

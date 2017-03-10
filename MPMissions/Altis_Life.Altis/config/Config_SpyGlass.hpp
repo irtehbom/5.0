@@ -531,7 +531,8 @@ class SpyGlass {
 		{"getrepos","ARRAY"},			
 		{"mav_tuning_nitro_handler","SCALAR"},	
 		{"bis_fnc_camera_ppcolor","SCALAR"},	
-		{"mav_tuning_nitrocooldownshort","SCALAR"},			
+		{"mav_tuning_nitrocooldownshort","SCALAR"},	
+		{"life_hc","OBJECT"},
 
     };
 

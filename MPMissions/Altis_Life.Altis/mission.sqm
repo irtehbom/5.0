@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={12243.152,158.36073,8946.1689};
-		dir[]={0.47565016,-0.65230954,-0.59017384};
-		up[]={0.40934438,0.75793839,-0.5079034};
-		aside[]={-0.77862412,-3.7113205e-007,-0.62753129};
+		pos[]={12295.019,129.70885,8868.3662};
+		dir[]={-0.023854923,-0.6245774,-0.78063703};
+		up[]={-0.019078344,0.78094739,-0.62430668};
+		aside[]={-0.99956167,-2.8571958e-007,0.030545833};
 	};
 };
 binarizationWanted=0;
@@ -64,6 +64,7 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
+	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_Households_Addons",
@@ -123,7 +124,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -210,89 +211,95 @@ class AddonsMetaData
 		};
 		class Item12
 		{
+			className="life_server";
+			name="life_server";
+			author="Tonic";
+		};
+		class Item13
+		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Boat_F_Gamma";
 			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
@@ -4668,6 +4675,7 @@ class Mission
 				angles[]={0,3.1949127,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4675,7 +4683,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.3253021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13942,7 +13949,6 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
-			atlOffset=0.22998428;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14141,13 +14147,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
-			atlOffset=0.35447693;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16942,7 +16948,7 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.14999962;
+					atlOffset=0.0036697388;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17909,6 +17915,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -17917,7 +17924,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.4344749;
+					atlOffset=0.046899796;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37457,7 +37464,7 @@ class Mission
 			};
 			id=4921;
 			type="Land_LampAirport_F";
-			atlOffset=18.15;
+			atlOffset=2.6346359;
 		};
 		class Item1158
 		{
@@ -45690,7 +45697,7 @@ class Mission
 			};
 			id=7557;
 			type="Land_HelipadEmpty_F";
-			atlOffset=1.6014843;
+			atlOffset=1.1751184;
 		};
 		class Item1541
 		{
@@ -45725,7 +45732,7 @@ class Mission
 			};
 			id=7559;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.74555206;
+			atlOffset=0.68944263;
 		};
 		class Item1543
 		{
@@ -45866,7 +45873,7 @@ class Mission
 			};
 			id=7578;
 			type="Land_Billboard_F";
-			atlOffset=3.5429974;
+			atlOffset=3.3592491;
 		};
 		class Item1551
 		{
@@ -48403,7 +48410,7 @@ class Mission
 						angles[]={0,5.6400023,0};
 					};
 					side="Civilian";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -48412,7 +48419,7 @@ class Mission
 					};
 					id=7967;
 					type="C_man_1";
-					atlOffset=0.28002357;
+					atlOffset=0.0098896027;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48442,7 +48449,7 @@ class Mission
 			{
 			};
 			id=7966;
-			atlOffset=0.28002357;
+			atlOffset=0.0098896027;
 		};
 		class Item1683
 		{
@@ -48453,13 +48460,14 @@ class Mission
 				angles[]={0,2.3911011,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=7968;
 			type="Land_CashDesk_F";
-			atlOffset=0.28136826;
+			atlOffset=0.0098896027;
 		};
 		class Item1684
 		{
@@ -49304,20 +49312,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12295.5,123.89646,8862.7998};
-						angles[]={6.2392149,5.7412782,6.2778587};
+						position[]={12295.5,123.89645,8862.7998};
+						angles[]={6.2392201,5.7412777,6.2778621};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
-						skill=0.60000002;
-						init="this addAction[format [""%1 (%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo east '];";
+						skill=0.84499133;
+						init="this addAction[""Advanced Rebel Shop"",life_fnc_weaponShopMenu,""rebelAdvanced""];  " \n "this addAction[""Advanced Rebel Clothing Shop"",life_fnc_clothingMenu,""rebA""]; " \n "this addAction[format [""%1 (%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebelAdvanced"",0,false,false,"""",'license_civ_rebel && playerSide isEqualTo east '];";
 						name="reb_1_5";
 						disableSimulation=1;
 					};
 					id=8014;
 					type="O_Soldier_F";
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -49366,6 +49375,7 @@ class Mission
 			{
 			};
 			id=8013;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item1722
 		{
@@ -49421,6 +49431,7 @@ class Mission
 					};
 					id=8020;
 					type="Box_FIA_Support_F";
+					atlOffset=-0.0038528442;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -49532,7 +49543,7 @@ class Mission
 					};
 					id=8024;
 					type="Land_HBarrier_Big_F";
-					atlOffset=0.26222229;
+					atlOffset=0.26221466;
 				};
 				class Item5
 				{
@@ -49551,7 +49562,7 @@ class Mission
 					};
 					id=8025;
 					type="Land_HBarrier_Big_F";
-					atlOffset=0.03793335;
+					atlOffset=0.037940979;
 				};
 				class Item6
 				{
@@ -49698,7 +49709,7 @@ class Mission
 					};
 					id=8033;
 					type="Land_InfoStand_V2_F";
-					atlOffset=0.057403564;
+					atlOffset=0.056121826;
 				};
 				class Item14
 				{
@@ -49817,7 +49828,7 @@ class Mission
 					};
 					id=8040;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.015350342;
+					atlOffset=0.015342712;
 				};
 				class Item21
 				{
@@ -49931,7 +49942,7 @@ class Mission
 					};
 					id=8044;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.015365601;
+					atlOffset=0.01537323;
 				};
 				class Item25
 				{
@@ -50067,7 +50078,7 @@ class Mission
 					};
 					id=8052;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.072151184;
+					atlOffset=0.072090149;
 				};
 				class Item33
 				{
@@ -50101,7 +50112,7 @@ class Mission
 					};
 					id=8054;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.10359192;
+					atlOffset=0.10359955;
 				};
 				class Item35
 				{
@@ -50118,7 +50129,7 @@ class Mission
 					};
 					id=8055;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.024688721;
+					atlOffset=0.02469635;
 				};
 				class Item36
 				{
@@ -50186,7 +50197,7 @@ class Mission
 					};
 					id=8059;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.00048828125;
+					atlOffset=0.00049591064;
 				};
 				class Item40
 				{
@@ -50253,7 +50264,7 @@ class Mission
 					};
 					id=8063;
 					type="Land_Mil_WallBig_4m_F";
-					atlOffset=0.012985229;
+					atlOffset=0.0129776;
 				};
 				class Item44
 				{
@@ -50542,7 +50553,7 @@ class Mission
 					};
 					id=8080;
 					type="Land_PortableHelipadLight_01_F";
-					atlOffset=0.039665222;
+					atlOffset=0.039344788;
 				};
 				class Item61
 				{
@@ -50559,7 +50570,7 @@ class Mission
 					};
 					id=8081;
 					type="Land_PortableHelipadLight_01_F";
-					atlOffset=0.012786865;
+					atlOffset=0.012733459;
 				};
 				class Item62
 				{
@@ -50593,7 +50604,7 @@ class Mission
 					};
 					id=8083;
 					type="Land_PortableHelipadLight_01_F";
-					atlOffset=0.035392761;
+					atlOffset=0.034507751;
 				};
 				class Item64
 				{
@@ -50612,7 +50623,7 @@ class Mission
 					};
 					id=8084;
 					type="SignAd_Sponsor_ION_F";
-					atlOffset=0.022117615;
+					atlOffset=0.022109985;
 				};
 				class Item65
 				{
@@ -50731,6 +50742,7 @@ class Mission
 					};
 					id=8091;
 					type="Box_FIA_Support_F";
+					atlOffset=-0.0027236938;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -50847,7 +50859,7 @@ class Mission
 					};
 					id=8095;
 					type="Land_CargoBox_V1_F";
-					atlOffset=7.6293945e-006;
+					atlOffset=-0.00035858154;
 				};
 				class Item74
 				{
@@ -50883,10 +50895,11 @@ class Mission
 					};
 					id=8097;
 					type="Land_ToiletBox_F";
+					atlOffset=-0.0012817383;
 				};
 			};
 			id=8017;
-			atlOffset=-0.14859009;
+			atlOffset=-0.15008545;
 		};
 	};
 };

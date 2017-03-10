@@ -91,14 +91,6 @@ class CfgSpawnPoints {
                 conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
             };
 
-            class HW {
-                displayName = $STR_MAR_Highway_Patrol;
-                spawnMarker = "cop_spawn_5";
-                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel >= 3";
-            };
-        };
-
         class Medic {
             class Kavala {
                 displayName = $STR_SP_EMS_Kav;

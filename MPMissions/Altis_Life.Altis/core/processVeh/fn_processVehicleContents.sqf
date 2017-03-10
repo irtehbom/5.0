@@ -50,6 +50,16 @@ if (_multipleItems) exitWith { _multipleItems = false; hint format["Only %1 can 
 diag_log format ["_itemInVeh %1",_itemInVeh];
 diag_log format ["_itemType %1",_itemType];
 if (_itemInVeh find _itemType == -1) exitWith { hint format["You can only process %1 at this trader.",_itemType] };
+
+
+
+if (_itemType == "cannabis") then {
+
+	_itemType = "marijuana";
+
+};
+
+diag_log format ["_itemType DAWDWA %1",_itemType];
  
 
 if (_amount <= 10) 

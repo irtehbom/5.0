@@ -520,7 +520,18 @@ class SpyGlass {
 		{"weed_capture","OBJECT"},	
 		{"ton_fnc_getgangfundsdb","CODE"},		
 		{"life_inv_aquamarine","SCALAR"},
-		
+		{"license_civ_rebeladvanced","BOOL"},
+		{"mav_tuning_light_toofast","SCALAR"},	
+		{"76561198023100736_keys_east","ARRAY"},		
+		{"real_estate_marker_pos","ARRAY"},		
+		{"real_estate_houses","ARRAY"},	
+		{"mav_tuning_nitroactive","BOOL"},
+		{"real_estate_markers","ARRAY"},		
+		{"real_estate_storage","ARRAY"},			
+		{"getrepos","ARRAY"},			
+		{"mav_tuning_nitro_handler","SCALAR"},	
+		{"bis_fnc_camera_ppcolor","SCALAR"},	
+		{"mav_tuning_nitrocooldownshort","SCALAR"},			
 
     };
 

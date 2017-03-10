@@ -7,7 +7,7 @@
 class Life_Settings {
 /* Logging and Security Settings*/
     /* Security Settings */
-    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
+    spyGlass_toggle = true; //Spyglass On/Off Toggle --> True = On & False = Off
 	
 
     /* Data Logging Settings */

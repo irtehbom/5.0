@@ -28,10 +28,6 @@ _multipleItems = false;
 				_multipleItems = true;
 			};
 			
-			diag_log format ["_trunkContents %1",_trunkContents select 0];
-			diag_log format ["_count_items %1",count _count_items];
-			diag_log format ["_multipleItems %1",_multipleItems];
-			
             _vehicleWeight = _trunkContents select 1;
             _itemInVeh = _trunkContents select 0 select 0 select 0;
             _amount = _trunkContents select 0 select 0 select 1;
@@ -47,20 +43,13 @@ if (_multipleVehicles == 0) exitWith { hint format["You need a vehicle that is o
 if (_multipleVehicles > 1) exitWith {  hint 'Only one vehicle owned by you can be within 25 meters of the trader'; };
 if (isNil "_amount") exitWith { hint format["You don't have any %1 in your vehicle",_itemType] };
 if (_multipleItems) exitWith { _multipleItems = false; hint format["Only %1 can be in your vehicle when using vehicle processing - remove the other items",_itemType] };
-diag_log format ["_itemInVeh %1",_itemInVeh];
-diag_log format ["_itemType %1",_itemType];
 if (_itemInVeh find _itemType == -1) exitWith { hint format["You can only process %1 at this trader.",_itemType] };
-
-
 
 if (_itemType == "cannabis") then {
 
 	_itemType = "marijuana";
 
 };
-
-diag_log format ["_itemType DAWDWA %1",_itemType];
- 
 
 if (_amount <= 10) 
 	then { _sleep_amount =  0.3; }; //0:30

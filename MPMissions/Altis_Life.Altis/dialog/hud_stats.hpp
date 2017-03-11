@@ -1,4 +1,5 @@
 #define ST_CENTER         0x02
+#define IDC_LIFE_BAR_SeatBelt 4203
 /*
     Author: Daniel Stuart
 
@@ -85,4 +86,6 @@ class playerHUD {
         text = "$STR_HUD_Water";
         x = 0.534723 * safezoneW + safezoneX;
     };
+	
+	
 };

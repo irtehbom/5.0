@@ -48,6 +48,7 @@ life_pos_attach = [];
 life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
+life_seatbelt = false;
 
 gang_withdraw_clicks = 0;
 gang_withdraw_time = 0;

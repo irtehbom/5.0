@@ -51,6 +51,13 @@ if (_itemType == "cannabis") then {
 
 };
 
+if (_itemType == "rock") then {
+
+	_itemType = "cement";
+
+};
+
+
 if (_amount <= 10) 
 	then { _sleep_amount =  0.3; }; //0:30
 if (_amount > 10) 

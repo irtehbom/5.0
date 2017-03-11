@@ -195,6 +195,8 @@ class CfgRemoteExec {
 		F(TON_fnc_getGangAreaOwner,ANYONE)
 		F(TON_fnc_bankMissionReward,ANYONE)
 		F(HC_fnc_getGangFundsDB,ANYONE)
+		F(life_fnc_tieingb,ANYONE)
+		F(life_fnc_tieing,ANYONE)
 		
     };
 

@@ -8,7 +8,7 @@ class EditorData
 	toggles=106;
 	class ItemIDProvider
 	{
-		nextID=8099;
+		nextID=8103;
 	};
 	class MarkerIDProvider
 	{
@@ -448,7 +448,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1722;
+		items=1724;
 		class Item0
 		{
 			dataType="Marker";
@@ -50784,6 +50784,158 @@ class Mission
 			};
 			id=8017;
 			atlOffset=-0.15008545;
+		};
+		class Item1722
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20085.41,100.95979,6736.4268};
+						angles[]={0,3.9261355,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.84499133;
+						init="this addAction[""Advanced Rebel Shop"",life_fnc_weaponShopMenu,""rebelAdvanced""];  " \n "this addAction[""Advanced Rebel Clothing Shop"",life_fnc_clothingMenu,""rebA""]; " \n "this addAction[format [""%1 (%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebelAdvanced"",0,false,false,"""",'license_civ_rebel && playerSide isEqualTo east '];";
+						name="reb_1_6";
+						disableSimulation=1;
+					};
+					id=8100;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8099;
+		};
+		class Item1723
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9144.4785,14.415334,21655.469};
+						angles[]={0,2.2506192,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.84499133;
+						init="this addAction[""Advanced Rebel Shop"",life_fnc_weaponShopMenu,""rebelAdvanced""];  " \n "this addAction[""Advanced Rebel Clothing Shop"",life_fnc_clothingMenu,""rebA""]; " \n "this addAction[format [""%1 (%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebelAdvanced"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebelAdvanced"",0,false,false,"""",'license_civ_rebel && playerSide isEqualTo east '];";
+						name="reb_1_7";
+						disableSimulation=1;
+					};
+					id=8102;
+					type="O_Soldier_F";
+					atlOffset=2.8610229e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8101;
+			atlOffset=2.8610229e-006;
 		};
 	};
 };

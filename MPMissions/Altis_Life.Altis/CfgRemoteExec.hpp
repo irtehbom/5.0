@@ -197,6 +197,16 @@ class CfgRemoteExec {
 		F(HC_fnc_getGangFundsDB,ANYONE)
 		F(life_fnc_tieingb,ANYONE)
 		F(life_fnc_tieing,ANYONE)
+		F(TON_fnc_insertrealestate,ANYONE)
+		F(HC_fnc_insertrealestate,ANYONE)
+		F(HC_fnc_sellEstate,ANYONE)
+		F(TON_fnc_sellEstate,ANYONE)
+		F(HC_fnc_payRentRealEstate,ANYONE)
+		F(TON_fnc_payRentRealEstate,ANYONE)
+		F(TON_fnc_getGangFundsDB,ANYONE)
+		F(HC_fnc_getGangFundsDB,ANYONE)
+		
+		
 		
     };
 

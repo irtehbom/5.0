@@ -533,7 +533,27 @@ class SpyGlass {
 		{"bis_fnc_camera_ppcolor","SCALAR"},	
 		{"mav_tuning_nitrocooldownshort","SCALAR"},	
 		{"life_hc","OBJECT"},
-		{"aborted_process","BOOL"}
+		{"aborted_process","BOOL"},
+		{"hospital_sofia","OBJECT"},
+		{"hospital_sofia_1","OBJECT"},
+		{"hospital_sofia_2","OBJECT"},
+		{"hospital_sofia_3","OBJECT"},
+		{"hospital_sofia_4","OBJECT"},
+		{"hospital_sofia_5","OBJECT"},
+		{"hospital_sofia_6","OBJECT"},
+		{"hospital_sofia_7","OBJECT"},
+		{"hospital_sofia_8","OBJECT"},
+		{"reb_1_6","OBJECT"},
+		{"reb_1_7","OBJECT"},
+		{"life_seatbelt","BOOL"},
+		{"life_fnc_seatbelt_meta","CODE"},
+		{"life_fnc_seatbelt","CODE"},
+		{"bis_fnc_endmission_effects","SCRIPT"},
+		{"bis_fnc_missionhandlers_win","BOOL"},
+		{"bis_fnc_missionhandlers_end","STRING"}
+		
+		
+
 		
 
     };

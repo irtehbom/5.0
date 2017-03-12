@@ -13,7 +13,7 @@ _gangName = group player getVariable "gang_name";
 if (life_HC_isActive) then {
 	[_gangName,player] remoteExecCall ["HC_fnc_getGangFundsDB",HC_Life];
 } else {
-	[_gangName,player] remoteExecCall ["HC_fnc_getGangFundsDB",RSERV];
+	[_gangName,player] remoteExecCall ["TON_fnc_getGangFundsDB",RSERV];
 };
 
 sleep 0.5;

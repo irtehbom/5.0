@@ -90,6 +90,7 @@ class CfgSpawnPoints {
 					icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
 					conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
 				};
+			};
 
 			class Medic {
 				class Kavala {
@@ -240,5 +241,3 @@ class CfgSpawnPoints {
 		};
 
 	};
-	
-};

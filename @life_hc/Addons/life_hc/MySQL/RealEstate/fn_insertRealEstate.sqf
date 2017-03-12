@@ -10,6 +10,8 @@ _house = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 _playerName = [_this,2,"",[""]] call BIS_fnc_param;
 if(isNull _house OR _uid == "") exitWith {};
 
+diag_log format[_this];
+
 _housePos = getPosATL _house;
 
 _query = format["INSERT INTO realestate (pid, pos, inventory, containers, owned, playername) VALUES('%1', '%2', '""[[],0]""', '""[]""', '1', '%3')",_uid,_housePos,_playerName];

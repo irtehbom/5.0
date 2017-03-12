@@ -51,6 +51,8 @@ if (_extDBNotLoaded isEqualType []) then {
 
 if (_extDBNotLoaded isEqualType []) exitWith {}; //extDB3-HC did not fully initialize so terminate the rest of the initialization process.
 
+serv_sv_use = [];
+
 [] spawn {
     for "_i" from 0 to 1 step 0 do {
         publicVariableServer "serv_sv_use";
@@ -143,8 +145,8 @@ CONSTVAR(HC_MPAllowedFuncs);
 
 life_HC_isActive = true;
 
-[] remoteExec ["HC_fnc_missions_handler"];
-[] remoteExec ["HC_fnc_static_ai"];
+//[] remoteExec ["HC_fnc_missions_handler"];
+//[] remoteExec ["HC_fnc_static_ai"];
 
 publicVariable "life_HC_isActive";
 diag_log "----------------------------------------------------------------------------------------------------";

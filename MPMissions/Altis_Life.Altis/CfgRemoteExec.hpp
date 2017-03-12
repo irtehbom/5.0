@@ -204,7 +204,6 @@ class CfgRemoteExec {
 		F(HC_fnc_payRentRealEstate,ANYONE)
 		F(TON_fnc_payRentRealEstate,ANYONE)
 		F(TON_fnc_getGangFundsDB,ANYONE)
-		F(HC_fnc_getGangFundsDB,ANYONE)
 		
 		
 		

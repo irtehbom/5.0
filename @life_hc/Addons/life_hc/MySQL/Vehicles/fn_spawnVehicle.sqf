@@ -21,14 +21,13 @@ _ownerID = _unit getVariable ["life_clientID",-1];
 _unit_return = _unit;
 _name = name _unit;
 _side = side _unit;
-__serv_sv_use = [];
 
 //_unit = owner _unit;
 
 if (_vid isEqualTo -1 || _pid isEqualTo "") exitWith {};
-if (_vid in _serv_sv_use) exitWith {};
-_serv_sv_use pushBack _vid;
-_servIndex = _serv_sv_use find _vid;
+if (_vid in serv_sv_use) exitWith {};
+serv_sv_use pushBack _vid;
+_servIndex = serv_sv_use find _vid;
 
 _query = format ["SELECT id, side, classname, type, pid, alive, active, plate, color, inventory, gear, fuel, damage, blacklist FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
@@ -46,16 +45,16 @@ if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
 if (_queryResult isEqualType "") exitWith {};
 
 _vInfo = _queryResult;
-if (isNil "_vInfo") exitWith {_serv_sv_use deleteAt _servIndex;};
-if (count _vInfo isEqualTo 0) exitWith {_serv_sv_use deleteAt _servIndex;};
+if (isNil "_vInfo") exitWith {serv_sv_use deleteAt _servIndex;};
+if (count _vInfo isEqualTo 0) exitWith {serv_sv_use deleteAt _servIndex;};
 
 if ((_vInfo select 5) isEqualTo 0) exitWith {
-    _serv_sv_use deleteAt _servIndex;
+    serv_sv_use deleteAt _servIndex;
     [1,"STR_Garage_SQLError_Destroyed",true,[_vInfo select 2]] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 
 if ((_vInfo select 6) isEqualTo 1) exitWith {
-    _serv_sv_use deleteAt _servIndex;
+    serv_sv_use deleteAt _servIndex;
     [1,"STR_Garage_SQLError_Active",true,[_vInfo select 2]] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 
@@ -66,7 +65,7 @@ if (!(_sp isEqualType "")) then {
 };
 
 if (count _nearVehicles > 0) exitWith {
-    _serv_sv_use deleteAt _servIndex;
+    serv_sv_use deleteAt _servIndex;
     [_price,_unit_return] remoteExecCall ["life_fnc_garageRefund",_unit];
     [1,"STR_Garage_SpawnPointError",true] remoteExecCall ["life_fnc_broadcast",_unit];
 };
@@ -188,6 +187,6 @@ if ((_vInfo select 1) isEqualTo "med" && ((_vInfo select 2)) isEqualTo "C_Offroa
 };
 
 [1,_spawntext] remoteExecCall ["life_fnc_broadcast",_unit];
-_serv_sv_use deleteAt _servIndex;
+serv_sv_use deleteAt _servIndex;
 
 [_vid, _vehicle, 3] spawn mav_tuning_fnc_getTuningFromDB;

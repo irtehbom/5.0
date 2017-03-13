@@ -139,14 +139,15 @@ HC_MPAllowedFuncs = [
 	"hc_fnc_gangfunds",
 	"hc_fnc_neutralisearea",
 	"hc_fnc_getgangfundsdb"
+	"hc_fnc_updateYinv"
 ];
 
 CONSTVAR(HC_MPAllowedFuncs);
 
 life_HC_isActive = true;
 
-//[] remoteExec ["HC_fnc_missions_handler"];
-//[] remoteExec ["HC_fnc_static_ai"];
+[] remoteExec ["HC_fnc_missions_handler"];
+[] remoteExec ["HC_fnc_static_ai"];
 
 publicVariable "life_HC_isActive";
 diag_log "----------------------------------------------------------------------------------------------------";

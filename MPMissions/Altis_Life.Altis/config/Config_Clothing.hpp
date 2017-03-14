@@ -471,6 +471,37 @@ class Clothing {
             { "B_Carryall_cbr", "", 7500, "" }
         };
     };
+	
+	class rebA {
+        title = "STR_Shops_C_Rebel";
+        conditions = "license_civ_rebel && license_civ_rebelAdvanced";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+          
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+         
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" },
+          
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+           
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" },
+            { "B_Carryall_ghex_F", "", 7500, "" },
+			{ "B_Bergen_dgtl_F", "", 15000, "" }, //ApexBergenDigital
+			{ "B_Bergen_hex_F", "", 15000, "" }, //ApexBergenHex
+			{ "B_Bergen_mcamo_F", "", 15000, "" }, //ApexBergenMTP
+			{ "B_Bergen_tna_F", "", 15000, "" } //ApexBergenTropic
+           
+        };
+    };
  
     class kart {
         title = "STR_Shops_C_Kart";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Altis Life RPG">
-    <Package name="Init">
+    <Package name="Init">		
         <Key ID="STR_Init_ClientSetup">
             <Original>Setting up client, please wait...</Original>
             <Czech></Czech>
@@ -10919,6 +10919,17 @@
             <Italian>Pyrgos Hospital</Italian>
             <Portuguese>Pyrgos Hospital</Portuguese>
             <Polish>Pyrgos Hospital</Polish>
+        </Key>
+		<Key ID="STR_SP_EMS_Sophia">
+            <Original>Sophia Hospital</Original>
+            <Czech>Sophia Hospital</Czech>
+            <Spanish>Sophia Hospital</Spanish>
+            <Russian>Sophia Hospital</Russian>
+            <German>Sophia Krankenhaus</German>
+            <French>Sophia Hospital</French>
+            <Italian>Sophia Hospital</Italian>
+            <Portuguese>Sophia Hospital</Portuguese>
+            <Polish>Sophia Hospital</Polish>
         </Key>
         <Key ID="STR_SP_EMS_SE">
             <Original>South East Hospital</Original>

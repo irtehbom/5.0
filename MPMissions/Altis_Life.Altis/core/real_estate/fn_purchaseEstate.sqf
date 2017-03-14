@@ -45,7 +45,6 @@ if(_action) then {
 	Remember to pay rent, if rent is unpaid you'll lose your house!
 	";
 	
-	diag_log format["%1 _estate",_house];
 	_estatePosition = getPosATL _house;
 	
 	

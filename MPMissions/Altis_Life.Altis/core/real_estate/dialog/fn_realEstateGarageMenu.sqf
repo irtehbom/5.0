@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\..\..\script_macros.hpp"
 /*
 Creates the real estate garage menu
 */
@@ -36,17 +36,7 @@ _Btn2 buttonSetAction "[life_pInact_curTarget,player] spawn life_fnc_storeVehicl
 _Btn2 ctrlShow true;
 
 };
-/*
-calize"STR_Garage_Title",  {   if (life_HC_isActive) then { 
-[getPlayerUID player,playerSide,"Air",player] remoteExecCall ["HC_fnc_getVehicles",HC_Life];
- } else { [getPlayerUID player,playerSide,"Air",player] remoteExecCall ["TON_fnc_getVehicles",2];
- }; life_garage_type = "Air"; createDialog "Life_impound_menu";
- disableSerialization;  ctrlSetText[2802,"Fetching Vehicles...."];
- life_garage_sp = "air_g_1"; }];
- this addAction[localize"STR_MAR_Store_vehicle_in_Garage",life_fnc_storeVehicle,"",0,false,false,"",'!life_garage_store'];
- 
- 
- */
+
 
 if(((_curTarget getVariable "heli_owned") select 0) == (getPlayerUID player)) then {
 

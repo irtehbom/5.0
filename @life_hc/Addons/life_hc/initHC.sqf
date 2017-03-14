@@ -51,6 +51,8 @@ if (_extDBNotLoaded isEqualType []) then {
 
 if (_extDBNotLoaded isEqualType []) exitWith {}; //extDB3-HC did not fully initialize so terminate the rest of the initialization process.
 
+serv_sv_use = [];
+
 [] spawn {
     for "_i" from 0 to 1 step 0 do {
         publicVariableServer "serv_sv_use";
@@ -137,6 +139,7 @@ HC_MPAllowedFuncs = [
 	"hc_fnc_gangfunds",
 	"hc_fnc_neutralisearea",
 	"hc_fnc_getgangfundsdb"
+	"hc_fnc_updateYinv"
 ];
 
 CONSTVAR(HC_MPAllowedFuncs);

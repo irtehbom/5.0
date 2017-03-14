@@ -130,7 +130,6 @@ _vehicle allowDamage true;
 
 life_vehicles pushBack _vehicle;
 
-_vehicle addAction["<t color='#FF0000'>[</t><t color='#FFFFFF'>Weat Seatbelt</t><t color='#FF0000'>]</t>",life_fnc_seatBelt,"",0,false,false,"",'_this in _target'];
 //Always handle key management by the server
 [getPlayerUID player,playerSide,_vehicle,1] remoteExecCall ["TON_fnc_keyManagement",RSERV];
 

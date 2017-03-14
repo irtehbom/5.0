@@ -16,7 +16,6 @@ _ownerID = _this select 0;
 _gangName = _this select 1;
 _gangBank = _this select 2;
 
-diag_log format["_gangBank %1", _gangBank];
 
 _gangMax = group player getVariable "gang_maxMembers";
 

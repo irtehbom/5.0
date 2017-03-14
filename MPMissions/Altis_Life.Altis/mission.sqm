@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=17;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={9187.5645,39.407356,21638.441};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={9197.3135,39.407356,21649.662};
+		dir[]={-0.83751804,-0.54413342,-0.050002206};
+		up[]={-0.54316998,0.83899498,-0.032428432};
+		aside[]={-0.059597634,-8.9465175e-008,0.9982329};
 	};
 };
 binarizationWanted=0;
@@ -64,6 +64,7 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
+	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_Households_Addons",
@@ -339,6 +340,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -353,24 +372,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1444,7 +1445,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=118;
-			atlOffset=2.7725487;
+			atlOffset=2.7798691;
 		};
 		class Item95
 		{
@@ -4566,7 +4567,6 @@ class Mission
 				angles[]={0,3.1949127,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4574,6 +4574,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.3253021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13756,6 +13757,7 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
+			atlOffset=0.22998428;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13954,13 +13956,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.35447693;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15365,7 +15367,6 @@ class Mission
 						angles[]={0,4.0052385,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15374,6 +15375,7 @@ class Mission
 					};
 					id=951;
 					type="C_man_1";
+					atlOffset=0.39696693;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16755,7 +16757,7 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.0036697388;
+					atlOffset=0.14999962;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17722,7 +17724,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -17731,7 +17732,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.046899796;
+					atlOffset=1.4344749;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19368,7 +19369,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",east,[""reb_scar2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""reb_scar2""; }]; this addAction[localize""STR_Garage_TitleAir"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""reb_scar1""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo east']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",east,[""reb_scar2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""reb_scar2""; }]; this addAction[localize""STR_Garage_TitleAir"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""reb_scar2""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo east']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						name="reb_1_3_1";
 						disableSimulation=1;
 					};
@@ -37017,7 +37018,7 @@ class Mission
 			};
 			id=4921;
 			type="Land_LampAirport_F";
-			atlOffset=2.6346359;
+			atlOffset=18.15;
 		};
 		class Item1145
 		{
@@ -45239,7 +45240,7 @@ class Mission
 			};
 			id=7557;
 			type="Land_HelipadEmpty_F";
-			atlOffset=1.1751184;
+			atlOffset=1.6014843;
 		};
 		class Item1527
 		{
@@ -45274,7 +45275,7 @@ class Mission
 			};
 			id=7559;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.68944263;
+			atlOffset=0.74555206;
 		};
 		class Item1529
 		{
@@ -45415,7 +45416,7 @@ class Mission
 			};
 			id=7578;
 			type="Land_Billboard_F";
-			atlOffset=3.3592491;
+			atlOffset=3.5429974;
 		};
 		class Item1537
 		{
@@ -47952,7 +47953,7 @@ class Mission
 						angles[]={0,5.6400023,0};
 					};
 					side="Civilian";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -47961,7 +47962,7 @@ class Mission
 					};
 					id=7967;
 					type="C_man_1";
-					atlOffset=0.0098896027;
+					atlOffset=0.28002357;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -47991,7 +47992,7 @@ class Mission
 			{
 			};
 			id=7966;
-			atlOffset=0.0098896027;
+			atlOffset=0.28002357;
 		};
 		class Item1669
 		{
@@ -48002,14 +48003,13 @@ class Mission
 				angles[]={0,2.3911011,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=7968;
 			type="Land_CashDesk_F";
-			atlOffset=0.0098896027;
+			atlOffset=0.28136826;
 		};
 		class Item1670
 		{
@@ -50686,7 +50686,7 @@ class Mission
 			position[]={26030.971,-1.1278558e-030,21462.699};
 			name="medic_spawn_4";
 			type="Empty";
-			angle=170.34995;
+			angle=170.34993;
 			id=8109;
 			atlOffset=-19.783087;
 		};
@@ -51100,7 +51100,7 @@ class Mission
 			text="@STR_MAR_Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=141.0834;
+			angle=141.08339;
 			id=8132;
 			atlOffset=-4.0223064;
 		};

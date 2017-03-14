@@ -64,6 +64,7 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
+	"life_server",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_Households_Addons",

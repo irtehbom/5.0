@@ -83,12 +83,26 @@ class CfgSpawnPoints {
 					icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
 					conditions = "";
 				};
+				
+				class Sofia {
+					displayName = "Sofia HQ";
+					spawnMarker = "cop_spawn_5";
+					icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+					conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+				};
 
 				class Air {
 					displayName = $STR_MAR_Police_Air_HQ;
 					spawnMarker = "cop_spawn_4";
 					icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
 					conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+				};
+				
+				class CoastGuard {
+					displayName = "APD Coast Guard";
+					spawnMarker = "cop_spawn_6";
+					icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+					conditions = "";
 				};
 			};
 

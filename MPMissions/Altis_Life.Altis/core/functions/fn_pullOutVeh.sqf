@@ -6,6 +6,14 @@
 
 */
 if (playerSide isEqualTo west || (isNull objectParent player)) exitWith {};
+
+// pull out dead players
+if (!alive player) then {
+	_deadPos = player worldToModel _vehPos; 
+	_deadExitPos = player modelToWorld [3, 0, 0]; 
+	player setPos _deadExitPos;
+};
+
 if (player getVariable "restrained") then {
     detach player;
     player setVariable ["Escorting",false,true];

@@ -42,7 +42,8 @@ class WeaponShops {
         };
         accs[] = {
             { "optic_ACO_grn", "", 500, -1, "" }, //ACOGreen
-			{ "optic_Aco", "", 500, -1, "" } //ACORed
+			{ "optic_Aco", "", 500, -1, "" }, //ACORed
+			{ "muzzle_snds_H", "", 5000, -1, "" } //9MMSuppressor
         };
     };
 
@@ -73,7 +74,7 @@ class WeaponShops {
 			{ "arifle_CTARS_blk_F", "", 80000, -1, "" }, //CAR951Black 5.8
 			{ "arifle_CTARS_ghex_F", "", 80000, -1, "" }, //CAR951GreenHex 5.8
 			{ "arifle_CTARS_hex_F", "", 80000, -1, "" }, //CAR951Hex 5.8
-			{ "LMG_03_F", "", 125000, -1, "" }, //LIM 5.56
+			{ "LMG_03_F", "", 125000, -1, "" } //LIM 5.56
 			
 			//{ "arifle_Katiba_C_F", "", 60000, -1, "" }, //KatibaCarbine 6.5
 			//{ "arifle_Katiba_F", "", 65000, -1, "" }, //Katiba 6.5
@@ -237,7 +238,8 @@ class WeaponShops {
         };
         accs[] = {
             { "optic_ACO_grn", "", 500, -1, "" }, //ACOGreen
-			{ "optic_Aco", "", 500, -1, "" } //ACORed
+			{ "optic_Aco", "", 500, -1, "" }, //ACORed
+			{ "muzzle_snds_H", "", 5000, -1, "" } //9MMSuppressor
         };
     };
 
@@ -363,10 +365,10 @@ class WeaponShops {
         conditions = "";
         items[] = {
             { "Medikit", "", 0, -1, "" },			
-            { "ItemGPS", "", 100, -1, "" },
-            { "Binocular", "", 150, -1, "" },
+            { "ItemGPS", "", 0, -1, "" },
+            { "Binocular", "", 0, -1, "" },
             { "FirstAidKit", "", 0, -1, "" },
-            { "NVGoggles_OPFOR", "", 1000, -1, "" }
+            { "NVGoggles_OPFOR", "", 0, -1, "" }
         };
         mags[] = {};
         accs[] = {};

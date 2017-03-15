@@ -110,9 +110,9 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "C_Hatchback_01_sport_F", "" }, //Hatchback
-            { "C_Offroad_01_F", "" }, //Offroad
-            { "C_SUV_01_F", "" }, //SUV
+            { "C_Hatchback_01_sport_F", "call life_mediclevel >= 1" }, //Hatchback //Student cap
+            { "C_Offroad_01_F", "call life_mediclevel >= 2" }, //Offroad
+            { "C_SUV_01_F", "call life_mediclevel >= 2" } //SUV
         };
     };
  
@@ -120,8 +120,9 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "B_Heli_Light_01_F", "" }, //Hummingbird
-            { "O_Heli_Light_02_unarmed_F", "" }, //Orca
+            { "B_Heli_Light_01_F", "call life_mediclevel >= 2" }, //Hummingbird	//Paramedics
+            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 3" } //Orca
+			
         };
     };
  

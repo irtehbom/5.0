@@ -144,43 +144,43 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_B_CombatUniform_mcam", $STR_C_Cop_uniforms, 0, "" }, //DefaultCop
-            { "U_B_GEN_Soldier_F", "", 250, "call life_coplevel >= 1" }, //GendarmarieUniform
-            { "U_B_GEN_Commander_F", "", 500, "call life_coplevel >= 2" } //GendarmarieCommander
+            { "U_B_GEN_Soldier_F", "", 0, "call life_coplevel >= 1" }, //GendarmarieUniform
+            { "U_B_GEN_Commander_F", "", 0, "call life_coplevel >= 2" } //GendarmarieCommander
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "call life_coplevel >= 1" },
-            { "H_Cap_police", "", 25, "call life_coplevel >= 1" }, //PoliceCap
-            { "H_Watchcap_blk", "", 25, "call life_coplevel >= 1" }, //BlackBeanie
-            { "H_HelmetB_black", "", 250, "call life_coplevel >= 2" }, //CombatHelmetBlack
-            { "H_MilCap_gen_F", "", 25, "call life_coplevel >= 2" }, //MilitaryCapGendarmarie
-            { "H_HelmetSpecB_blk", "", 350, "call life_coplevel >= 3" }, //EnhancedCombatHelmet
-            { "H_Beret_02", "", 25, "call life_coplevel >= 4" }, //BeretNATO
-            { "H_PilotHelmetHeli_B", "", 500, "call life_coplevel >= 4" }, //HeliPilotHelmetNATO
-            { "H_Beret_gen_F", "", 25, "call life_coplevel >= 5" } //BeretGendarmarie
+            { "H_Cap_police", "", 0, "call life_coplevel >= 1" }, //PoliceCap
+            { "H_Watchcap_blk", "", 0, "call life_coplevel >= 1" }, //BlackBeanie
+            { "H_HelmetB_black", "", 0, "call life_coplevel >= 2" }, //CombatHelmetBlack
+            { "H_MilCap_gen_F", "", 0, "call life_coplevel >= 2" }, //MilitaryCapGendarmarie
+            { "H_HelmetSpecB_blk", "", 0, "call life_coplevel >= 3" }, //EnhancedCombatHelmet
+            { "H_Beret_02", "", 0, "call life_coplevel >= 4" }, //BeretNATO
+            { "H_PilotHelmetHeli_B", "", 0, "call life_coplevel >= 4" }, //HeliPilotHelmetNATO
+            { "H_Beret_gen_F", "", 0, "call life_coplevel >= 5" } //BeretGendarmarie
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
-            { "G_Shades_Blue", "", 25, "call life_coplevel >= 1" }, //ShadesBlue
-            { "G_Aviator", "", 25, "call life_coplevel >= 1" }, //Aviators
-            { "G_Spectacles_Tinted", "", 25, "call life_coplevel >= 1" }, //TintedSpectacles
-            { "G_Tactical_Black", "", 25, "call life_coplevel >= 1" }, //TacticalShades
-            { "G_Balaclava_TI_blk_F", "", 50, "call life_coplevel >= 4" } //StealthBalaclavaBlack
+            { "G_Shades_Blue", "", 0, "call life_coplevel >= 1" }, //ShadesBlue
+            { "G_Aviator", "", 0, "call life_coplevel >= 1" }, //Aviators
+            { "G_Spectacles_Tinted", "", 0, "call life_coplevel >= 1" }, //TintedSpectacles
+            { "G_Tactical_Black", "", 0, "call life_coplevel >= 1" }, //TacticalShades
+            { "G_Balaclava_TI_blk_F", "", 0, "call life_coplevel >= 4" } //StealthBalaclavaBlack
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_TacVest_blk_POLICE", "", 500, "call life_coplevel >= 1" }, //TacticalVestPolice
-            { "V_TacVest_gen_F", "", 500, "call life_coplevel >= 1" }, //GendarmarieVest
-            { "V_PlateCarrier1_blk", "", 2500, "call life_coplevel >= 2" }, //CarrierLite
-            { "V_PlateCarrier2_blk", "", 5000, "call life_coplevel >= 3" } //CarrierRig
+            { "V_TacVest_blk_POLICE", "", 0, "call life_coplevel >= 1" }, //TacticalVestPolice
+            { "V_TacVest_gen_F", "", 0, "call life_coplevel >= 1" }, //GendarmarieVest
+            { "V_PlateCarrier1_blk", "", 0, "call life_coplevel >= 2" }, //CarrierLite
+            { "V_PlateCarrier2_blk", "", 0, "call life_coplevel >= 3" } //CarrierRig
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "call life_coplevel >= 1" },
-            { "B_AssaultPack_blk", "", 500, "call life_coplevel >= 1" }, //AssaultPack
-            { "B_FieldPack_blk", "", 1000, "call life_coplevel >= 1" }, //FieldPack
-            { "B_TacticalPack_blk", "", 2000, "call life_coplevel >= 1" }, //TacticalPack
-            { "B_ViperHarness_blk_F", "", 2250, "call life_coplevel >= 1" }, //ViperHarness
-            { "B_Bergen_blk", "", 2500, "call life_coplevel >= 1" }, //Bergen
-            { "B_Carryall_cbr", "", 3000, "call life_coplevel >= 1" } //Carryall
+            { "B_AssaultPack_blk", "", 0, "call life_coplevel >= 1" }, //AssaultPack
+            { "B_FieldPack_blk", "", 0, "call life_coplevel >= 1" }, //FieldPack
+            { "B_TacticalPack_blk", "", 0, "call life_coplevel >= 1" }, //TacticalPack
+            { "B_ViperHarness_blk_F", "", 0, "call life_coplevel >= 1" }, //ViperHarness
+            { "B_Bergen_blk", "", 0, "call life_coplevel >= 1" }, //Bergen
+            { "B_Carryall_cbr", "", 0, "call life_coplevel >= 1" } //Carryall
         };
     };
  
@@ -190,7 +190,7 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_B_Wetsuit", "", 2000, "" }
+            { "U_O_Wetsuit", "", 2000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" }
@@ -258,22 +258,22 @@ class Clothing {
         side = "med";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_EMS_uniforms, 50, "" }
+            { "U_Rangemaster", $STR_C_EMS_uniforms, 0, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-            { "H_Cap_blu", "", 10, "" }
+            { "H_Cap_blu", "", 0, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
-            { "G_Shades_Blue", "", 10, "" }
+            { "G_Shades_Blue", "", 0, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
-            { "B_FieldPack_oli", $STR_C_EMS_backpacks, 3000, "" }
+            { "B_FieldPack_oli", $STR_C_EMS_backpacks, 0, "" }
         };
     };
  
@@ -379,12 +379,6 @@ class Clothing {
             { "H_HelmetO_ghex_F", "", 1750, "" }, //ProtectorHelmetGreenHex
             { "H_HelmetO_ocamo", "", 1750, "" }, //ProtectorHelmetHex
             { "H_HelmetO_oucamo", "", 1750, "" }, //ProtectorHelmetUrban
-            { "H_HelmetSpecB", "", 2500, "" }, //EnhancedCombatHelmet
-            { "H_HelmetSpecB_paint2", "", 2500, "" }, //EnhancedCombatHelmetDesert
-            { "H_HelmetSpecB_paint1", "", 2500, "" }, //EnhancedCombatHelmetGrass
-            { "H_HelmetSpecB_sand", "", 2500, "" }, //EnhancedCombatHelmetSand
-            { "H_HelmetSpecB_snakeskin", "", 2500, "" }, //EnhancedCombatHelmetSnakeskin
-            { "H_HelmetB_Enh_tna_F", "", 2500, "" }, //EnhancedCombatHelmetTropic
             { "H_Beret_blk", "", 500, "" } //BeretBlack
         };
         goggles[] = {
@@ -407,11 +401,8 @@ class Clothing {
             { "G_Bandanna_shades", "", 100, "" }, //BandanaShadesGlasses
             { "G_Bandanna_aviator", "", 150, "" }, //BandanaAviators
             { "G_Balaclava_blk", "", 250, "" }, //BalaclavaBlack
-            { "G_Balaclava_oli", "", 250, "" }, //BalaclavaOlive
-            { "G_Balaclava_TI_blk_F", "", 350, "" }, //StealthBalaclavaBlack
-            { "G_Balaclava_TI_G_blk_F", "", 350, "" }, //StealthBalaclavaBlackGoggles
-            { "G_Balaclava_TI_tna_F", "", 350, "" }, //StealthBalaclavaGreen
-            { "G_Balaclava_TI_G_tna_F", "", 350, "" } //StealthBalaclavaGreenGoogles
+            { "G_Balaclava_oli", "", 250, "" } //BalaclavaOlive
+            
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
@@ -432,9 +423,8 @@ class Clothing {
             { "V_TacVest_oli", "", 1500, "" }, //TacticalVestOlive
             { "V_PlateCarrier1_rgr", "", 8500, "" }, //CarrierLiteGreen
             { "V_PlateCarrier1_tna_F", "", 8500, "" }, //CarrierLiteTropic
-            { "V_PlateCarrierL_CTRG", "", 8500, "" }, //CTRGPlateCarrierRigLight
-            { "V_PlateCarrier2_rgr", "", 12500, "" }, //CarrierRigGreen
-            { "V_PlateCarrier2_tna_F", "", 12500, "" } //CarrierRigTropic
+            { "V_PlateCarrierL_CTRG", "", 8500, "" } //CTRGPlateCarrierRigLight
+            
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -482,19 +472,29 @@ class Clothing {
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-         
+			{ "H_HelmetSpecB", "", 2500, "" }, //EnhancedCombatHelmet
+            { "H_HelmetSpecB_paint2", "", 2500, "" }, //EnhancedCombatHelmetDesert
+            { "H_HelmetSpecB_paint1", "", 2500, "" }, //EnhancedCombatHelmetGrass
+            { "H_HelmetSpecB_sand", "", 2500, "" }, //EnhancedCombatHelmetSand
+            { "H_HelmetSpecB_snakeskin", "", 2500, "" }, //EnhancedCombatHelmetSnakeskin
+            { "H_HelmetB_Enh_tna_F", "", 2500, "" } //EnhancedCombatHelmetTropic
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
+			{ "G_Balaclava_TI_blk_F", "", 350, "" }, //StealthBalaclavaBlack
+            { "G_Balaclava_TI_G_blk_F", "", 350, "" }, //StealthBalaclavaBlackGoggles
+            { "G_Balaclava_TI_tna_F", "", 350, "" }, //StealthBalaclavaGreen
+            { "G_Balaclava_TI_G_tna_F", "", 350, "" } //StealthBalaclavaGreenGoogles
           
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-           
+			{ "V_PlateCarrier2_rgr", "", 12500, "" }, //CarrierRigGreen
+            { "V_PlateCarrier2_tna_F", "", 12500, "" }, //CarrierRigTropic
+			{ "V_PlateCarrierH_CTRG", "", 12500, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
-            { "B_Carryall_ghex_F", "", 7500, "" },
 			{ "B_Bergen_dgtl_F", "", 15000, "" }, //ApexBergenDigital
 			{ "B_Bergen_hex_F", "", 15000, "" }, //ApexBergenHex
 			{ "B_Bergen_mcamo_F", "", 15000, "" }, //ApexBergenMTP

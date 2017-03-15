@@ -145,7 +145,8 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_B_CombatUniform_mcam", $STR_C_Cop_uniforms, 0, "" }, //DefaultCop
             { "U_B_GEN_Soldier_F", "", 0, "call life_coplevel >= 1" }, //GendarmarieUniform
-            { "U_B_GEN_Commander_F", "", 0, "call life_coplevel >= 2" } //GendarmarieCommander
+            { "U_B_GEN_Commander_F", "", 0, "call life_coplevel >= 2" }, //GendarmarieCommander
+            { "U_O_Wetsuit", "", 0, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "call life_coplevel >= 1" },
@@ -164,14 +165,16 @@ class Clothing {
             { "G_Aviator", "", 0, "call life_coplevel >= 1" }, //Aviators
             { "G_Spectacles_Tinted", "", 0, "call life_coplevel >= 1" }, //TintedSpectacles
             { "G_Tactical_Black", "", 0, "call life_coplevel >= 1" }, //TacticalShades
-            { "G_Balaclava_TI_blk_F", "", 0, "call life_coplevel >= 4" } //StealthBalaclavaBlack
+            { "G_Balaclava_TI_blk_F", "", 0, "call life_coplevel >= 4" }, //StealthBalaclavaBlack
+            { "G_Diving", "", 0, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_TacVest_blk_POLICE", "", 0, "call life_coplevel >= 1" }, //TacticalVestPolice
             { "V_TacVest_gen_F", "", 0, "call life_coplevel >= 1" }, //GendarmarieVest
             { "V_PlateCarrier1_blk", "", 0, "call life_coplevel >= 2" }, //CarrierLite
-            { "V_PlateCarrier2_blk", "", 0, "call life_coplevel >= 3" } //CarrierRig
+            { "V_PlateCarrier2_blk", "", 0, "call life_coplevel >= 3" }, //CarrierRig
+            { "V_RebreatherB", "", 0, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "call life_coplevel >= 1" },

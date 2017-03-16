@@ -121,19 +121,6 @@ class WeaponShops {
 			{ "bipod_02_F_blk", "", 3500, -1, "" }, //CSATBipodBlack
 			{ "bipod_02_F_tan", "", 3500, -1, "" }, //CSATBipodTan
 			{ "bipod_02_F_hex", "", 3500, -1, "" }, //CSATBipodHex
-			{ "optic_SOS", "", 12500, -1, "" }, //SOS
-			{ "optic_SOS_khk_F", "", 12500, -1, "" }, //SOSKhaki
-			{ "optic_DMS", "", 15000, -1, "" }, //DMS
-			{ "optic_DMS_ghex_F", "", 15000, -1, "" }, //DMSHex
-			{ "optic_LRPS", "", 20000, -1, "" }, //LRPS
-			{ "optic_LRPS_tna_F", "", 20000, -1, "" }, //LRPSTropic
-			{ "optic_LRPS_ghex_F", "", 20000, -1, "" }, //LRPSHex
-			{ "optic_AMS", "", 15000, -1, "" }, //AMS
-			{ "optic_AMS_khk", "", 15000, -1, "" }, //AMSKhaki
-			{ "optic_AMS_snd", "", 15000, -1, "" }, //AMSSand
-			{ "optic_KHS_blk", "", 12500, -1, "" }, // Kahlia
-			{ "optic_KHS_hex", "", 12500, -1, "" }, // KahliaHex
-			{ "optic_KHS_tan", "", 12500, -1, "" }, // KahliaTan
 			{ "muzzle_snds_65_TI_blk_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorBlack
 			{ "muzzle_snds_65_TI_ghex_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorGreenHex
 			{ "muzzle_snds_65_TI_hex_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorHex

@@ -206,8 +206,8 @@ class CfgRemoteExec {
 		F(TON_fnc_getGangFundsDB,ANYONE)
 		F(HC_fnc_updateYinv,ANYONE)
         F(TON_fnc_updateYinv,ANYONE)
-		
-		
+		F(HC_fnc_saveInventoryRealEstate,ANYONE)
+        F(TON_fnc_saveInventoryRealEstate,ANYONE)		
 		
     };
 

@@ -65,7 +65,7 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_F", "", 3500, -1, "" }, //4Five
             { "hgun_Pistol_heavy_02_F", "", 5000, -1, "" }, //Zubr
 			{ "hgun_Rook40_F", "", 6500, -1, "" },
-            { "hgun_Pistol_01_F", "", 7000, -1, "" }, //Apex DLC
+			{ "hgun_Pistol_01_F", "", 7000, -1, "" }, //Apex DLC
             { "SMG_01_F", "", 10000, -1, "" }, //Vermin .45ACP
 			{ "hgun_PDW2000_F", "", 20000, -1, "" },
             { "arifle_SDAR_F", "", 35000, -1, "" }, //SDAR	5.56
@@ -92,7 +92,8 @@ class WeaponShops {
 			{ "200Rnd_556x45_Box_Red_F", "", 1500, -1, "" },
 			{ "20Rnd_556x45_UW_mag", "", 350, -1, "" },
 			{ "16Rnd_9x21_Mag", "", 125, -1, "" },
-            { "30Rnd_9x21_Mag", "", 250, -1, "" }
+            { "30Rnd_9x21_Mag", "", 250, -1, "" },
+			{ "10Rnd_9x21_Mag", "", 250, -1, "" } //Apex DLC
         };
         accs[] = {
             { "acc_pointer_IR", "", 100, -1, "" }, //LaserPointer
@@ -118,9 +119,8 @@ class WeaponShops {
 			{ "muzzle_snds_58_hex_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorHex
 			{ "muzzle_snds_L", "", 5000, -1, "" }, //9MMSuppressor
 			{ "bipod_02_F_blk", "", 3500, -1, "" }, //CSATBipodBlack
-			{ "bipod_02_F_khk", "", 3500, -1, "" }, //CSATBipodKhaki
-			{ "bipod_02_F_mtp", "", 3500, -1, "" }, //CSATBipodMTP
-			{ "bipod_02_F_snd", "", 3500, -1, "" }, //CSATBipodSand
+			{ "bipod_02_F_tan", "", 3500, -1, "" }, //CSATBipodTan
+			{ "bipod_02_F_hex", "", 3500, -1, "" }, //CSATBipodHex
 			{ "optic_SOS", "", 12500, -1, "" }, //SOS
 			{ "optic_SOS_khk_F", "", 12500, -1, "" }, //SOSKhaki
 			{ "optic_DMS", "", 15000, -1, "" }, //DMS
@@ -167,7 +167,7 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_F", "", 3500, -1, "" }, //4Five
             { "hgun_Pistol_heavy_02_F", "", 5000, -1, "" }, //Zubr
 			{ "hgun_Rook40_F", "", 6500, -1, "" },
-            { "hgun_Pistol_01_F", "", 7000, -1, "" }, //Apex DLC
+			{ "hgun_Pistol_01_F", "", 7000, -1, "" }, //Apex DLC
             { "SMG_01_F", "", 10000, -1, "" }, //Vermin .45ACP
 			{ "hgun_PDW2000_F", "", 20000, -1, "" },
             { "arifle_SDAR_F", "", 35000, -1, "" }, //SDAR	5.56
@@ -219,7 +219,8 @@ class WeaponShops {
 			{ "10Rnd_762x54_Mag", "", 700, -1, "" },	
 			{ "20Rnd_762x51_Mag", "", 850, -1, "" },
 			{ "16Rnd_9x21_Mag", "", 125, -1, "" },
-            { "30Rnd_9x21_Mag", "", 250, -1, "" }
+            { "30Rnd_9x21_Mag", "", 250, -1, "" },
+			{ "10Rnd_9x21_Mag", "", 250, -1, "" } //Apex DLC
 		};
 		accs[] = {
 			{ "muzzle_snds_65_TI_blk_F", "", 10000, -1, "" }, // 6.5mmStealthSuppressorBlack
@@ -257,9 +258,8 @@ class WeaponShops {
 			{ "muzzle_snds_58_ghex_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorGreenHex
 			{ "muzzle_snds_58_hex_F", "", 9500, -1, "" }, //5.8mmStealthSuppressorHex
 			{ "bipod_02_F_blk", "", 3500, -1, "" }, //CSATBipodBlack
-			{ "bipod_02_F_khk", "", 3500, -1, "" }, //CSATBipodKhaki
-			{ "bipod_02_F_mtp", "", 3500, -1, "" }, //CSATBipodMTP
-			{ "bipod_02_F_snd", "", 3500, -1, "" }, //CSATBipodSand
+			{ "bipod_02_F_tan", "", 3500, -1, "" }, //CSATBipodTan
+			{ "bipod_02_F_hex", "", 3500, -1, "" }, //CSATBipodHex
 			{ "optic_SOS", "", 12500, -1, "" }, //SOS
 			{ "optic_SOS_khk_F", "", 12500, -1, "" }, //SOSKhaki
 			{ "optic_DMS", "", 15000, -1, "" }, //DMS

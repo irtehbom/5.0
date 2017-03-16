@@ -325,6 +325,9 @@
             <Portuguese>Loja de Conveniência</Portuguese>
             <Polish>Caffe OLLEN</Polish>
         </Key>
+        <Key ID="STR_Shop_Jet">
+            <Original>Jet Shop</Original>
+        </Key>
     </Package>
     <Package name="Global">
         <Key ID="STR_Global_Close">

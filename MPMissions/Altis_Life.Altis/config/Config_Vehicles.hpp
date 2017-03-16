@@ -56,7 +56,17 @@ class CarShops {
         };
     };
  
-    class civ_air {
+    class civ_plane {
+        side = "civ";
+        conditions = "license_civ_pilot";
+        vehicles[] = {
+            { "O_Plane_CAS_02_F", ""}, //Neophron (Cas)
+            { "I_Plane_Fighter_03_CAS_F", "" }, //Buzzard (Cas)
+            { "O_T_VTOL_02_infantry_F", "" } //Xi'an
+        };
+    }; 
+ 
+    class civ_air{
         side = "civ";
         conditions = "license_civ_pilot";
         vehicles[] = {
@@ -72,7 +82,7 @@ class CarShops {
 			{ "B_Heli_Transport_03_unarmed_F", "" } //Huron     
         };
     };
- 
+	
      class civ_ship {
         side = "civ";
         conditions = "license_civ_boat";
@@ -1010,6 +1020,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 250;
         conditions = "";
         price = 500000;
+        textures[] = {};
+    };
+   
+    class O_Plane_CAS_02_F {
+        vItemSpace = 50;
+        conditions = "";
+        price = 3500000;
+        textures[] = {};
+    };
+   
+    class I_Plane_Fighter_03_CAS_F {
+        vItemSpace = 50;
+        conditions = "";
+        price = 3500000;
+        textures[] = {};
+    };
+   
+    class O_T_VTOL_02_infantry_F {
+        vItemSpace = 250;
+        conditions = "";
+        price = 3000000;
         textures[] = {};
     };
  

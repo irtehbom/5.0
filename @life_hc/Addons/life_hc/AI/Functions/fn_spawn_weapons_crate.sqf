@@ -17,7 +17,6 @@ _defaultCrateItems =
 	["ToolKit", 1],
 	["FirstAidKit", 4],
 	["optic_LRPS", 1],
-	["optic_NVS", 1],
 	["optic_Holosight", 1],
 	["optic_Aco", 1],
 	["Rangefinder", 1]
@@ -27,10 +26,8 @@ _defaultCrateItems =
 // Format: weaponClass, magazineClass, magazines, weight (chance to be picked)
 _rareCrateWeapons =
 [
-	["srifle_LRR_SOS_F", "7Rnd_408_Mag", 2, 0.05],
-	["srifle_GM6_SOS_F", "5Rnd_127x108_Mag", 2, 0.05],
 	["arifle_MX_GL_Black_Hamr_pointer_F", "1Rnd_HE_Grenade_shell", 3, 0.1],
-	["arifle_Katiba_GL_Nstalker_pointer_F", "1Rnd_HE_Grenade_shell", 3, 0.1],
+	["arifle_Katiba_GL_F", "1Rnd_HE_Grenade_shell", 3, 0.1],
 	["MMG_01_hex_ARCO_LP_F", "150Rnd_93x64_Mag", 2, 0.1],
 	["srifle_DMR_06_camo_khs_F", "20Rnd_762x51_Mag", 3, 0.3],
 	["srifle_DMR_05_KHS_LP_F", "10Rnd_93x64_DMR_05_Mag", 3, 0.3],

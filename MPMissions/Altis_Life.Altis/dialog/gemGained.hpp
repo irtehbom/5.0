@@ -29,7 +29,7 @@ class A3_gemGained
 		{    
 			idc = 2;
 			type = 0;
-			style = 2
+			style = 2;
 			x = safeZoneX + safeZoneW - (safeZoneW / 2) - 0.95;
 			y = safeZoneY + 0.1;
 			h = 0.4;

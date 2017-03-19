@@ -396,20 +396,32 @@ switch (_code) do {
                 };
             };
 			
+			diag_log format["_veh: %1",_veh];
+			
 			if(((_veh getVariable "estate_owned") select 0) == (getPlayerUID player)) then {
+			
 			    if (player distance _veh < 25) then {
+				
 					_door = [_veh] call life_fnc_nearestDoor;
+					
+					diag_log format["_door: %1",_door];
+					
 					if(_door == 0) exitWith {hint localize "STR_House_Door_NotNear"};
 					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
+					
+					diag_log format["_locked: %1",_locked];
+					
 					if(_locked == 0) then {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
-						_veh animate [format["door_%1_rot",_door],0];
+						_veh animateSource [format ["Door_%1_source", _door], 0];
 						systemChat localize "STR_House_Door_Lock";
 					} else {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
-						_veh animate [format["door_%1_rot",_door],1];
+						_veh animateSource [format ["Door_%1_source", _door], 1];
 						systemChat localize "STR_House_Door_Unlock";
 					};
+					
+					diag_log format["_locked: %1",_locked];
 				};
 			};
 			

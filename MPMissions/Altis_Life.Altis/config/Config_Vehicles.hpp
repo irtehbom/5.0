@@ -62,8 +62,8 @@ class CarShops {
         vehicles[] = {
             { "O_Plane_CAS_02_F", ""}, //Neophron (Cas)
             { "I_Plane_Fighter_03_CAS_F", "" }, //Buzzard (Cas)
-            { "O_T_VTOL_02_infantry_F", "" } //Xi'an
-        };
+            { "O_T_VTOL_02_vehicle_ghex_F", "" } //Xi'an
+        };	
     }; 
  
     class civ_air{
@@ -1037,8 +1037,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
    
-    class O_T_VTOL_02_infantry_F {
-        vItemSpace = 250;
+    class O_T_VTOL_02_vehicle_ghex_F {
+        vItemSpace = 200;
         conditions = "";
         price = 3000000;
         textures[] = {};

@@ -50,7 +50,7 @@ if (_veh isEqualTo "I_Plane_Fighter_03_CAS_F") then {
     _vehicle removeMagazinesTurret ["2Rnd_GBU12_LGB_MI10",[-1]];
 };
 
-if (_veh isEqualTo "O_T_VTOL_02_infantry_F") then {
+if (_veh isEqualTo "O_T_VTOL_02_vehicle_ghex_F") then {
     _vehicle removeMagazinesTurret ["250Rnd_30mm_APDS_shells_Tracer_Green",[0]];
     _vehicle removeMagazinesTurret ["8Rnd_LG_scalpel",[0]];
     _vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];

@@ -61,8 +61,7 @@ class CarShops {
         conditions = "license_civ_pilot";
         vehicles[] = {
             { "O_Plane_CAS_02_F", ""}, //Neophron (Cas)
-            { "I_Plane_Fighter_03_CAS_F", "" }, //Buzzard (Cas)
-            { "O_T_VTOL_02_vehicle_ghex_F", "" } //Xi'an
+            { "I_Plane_Fighter_03_CAS_F", "" } //Buzzard (Cas)
         };	
     }; 
  
@@ -156,8 +155,7 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", "call life_coplevel >= 2" }, //Hummingbird
             { "O_Heli_Light_02_unarmed_F", "call life_coplevel >= 3" }, //Orca
-            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" }, //Hellcat
-            { "B_T_VTOL_01_infantry_blue_F", "call life_coplevel >= 5" } //VTOL
+            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" } //Hellcat
         };
     };
  
@@ -224,7 +222,6 @@ class LifeCfgVehicles {
    
     // Huron
     class B_Heli_Transport_03_unarmed_F {
-        vItemSpace = 200;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 675000;
         textures[] = {};
@@ -232,7 +229,6 @@ class LifeCfgVehicles {
    
     // Mohawk
     class I_Heli_Transport_02_F {
-        vItemSpace = 350;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 450000;
         textures[] = {};
@@ -412,7 +408,7 @@ class LifeCfgVehicles {
     };
  
     class B_Heli_Transport_01_F {
-        vItemSpace = 200;
+        vItemSpace = 175;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
         price = 200000;
         textures[] = {};
@@ -890,7 +886,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
  
     class O_Heli_Light_02_unarmed_F {
-        vItemSpace = 250;
+        vItemSpace = 225;
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)} || license_civ_rebel";
         price = 300000;
         textures[] = {
@@ -996,14 +992,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
    
     class O_Heli_Transport_04_bench_F {
-        vItemSpace = 120;
+        vItemSpace = 110;
         conditions = "";
         price = 205000;
         textures[] = {};
     };
    
     class O_Heli_Transport_04_box_F {
-        vItemSpace = 300;
         conditions = "";
         price = 375000;
         textures[] = {};
@@ -1013,13 +1008,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         conditions = "";
         price = 200000;
-        textures[] = {};
-    };
-   
-    class B_T_VTOL_01_infantry_blue_F {
-        vItemSpace = 250;
-        conditions = "";
-        price = 500000;
         textures[] = {};
     };
    
@@ -1034,13 +1022,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         conditions = "";
         price = 3500000;
-        textures[] = {};
-    };
-   
-    class O_T_VTOL_02_vehicle_ghex_F {
-        vItemSpace = 200;
-        conditions = "";
-        price = 3000000;
         textures[] = {};
     };
  

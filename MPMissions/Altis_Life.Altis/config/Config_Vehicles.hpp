@@ -222,6 +222,7 @@ class LifeCfgVehicles {
    
     // Huron
     class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 325;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 675000;
         textures[] = {};
@@ -229,6 +230,7 @@ class LifeCfgVehicles {
    
     // Mohawk
     class I_Heli_Transport_02_F {
+        vItemSpace = 250;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 450000;
         textures[] = {};
@@ -999,6 +1001,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
    
     class O_Heli_Transport_04_box_F {
+        vItemSpace = 200;
         conditions = "";
         price = 375000;
         textures[] = {};

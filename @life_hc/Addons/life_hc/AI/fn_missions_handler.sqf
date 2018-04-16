@@ -15,6 +15,8 @@ _availableMissions = [
 	"assassinationMission"
 ];
 
+diag_log format['test','test']
+
 spawnMarkers = [
 	"ai_missions_1",
 	"ai_missions_2",

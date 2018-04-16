@@ -9,7 +9,9 @@ StartProgress = false;
 
 if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
+	[] execVM "intro.sqf"; //Load Intro
 };
+
 [] execVM "KRON_Strings.sqf";
 [] execVM "findKeyValue.sqf";
 

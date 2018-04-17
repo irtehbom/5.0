@@ -371,6 +371,7 @@ class Life_Client_Core {
         class say3D {};
         class setFuel {};
         class soundDevice {};
+		class netSetVar {};
     };
 
     class Player_Menu {

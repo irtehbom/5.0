@@ -76,6 +76,7 @@ class CfgRemoteExec {
 		F(life_fnc_gagaction_meta,CLIENT)
 		F(life_fnc_placeableplace,CLIENT)
 		F(life_fnc_intro,CLIENT)
+		F(life_fnc_netSetVar,CLIENT)
 		
 		
 		
@@ -121,6 +122,7 @@ class CfgRemoteExec {
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
 		F(TON_fnc_handleC4,SERVER)
+		F(TON_fnc_netSetVar,CLIENT)
 		
 
         /* HeadlessClient only functions */

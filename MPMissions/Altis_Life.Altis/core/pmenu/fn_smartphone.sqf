@@ -8,7 +8,7 @@
 private["_display","_units","_type","_data","_rowData","_msg"];
 _type = param [0,0];
 _data = param [1,0,["",[],0]];
-if(!("ItemRadio" in (assignedItems  player)) && (FETCH_CONST(life_adminlevel)) < 1) exitWith {hint "You don't have a Cellphone"; closeDialog 0;};
+//if(!("ItemRadio" in (assignedItems  player)) && (FETCH_CONST(life_adminlevel)) < 1) exitWith {hint "You don't have a Cellphone"; closeDialog 0;};
 if((player getVariable["restrained",false] || player getVariable["zipTie",false]) && (FETCH_CONST(life_adminlevel)) < 1) exitWith { hint "You wish you could text behind your back, but you just don't have the necessary skill set!"; closeDialog 0; };
 
 disableSerialization;
@@ -40,7 +40,7 @@ switch(_type) do
 				_type = switch(side _x) do
 				{
 					case west: {"Cop"};
-					case opfor: {"Civ"};
+					case east: {"Civ"};
 					case independent: {"Med"};
 				};
 				};
@@ -69,7 +69,7 @@ switch(_type) do
 	{
 		createDialog "STS_Life_smartphone_schreiben";
 		ctrlSetText[88886,"Message to target"];
-		if((__GETC__(life_adminlevel) < 1)) then
+		if(FETCH_CONST(life_adminlevel) < 1) then
 		{
 			ctrlShow[888897,false];
 		};
@@ -79,7 +79,7 @@ switch(_type) do
 	{
 		createDialog "STS_Life_smartphone_schreiben";
 		ctrlSetText[88886,"Message to target"];
-		if((__GETC__(life_adminlevel) < 1)) then
+		if(FETCH_CONST(life_adminlevel) < 1) then
 		{
 			ctrlShow[888897,false];
 		};

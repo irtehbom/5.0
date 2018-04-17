@@ -140,6 +140,8 @@ switch (playerSide) do {
     };
 };
 
+
+
 if (count (_this select (_count - 1)) > 0) then {
     {life_vehicles pushBack _x;} forEach (_this select (_count - 1));
 };

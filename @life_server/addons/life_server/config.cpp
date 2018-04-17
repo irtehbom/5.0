@@ -28,6 +28,17 @@ class CfgFunctions {
             class updatePartial {};
         };
     };
+	
+	class GHBSystem
+		{
+			tag = "GHB";
+			class Smartphone
+			{
+				file = "\life_server\Functions\Smartphone";
+				class handleMessages {};
+				class msgRequest {};
+			};	
+	};
 
     class Life_System {
         tag = "life";
@@ -148,6 +159,8 @@ class CfgFunctions {
             class setPlayTime {};
             class getPlayTime {};
         };
+		
+		
     };
 };
 

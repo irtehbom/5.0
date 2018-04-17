@@ -329,6 +329,38 @@
             <Original>Jet Shop</Original>
         </Key>
     </Package>
+		<Package name="Smartphone">
+		<Key ID="STR_PM_Smartphone">
+			<Original>Smartphone</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_TITLE">
+			<Original>Smartphone Menu</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
+			<Original>Playerlist</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
+			<Original>NEW  | FROM | TIME</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
+			<Original>Select a message to read</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_SCHREIBEN">
+			<Original>Compose</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NOTRUF">
+			<Original>EMERGENCY</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Absenden">
+			<Original>Send</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
+			<Original>Message:</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Notruftitle">
+			<Original>-Emergency Calls-</Original>
+		</Key>
+	</Package>
     <Package name="Global">
         <Key ID="STR_Global_Close">
             <Original>Close</Original>
@@ -1208,7 +1240,7 @@
     </Package>
     <Package name="Cell_Phone">
         <Key ID="STR_CELL_Title">
-            <Original>Altis Mobile</Original>
+            <Original>Smartphone</Original>
             <Czech>Altis Mobile</Czech>
             <Spanish>Celular</Spanish>
             <Russian></Russian>

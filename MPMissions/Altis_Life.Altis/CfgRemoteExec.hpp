@@ -75,7 +75,7 @@ class CfgRemoteExec {
 		F(life_fnc_civInteractionMenu,CLIENT)
 		F(life_fnc_gagaction_meta,CLIENT)
 		F(life_fnc_placeableplace,CLIENT)
-		
+		F(life_fnc_intro,CLIENT)
 		
 		
 		

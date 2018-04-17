@@ -232,6 +232,7 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
 		class seatbelt {};
+		class phoneCall {};
     };
 	
 	class CivTieing {
@@ -374,7 +375,6 @@ class Life_Client_Core {
 
     class Player_Menu {
         file = "core\pmenu";
-        class cellphone {};
         class giveItem {};
         class giveMoney {};
         class keyDrop {};
@@ -394,6 +394,7 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+		class smartphone {};
     };
 
     class Shops {
@@ -450,5 +451,11 @@ class Life_Client_Core {
 	{
 		file = "core\processVeh";
 		class processVehicleContents {};
+	};
+	
+	class customScripts
+	{
+		file = "custom_scripts";
+		class intro {};
 	};
 };

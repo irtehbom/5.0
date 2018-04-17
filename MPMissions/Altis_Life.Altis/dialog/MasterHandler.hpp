@@ -12,7 +12,6 @@
 #include "shops.hpp"
 #include "hud_stats.hpp"
 #include "admin_menu.hpp"
-#include "cell_phone.hpp"
 #include "wanted_list.hpp"
 #include "ticket.hpp"
 #include "clothing.hpp"
@@ -36,3 +35,4 @@
 #include "civInteractionMenu.hpp"
 #include "market.hpp"
 #include "gemGained.hpp"
+#include "smartphone.hpp"

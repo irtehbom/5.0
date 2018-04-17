@@ -191,6 +191,21 @@ switch (_code) do {
 		
 		
     };
+	
+	//Smartphone
+	if( !_shift && _ctrlKey && !_alt) then
+		{
+			if(!(cursorTarget isKindOf "AllVehicles")) exitWith {};
+			if(!(isPlayer cursorTarget) && {count crew cursorTarget == 0}) exitWith {};
+			if(cursorTarget isKindOf "Man") then {
+				//life_smartphoneTarget = call compile format["%1", cursorTarget];
+			} else {
+				life_smartphoneTarget = crew cursorTarget;
+				if(isNil "life_smartphoneTarget") exitWith {};
+				[4] call life_fnc_smartphone;
+			};
+		};
+	
     //L Key?
     case 38: {
         //If cop run checks for turning lights on.
@@ -423,6 +438,8 @@ switch (_code) do {
 			_handled = true;
 		};
 	};
+	
+	
 	
 };
 

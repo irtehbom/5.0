@@ -47,18 +47,6 @@ class WeaponShops {
         };
     };
 
-    class jailgun {
-        name = "Tyrone's Shank Shop";
-        side = "civ";
-        conditions = "license_civ_rebel";
-        items[] = {
-            { "hgun_Rook40_F", "", 250000, -1, "" }
-        };
-        mags[] = {
-            { "16Rnd_9x21_Mag", "", 50000, -1, "" }
-        };
-    };
-
     class rebel {
         name = "Mohammed's Jihadi Shop";
         side = "civ";

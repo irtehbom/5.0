@@ -127,6 +127,9 @@
             <Portuguese>Armas de fogo Billy Joe</Portuguese>
             <Polish>Broń palna Billy Joe</Polish>
         </Key>
+        <Key ID="STR_Shops_W_jailGun">
+            <Original>Tyrone's Shank Shop</Original>
+        </Key>
         <Key ID="STR_Shops_C_Kart">
             <Original>Bobby's Kart-Racing Outfits</Original>
             <Czech>Billy Joe Střelné zbraně</Czech>

@@ -317,7 +317,8 @@ class WeaponShops {
             { "Chemlight_red", "", 300, -1, "" },
             { "Chemlight_yellow", "", 300, -1, "" },
             { "Chemlight_green", "", 300, -1, "" },
-            { "Chemlight_blue", "", 300, -1, "" }
+            { "Chemlight_blue", "", 300, -1, "" },
+			{ "ItemRadio", "", 300, -1, "" }
         };
         mags[] = {};
         accs[] = {};

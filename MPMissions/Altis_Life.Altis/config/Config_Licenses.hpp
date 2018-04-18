@@ -141,6 +141,14 @@ class Licenses {
     class heroin {
         variable = "heroin";
         displayName = "STR_License_Heroin";
+        price = 350000;
+        illegal = true;
+        side = "civ";
+    };
+
+    class meth {
+        variable = "meth";
+        displayName = "STR_License_Heroin";
         price = 25000;
         illegal = true;
         side = "civ";

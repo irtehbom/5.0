@@ -218,6 +218,9 @@
             <Portuguese>Traficante</Portuguese>
             <Polish>Sprzedawca 'Trawy'</Polish>
         </Key>
+        <Key ID="STR_Shops_ChemicalDealer">
+            <Original>Chemical Dealer</Original>
+        </Key>
         <Key ID="STR_Shops_Oil">
             <Original>Oil Trader</Original>
             <Czech>olej Trader</Czech>
@@ -6334,6 +6337,15 @@
             <Portuguese>Heroína</Portuguese>
             <Polish>Heroina</Polish>
         </Key>
+        <Key ID="STR_Item_redP">
+            <Original>Red Phosphorus</Original>
+        </Key>
+        <Key ID="STR_Item_batteryA">
+            <Original>Battery Acid</Original>
+        </Key>
+        <Key ID="STR_Item_crystalM">
+            <Original>Crystal Meth</Original>
+        </Key>
         <Key ID="STR_Item_Oil">
             <Original>Oil</Original>
             <Czech>Olej</Czech>
@@ -7140,6 +7152,9 @@
             <Portuguese>Treinamento de Heroina</Portuguese>
             <Polish>Wytwarzanie Heroiny</Polish>
         </Key>
+        <Key ID="STR_License_Meth">
+            <Original>Meth Training</Original>
+        </Key>
         <Key ID="STR_License_Oil">
             <Original>Oil Processing</Original>
             <Czech>Zpracování olej</Czech>
@@ -7872,6 +7887,9 @@
             <Italian>Processando Eroina</Italian>
             <Portuguese>Processando Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
+        </Key>
+        <Key ID="STR_Process_Meth">
+            <Original>Cooking Meth</Original>
         </Key>
         <Key ID="STR_Process_Copper">
             <Original>Casting Copper Ingots</Original>
@@ -10024,6 +10042,9 @@
             <Polish>Diler narkotyków</Polish>
             <Italian>Spacciatore</Italian>
         </Key>
+        <Key ID="STR_MAR_Chemical_Dealer">
+            <Original>Chemical Dealer</Original>
+        </Key>
         <Key ID="STR_MAR_Diamond_Processing">
             <Original>Diamond Processing</Original>
             <Czech>Diamond Processing</Czech>
@@ -10189,6 +10210,9 @@
             <Portuguese>Campo de Heroína</Portuguese>
             <Polish>Pole heroiny</Polish>
         </Key>
+        <Key ID="STR_MAR_Meth_Field">
+            <Original>Meth Field</Original>
+        </Key>
         <Key ID="STR_MAR_Heroin_Processing">
             <Original>Heroin Processing</Original>
             <Czech>Zpracování heroin</Czech>
@@ -10199,6 +10223,9 @@
             <German>Heroin Verarbeitung</German>
             <Portuguese>Processador de Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
+        </Key>
+        <Key ID="STR_MAR_Heroin_Processing">
+            <Original>Meth Processing</Original>
         </Key>
         <Key ID="STR_MAR_Garage">
             <Original>Garage</Original>

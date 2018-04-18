@@ -72,7 +72,14 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "crystal_meth" };
+    };
+
+    class chemicaldealer {
+        name = "STR_Shops_ChemicalDealer";
+        side = "civ";
+        conditions = "licence_civ_meth";
+        items[] = {"battery_acid" };
     };
 
     class oil {
@@ -539,6 +546,41 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
+    };
+
+    class red_phosphorus {
+        variable = "redPhosphorus";
+        displayName = "STR_Item_redP";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_redPhosphorus.paa";
+        processedItem = "crystal_meth";
+    };
+
+    class battery_acid {
+        variable = "batteryAcid";
+        displayName = "STR_Item_batteryA";
+        weight = 2;
+        buyPrice = 200;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_batteryAcid.paa";
+        processedItem = "crystal_meth";
+    };
+
+    class crystal_meth {
+        variable = "crystalMeth";
+        displayName = "STR_Item_crystalM";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 1950;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_crystalMeth.paa";
     };
 
     class cannabis {

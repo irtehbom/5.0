@@ -21,6 +21,13 @@ class CfgGather {
             zoneSize = 30;
         };
 
+        class red_phosphorus {
+            amount = 3;
+            zones[] = { "meth_1" };
+            item = "";
+            zoneSize = 30;
+        };
+
         class cocaine_unprocessed {
             amount = 3;
             zones[] = { "cocaine_1" };

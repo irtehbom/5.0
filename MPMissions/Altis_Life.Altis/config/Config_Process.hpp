@@ -41,6 +41,14 @@ class ProcessAction {
         NoLicenseCost = 1750;
     };
 
+    class meth {
+        MaterialsReq[] = {{"red_phosphorus","battery_acid",1}};
+        MaterialsGive[] = {{"crystal_meth",1}};
+        Text = "STR_Process_Meth";
+        //ScrollText = "Process Heroin";
+        NoLicenseCost = 1750;
+    };
+
     class copper {
         MaterialsReq[] = {{"copper_unrefined",1}};
         MaterialsGive[] = {{"copper_refined",1}};

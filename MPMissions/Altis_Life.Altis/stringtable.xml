@@ -9603,16 +9603,8 @@
             <Polish>Sklep rybny</Polish>
             <Italian>Pescivendolo</Italian>
         </Key>
-        <Key ID="STR_MAR_Hospital">
-            <Original>Hospital</Original>
-            <Czech>Nemocnice</Czech>
-            <French>Hôpital</French>
-            <Spanish>Hospital</Spanish>
-            <Russian></Russian>
-            <German>Krankenhaus</German>
-            <Portuguese>Hospital</Portuguese>
-            <Polish>Szpital</Polish>
-            <Italian>Ospedale</Italian>
+        <Key ID="STR_MAR_IdapHq">
+            <Original>Idap Hq</Original>
         </Key>
         <Key ID="STR_MAR_Police_Station">
             <Original>Police Station</Original>
